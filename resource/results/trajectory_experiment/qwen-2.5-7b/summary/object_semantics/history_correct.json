@@ -1,0 +1,378 @@
+[
+    {
+        "episode_id": 2960,
+        "error": false,
+        "instruction": "Could you move the book which is a gift from my best friend and the white candle on a black holder from the living room couch to the dining table, placing them next to each other?",
+        "replanning_count_0": 24.0,
+        "run_id": 0,
+        "runtime": 275.92091846466064,
+        "sim_step_count": 3367.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "2960",
+            "instruction": "Could you move the book which is a gift from my best friend and the white candle on a black holder from the living room couch to the dining table, placing them next to each other?",
+            "original_data_info": {
+                "episode_id": "763",
+                "instruction": "Move the book and candle from the living room couch to the dining table? Place them next to each other on the table.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "960",
+                "episode_type": "object_semantics",
+                "target_objects": [
+                    {
+                        "id": "Book_15",
+                        "caption": "A beige book titled \"UNIX\" with a simple cover design.",
+                        "source": "ai2thorhab",
+                        "category": "book",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "Candle_6",
+                        "caption": "A white candle on a black holder.",
+                        "source": "ai2thorhab",
+                        "category": "candle",
+                        "cluster": 1
+                    }
+                ],
+                "distractors": [
+                    {
+                        "id": "6c012b2a87c94cc8b26d014ba8601b4eadf0c17d",
+                        "caption": "A black book with a textured cover.",
+                        "source": "hssd_hab",
+                        "category": "book",
+                        "cluster": 0,
+                        "pair_id": "Book_15"
+                    },
+                    {
+                        "id": "xxxx575beb73xadbex4b2axbc06x2273ca72ce73",
+                        "caption": "A gradient teal candle with a white top.",
+                        "source": "hssd_hab",
+                        "category": "candle",
+                        "cluster": 0,
+                        "pair_id": "Candle_6"
+                    }
+                ],
+                "subtype": "history",
+                "num_targets": 1,
+                "memory": "The beige book titled 'UNIX' is a gift from the user's best friend.",
+                "used_object": [
+                    "book"
+                ]
+            },
+            "scene_id": "102816756",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Book_15_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "786845ecaee2a43d135f922f4d617da02c8543b6_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Candle_6_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "786845ecaee2a43d135f922f4d617da02c8543b6_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "Book_15_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "Candle_6_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        2
+                    ],
+                    "depends_on": [
+                        0,
+                        1
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 3
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 3250,
+        "error": false,
+        "instruction": "Could you place the toy airplane, which is a gift from my childhood friend, next to the couch on the living room table?",
+        "replanning_count_0": 10.0,
+        "run_id": 0,
+        "runtime": 62.717693567276,
+        "sim_step_count": 1093.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "3250",
+            "instruction": "Could you place the toy airplane, which is a gift from my childhood friend, next to the couch on the living room table?",
+            "original_data_info": {
+                "episode_id": "749",
+                "instruction": "Move the toy airplane from the bedroom to the living room table. Place it next to the couch.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1250",
+                "episode_type": "object_semantics",
+                "target_objects": [
+                    {
+                        "id": "Air_Hogs_Wind_Flyers_Set_Airplane_Red",
+                        "caption": "A red toy airplane, Air Hogs Wind Flyers Set.",
+                        "source": "google",
+                        "category": "toy_airplane",
+                        "cluster": 1
+                    }
+                ],
+                "distractors": [
+                    {
+                        "id": "TURBOPROP_AIRPLANE_WITH_PILOT",
+                        "caption": "A red and white toy turboprop airplane with a pilot.",
+                        "source": "google",
+                        "category": "toy_airplane",
+                        "cluster": 0,
+                        "pair_id": "Air_Hogs_Wind_Flyers_Set_Airplane_Red"
+                    }
+                ],
+                "subtype": "history",
+                "num_targets": 1,
+                "memory": "The red toy airplane, part of the Air Hogs Wind Flyers Set, is a gift from the user's childhood friend.",
+                "used_object": [
+                    "toy_airplane"
+                ]
+            },
+            "scene_id": "103997895_171031182",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Air_Hogs_Wind_Flyers_Set_Airplane_Red_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "2f38b4f83d8a77af0eb36406b0f00df98cef5e47_:0000",
+                            "735845d0674f69f736af7e0f116767a01392f9b8_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "Air_Hogs_Wind_Flyers_Set_Airplane_Red_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "50bf1434785c2776eac002be0f7c3abeff54709c_:0000",
+                            "809aa90d72a9aa73fadef388620c7ca3668f9d00_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        1
+                    ],
+                    "depends_on": [
+                        0
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 2
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 2952,
+        "error": false,
+        "instruction": "Could you move the Cole Hardware plant container from the bedroom table to the living room table? Then place the gift toy from my friend on the bedroom table.",
+        "replanning_count_0": 13.0,
+        "run_id": 0,
+        "runtime": 537.9852702617645,
+        "sim_step_count": 6973.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "2952",
+            "instruction": "Could you move the Cole Hardware plant container from the bedroom table to the living room table? Then place the gift toy from my friend on the bedroom table.",
+            "original_data_info": {
+                "episode_id": "379",
+                "instruction": "Move the plant container from the bedroom table to the living room table. Take the stuffed toy from the kitchen cabinet and put it on a bedroom table.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "952",
+                "episode_type": "object_semantics",
+                "target_objects": [
+                    {
+                        "id": "Cole_Hardware_Electric_Pot_Assortment_55",
+                        "caption": "A colorful assortment of electric pots, Cole Hardware.",
+                        "source": "google",
+                        "category": "plant_container",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "b4ba58ab622b84b76b98a8d4f907116425d68f3b",
+                        "caption": "A gray stuffed toy bear with a paw print on its scarf.",
+                        "source": "hssd_hab",
+                        "category": "stuffed_toy",
+                        "cluster": 1
+                    }
+                ],
+                "distractors": [
+                    {
+                        "id": "Ecoforms_Plant_Pot_GP9_SAND",
+                        "caption": "A sand-colored plant pot, Ecoforms GP9.",
+                        "source": "google",
+                        "category": "plant_container",
+                        "cluster": 1,
+                        "pair_id": "Cole_Hardware_Electric_Pot_Assortment_55"
+                    },
+                    {
+                        "id": "Ortho_Forward_Facing_3Q6J2oKJD92",
+                        "caption": "A plush stuffed toy, Ortho_Forward_Facing_3Q6J2oKJD92.",
+                        "source": "google",
+                        "category": "stuffed_toy",
+                        "cluster": 0,
+                        "pair_id": "b4ba58ab622b84b76b98a8d4f907116425d68f3b"
+                    }
+                ],
+                "subtype": "history",
+                "num_targets": 1,
+                "memory": "The gray stuffed toy bear with a paw print on its scarf is a gift from the user's friend.",
+                "used_object": [
+                    "stuffed_toy"
+                ]
+            },
+            "scene_id": "102816756",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Cole_Hardware_Electric_Pot_Assortment_55_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "786845ecaee2a43d135f922f4d617da02c8543b6_:0000",
+                            "7dd70791b3608b7a7e5f24b451cf7b11cdadcba5_:0000",
+                            "c95a77cb5c2b67768b566f45b25ccd726be5bead_:0000",
+                            "d60340031eacc7eba62900753ddb800d5d022e69_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "b4ba58ab622b84b76b98a8d4f907116425d68f3b_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "e1d51fa2fae90a92cbb8876689336c9ae07cb5a9_:0000",
+                            "e773f6b54137ce8acdf013c000fc8dbf29071e1d_:0000",
+                            "ff6b4958d22c4a1a423dc32fb35b794ed075411c_:0000",
+                            "a32ed32cc5693cb1ccd4792b7c3f0340cc8eda91_:0000",
+                            "c76cf29427780abebb11688b4815cbe59d54819a_:0000",
+                            "c76cf29427780abebb11688b4815cbe59d54819a_:0002"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 2
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    }
+]

@@ -1,0 +1,413 @@
+[
+    {
+        "episode_id": 10020,
+        "error": "False",
+        "instruction": "Could you move my favorite vase and the picture frame with a light blue border and multicolored accents from the living room table to the lounge chair? Place them next to each other on the chair. After that, can you set up everything for my morning routine?",
+        "replanning_count_0": 41.0,
+        "run_id": 0,
+        "runtime": 289.4195730686188,
+        "sim_step_count": 3148.0,
+        "task_percent_complete": 0.5,
+        "task_state_success": 0.0,
+        "org_data": {
+            "episode_id": "10020",
+            "instruction": "Could you move my favorite vase and the picture frame with a light blue border and multicolored accents from the living room table to the lounge chair? Place them next to each other on the chair. After that, can you set up everything for my morning routine?",
+            "original_data_info": {
+                "episode_id": [
+                    "3174",
+                    "3154"
+                ],
+                "instruction": [
+                    "Could you move my favorite vase and the picture frame with a light blue border and multicolored accents from the living room table to the lounge chair? Place them next to each other on the chair.",
+                    "Can you set up everything for my morning routine?"
+                ],
+                "data_path": [
+                    "data/datasets/partnr_episodes/v0_0/val.json",
+                    "data/datasets/partnr_episodes/v0_0/val.json"
+                ]
+            },
+            "metadata": {
+                "subtype": [
+                    "preference",
+                    "routine"
+                ],
+                "memory": [
+                    "The dark blue vase with a faceted design is the user's personal favorite.",
+                    "Arrange the jug, kettle, and bread on the living room table for the morning routine."
+                ],
+                "episode_type": [
+                    "object_semantics",
+                    "user_pattern"
+                ],
+                "num_targets": [
+                    1,
+                    null
+                ],
+                "related_episode_id": [
+                    "1174",
+                    "1154"
+                ],
+                "stage": "2",
+                "target_objects_original": [
+                    [
+                        {
+                            "id": "Vase_Open_2",
+                            "caption": "A dark blue vase with a faceted design.",
+                            "source": "ai2thorhab",
+                            "category": "vase",
+                            "cluster": 1
+                        },
+                        {
+                            "id": "5063d7a560f9af30a6fdec857fc51d7008c60fd3",
+                            "caption": "A decorative picture frame with a light blue border and multicolored accents.",
+                            "source": "hssd_hab",
+                            "category": "picture_frame",
+                            "cluster": 1
+                        }
+                    ],
+                    [
+                        {
+                            "id": "ad87281ca93b236560306a08f0953ba340e85c3c",
+                            "caption": "A dark green jug with a wavy top and abstract pattern.",
+                            "source": "hssd_hab",
+                            "category": "jug",
+                            "cluster": 1
+                        },
+                        {
+                            "id": "5a2d4315640f464391c6a256818c3c11fdd8f4f6",
+                            "caption": "A white kettle with a black handle and lid.",
+                            "source": "hssd_hab",
+                            "category": "kettle",
+                            "cluster": 0
+                        },
+                        {
+                            "id": "Bread_1",
+                            "caption": "A loaf of brown bread.",
+                            "source": "ai2thorhab",
+                            "category": "bread",
+                            "cluster": 0
+                        }
+                    ]
+                ],
+                "target_objects": [
+                    {
+                        "id": "Vase_Open_2",
+                        "caption": "A dark blue vase with a faceted design.",
+                        "source": "ai2thorhab",
+                        "category": "vase",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "5063d7a560f9af30a6fdec857fc51d7008c60fd3",
+                        "caption": "A decorative picture frame with a light blue border and multicolored accents.",
+                        "source": "hssd_hab",
+                        "category": "picture_frame",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "ad87281ca93b236560306a08f0953ba340e85c3c",
+                        "caption": "A dark green jug with a wavy top and abstract pattern.",
+                        "source": "hssd_hab",
+                        "category": "jug",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "5a2d4315640f464391c6a256818c3c11fdd8f4f6",
+                        "caption": "A white kettle with a black handle and lid.",
+                        "source": "hssd_hab",
+                        "category": "kettle",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "Bread_1",
+                        "caption": "A loaf of brown bread.",
+                        "source": "ai2thorhab",
+                        "category": "bread",
+                        "cluster": 0
+                    }
+                ],
+                "distractors_original": [
+                    [
+                        {
+                            "id": "B075HR7DM7",
+                            "caption": "A white vase with a geometric pattern.",
+                            "source": "amazon_berkeley",
+                            "category": "vase",
+                            "cluster": 0,
+                            "pair_id": "Vase_Open_2"
+                        },
+                        {
+                            "id": "844510f08ce0cfae1b8e6079c03896aa649cbcc7",
+                            "caption": "A white picture frame with scalloped edges.",
+                            "source": "hssd_hab",
+                            "category": "picture_frame",
+                            "cluster": 0,
+                            "pair_id": "5063d7a560f9af30a6fdec857fc51d7008c60fd3"
+                        }
+                    ],
+                    []
+                ],
+                "distractors": [
+                    {
+                        "id": "B075HR7DM7",
+                        "caption": "A white vase with a geometric pattern.",
+                        "source": "amazon_berkeley",
+                        "category": "vase",
+                        "cluster": 0,
+                        "pair_id": "Vase_Open_2"
+                    },
+                    {
+                        "id": "844510f08ce0cfae1b8e6079c03896aa649cbcc7",
+                        "caption": "A white picture frame with scalloped edges.",
+                        "source": "hssd_hab",
+                        "category": "picture_frame",
+                        "cluster": 0,
+                        "pair_id": "5063d7a560f9af30a6fdec857fc51d7008c60fd3"
+                    }
+                ],
+                "used_object_original": [
+                    [
+                        "vase"
+                    ],
+                    []
+                ],
+                "used_object": [
+                    "vase"
+                ],
+                "combination_type": "Object Semantics + User Pattern",
+                "object_overlaps": {
+                    "target_target": [],
+                    "distractor_distractor": [],
+                    "target1_distractor2": [],
+                    "target2_distractor1": [],
+                    "target_category_overlap": [],
+                    "counts": {
+                        "target_target": 0,
+                        "distractor_distractor": 0,
+                        "target1_distractor2": 0,
+                        "target2_distractor1": 0,
+                        "target_category_overlap": 0,
+                        "total_overlap": 0
+                    },
+                    "has_target_category_overlap": false,
+                    "has_target_distractor_overlap": false
+                },
+                "receptacle_overlaps": {
+                    "has_overlaps": false,
+                    "common_receptacles": [],
+                    "overlap_count": 0
+                }
+            },
+            "scene_id": "107734176_176000019",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Vase_Open_2_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "0bd3fff760626beb3b250521c516ebc696984229_:0000",
+                            "bbe458f78e3686c63a219a0b9a6fcd785b55cf3d_:0000",
+                            "bbe458f78e3686c63a219a0b9a6fcd785b55cf3d_:0001",
+                            "bbe458f78e3686c63a219a0b9a6fcd785b55cf3d_:0002"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "5063d7a560f9af30a6fdec857fc51d7008c60fd3_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "0bd3fff760626beb3b250521c516ebc696984229_:0000",
+                            "bbe458f78e3686c63a219a0b9a6fcd785b55cf3d_:0000",
+                            "bbe458f78e3686c63a219a0b9a6fcd785b55cf3d_:0001",
+                            "bbe458f78e3686c63a219a0b9a6fcd785b55cf3d_:0002"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "Vase_Open_2_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "5063d7a560f9af30a6fdec857fc51d7008c60fd3_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "ad87281ca93b236560306a08f0953ba340e85c3c_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "033774ae209de7a75a61ef44b69e42189f9af358_:0000",
+                            "086ae0df95ac1b212fabe2f0b8bf5c63968dfb69_:0000",
+                            "174666b4a100a3e62f73d11e96a2ff9c432cd731_:0000",
+                            "174666b4a100a3e62f73d11e96a2ff9c432cd731_:0001",
+                            "1f366035e778f93cff51f06f392d86814b3eab65_:0000",
+                            "24304078d26588e2d78d4db014c5804506388cf5_:0000",
+                            "9d5c4c5e897817e769610d84c3fa695b4f4fee0b_:0000",
+                            "b39d5fdf03917dbc9ef22c8b7d310e2f3675c4c6_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "5a2d4315640f464391c6a256818c3c11fdd8f4f6_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "033774ae209de7a75a61ef44b69e42189f9af358_:0000",
+                            "086ae0df95ac1b212fabe2f0b8bf5c63968dfb69_:0000",
+                            "174666b4a100a3e62f73d11e96a2ff9c432cd731_:0000",
+                            "174666b4a100a3e62f73d11e96a2ff9c432cd731_:0001",
+                            "1f366035e778f93cff51f06f392d86814b3eab65_:0000",
+                            "24304078d26588e2d78d4db014c5804506388cf5_:0000",
+                            "9d5c4c5e897817e769610d84c3fa695b4f4fee0b_:0000",
+                            "b39d5fdf03917dbc9ef22c8b7d310e2f3675c4c6_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Bread_1_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "033774ae209de7a75a61ef44b69e42189f9af358_:0000",
+                            "086ae0df95ac1b212fabe2f0b8bf5c63968dfb69_:0000",
+                            "174666b4a100a3e62f73d11e96a2ff9c432cd731_:0000",
+                            "174666b4a100a3e62f73d11e96a2ff9c432cd731_:0001",
+                            "1f366035e778f93cff51f06f392d86814b3eab65_:0000",
+                            "24304078d26588e2d78d4db014c5804506388cf5_:0000",
+                            "9d5c4c5e897817e769610d84c3fa695b4f4fee0b_:0000",
+                            "b39d5fdf03917dbc9ef22c8b7d310e2f3675c4c6_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "ad87281ca93b236560306a08f0953ba340e85c3c_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "5a2d4315640f464391c6a256818c3c11fdd8f4f6_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "5a2d4315640f464391c6a256818c3c11fdd8f4f6_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "Bread_1_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        2
+                    ],
+                    "depends_on": [
+                        0,
+                        1
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                },
+                {
+                    "proposition_indices": [
+                        6
+                    ],
+                    "depends_on": [
+                        3,
+                        4
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                },
+                {
+                    "proposition_indices": [
+                        7
+                    ],
+                    "depends_on": [
+                        4,
+                        5
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [
+                            [
+                                0,
+                                3
+                            ],
+                            [
+                                1,
+                                3
+                            ],
+                            [
+                                2,
+                                3
+                            ]
+                        ],
+                        "n_propositions": 8
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2,
+                            3,
+                            4,
+                            5,
+                            6,
+                            7
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    }
+]

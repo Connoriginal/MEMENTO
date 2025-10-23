@@ -35,6 +35,11 @@ class Planner:
             if isinstance(plan_config, DictConfig)
             else False
         )
+        self.enable_user_profile_rag: bool = (
+            plan_config.get("enable_user_profile_rag", False)
+            if isinstance(plan_config, DictConfig)
+            else False
+        )
         self.swap_instruction: bool = True
         self.last_high_level_actions: Dict[int, Tuple[str, str, str]] = {}
 

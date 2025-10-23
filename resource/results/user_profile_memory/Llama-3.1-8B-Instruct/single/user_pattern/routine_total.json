@@ -1,0 +1,4059 @@
+[
+    {
+        "episode_id": 3067,
+        "error": false,
+        "instruction": "Could you set up my workspace in the bedroom?",
+        "replanning_count_0": 12.0,
+        "run_id": 0,
+        "runtime": 61.679972648620605,
+        "sim_step_count": 1083.0,
+        "task_percent_complete": 0.0,
+        "task_state_success": 0.0,
+        "org_data": {
+            "episode_id": "3067",
+            "instruction": "Could you set up my workspace in the bedroom?",
+            "original_data_info": {
+                "episode_id": "709",
+                "instruction": "First, move the laptop from the living room to the bedroom and place it on the bedside table. Then move the laptop from the bedside table to the stool in the bedroom.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1067",
+                "episode_type": "user_pattern",
+                "target_objects": [
+                    {
+                        "id": "Laptop_21",
+                        "caption": "A black laptop with a sleek design.",
+                        "source": "ai2thorhab",
+                        "category": "laptop",
+                        "cluster": 1
+                    }
+                ],
+                "subtype": "routine",
+                "memory": "Start by placing the laptop on the bedside table, then move it to the stool for work comfort in the bedroom."
+            },
+            "scene_id": "106878915_174887025",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Laptop_21_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "4a5f3b29cc15b191bb35bfae6c5918087a173827_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Laptop_21_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "8a2d6c76deccf5964e793c0e591b985590bb916a_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        1
+                    ],
+                    "depends_on": [
+                        0
+                    ],
+                    "relation_type": "after_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [
+                            [
+                                0,
+                                1
+                            ]
+                        ],
+                        "n_propositions": 2
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            1
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 3055,
+        "error": false,
+        "instruction": "Could you set up my playtime and study areas?",
+        "replanning_count_0": 16.0,
+        "run_id": 0,
+        "runtime": 93.37367820739746,
+        "sim_step_count": 1608.0,
+        "task_percent_complete": 0.6666666666666666,
+        "task_state_success": 0.0,
+        "org_data": {
+            "episode_id": "3055",
+            "instruction": "Could you set up my playtime and study areas?",
+            "original_data_info": {
+                "episode_id": "422",
+                "instruction": "Move the toy airplane to the living room couch. Take the book and laptop to the living room table.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1055",
+                "episode_type": "user_pattern",
+                "target_objects": [
+                    {
+                        "id": "Air_Hogs_Wind_Flyers_Set_Airplane_Red",
+                        "caption": "A red toy airplane, Air Hogs Wind Flyers Set.",
+                        "source": "google",
+                        "category": "toy_airplane",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "Book_21",
+                        "caption": "A book with a dark cover featuring a large red circle.",
+                        "source": "ai2thorhab",
+                        "category": "book",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "Laptop_19",
+                        "caption": "A black laptop with a dark keyboard.",
+                        "source": "ai2thorhab",
+                        "category": "laptop",
+                        "cluster": 1
+                    }
+                ],
+                "subtype": "routine",
+                "memory": "Keep the toy airplane on the couch for playtime and the book and laptop on the living room table for study sessions."
+            },
+            "scene_id": "106878915_174887025",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Air_Hogs_Wind_Flyers_Set_Airplane_Red_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "b31b3406480c29c8e44613edece1325cb5bd85ae_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Book_21_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "29c4cb616586ab3b47d648b08b40a74a9b2c083f_:0000",
+                            "183de9f61a9c362d58ac340058ecddc54da18809_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Laptop_19_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "29c4cb616586ab3b47d648b08b40a74a9b2c083f_:0000",
+                            "183de9f61a9c362d58ac340058ecddc54da18809_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 3
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 3065,
+        "error": false,
+        "instruction": "Could you follow my closet organizing routine?",
+        "replanning_count_0": 23.0,
+        "run_id": 0,
+        "runtime": 119.39026927947998,
+        "sim_step_count": 908.0,
+        "task_percent_complete": 0.1428571428571428,
+        "task_state_success": 0.0,
+        "org_data": {
+            "episode_id": "3065",
+            "instruction": "Could you follow my closet organizing routine?",
+            "original_data_info": {
+                "episode_id": "704",
+                "instruction": "Help me organize my closet in the bedroom. First, place the basket and shoe on another shelf in the bedroom, next to each other. Then, move them to the stand in the bedroom and place the hat close by.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1065",
+                "episode_type": "user_pattern",
+                "target_objects": [
+                    {
+                        "id": "Spritz_Easter_Basket_Plastic_Teal",
+                        "caption": "A teal plastic basket, Spritz Easter Basket.",
+                        "source": "google",
+                        "category": "basket",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "AMBERLIGHT_UP_W",
+                        "caption": "A white and gold sneaker with high-top design, AMBERLIGHT_UP_W.",
+                        "source": "google",
+                        "category": "shoe",
+                        "cluster": 0
+                    }
+                ],
+                "subtype": "routine",
+                "memory": "First, arrange the basket and shoe on a shelf before placing them on the stand with the hat nearby in the bedroom."
+            },
+            "scene_id": "106878915_174887025",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Spritz_Easter_Basket_Plastic_Teal_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "3220d21b0885b4f0ac2c044d00a76c2ff7844dca_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "AMBERLIGHT_UP_W_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "3220d21b0885b4f0ac2c044d00a76c2ff7844dca_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "Spritz_Easter_Basket_Plastic_Teal_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "AMBERLIGHT_UP_W_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Spritz_Easter_Basket_Plastic_Teal_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "e194cb80e9941fcf08be2185146d4dccf9d532c2_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "AMBERLIGHT_UP_W_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "e194cb80e9941fcf08be2185146d4dccf9d532c2_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "DPC_Handmade_Hat_Brown_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "Spritz_Easter_Basket_Plastic_Teal_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "DPC_Handmade_Hat_Brown_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "AMBERLIGHT_UP_W_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        2
+                    ],
+                    "depends_on": [
+                        0,
+                        1
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                },
+                {
+                    "proposition_indices": [
+                        5
+                    ],
+                    "depends_on": [
+                        3
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                },
+                {
+                    "proposition_indices": [
+                        6
+                    ],
+                    "depends_on": [
+                        4
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                },
+                {
+                    "proposition_indices": [
+                        3
+                    ],
+                    "depends_on": [
+                        0,
+                        2
+                    ],
+                    "relation_type": "after_satisfied",
+                    "dependency_mode": "any"
+                },
+                {
+                    "proposition_indices": [
+                        4
+                    ],
+                    "depends_on": [
+                        1,
+                        2
+                    ],
+                    "relation_type": "after_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [
+                            [
+                                0,
+                                3
+                            ],
+                            [
+                                0,
+                                4
+                            ],
+                            [
+                                0,
+                                5
+                            ],
+                            [
+                                0,
+                                6
+                            ],
+                            [
+                                1,
+                                3
+                            ],
+                            [
+                                1,
+                                4
+                            ],
+                            [
+                                1,
+                                5
+                            ],
+                            [
+                                1,
+                                6
+                            ],
+                            [
+                                2,
+                                3
+                            ],
+                            [
+                                2,
+                                4
+                            ],
+                            [
+                                2,
+                                5
+                            ],
+                            [
+                                2,
+                                6
+                            ]
+                        ],
+                        "n_propositions": 7
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            3,
+                            4,
+                            5,
+                            6
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 3035,
+        "error": false,
+        "instruction": "Can you arrange the playtime setup in the living room?",
+        "replanning_count_0": 41.0,
+        "run_id": 0,
+        "runtime": 251.92453265190125,
+        "sim_step_count": 4617.0,
+        "task_percent_complete": 0.2,
+        "task_state_success": 0.0,
+        "org_data": {
+            "episode_id": "3035",
+            "instruction": "Can you arrange the playtime setup in the living room?",
+            "original_data_info": {
+                "episode_id": "648",
+                "instruction": "Help me move some toys and a bowl from the dining room to the living room. Take the toy airplane toy animal, and bowl from the table in the dining room. Place them next to each other on the table in the living room.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1035",
+                "episode_type": "user_pattern",
+                "target_objects": [
+                    {
+                        "id": "Air_Hogs_Wind_Flyers_Set_Airplane_Red",
+                        "caption": "A red toy airplane, Air Hogs Wind Flyers Set.",
+                        "source": "google",
+                        "category": "toy_airplane",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "Schleich_African_Black_Rhino",
+                        "caption": "A detailed, gray Schleich African Black Rhino toy animal.",
+                        "source": "google",
+                        "category": "toy_animal",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "391972f73810b6eab26e322652d88a61aea7a739",
+                        "caption": "A black shallow bowl.",
+                        "source": "hssd_hab",
+                        "category": "bowl",
+                        "cluster": 1
+                    }
+                ],
+                "subtype": "routine",
+                "memory": "Arrange the toy airplane, toy animal, and bowl together on the living room table for playtime with the child."
+            },
+            "scene_id": "106366386_174226770",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Air_Hogs_Wind_Flyers_Set_Airplane_Red_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "138009a6121d7ebb8c3b78e3a411b4e33c388efb_:0000",
+                            "1a4841c613e9f5c2ba492107fb6aff4692c564a4_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Schleich_African_Black_Rhino_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "138009a6121d7ebb8c3b78e3a411b4e33c388efb_:0000",
+                            "1a4841c613e9f5c2ba492107fb6aff4692c564a4_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "Air_Hogs_Wind_Flyers_Set_Airplane_Red_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "Schleich_African_Black_Rhino_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "391972f73810b6eab26e322652d88a61aea7a739_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "138009a6121d7ebb8c3b78e3a411b4e33c388efb_:0000",
+                            "1a4841c613e9f5c2ba492107fb6aff4692c564a4_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "Schleich_African_Black_Rhino_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "391972f73810b6eab26e322652d88a61aea7a739_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        2
+                    ],
+                    "depends_on": [
+                        0,
+                        1
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                },
+                {
+                    "proposition_indices": [
+                        4
+                    ],
+                    "depends_on": [
+                        1,
+                        3
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 5
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2,
+                            3,
+                            4
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 3094,
+        "error": false,
+        "instruction": "Can you set my lunch spot in the office?",
+        "replanning_count_0": 10.0,
+        "run_id": 0,
+        "runtime": 100.781724691391,
+        "sim_step_count": 1015.0,
+        "task_percent_complete": 0.0,
+        "task_state_success": 0.0,
+        "org_data": {
+            "episode_id": "3094",
+            "instruction": "Can you set my lunch spot in the office?",
+            "original_data_info": {
+                "episode_id": "727",
+                "instruction": "First, move the plate from the dining table to the chair. Then, place it on the table in the office.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1094",
+                "episode_type": "user_pattern",
+                "target_objects": [
+                    {
+                        "id": "c717fbe8f10ad354c83f9cfc7ce154ae2fcdf96c",
+                        "caption": "A golden plate with a scalloped edge.",
+                        "source": "hssd_hab",
+                        "category": "plate",
+                        "cluster": 1
+                    }
+                ],
+                "subtype": "routine",
+                "memory": "Move the plate to the office table for lunchtime while working."
+            },
+            "scene_id": "106878960_174887073",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "c717fbe8f10ad354c83f9cfc7ce154ae2fcdf96c_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "2088726c4c35c8af549eb6a8d452ea2c27abbb42_:0000",
+                            "2088726c4c35c8af549eb6a8d452ea2c27abbb42_:0001",
+                            "2088726c4c35c8af549eb6a8d452ea2c27abbb42_:0002",
+                            "b40c4c013467c8c6db3c5d2ecfbcc63577beecd9_:0000",
+                            "b40c4c013467c8c6db3c5d2ecfbcc63577beecd9_:0001"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "c717fbe8f10ad354c83f9cfc7ce154ae2fcdf96c_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "8d099f0c81aeb33b406b0e7ef3007378b7f19363_:0000",
+                            "982c745b2ba22ebb22da0d6a4b3cffea896c0d3a_:0000",
+                            "215e08aaca7f96eb917fb32b11a459b2271a31f0_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        1
+                    ],
+                    "depends_on": [
+                        0
+                    ],
+                    "relation_type": "after_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [
+                            [
+                                0,
+                                1
+                            ]
+                        ],
+                        "n_propositions": 2
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            1
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 2967,
+        "error": false,
+        "instruction": "Can you set up my study materials for the afternoon session?",
+        "replanning_count_0": 41.0,
+        "run_id": 0,
+        "runtime": 255.2915005683899,
+        "sim_step_count": 1130.0,
+        "task_percent_complete": 0.0,
+        "task_state_success": 0.0,
+        "org_data": {
+            "episode_id": "2967",
+            "instruction": "Can you set up my study materials for the afternoon session?",
+            "original_data_info": {
+                "episode_id": "390",
+                "instruction": "Move a book and a pencil case from the bedroom to the living room. Place them on the table.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "967",
+                "episode_type": "user_pattern",
+                "target_objects": [
+                    {
+                        "id": "81c6dd3830a8df6644bd1f6b9a239615234e888f",
+                        "caption": "A book with a cover image of a modern interior.",
+                        "source": "hssd_hab",
+                        "category": "book",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "Olive_Kids_Paisley_Pencil_Case",
+                        "caption": "A colorful, paisley-patterned pencil case, Olive Kids Paisley Pencil Case.",
+                        "source": "google",
+                        "category": "pencil_case",
+                        "cluster": 0
+                    }
+                ],
+                "subtype": "routine",
+                "memory": "Keep the book and pencil case in the living room for afternoon study sessions."
+            },
+            "scene_id": "107733960_175999701",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "81c6dd3830a8df6644bd1f6b9a239615234e888f_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "7d32f5f7ab814a5cbe9b8eff80e139d2d9f13cf7_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Olive_Kids_Paisley_Pencil_Case_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "7d32f5f7ab814a5cbe9b8eff80e139d2d9f13cf7_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 2
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 3122,
+        "error": false,
+        "instruction": "Could you set up the candle for a cozy evening?",
+        "replanning_count_0": 13.0,
+        "run_id": 0,
+        "runtime": 107.51606607437134,
+        "sim_step_count": 1869.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "3122",
+            "instruction": "Could you set up the candle for a cozy evening?",
+            "original_data_info": {
+                "episode_id": "674",
+                "instruction": "First, move the candle from the table to the chair in the tv room. Then, place it on tv the table.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1122",
+                "episode_type": "user_pattern",
+                "target_objects": [
+                    {
+                        "id": "b012e7b6b46475fdee5e0d64dfbb5b359e1c7e5b",
+                        "caption": "A mint green candle with white butterfly designs.",
+                        "source": "hssd_hab",
+                        "category": "candle",
+                        "cluster": 0
+                    }
+                ],
+                "subtype": "routine",
+                "memory": "Reposition the candle from the table to the chair, then onto the tv table for a cozy evening setup."
+            },
+            "scene_id": "102344529",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "b012e7b6b46475fdee5e0d64dfbb5b359e1c7e5b_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "3b77d0a7c6b76e39f050385d2548c0de327b76f2_:0000",
+                            "4857100a62e0e8ae2bf7d58e34ce9a84f9c27bd2_:0000",
+                            "a8bdceeb3b502b9755a0ec55b776a874d74cd343_:0000",
+                            "c62bd3f57959ef6e18c81d003f3c55fdde452e52_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "b012e7b6b46475fdee5e0d64dfbb5b359e1c7e5b_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "1f20f5194541179686f9bff3a01d002076751910_:0000",
+                            "9812cf1f7ced3de9596d88244068b628e346069c_:0000",
+                            "9b2f527215b5f508680ff582ad412a68407c07bd_:0000",
+                            "cb0d27b5428679b54fc8bf347ccc168cba08092f_:0000",
+                            "f1a090d794cf38e36a584e07672edf7ad1a70f8a_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        1
+                    ],
+                    "depends_on": [
+                        0
+                    ],
+                    "relation_type": "after_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [
+                            [
+                                0,
+                                1
+                            ]
+                        ],
+                        "n_propositions": 2
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            1
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 3092,
+        "error": false,
+        "instruction": "Could you set the jug for mealtime?",
+        "replanning_count_0": 5.0,
+        "run_id": 0,
+        "runtime": 52.99554920196533,
+        "sim_step_count": 668.0,
+        "task_percent_complete": 0.5,
+        "task_state_success": 0.0,
+        "org_data": {
+            "episode_id": "3092",
+            "instruction": "Could you set the jug for mealtime?",
+            "original_data_info": {
+                "episode_id": "721",
+                "instruction": "First, bring the jug from the kitchen to the dining room. Then, place it on the table.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1092",
+                "episode_type": "user_pattern",
+                "target_objects": [
+                    {
+                        "id": "794f4ad86d136c76bfe3082ffedc4133e876ac9a",
+                        "caption": "A cream-colored jug with a curved handle.",
+                        "source": "hssd_hab",
+                        "category": "jug",
+                        "cluster": 0
+                    }
+                ],
+                "subtype": "routine",
+                "memory": "Place the jug on the dining room and then to the table during meals for easy water access."
+            },
+            "scene_id": "106878960_174887073",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_in_room",
+                    "args": {
+                        "object_handles": [
+                            "794f4ad86d136c76bfe3082ffedc4133e876ac9a_:0000"
+                        ],
+                        "room_ids": [
+                            "dining room"
+                        ],
+                        "number": 1,
+                        "is_same_room": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "794f4ad86d136c76bfe3082ffedc4133e876ac9a_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "125fb3495160325540ca5e61fd4e1bbbcee3ed9e_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        1
+                    ],
+                    "depends_on": [
+                        0
+                    ],
+                    "relation_type": "after_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [
+                            [
+                                0,
+                                1
+                            ]
+                        ],
+                        "n_propositions": 2
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            1
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 2972,
+        "error": false,
+        "instruction": "Can you set up my morning meditation space?",
+        "replanning_count_0": 15.0,
+        "run_id": 0,
+        "runtime": 120.97401118278503,
+        "sim_step_count": 1568.0,
+        "task_percent_complete": 0.0,
+        "task_state_success": 0.0,
+        "org_data": {
+            "episode_id": "2972",
+            "instruction": "Can you set up my morning meditation space?",
+            "original_data_info": {
+                "episode_id": "660",
+                "instruction": "First, move the vase and statue to the other shelves in the living room. Then, place them next to each other on the table in the living room.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "972",
+                "episode_type": "user_pattern",
+                "target_objects": [
+                    {
+                        "id": "Vase_Medium_5",
+                        "caption": "A black vase with a bulbous shape.",
+                        "source": "ai2thorhab",
+                        "category": "vase",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "Dog_Statue_3",
+                        "caption": "A black dog statue.",
+                        "source": "ai2thorhab",
+                        "category": "statue",
+                        "cluster": 1
+                    }
+                ],
+                "subtype": "routine",
+                "memory": "Keep the vase and statue together on the table for morning meditation."
+            },
+            "scene_id": "107733960_175999701",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Vase_Medium_5_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "e6f8c01259ecf4b053c6f3ae6d9a6ae4cc4780a7_part_23_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Dog_Statue_3_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "e6f8c01259ecf4b053c6f3ae6d9a6ae4cc4780a7_part_23_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Vase_Medium_5_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "7d32f5f7ab814a5cbe9b8eff80e139d2d9f13cf7_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Dog_Statue_3_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "7d32f5f7ab814a5cbe9b8eff80e139d2d9f13cf7_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "Vase_Medium_5_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "Dog_Statue_3_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        4
+                    ],
+                    "depends_on": [
+                        2,
+                        3
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                },
+                {
+                    "proposition_indices": [
+                        2
+                    ],
+                    "depends_on": [
+                        0
+                    ],
+                    "relation_type": "after_satisfied",
+                    "dependency_mode": "any"
+                },
+                {
+                    "proposition_indices": [
+                        3
+                    ],
+                    "depends_on": [
+                        1
+                    ],
+                    "relation_type": "after_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [
+                            [
+                                0,
+                                2
+                            ],
+                            [
+                                0,
+                                3
+                            ],
+                            [
+                                0,
+                                4
+                            ],
+                            [
+                                1,
+                                2
+                            ],
+                            [
+                                1,
+                                3
+                            ],
+                            [
+                                1,
+                                4
+                            ]
+                        ],
+                        "n_propositions": 5
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            2,
+                            3,
+                            4
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 3141,
+        "error": false,
+        "instruction": "Can you set up the table for afternoon tea?",
+        "replanning_count_0": 13.0,
+        "run_id": 0,
+        "runtime": 98.9698724746704,
+        "sim_step_count": 1658.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "3141",
+            "instruction": "Can you set up the table for afternoon tea?",
+            "original_data_info": {
+                "episode_id": "564",
+                "instruction": "First, move the jug from the kitchen counter to living room table. Then, take the cup and plate from the kitchen cabinet to the living room table and place them next to each other.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1141",
+                "episode_type": "user_pattern",
+                "target_objects": [
+                    {
+                        "id": "aaf1ba3e91ae781751ab5eba22ec2bbd30e05365",
+                        "caption": "A blue jug with a round lid.",
+                        "source": "hssd_hab",
+                        "category": "jug",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "6a833596dd725a0044674dbaada29368ebe7a53e",
+                        "caption": "A yellow cup with a white interior.",
+                        "source": "hssd_hab",
+                        "category": "cup",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "b599eb548442db2690265de15d2bf8aa549acd02",
+                        "caption": "A plain white plate with a smooth, circular design.",
+                        "source": "hssd_hab",
+                        "category": "plate",
+                        "cluster": 1
+                    }
+                ],
+                "subtype": "routine",
+                "memory": "Arrange the jug, cup, and plate on the living room table for afternoon tea."
+            },
+            "scene_id": "104348361_171513414",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "aaf1ba3e91ae781751ab5eba22ec2bbd30e05365_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "2e7f82e48f14d6fb2ad6a6b1a8d0429e76401542_part_7_:0000",
+                            "7adfff7e2fab4e59b6390f012d434a6239b04e66_:0000",
+                            "87ec2d5fefc4493289c251c6eb84f1c02371addc_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "6a833596dd725a0044674dbaada29368ebe7a53e_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "2e7f82e48f14d6fb2ad6a6b1a8d0429e76401542_part_7_:0000",
+                            "7adfff7e2fab4e59b6390f012d434a6239b04e66_:0000",
+                            "87ec2d5fefc4493289c251c6eb84f1c02371addc_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "b599eb548442db2690265de15d2bf8aa549acd02_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "2e7f82e48f14d6fb2ad6a6b1a8d0429e76401542_part_7_:0000",
+                            "7adfff7e2fab4e59b6390f012d434a6239b04e66_:0000",
+                            "87ec2d5fefc4493289c251c6eb84f1c02371addc_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "6a833596dd725a0044674dbaada29368ebe7a53e_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "b599eb548442db2690265de15d2bf8aa549acd02_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        3
+                    ],
+                    "depends_on": [
+                        1,
+                        2
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [
+                            [
+                                0,
+                                1
+                            ],
+                            [
+                                0,
+                                2
+                            ],
+                            [
+                                0,
+                                3
+                            ]
+                        ],
+                        "n_propositions": 4
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2,
+                            3
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 3144,
+        "error": false,
+        "instruction": "Can you set up the laundry room for my usual cleaning routine?",
+        "replanning_count_0": 17.0,
+        "run_id": 0,
+        "runtime": 107.3760063648224,
+        "sim_step_count": 1557.0,
+        "task_percent_complete": 0.25,
+        "task_state_success": 0.0,
+        "org_data": {
+            "episode_id": "3144",
+            "instruction": "Can you set up the laundry room for my usual cleaning routine?",
+            "original_data_info": {
+                "episode_id": "697",
+                "instruction": "Help me prepare the laundry room for a cleaning session. First, move the vase from the washer dryer to the closet table. Then, take the stuffed toy and basket and place them next to each other on the chest of drawers.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1144",
+                "episode_type": "user_pattern",
+                "target_objects": [
+                    {
+                        "id": "f51fd63c6cd12ee673b94946d1450c6afc8713be",
+                        "caption": "A black and white vase with a speckled pattern.",
+                        "source": "hssd_hab",
+                        "category": "vase",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "RJ_Rabbit_Easter_Basket_Blue",
+                        "caption": "A blue Easter basket with rabbit ears, RJ_Rabbit_Easter_Basket_Blue.",
+                        "source": "google",
+                        "category": "basket",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "Ortho_Forward_Facing_QCaor9ImJ2G",
+                        "caption": "A blue stuffed toy with a friendly face, Ortho_Forward_Facing_QCaor9ImJ2G.",
+                        "source": "google",
+                        "category": "stuffed_toy",
+                        "cluster": 0
+                    }
+                ],
+                "subtype": "routine",
+                "memory": "Move the vase to the closet table and place the stuffed toy and basket next to each other on the chest of drawers before a cleaning session."
+            },
+            "scene_id": "104348361_171513414",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "f51fd63c6cd12ee673b94946d1450c6afc8713be_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "eaf719f5dd094990daa3e96831f847f47733587f_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "Ortho_Forward_Facing_QCaor9ImJ2G_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "RJ_Rabbit_Easter_Basket_Blue_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Ortho_Forward_Facing_QCaor9ImJ2G_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "07b4946baa48b230b224946422be140ff626c328_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "RJ_Rabbit_Easter_Basket_Blue_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "07b4946baa48b230b224946422be140ff626c328_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        1
+                    ],
+                    "depends_on": [
+                        2,
+                        3
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [
+                            [
+                                0,
+                                1
+                            ],
+                            [
+                                0,
+                                2
+                            ],
+                            [
+                                0,
+                                3
+                            ]
+                        ],
+                        "n_propositions": 4
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2,
+                            3
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 3154,
+        "error": false,
+        "instruction": "Can you set up everything for my morning routine?",
+        "replanning_count_0": 41.0,
+        "run_id": 0,
+        "runtime": 194.95263004302976,
+        "sim_step_count": 2374.0,
+        "task_percent_complete": 0.0,
+        "task_state_success": 0.0,
+        "org_data": {
+            "episode_id": "3154",
+            "instruction": "Can you set up everything for my morning routine?",
+            "original_data_info": {
+                "episode_id": "467",
+                "instruction": "Move the jug, kettle, and bread from the kitchen counter to the living room table. Place them next to each other.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1154",
+                "episode_type": "user_pattern",
+                "target_objects": [
+                    {
+                        "id": "ad87281ca93b236560306a08f0953ba340e85c3c",
+                        "caption": "A dark green jug with a wavy top and abstract pattern.",
+                        "source": "hssd_hab",
+                        "category": "jug",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "5a2d4315640f464391c6a256818c3c11fdd8f4f6",
+                        "caption": "A white kettle with a black handle and lid.",
+                        "source": "hssd_hab",
+                        "category": "kettle",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "Bread_1",
+                        "caption": "A loaf of brown bread.",
+                        "source": "ai2thorhab",
+                        "category": "bread",
+                        "cluster": 0
+                    }
+                ],
+                "subtype": "routine",
+                "memory": "Arrange the jug, kettle, and bread on the living room table for the morning routine."
+            },
+            "scene_id": "107734176_176000019",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "ad87281ca93b236560306a08f0953ba340e85c3c_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "033774ae209de7a75a61ef44b69e42189f9af358_:0000",
+                            "086ae0df95ac1b212fabe2f0b8bf5c63968dfb69_:0000",
+                            "174666b4a100a3e62f73d11e96a2ff9c432cd731_:0000",
+                            "174666b4a100a3e62f73d11e96a2ff9c432cd731_:0001",
+                            "1f366035e778f93cff51f06f392d86814b3eab65_:0000",
+                            "24304078d26588e2d78d4db014c5804506388cf5_:0000",
+                            "9d5c4c5e897817e769610d84c3fa695b4f4fee0b_:0000",
+                            "b39d5fdf03917dbc9ef22c8b7d310e2f3675c4c6_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "5a2d4315640f464391c6a256818c3c11fdd8f4f6_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "033774ae209de7a75a61ef44b69e42189f9af358_:0000",
+                            "086ae0df95ac1b212fabe2f0b8bf5c63968dfb69_:0000",
+                            "174666b4a100a3e62f73d11e96a2ff9c432cd731_:0000",
+                            "174666b4a100a3e62f73d11e96a2ff9c432cd731_:0001",
+                            "1f366035e778f93cff51f06f392d86814b3eab65_:0000",
+                            "24304078d26588e2d78d4db014c5804506388cf5_:0000",
+                            "9d5c4c5e897817e769610d84c3fa695b4f4fee0b_:0000",
+                            "b39d5fdf03917dbc9ef22c8b7d310e2f3675c4c6_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Bread_1_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "033774ae209de7a75a61ef44b69e42189f9af358_:0000",
+                            "086ae0df95ac1b212fabe2f0b8bf5c63968dfb69_:0000",
+                            "174666b4a100a3e62f73d11e96a2ff9c432cd731_:0000",
+                            "174666b4a100a3e62f73d11e96a2ff9c432cd731_:0001",
+                            "1f366035e778f93cff51f06f392d86814b3eab65_:0000",
+                            "24304078d26588e2d78d4db014c5804506388cf5_:0000",
+                            "9d5c4c5e897817e769610d84c3fa695b4f4fee0b_:0000",
+                            "b39d5fdf03917dbc9ef22c8b7d310e2f3675c4c6_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "ad87281ca93b236560306a08f0953ba340e85c3c_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "5a2d4315640f464391c6a256818c3c11fdd8f4f6_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "5a2d4315640f464391c6a256818c3c11fdd8f4f6_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "Bread_1_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        3
+                    ],
+                    "depends_on": [
+                        0,
+                        1
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                },
+                {
+                    "proposition_indices": [
+                        4
+                    ],
+                    "depends_on": [
+                        1,
+                        2
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 5
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2,
+                            3,
+                            4
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 3140,
+        "error": false,
+        "instruction": "Can you arrange the kettle and ladle for my cooking routine?",
+        "replanning_count_0": 20.0,
+        "run_id": 0,
+        "runtime": 144.96834135055542,
+        "sim_step_count": 2842.0,
+        "task_percent_complete": 0.3333333333333333,
+        "task_state_success": 0.0,
+        "org_data": {
+            "episode_id": "3140",
+            "instruction": "Can you arrange the kettle and ladle for my cooking routine?",
+            "original_data_info": {
+                "episode_id": "560",
+                "instruction": "Move the kettle and ladle from the office to the kitchen and place them next to each other on the counter.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1140",
+                "episode_type": "user_pattern",
+                "target_objects": [
+                    {
+                        "id": "e41fb9d079791e99e3ff9e216c5e4416a9a83570",
+                        "caption": "A black kettle with a curved handle.",
+                        "source": "hssd_hab",
+                        "category": "kettle",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "Ladle_2",
+                        "caption": "A black ladle with a round scoop.",
+                        "source": "ai2thorhab",
+                        "category": "ladle",
+                        "cluster": 0
+                    }
+                ],
+                "subtype": "routine",
+                "memory": "Keep the kettle and ladle next to each other on the kitchen counter for easy access during cooking."
+            },
+            "scene_id": "104348361_171513414",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "e41fb9d079791e99e3ff9e216c5e4416a9a83570_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "55dcc18191c2412b899ff405d5d0574571bb81cf_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Ladle_2_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "55dcc18191c2412b899ff405d5d0574571bb81cf_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "e41fb9d079791e99e3ff9e216c5e4416a9a83570_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "Ladle_2_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        2
+                    ],
+                    "depends_on": [
+                        0,
+                        1
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 3
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 2942,
+        "error": false,
+        "instruction": "Can you place my book for bedtime reading?",
+        "replanning_count_0": 11.0,
+        "run_id": 0,
+        "runtime": 184.12666177749637,
+        "sim_step_count": 2827.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "2942",
+            "instruction": "Can you place my book for bedtime reading?",
+            "original_data_info": {
+                "episode_id": "533",
+                "instruction": "Bring the book from the living room to the bedroom and place it on the chest of drawers.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "942",
+                "episode_type": "user_pattern",
+                "target_objects": [
+                    {
+                        "id": "8c6411e06f17477320b687b36a247e4ebc86dc3d",
+                        "caption": "A white book with subtle yellow accents and a bookmark.",
+                        "source": "hssd_hab",
+                        "category": "book",
+                        "cluster": 1
+                    }
+                ],
+                "subtype": "routine",
+                "memory": "Place the book on the chest of drawers in the bedroom for bedtime reading."
+            },
+            "scene_id": "102816756",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "8c6411e06f17477320b687b36a247e4ebc86dc3d_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "0463153d9be9a8603ecd0e9af7e7763f42ee6c92_:0000",
+                            "1b3a5dd7d2a94add4a978d2516e7158980da0cb2_:0000",
+                            "1b3a5dd7d2a94add4a978d2516e7158980da0cb2_:0001",
+                            "1b7f8e7466fd35725ff1b8eff84e66bd90875a4f_:0000",
+                            "1b7f8e7466fd35725ff1b8eff84e66bd90875a4f_:0001",
+                            "8ad3eae836fed059c1b6979c96903573bf37e1e2_:0000",
+                            "8ad3eae836fed059c1b6979c96903573bf37e1e2_:0001",
+                            "8ead2614ed88bb808e684234eec0f9120f41c089_:0000",
+                            "9b34edb22079c93180e57192ed0c919435f8fabc_:0000",
+                            "a99726b1fb773a189df763d7588d4c5a34726f35_:0000",
+                            "a99726b1fb773a189df763d7588d4c5a34726f35_:0001",
+                            "c3c743ba30c2c5488903064178e52a7b61297dc0_:0000",
+                            "c3c743ba30c2c5488903064178e52a7b61297dc0_:0001",
+                            "dccf4f0724add1d24511d9353a2c959487df35e6_:0000",
+                            "e40eb85bbfeb96330fa43d3a766676fd4bb9fb3e_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 1
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 3166,
+        "error": false,
+        "instruction": "Can you set up for movie night?",
+        "replanning_count_0": 17.0,
+        "run_id": 0,
+        "runtime": 124.91672706604004,
+        "sim_step_count": 2767.0,
+        "task_percent_complete": 0.6666666666666666,
+        "task_state_success": 0.0,
+        "org_data": {
+            "episode_id": "3166",
+            "instruction": "Can you set up for movie night?",
+            "original_data_info": {
+                "episode_id": "737",
+                "instruction": "Move the jug and cup from the kitchen counter to the living room table. Then move the tray on the couch.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1166",
+                "episode_type": "user_pattern",
+                "target_objects": [
+                    {
+                        "id": "79590e37b261153df0b50a05e90edf40bc4f13c0",
+                        "caption": "A brown jug with a unique geometric design.",
+                        "source": "hssd_hab",
+                        "category": "jug",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "Cup_9",
+                        "caption": "A translucent, flared cup.",
+                        "source": "ai2thorhab",
+                        "category": "cup",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "d484ce7925cb15f669f0ad3215e4c614cc0ecccd",
+                        "caption": "A black rectangular tray.",
+                        "source": "hssd_hab",
+                        "category": "tray",
+                        "cluster": 1
+                    }
+                ],
+                "subtype": "routine",
+                "memory": "Place the jug and cup on the living room table and the tray on the couch for movie nights."
+            },
+            "scene_id": "107734176_176000019",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "79590e37b261153df0b50a05e90edf40bc4f13c0_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "033774ae209de7a75a61ef44b69e42189f9af358_:0000",
+                            "086ae0df95ac1b212fabe2f0b8bf5c63968dfb69_:0000",
+                            "174666b4a100a3e62f73d11e96a2ff9c432cd731_:0000",
+                            "174666b4a100a3e62f73d11e96a2ff9c432cd731_:0001",
+                            "1f366035e778f93cff51f06f392d86814b3eab65_:0000",
+                            "24304078d26588e2d78d4db014c5804506388cf5_:0000",
+                            "9d5c4c5e897817e769610d84c3fa695b4f4fee0b_:0000",
+                            "b39d5fdf03917dbc9ef22c8b7d310e2f3675c4c6_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Cup_9_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "033774ae209de7a75a61ef44b69e42189f9af358_:0000",
+                            "086ae0df95ac1b212fabe2f0b8bf5c63968dfb69_:0000",
+                            "174666b4a100a3e62f73d11e96a2ff9c432cd731_:0000",
+                            "174666b4a100a3e62f73d11e96a2ff9c432cd731_:0001",
+                            "1f366035e778f93cff51f06f392d86814b3eab65_:0000",
+                            "24304078d26588e2d78d4db014c5804506388cf5_:0000",
+                            "9d5c4c5e897817e769610d84c3fa695b4f4fee0b_:0000",
+                            "b39d5fdf03917dbc9ef22c8b7d310e2f3675c4c6_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "d484ce7925cb15f669f0ad3215e4c614cc0ecccd_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "6a9b9f8c5c14b981eb58dc8971b426c00e2f409c_:0000",
+                            "f75c49f9bed26c64c3ada2c8623fda53583d3025_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [
+                            [
+                                0,
+                                2
+                            ],
+                            [
+                                1,
+                                2
+                            ]
+                        ],
+                        "n_propositions": 3
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 2936,
+        "error": false,
+        "instruction": "Can you organize the stand as I usually do?",
+        "replanning_count_0": 17.0,
+        "run_id": 0,
+        "runtime": 213.78232097625727,
+        "sim_step_count": 3508.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "2936",
+            "instruction": "Can you organize the stand as I usually do?",
+            "original_data_info": {
+                "episode_id": "378",
+                "instruction": "Help me tidy up the living room table. Move the clock, book, and candle to the stand?",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "936",
+                "episode_type": "user_pattern",
+                "target_objects": [
+                    {
+                        "id": "5bb85d3caf11acb1eb2f299ccc724eb7a855b7cf",
+                        "caption": "A black book with gold accents.",
+                        "source": "hssd_hab",
+                        "category": "book",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "7696a432ae056712d7c12321200c49ff89b5ce32",
+                        "caption": "A brown and blue gradient candle.",
+                        "source": "hssd_hab",
+                        "category": "candle",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "Alarm_Clock_4",
+                        "caption": "A round white clock with black numbers and a brown frame.",
+                        "source": "ai2thorhab",
+                        "category": "clock",
+                        "cluster": 0
+                    }
+                ],
+                "subtype": "routine",
+                "memory": "Arrange the clock, book, and candle on the stand as my usual setup."
+            },
+            "scene_id": "102816756",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "5bb85d3caf11acb1eb2f299ccc724eb7a855b7cf_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "e5e0a3fa5bf301911dbb5f403eebbd5c5adf9fb1_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "7696a432ae056712d7c12321200c49ff89b5ce32_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "e5e0a3fa5bf301911dbb5f403eebbd5c5adf9fb1_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Alarm_Clock_4_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "e5e0a3fa5bf301911dbb5f403eebbd5c5adf9fb1_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 3
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 3193,
+        "error": false,
+        "instruction": "Can you set up the dining ambiance with the phone stand and candle?",
+        "replanning_count_0": 31.0,
+        "run_id": 0,
+        "runtime": 186.4870247840881,
+        "sim_step_count": 4133.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "3193",
+            "instruction": "Can you set up the dining ambiance with the phone stand and candle?",
+            "original_data_info": {
+                "episode_id": "758",
+                "instruction": "First, move the phone stand and candle to the bedroom couch? Then, relocate them to the dining table and place them next to each other. Leave the doll on the living room couch.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1193",
+                "episode_type": "user_pattern",
+                "target_objects": [
+                    {
+                        "id": "B01IJ5A2UA",
+                        "caption": "A black phone stand with a minimalist design.",
+                        "source": "amazon_berkeley",
+                        "category": "phone_stand",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "b012e7b6b46475fdee5e0d64dfbb5b359e1c7e5b",
+                        "caption": "A mint green candle with white butterfly designs.",
+                        "source": "hssd_hab",
+                        "category": "candle",
+                        "cluster": 0
+                    }
+                ],
+                "subtype": "routine",
+                "memory": "Move the phone stand and candle to the bedroom couch before relocating them to the dining table next to each other for dining ambiance. Keep the doll on the living room couch."
+            },
+            "scene_id": "106366410_174226806",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "B01IJ5A2UA_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "d3aaaa4c5f6f4c0f8ac9acffa625b527bf1ddc89_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "b012e7b6b46475fdee5e0d64dfbb5b359e1c7e5b_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "d3aaaa4c5f6f4c0f8ac9acffa625b527bf1ddc89_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "B01IJ5A2UA_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "89181c03caf21d1d90ee760ed5ab3986f462f698_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "b012e7b6b46475fdee5e0d64dfbb5b359e1c7e5b_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "89181c03caf21d1d90ee760ed5ab3986f462f698_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "B01IJ5A2UA_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "b012e7b6b46475fdee5e0d64dfbb5b359e1c7e5b_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        4
+                    ],
+                    "depends_on": [
+                        2,
+                        3
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                },
+                {
+                    "proposition_indices": [
+                        2
+                    ],
+                    "depends_on": [
+                        0
+                    ],
+                    "relation_type": "after_satisfied",
+                    "dependency_mode": "any"
+                },
+                {
+                    "proposition_indices": [
+                        3
+                    ],
+                    "depends_on": [
+                        1
+                    ],
+                    "relation_type": "after_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [
+                            [
+                                0,
+                                2
+                            ],
+                            [
+                                0,
+                                3
+                            ],
+                            [
+                                0,
+                                4
+                            ],
+                            [
+                                1,
+                                2
+                            ],
+                            [
+                                1,
+                                3
+                            ],
+                            [
+                                1,
+                                4
+                            ]
+                        ],
+                        "n_propositions": 5
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            2,
+                            3,
+                            4
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 3007,
+        "error": false,
+        "instruction": "Can you set up the bedroom table for a calming atmosphere?",
+        "replanning_count_0": 41.0,
+        "run_id": 0,
+        "runtime": 415.021909236908,
+        "sim_step_count": 8118.0,
+        "task_percent_complete": 0.0,
+        "task_state_success": 0.0,
+        "org_data": {
+            "episode_id": "3007",
+            "instruction": "Can you set up the bedroom table for a calming atmosphere?",
+            "original_data_info": {
+                "episode_id": "719",
+                "instruction": "Move the lamp, then the vase, and finally the statue to the shelves. Then, move them to the table in the bedroom and place them next to each other.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1007",
+                "episode_type": "user_pattern",
+                "target_objects": [
+                    {
+                        "id": "B07HK3PNSK",
+                        "caption": "A lamp with a pineapple-shaped neon outline and a black base.",
+                        "source": "amazon_berkeley",
+                        "category": "lamp",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "xxxx59b79f40x2b52x4d5axb58bx2c8d239b9a1e",
+                        "caption": "A brown vase with dot and stripe patterns.",
+                        "source": "hssd_hab",
+                        "category": "vase",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "Towel_Statue_1",
+                        "caption": "A dark bronze statue of a standing figure with an umbrella.",
+                        "source": "ai2thorhab",
+                        "category": "statue",
+                        "cluster": 0
+                    }
+                ],
+                "subtype": "routine",
+                "memory": "Arrange the lamp, vase, and statue on the bedroom table in sequence for a calming bedtime atmosphere."
+            },
+            "scene_id": "102817140",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "B07HK3PNSK_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "3bd0e65f7e1c55fe38c4b6101e30f44fe392151a_:0000",
+                            "7b395deb580a75ca10a361d25b5e10b1bab8464b_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "xxxx59b79f40x2b52x4d5axb58bx2c8d239b9a1e_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "3bd0e65f7e1c55fe38c4b6101e30f44fe392151a_:0000",
+                            "7b395deb580a75ca10a361d25b5e10b1bab8464b_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Towel_Statue_1_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "3bd0e65f7e1c55fe38c4b6101e30f44fe392151a_:0000",
+                            "7b395deb580a75ca10a361d25b5e10b1bab8464b_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "B07HK3PNSK_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "2d677064b6bd4a3ba262cd510fd03c58efb57533_:0000",
+                            "689340fdf94601c7e57aabc45c1f1752bc7791da_:0000",
+                            "72305abe342ae61ffd01243a6acfcdb8aa0381c6_:0000",
+                            "72305abe342ae61ffd01243a6acfcdb8aa0381c6_:0001",
+                            "a858cba39573583f6aff0a31d237bcebabaaf503_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "xxxx59b79f40x2b52x4d5axb58bx2c8d239b9a1e_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "2d677064b6bd4a3ba262cd510fd03c58efb57533_:0000",
+                            "689340fdf94601c7e57aabc45c1f1752bc7791da_:0000",
+                            "72305abe342ae61ffd01243a6acfcdb8aa0381c6_:0000",
+                            "72305abe342ae61ffd01243a6acfcdb8aa0381c6_:0001",
+                            "a858cba39573583f6aff0a31d237bcebabaaf503_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Towel_Statue_1_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "2d677064b6bd4a3ba262cd510fd03c58efb57533_:0000",
+                            "689340fdf94601c7e57aabc45c1f1752bc7791da_:0000",
+                            "72305abe342ae61ffd01243a6acfcdb8aa0381c6_:0000",
+                            "72305abe342ae61ffd01243a6acfcdb8aa0381c6_:0001",
+                            "a858cba39573583f6aff0a31d237bcebabaaf503_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "B07HK3PNSK_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "xxxx59b79f40x2b52x4d5axb58bx2c8d239b9a1e_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "xxxx59b79f40x2b52x4d5axb58bx2c8d239b9a1e_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "Towel_Statue_1_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        6
+                    ],
+                    "depends_on": [
+                        3,
+                        4
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                },
+                {
+                    "proposition_indices": [
+                        7
+                    ],
+                    "depends_on": [
+                        4,
+                        5
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                },
+                {
+                    "proposition_indices": [
+                        3
+                    ],
+                    "depends_on": [
+                        0
+                    ],
+                    "relation_type": "after_satisfied",
+                    "dependency_mode": "any"
+                },
+                {
+                    "proposition_indices": [
+                        4
+                    ],
+                    "depends_on": [
+                        1
+                    ],
+                    "relation_type": "after_satisfied",
+                    "dependency_mode": "any"
+                },
+                {
+                    "proposition_indices": [
+                        5
+                    ],
+                    "depends_on": [
+                        2
+                    ],
+                    "relation_type": "after_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [
+                            [
+                                0,
+                                1
+                            ],
+                            [
+                                1,
+                                2
+                            ],
+                            [
+                                2,
+                                3
+                            ],
+                            [
+                                2,
+                                4
+                            ],
+                            [
+                                2,
+                                5
+                            ],
+                            [
+                                2,
+                                6
+                            ],
+                            [
+                                2,
+                                7
+                            ]
+                        ],
+                        "n_propositions": 8
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            3,
+                            4,
+                            5,
+                            6,
+                            7
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 3165,
+        "error": false,
+        "instruction": "Can you set up the counter for my pet's routine?",
+        "replanning_count_0": 15.0,
+        "run_id": 0,
+        "runtime": 118.72693800926208,
+        "sim_step_count": 2365.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "3165",
+            "instruction": "Can you set up the counter for my pet's routine?",
+            "original_data_info": {
+                "episode_id": "735",
+                "instruction": "Move the stuffed toy and the bowl to the kitchen and leave them next to each other on the counter.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1165",
+                "episode_type": "user_pattern",
+                "target_objects": [
+                    {
+                        "id": "Sootheze_Cold_Therapy_Elephant",
+                        "caption": "A gray elephant stuffed toy with a soft, plush texture, Sootheze Cold Therapy Elephant.",
+                        "source": "google",
+                        "category": "stuffed_toy",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "dcbb308c375e044129e5e5a8723960b0dafd9c9b",
+                        "caption": "A plain white bowl.",
+                        "source": "hssd_hab",
+                        "category": "bowl",
+                        "cluster": 1
+                    }
+                ],
+                "subtype": "routine",
+                "memory": "Place the stuffed toy and bowl together on the kitchen counter for my pet's routine."
+            },
+            "scene_id": "107734176_176000019",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Sootheze_Cold_Therapy_Elephant_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "bf0ea53947cff924371c0ae4abf8b9891452e9c5_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "dcbb308c375e044129e5e5a8723960b0dafd9c9b_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "bf0ea53947cff924371c0ae4abf8b9891452e9c5_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "Sootheze_Cold_Therapy_Elephant_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "dcbb308c375e044129e5e5a8723960b0dafd9c9b_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        2
+                    ],
+                    "depends_on": [
+                        0,
+                        1
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 3
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 2944,
+        "error": false,
+        "instruction": "Can you put the toy where I usually play with it?",
+        "replanning_count_0": 6.0,
+        "run_id": 0,
+        "runtime": 169.13432264328003,
+        "sim_step_count": 3002.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "2944",
+            "instruction": "Can you put the toy where I usually play with it?",
+            "original_data_info": {
+                "episode_id": "762",
+                "instruction": "First, move the toy vehicle from the bedroom to the living room. Then, place it on the couch in the living room.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "944",
+                "episode_type": "user_pattern",
+                "target_objects": [
+                    {
+                        "id": "Thomas_Friends_Woodan_Railway_Henry",
+                        "caption": "A green toy train with red and black details, Thomas Friends Woodan Railway Henry.",
+                        "source": "google",
+                        "category": "toy_vehicle",
+                        "cluster": 0
+                    }
+                ],
+                "subtype": "routine",
+                "memory": "Place the toy vehicle on the living room couch for easy access during playtime."
+            },
+            "scene_id": "102816756",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_in_room",
+                    "args": {
+                        "object_handles": [
+                            "Thomas_Friends_Woodan_Railway_Henry_:0000"
+                        ],
+                        "room_ids": [
+                            "living room"
+                        ],
+                        "number": 1,
+                        "is_same_room": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Thomas_Friends_Woodan_Railway_Henry_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "174ea8cf2a80b38b2ce4dbbda6de2fee33d3870b_:0000",
+                            "540236e6b30d9bfad48bae8adbe876f42d088131_:0000",
+                            "540236e6b30d9bfad48bae8adbe876f42d088131_:0001"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        1
+                    ],
+                    "depends_on": [
+                        0
+                    ],
+                    "relation_type": "after_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [
+                            [
+                                0,
+                                1
+                            ]
+                        ],
+                        "n_propositions": 2
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            1
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 3228,
+        "error": false,
+        "instruction": "Can you prepare my usual breakfast?",
+        "replanning_count_0": 18.0,
+        "run_id": 0,
+        "runtime": 100.518714427948,
+        "sim_step_count": 1349.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "3228",
+            "instruction": "Can you prepare my usual breakfast?",
+            "original_data_info": {
+                "episode_id": "746",
+                "instruction": "Place the bread, the potato, and the egg on the kitchen table and place them next to each other.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1228",
+                "episode_type": "user_pattern",
+                "target_objects": [
+                    {
+                        "id": "Bread_19",
+                        "caption": "A round, dark brown loaf of bread with slashes on top.",
+                        "source": "ai2thorhab",
+                        "category": "bread",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "Potato_8",
+                        "caption": "A brown potato with a smooth surface.",
+                        "source": "ai2thorhab",
+                        "category": "potato",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "Egg_10",
+                        "caption": "A brown egg with a smooth surface.",
+                        "source": "ai2thorhab",
+                        "category": "egg",
+                        "cluster": 1
+                    }
+                ],
+                "subtype": "routine",
+                "memory": "Arrange the bread, potato, and egg together on the kitchen table for my breakfast."
+            },
+            "scene_id": "103997895_171031182",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Bread_19_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "dd00b36439864cbfa47440f93d6fc81f91a164d3_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Potato_8_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "dd00b36439864cbfa47440f93d6fc81f91a164d3_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Egg_10_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "dd00b36439864cbfa47440f93d6fc81f91a164d3_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "Bread_19_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "Potato_8_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "Potato_8_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "Egg_10_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        3
+                    ],
+                    "depends_on": [
+                        0,
+                        1
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                },
+                {
+                    "proposition_indices": [
+                        4
+                    ],
+                    "depends_on": [
+                        1,
+                        2
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 5
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2,
+                            3,
+                            4
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 3263,
+        "error": false,
+        "instruction": "Could you set up the office decor for me?",
+        "replanning_count_0": 22.0,
+        "run_id": 0,
+        "runtime": 711.4696640968323,
+        "sim_step_count": 7063.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "3263",
+            "instruction": "Could you set up the office decor for me?",
+            "original_data_info": {
+                "episode_id": "773",
+                "instruction": "First, bring the vase from shelves in the living room to the dining room. Then, place it on the table in the office.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1263",
+                "episode_type": "user_pattern",
+                "target_objects": [
+                    {
+                        "id": "1520472dfd763a8cb0f1b2a447bce437827b8776",
+                        "caption": "A white vase with green and light blue leaves.",
+                        "source": "hssd_hab",
+                        "category": "vase",
+                        "cluster": 0
+                    }
+                ],
+                "subtype": "routine",
+                "memory": "Move the vase to the office table for decor while working."
+            },
+            "scene_id": "104348010_171512832",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_in_room",
+                    "args": {
+                        "object_handles": [
+                            "1520472dfd763a8cb0f1b2a447bce437827b8776_:0000"
+                        ],
+                        "room_ids": [
+                            "dining room"
+                        ],
+                        "number": 1,
+                        "is_same_room": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "1520472dfd763a8cb0f1b2a447bce437827b8776_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "2aa6ddd969d37db340725a8fcf11d95df87023f6_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        1
+                    ],
+                    "depends_on": [
+                        0
+                    ],
+                    "relation_type": "after_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [
+                            [
+                                0,
+                                1
+                            ]
+                        ],
+                        "n_propositions": 2
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            1
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 3257,
+        "error": false,
+        "instruction": "Can you set up for my afternoon tea?",
+        "replanning_count_0": 18.0,
+        "run_id": 0,
+        "runtime": 322.5659203529358,
+        "sim_step_count": 2860.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "3257",
+            "instruction": "Can you set up for my afternoon tea?",
+            "original_data_info": {
+                "episode_id": "589",
+                "instruction": "First, move the kettle, then the teapot, and finally the cup from the kitchen counter to the dining room table. Place them next to each other.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1257",
+                "episode_type": "user_pattern",
+                "target_objects": [
+                    {
+                        "id": "Kettle_1",
+                        "caption": "A black kettle with a pixelated pattern.",
+                        "source": "ai2thorhab",
+                        "category": "kettle",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "cd77c8f1b272d2776dc5f7a89dad82a1cdb4ebc8",
+                        "caption": "A white teapot with a curved spout and handle.",
+                        "source": "hssd_hab",
+                        "category": "teapot",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "xxxx6c3b8f4ax07a5x4c9exbf89x4cce25209c87",
+                        "caption": "A white cup with a silver rim.",
+                        "source": "hssd_hab",
+                        "category": "cup",
+                        "cluster": 1
+                    }
+                ],
+                "subtype": "routine",
+                "memory": "Arrange the kettle, teapot, and cup on the dining room table in order for afternoon tea."
+            },
+            "scene_id": "104348010_171512832",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Kettle_1_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "ea8b4b9360dcfe7e18aae385c53f7ca2200678ab_part_6_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "cd77c8f1b272d2776dc5f7a89dad82a1cdb4ebc8_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "ea8b4b9360dcfe7e18aae385c53f7ca2200678ab_part_6_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "Kettle_1_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "cd77c8f1b272d2776dc5f7a89dad82a1cdb4ebc8_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "xxxx6c3b8f4ax07a5x4c9exbf89x4cce25209c87_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "ea8b4b9360dcfe7e18aae385c53f7ca2200678ab_part_6_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "xxxx6c3b8f4ax07a5x4c9exbf89x4cce25209c87_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "cd77c8f1b272d2776dc5f7a89dad82a1cdb4ebc8_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        2
+                    ],
+                    "depends_on": [
+                        1
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                },
+                {
+                    "proposition_indices": [
+                        4
+                    ],
+                    "depends_on": [
+                        3
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [
+                            [
+                                0,
+                                1
+                            ],
+                            [
+                                0,
+                                2
+                            ],
+                            [
+                                1,
+                                3
+                            ],
+                            [
+                                1,
+                                4
+                            ],
+                            [
+                                2,
+                                3
+                            ],
+                            [
+                                2,
+                                4
+                            ]
+                        ],
+                        "n_propositions": 5
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2,
+                            3,
+                            4
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 3220,
+        "error": false,
+        "instruction": "Can you set my afternoon tea time routine?",
+        "replanning_count_0": 20.0,
+        "run_id": 0,
+        "runtime": 154.8571858406067,
+        "sim_step_count": 2963.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "3220",
+            "instruction": "Can you set my afternoon tea time routine?",
+            "original_data_info": {
+                "episode_id": "499",
+                "instruction": "Move the jug, cup, and plate to the living room table.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1220",
+                "episode_type": "user_pattern",
+                "target_objects": [
+                    {
+                        "id": "2b429c575b4de6837a9d3ce5472ceb8a918fdbd2",
+                        "caption": "A dark green jug with a rounded base.",
+                        "source": "hssd_hab",
+                        "category": "jug",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "5d1f718ed51e63cdf4d69617f849e10ad36f9b97",
+                        "caption": "A dark blue cup with a dandelion design.",
+                        "source": "hssd_hab",
+                        "category": "cup",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "b599eb548442db2690265de15d2bf8aa549acd02",
+                        "caption": "A plain white plate with a smooth, circular design.",
+                        "source": "hssd_hab",
+                        "category": "plate",
+                        "cluster": 1
+                    }
+                ],
+                "subtype": "routine",
+                "memory": "Arrange the jug, cup, and plate on the living room table for afternoon tea time."
+            },
+            "scene_id": "103997895_171031182",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "2b429c575b4de6837a9d3ce5472ceb8a918fdbd2_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "2f38b4f83d8a77af0eb36406b0f00df98cef5e47_:0000",
+                            "735845d0674f69f736af7e0f116767a01392f9b8_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "5d1f718ed51e63cdf4d69617f849e10ad36f9b97_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "2f38b4f83d8a77af0eb36406b0f00df98cef5e47_:0000",
+                            "735845d0674f69f736af7e0f116767a01392f9b8_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "b599eb548442db2690265de15d2bf8aa549acd02_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "2f38b4f83d8a77af0eb36406b0f00df98cef5e47_:0000",
+                            "735845d0674f69f736af7e0f116767a01392f9b8_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 3
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 3224,
+        "error": false,
+        "instruction": "Can you arrange my morning setup in the kitchen?",
+        "replanning_count_0": 16.0,
+        "run_id": 0,
+        "runtime": 128.023907661438,
+        "sim_step_count": 2677.0,
+        "task_percent_complete": 0.0,
+        "task_state_success": 0.0,
+        "org_data": {
+            "episode_id": "3224",
+            "instruction": "Can you arrange my morning setup in the kitchen?",
+            "original_data_info": {
+                "episode_id": "738",
+                "instruction": "Move the picture frame and clock to the table in the bedroom. Then, place them next to each other on the counter in the kitchen.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1224",
+                "episode_type": "user_pattern",
+                "target_objects": [
+                    {
+                        "id": "faa3c5c9cb8d500bc1b11cc2baeb3f49bef68b4a",
+                        "caption": "A black picture frame adorned with teardrop-shaped embellishments.",
+                        "source": "hssd_hab",
+                        "category": "picture_frame",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "ad8d273db79dfd442b2bf8902da4dc0b4d60054b",
+                        "caption": "A dark green analog alarm clock with twin bells.",
+                        "source": "hssd_hab",
+                        "category": "clock",
+                        "cluster": 1
+                    }
+                ],
+                "subtype": "routine",
+                "memory": "Place the picture frame and clock next to each other on the kitchen counter for the morning routine."
+            },
+            "scene_id": "103997895_171031182",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "faa3c5c9cb8d500bc1b11cc2baeb3f49bef68b4a_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "319c007ee7d07ca84c797a512ad4a98c9abc42da_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "ad8d273db79dfd442b2bf8902da4dc0b4d60054b_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "319c007ee7d07ca84c797a512ad4a98c9abc42da_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "faa3c5c9cb8d500bc1b11cc2baeb3f49bef68b4a_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "559f21c7f5628a83b31d616e90bdcc02e7744731_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "ad8d273db79dfd442b2bf8902da4dc0b4d60054b_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "559f21c7f5628a83b31d616e90bdcc02e7744731_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "faa3c5c9cb8d500bc1b11cc2baeb3f49bef68b4a_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "ad8d273db79dfd442b2bf8902da4dc0b4d60054b_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        4
+                    ],
+                    "depends_on": [
+                        2,
+                        3
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                },
+                {
+                    "proposition_indices": [
+                        2
+                    ],
+                    "depends_on": [
+                        0
+                    ],
+                    "relation_type": "after_satisfied",
+                    "dependency_mode": "any"
+                },
+                {
+                    "proposition_indices": [
+                        3
+                    ],
+                    "depends_on": [
+                        1
+                    ],
+                    "relation_type": "after_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [
+                            [
+                                0,
+                                2
+                            ],
+                            [
+                                0,
+                                3
+                            ],
+                            [
+                                0,
+                                4
+                            ],
+                            [
+                                1,
+                                2
+                            ],
+                            [
+                                1,
+                                3
+                            ],
+                            [
+                                1,
+                                4
+                            ]
+                        ],
+                        "n_propositions": 5
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            2,
+                            3,
+                            4
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 3212,
+        "error": false,
+        "instruction": "Could you set up my workspace and break time book?",
+        "replanning_count_0": 11.0,
+        "run_id": 0,
+        "runtime": 75.68741345405579,
+        "sim_step_count": 1169.0,
+        "task_percent_complete": 0.6666666666666666,
+        "task_state_success": 0.0,
+        "org_data": {
+            "episode_id": "3212",
+            "instruction": "Could you set up my workspace and break time book?",
+            "original_data_info": {
+                "episode_id": "486",
+                "instruction": "Move the laptop and laptop stand from the living room table to the bedroom chair. Also, bring a book from the bedroom chair to the living room table.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1212",
+                "episode_type": "user_pattern",
+                "target_objects": [
+                    {
+                        "id": "Laptop_23",
+                        "caption": "A gray laptop with a black keyboard and touchpad.",
+                        "source": "ai2thorhab",
+                        "category": "laptop",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "B00WRDRRWW",
+                        "caption": "A black laptop stand with a rounded design.",
+                        "source": "amazon_berkeley",
+                        "category": "laptop_stand",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "edf5a667080ed733fda55514ee18a8081f9dcf9c",
+                        "caption": "A green sketchbook with a spiral binding and brown central design.",
+                        "source": "hssd_hab",
+                        "category": "book",
+                        "cluster": 0
+                    }
+                ],
+                "subtype": "routine",
+                "memory": "Move the laptop and laptop stand to the bedroom chair for work setup and keep a book on the living room table for breaks."
+            },
+            "scene_id": "103997895_171031182",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Laptop_23_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "04801d6f327197470d63bfd728d4cf02bd33ec56_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "B00WRDRRWW_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "04801d6f327197470d63bfd728d4cf02bd33ec56_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "edf5a667080ed733fda55514ee18a8081f9dcf9c_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "2f38b4f83d8a77af0eb36406b0f00df98cef5e47_:0000",
+                            "735845d0674f69f736af7e0f116767a01392f9b8_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 3
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 3256,
+        "error": false,
+        "instruction": "Could you organize the dishes for cleanup?",
+        "replanning_count_0": 17.0,
+        "run_id": 0,
+        "runtime": 348.0264675617218,
+        "sim_step_count": 3190.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "3256",
+            "instruction": "Could you organize the dishes for cleanup?",
+            "original_data_info": {
+                "episode_id": "511",
+                "instruction": "Move the plate and bowl from the dining table to the kitchen counter. Place them next to each other on the counter.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1256",
+                "episode_type": "user_pattern",
+                "target_objects": [
+                    {
+                        "id": "Plate_14",
+                        "caption": "A white square plate.",
+                        "source": "ai2thorhab",
+                        "category": "plate",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "Bowl_24",
+                        "caption": "A gray bowl with a faceted design.",
+                        "source": "ai2thorhab",
+                        "category": "bowl",
+                        "cluster": 0
+                    }
+                ],
+                "subtype": "routine",
+                "memory": "Place the plate and bowl together on the kitchen counter after meals for easy cleanup."
+            },
+            "scene_id": "104348010_171512832",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Plate_14_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "27903d5a77d900067dd9031caf2f229776d800d4_:0000",
+                            "27903d5a77d900067dd9031caf2f229776d800d4_:0001",
+                            "27903d5a77d900067dd9031caf2f229776d800d4_:0002",
+                            "27903d5a77d900067dd9031caf2f229776d800d4_:0003",
+                            "55dcc18191c2412b899ff405d5d0574571bb81cf_:0000",
+                            "55dcc18191c2412b899ff405d5d0574571bb81cf_:0001"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Bowl_24_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "27903d5a77d900067dd9031caf2f229776d800d4_:0000",
+                            "27903d5a77d900067dd9031caf2f229776d800d4_:0001",
+                            "27903d5a77d900067dd9031caf2f229776d800d4_:0002",
+                            "27903d5a77d900067dd9031caf2f229776d800d4_:0003",
+                            "55dcc18191c2412b899ff405d5d0574571bb81cf_:0000",
+                            "55dcc18191c2412b899ff405d5d0574571bb81cf_:0001"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "Plate_14_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "Bowl_24_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        2
+                    ],
+                    "depends_on": [
+                        0,
+                        1
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 3
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 3259,
+        "error": false,
+        "instruction": "Could you prepare for my go to breakfast?",
+        "replanning_count_0": 15.0,
+        "run_id": 0,
+        "runtime": 290.6200568675995,
+        "sim_step_count": 2766.0,
+        "task_percent_complete": 0.6,
+        "task_state_success": 0.0,
+        "org_data": {
+            "episode_id": "3259",
+            "instruction": "Could you prepare for my go to breakfast?",
+            "original_data_info": {
+                "episode_id": "591",
+                "instruction": "Move the apple, the tomato, and the bread from the kitchen counter to the dining table. Place them next to each other on the table.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1259",
+                "episode_type": "user_pattern",
+                "target_objects": [
+                    {
+                        "id": "Apple_7",
+                        "caption": "A green apple with a glossy surface.",
+                        "source": "ai2thorhab",
+                        "category": "apple",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "Bread_9",
+                        "caption": "A brown loaf of bread with a crusty texture.",
+                        "source": "ai2thorhab",
+                        "category": "bread",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "Tomato_28",
+                        "caption": "A red tomato with a green stem.",
+                        "source": "ai2thorhab",
+                        "category": "tomato",
+                        "cluster": 0
+                    }
+                ],
+                "subtype": "routine",
+                "memory": "Arrange the apple, tomato, and bread on the dining table for my usual breakfast."
+            },
+            "scene_id": "104348010_171512832",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Apple_7_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "ea8b4b9360dcfe7e18aae385c53f7ca2200678ab_part_6_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Bread_9_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "ea8b4b9360dcfe7e18aae385c53f7ca2200678ab_part_6_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Tomato_28_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "ea8b4b9360dcfe7e18aae385c53f7ca2200678ab_part_6_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "Apple_7_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "Bread_9_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "Bread_9_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "Tomato_28_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        3
+                    ],
+                    "depends_on": [
+                        0,
+                        1
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                },
+                {
+                    "proposition_indices": [
+                        4
+                    ],
+                    "depends_on": [
+                        1,
+                        2
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 5
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2,
+                            3,
+                            4
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    }
+]

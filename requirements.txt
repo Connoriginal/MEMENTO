@@ -19,7 +19,7 @@ networkx
 nltk
 numba==0.60.0
 numpy==1.26.4
-openai==1.10.0
+openai==1.71.0
 pandas
 peft==0.13.1
 protobuf>=3.20.1
@@ -35,6 +35,8 @@ trl==0.11.2
 typing_extensions
 uvicorn==0.22.0
 wandb
+anthropic
+
 
 # habitat_llm
 -e ./third_party/partnr-planner

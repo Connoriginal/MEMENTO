@@ -1,0 +1,278 @@
+[
+    {
+        "episode_id": 2961,
+        "error": false,
+        "instruction": "Move the cream-colored jug with a curved handle and my favorite dinnerware cup from the kitchen counter to the dining table, placing them next to each other.",
+        "replanning_count_0": 16.0,
+        "run_id": 0,
+        "runtime": 171.30579471588135,
+        "sim_step_count": 1953.0,
+        "task_percent_complete": 0.3333333333333333,
+        "task_state_success": 0.0,
+        "org_data": {
+            "episode_id": "2961",
+            "instruction": "Move the cream-colored jug with a curved handle and my favorite dinnerware cup from the kitchen counter to the dining table, placing them next to each other.",
+            "original_data_info": {
+                "episode_id": "764",
+                "instruction": "Move the jug and cup from the kitchen counter to the dining table. Place them next to each other on the table.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "961",
+                "episode_type": "object_semantics",
+                "target_objects": [
+                    {
+                        "id": "794f4ad86d136c76bfe3082ffedc4133e876ac9a",
+                        "caption": "A cream-colored jug with a curved handle.",
+                        "source": "hssd_hab",
+                        "category": "jug",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "Cup_2",
+                        "caption": "A black cup with a smooth surface.",
+                        "source": "ai2thorhab",
+                        "category": "cup",
+                        "cluster": 0
+                    }
+                ],
+                "distractors": [
+                    {
+                        "id": "ad87281ca93b236560306a08f0953ba340e85c3c",
+                        "caption": "A dark green jug with a wavy top and abstract pattern.",
+                        "source": "hssd_hab",
+                        "category": "jug",
+                        "cluster": 1,
+                        "pair_id": "794f4ad86d136c76bfe3082ffedc4133e876ac9a"
+                    },
+                    {
+                        "id": "1a6b779033e0f9f9936970d79af01ed7653e4321",
+                        "caption": "A white cup with a green leaf pattern.",
+                        "source": "hssd_hab",
+                        "category": "cup",
+                        "cluster": 1,
+                        "pair_id": "Cup_2"
+                    }
+                ],
+                "subtype": "preference",
+                "num_targets": 1,
+                "memory": "The black cup with a smooth surface is part of the user's favorite dinnerware.",
+                "used_object": [
+                    "cup"
+                ]
+            },
+            "scene_id": "102816756",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "794f4ad86d136c76bfe3082ffedc4133e876ac9a_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "786845ecaee2a43d135f922f4d617da02c8543b6_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Cup_2_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "786845ecaee2a43d135f922f4d617da02c8543b6_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "794f4ad86d136c76bfe3082ffedc4133e876ac9a_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "Cup_2_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        2
+                    ],
+                    "depends_on": [
+                        0,
+                        1
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 3
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 3233,
+        "error": false,
+        "instruction": "Please move my work-essential laptop and the black mouse pad with a logo to a new living room table. Also, move the red clock with a white face and black numbers to another shelf.",
+        "replanning_count_0": 12.0,
+        "run_id": 0,
+        "runtime": 74.51470065116882,
+        "sim_step_count": 994.0,
+        "task_percent_complete": 0.6666666666666666,
+        "task_state_success": 0.0,
+        "org_data": {
+            "episode_id": "3233",
+            "instruction": "Please move my work-essential laptop and the black mouse pad with a logo to a new living room table. Also, move the red clock with a white face and black numbers to another shelf.",
+            "original_data_info": {
+                "episode_id": "489",
+                "instruction": "Move the laptop and the mouse pad to a new living room table. Move the clock to another shelf.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1233",
+                "episode_type": "object_semantics",
+                "target_objects": [
+                    {
+                        "id": "Laptop_13",
+                        "caption": "A black laptop with a dark keyboard and a large touchpad.",
+                        "source": "ai2thorhab",
+                        "category": "laptop",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "B003QTD4Y6",
+                        "caption": "A black mouse pad with a logo in the corner.",
+                        "source": "amazon_berkeley",
+                        "category": "mouse_pad",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "2b2f31fee32cb0d073d69fb9bfe373684bbdd465",
+                        "caption": "A red clock with a white face and black numbers.",
+                        "source": "hssd_hab",
+                        "category": "clock",
+                        "cluster": 0
+                    }
+                ],
+                "distractors": [
+                    {
+                        "id": "Laptop_23",
+                        "caption": "A gray laptop with a black keyboard and touchpad.",
+                        "source": "ai2thorhab",
+                        "category": "laptop",
+                        "cluster": 0,
+                        "pair_id": "Laptop_13"
+                    },
+                    {
+                        "id": "Alarm_Clock_21",
+                        "caption": "A black digital clock with a blue display.",
+                        "source": "ai2thorhab",
+                        "category": "clock",
+                        "cluster": 1,
+                        "pair_id": "2b2f31fee32cb0d073d69fb9bfe373684bbdd465"
+                    }
+                ],
+                "subtype": "preference",
+                "num_targets": 1,
+                "memory": "The black laptop is essential for the user's work.",
+                "used_object": [
+                    "laptop"
+                ]
+            },
+            "scene_id": "103997895_171031182",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Laptop_13_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "735845d0674f69f736af7e0f116767a01392f9b8_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "B003QTD4Y6_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "735845d0674f69f736af7e0f116767a01392f9b8_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "2b2f31fee32cb0d073d69fb9bfe373684bbdd465_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "499dd12f83d3fcb655a0bc2373e4da020a67008a_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 3
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    }
+]

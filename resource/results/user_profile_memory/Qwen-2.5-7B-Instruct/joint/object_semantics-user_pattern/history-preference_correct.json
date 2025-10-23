@@ -1,0 +1,314 @@
+[
+    {
+        "episode_id": 10018,
+        "error": "False",
+        "instruction": "Could you move the minimalist phone stand to the tv table and then place the gift statue from my best friend on the lounge counter? After that, can you set up for movie night with the kettle and tray?",
+        "replanning_count_0": 26.0,
+        "run_id": 0,
+        "runtime": 580.8395495414734,
+        "sim_step_count": 6895.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "10018",
+            "instruction": "Could you move the minimalist phone stand to the tv table and then place the gift statue from my best friend on the lounge counter? After that, can you set up for movie night with the kettle and tray?",
+            "original_data_info": {
+                "episode_id": [
+                    "3127",
+                    "3111"
+                ],
+                "instruction": [
+                    "Could you move the minimalist phone stand to the tv table and then place the gift statue from my best friend on the lounge counter?",
+                    "Can you set up for movie night with the kettle and tray?"
+                ],
+                "data_path": [
+                    "data/datasets/partnr_episodes/v0_0/val.json",
+                    "data/datasets/partnr_episodes/v0_0/val.json"
+                ]
+            },
+            "metadata": {
+                "subtype": [
+                    "history",
+                    "preference"
+                ],
+                "memory": [
+                    "The green statue of a sitting dog was a gift from the user's best friend.",
+                    "Place the kettle and tray on the TV table for easy access during movie nights."
+                ],
+                "episode_type": [
+                    "object_semantics",
+                    "user_pattern"
+                ],
+                "num_targets": [
+                    1,
+                    null
+                ],
+                "related_episode_id": [
+                    "1127",
+                    "1111"
+                ],
+                "stage": "2",
+                "target_objects_original": [
+                    [
+                        {
+                            "id": "B01IJ5A2UA",
+                            "caption": "A black phone stand with a minimalist design.",
+                            "source": "amazon_berkeley",
+                            "category": "phone_stand",
+                            "cluster": 0
+                        },
+                        {
+                            "id": "Dog_Statue_1",
+                            "caption": "A green statue of a sitting dog.",
+                            "source": "ai2thorhab",
+                            "category": "statue",
+                            "cluster": 1
+                        }
+                    ],
+                    [
+                        {
+                            "id": "e41fb9d079791e99e3ff9e216c5e4416a9a83570",
+                            "caption": "A black kettle with a curved handle.",
+                            "source": "hssd_hab",
+                            "category": "kettle",
+                            "cluster": 0
+                        },
+                        {
+                            "id": "45ef260cbb5f19848878081e98db6af0fa1b155c",
+                            "caption": "A speckled brown circular tray.",
+                            "source": "hssd_hab",
+                            "category": "tray",
+                            "cluster": 1
+                        }
+                    ]
+                ],
+                "target_objects": [
+                    {
+                        "id": "B01IJ5A2UA",
+                        "caption": "A black phone stand with a minimalist design.",
+                        "source": "amazon_berkeley",
+                        "category": "phone_stand",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "Dog_Statue_1",
+                        "caption": "A green statue of a sitting dog.",
+                        "source": "ai2thorhab",
+                        "category": "statue",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "e41fb9d079791e99e3ff9e216c5e4416a9a83570",
+                        "caption": "A black kettle with a curved handle.",
+                        "source": "hssd_hab",
+                        "category": "kettle",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "45ef260cbb5f19848878081e98db6af0fa1b155c",
+                        "caption": "A speckled brown circular tray.",
+                        "source": "hssd_hab",
+                        "category": "tray",
+                        "cluster": 1
+                    }
+                ],
+                "distractors_original": [
+                    [
+                        {
+                            "id": "B01IJ5A0PC",
+                            "caption": "A silver and light blue phone stand with a sleek design.",
+                            "source": "amazon_berkeley",
+                            "category": "phone_stand",
+                            "cluster": 1,
+                            "pair_id": "B01IJ5A2UA"
+                        },
+                        {
+                            "id": "Stone_Statue_3",
+                            "caption": "A bronze statue with an abstract human form.",
+                            "source": "ai2thorhab",
+                            "category": "statue",
+                            "cluster": 0,
+                            "pair_id": "Dog_Statue_1"
+                        }
+                    ],
+                    []
+                ],
+                "distractors": [
+                    {
+                        "id": "B01IJ5A0PC",
+                        "caption": "A silver and light blue phone stand with a sleek design.",
+                        "source": "amazon_berkeley",
+                        "category": "phone_stand",
+                        "cluster": 1,
+                        "pair_id": "B01IJ5A2UA"
+                    },
+                    {
+                        "id": "Stone_Statue_3",
+                        "caption": "A bronze statue with an abstract human form.",
+                        "source": "ai2thorhab",
+                        "category": "statue",
+                        "cluster": 0,
+                        "pair_id": "Dog_Statue_1"
+                    }
+                ],
+                "used_object_original": [
+                    [
+                        "statue"
+                    ],
+                    []
+                ],
+                "used_object": [
+                    "statue"
+                ],
+                "combination_type": "Object Semantics + User Pattern",
+                "object_overlaps": {
+                    "target_target": [],
+                    "distractor_distractor": [],
+                    "target1_distractor2": [],
+                    "target2_distractor1": [],
+                    "target_category_overlap": [],
+                    "counts": {
+                        "target_target": 0,
+                        "distractor_distractor": 0,
+                        "target1_distractor2": 0,
+                        "target2_distractor1": 0,
+                        "target_category_overlap": 0,
+                        "total_overlap": 0
+                    },
+                    "has_target_category_overlap": false,
+                    "has_target_distractor_overlap": false
+                },
+                "receptacle_overlaps": {
+                    "has_overlaps": false,
+                    "common_receptacles": [],
+                    "overlap_count": 0
+                }
+            },
+            "scene_id": "102344529",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "B01IJ5A2UA_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "1f20f5194541179686f9bff3a01d002076751910_:0000",
+                            "9812cf1f7ced3de9596d88244068b628e346069c_:0000",
+                            "9b2f527215b5f508680ff582ad412a68407c07bd_:0000",
+                            "cb0d27b5428679b54fc8bf347ccc168cba08092f_:0000",
+                            "f1a090d794cf38e36a584e07672edf7ad1a70f8a_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Dog_Statue_1_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "15a81c5727eba4e4a4161e1cf2c76fe2c601ae15_:0001"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "e41fb9d079791e99e3ff9e216c5e4416a9a83570_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "1f20f5194541179686f9bff3a01d002076751910_:0000",
+                            "9812cf1f7ced3de9596d88244068b628e346069c_:0000",
+                            "9b2f527215b5f508680ff582ad412a68407c07bd_:0000",
+                            "cb0d27b5428679b54fc8bf347ccc168cba08092f_:0000",
+                            "f1a090d794cf38e36a584e07672edf7ad1a70f8a_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "45ef260cbb5f19848878081e98db6af0fa1b155c_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "1f20f5194541179686f9bff3a01d002076751910_:0000",
+                            "9812cf1f7ced3de9596d88244068b628e346069c_:0000",
+                            "9b2f527215b5f508680ff582ad412a68407c07bd_:0000",
+                            "cb0d27b5428679b54fc8bf347ccc168cba08092f_:0000",
+                            "f1a090d794cf38e36a584e07672edf7ad1a70f8a_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "e41fb9d079791e99e3ff9e216c5e4416a9a83570_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "45ef260cbb5f19848878081e98db6af0fa1b155c_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        4
+                    ],
+                    "depends_on": [
+                        2,
+                        3
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [
+                            [
+                                0,
+                                2
+                            ],
+                            [
+                                1,
+                                2
+                            ]
+                        ],
+                        "n_propositions": 5
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2,
+                            3,
+                            4
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    }
+]

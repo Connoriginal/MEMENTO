@@ -1,0 +1,438 @@
+[
+    {
+        "episode_id": 3147,
+        "error": "False",
+        "instruction": "Please move my cooking essentials from the office to the kitchen and place them next to each other on the counter.",
+        "replanning_count_0": 13.0,
+        "run_id": 0,
+        "runtime": 108.2244930267334,
+        "sim_step_count": 1232.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "3147",
+            "instruction": "Please move my cooking essentials from the office to the kitchen and place them next to each other on the counter.",
+            "original_data_info": {
+                "episode_id": "560",
+                "instruction": "Move the kettle and ladle from the office to the kitchen and place them next to each other on the counter.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1147",
+                "episode_type": "object_semantics",
+                "target_objects": [
+                    {
+                        "id": "e41fb9d079791e99e3ff9e216c5e4416a9a83570",
+                        "caption": "A black kettle with a curved handle.",
+                        "source": "hssd_hab",
+                        "category": "kettle",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "Ladle_2",
+                        "caption": "A black ladle with a round scoop.",
+                        "source": "ai2thorhab",
+                        "category": "ladle",
+                        "cluster": 0
+                    }
+                ],
+                "distractors": [
+                    {
+                        "id": "Kettle_1",
+                        "caption": "A black kettle with a pixelated pattern.",
+                        "source": "ai2thorhab",
+                        "category": "kettle",
+                        "cluster": 1,
+                        "pair_id": "e41fb9d079791e99e3ff9e216c5e4416a9a83570"
+                    },
+                    {
+                        "id": "Ladle_3",
+                        "caption": "A black ladle with a blue handle.",
+                        "source": "ai2thorhab",
+                        "category": "ladle",
+                        "cluster": 1,
+                        "pair_id": "Ladle_2"
+                    }
+                ],
+                "subtype": "group",
+                "num_targets": 2,
+                "memory": "The black kettle with a curved handle and the black ladle with a round scoop are part of the user's cooking essentials.",
+                "used_object": [
+                    "ladle",
+                    "kettle"
+                ]
+            },
+            "scene_id": "104348361_171513414",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "e41fb9d079791e99e3ff9e216c5e4416a9a83570_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "55dcc18191c2412b899ff405d5d0574571bb81cf_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Ladle_2_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "55dcc18191c2412b899ff405d5d0574571bb81cf_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "e41fb9d079791e99e3ff9e216c5e4416a9a83570_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "Ladle_2_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        2
+                    ],
+                    "depends_on": [
+                        0,
+                        1
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 3
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 3201,
+        "error": "False",
+        "instruction": "Could you please move my favorite childhood toys from the bedroom table to the workout table and place them next to each other?",
+        "replanning_count_0": 16.0,
+        "run_id": 0,
+        "runtime": 154.84565830230713,
+        "sim_step_count": 1455.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "3201",
+            "instruction": "Could you please move my favorite childhood toys from the bedroom table to the workout table and place them next to each other?",
+            "original_data_info": {
+                "episode_id": "483",
+                "instruction": "Move the toy airplane and stuffed toy from the bedroom table to the workout table. Place them next to each other on the table.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1201",
+                "episode_type": "object_semantics",
+                "target_objects": [
+                    {
+                        "id": "Air_Hogs_Wind_Flyers_Set_Airplane_Red",
+                        "caption": "A red toy airplane, Air Hogs Wind Flyers Set.",
+                        "source": "google",
+                        "category": "toy_airplane",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "Animal_Planet_Foam_2Headed_Dragon",
+                        "caption": "A green and blue two-headed dragon stuffed toy, Animal Planet Foam.",
+                        "source": "google",
+                        "category": "stuffed_toy",
+                        "cluster": 0
+                    }
+                ],
+                "distractors": [
+                    {
+                        "id": "TURBOPROP_AIRPLANE_WITH_PILOT",
+                        "caption": "A red and white toy turboprop airplane with a pilot.",
+                        "source": "google",
+                        "category": "toy_airplane",
+                        "cluster": 0,
+                        "pair_id": "Air_Hogs_Wind_Flyers_Set_Airplane_Red"
+                    },
+                    {
+                        "id": "567ba453e60735e7667f25ea6d09377be18bda66",
+                        "caption": "A white stuffed bear with pink accents and a heart.",
+                        "source": "hssd_hab",
+                        "category": "stuffed_toy",
+                        "cluster": 1,
+                        "pair_id": "Animal_Planet_Foam_2Headed_Dragon"
+                    }
+                ],
+                "subtype": "group",
+                "num_targets": 2,
+                "memory": "The red Air Hogs Wind Flyers Set toy airplane and the green and blue two-headed dragon stuffed toy are part of the user's favorite childhood toys.",
+                "used_object": [
+                    "stuffed_toy",
+                    "toy_airplane"
+                ]
+            },
+            "scene_id": "106366410_174226806",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Air_Hogs_Wind_Flyers_Set_Airplane_Red_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "47da03c52e0003488334f8dea02c926cbe66029c_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Animal_Planet_Foam_2Headed_Dragon_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "47da03c52e0003488334f8dea02c926cbe66029c_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "Air_Hogs_Wind_Flyers_Set_Airplane_Red_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "Animal_Planet_Foam_2Headed_Dragon_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        2
+                    ],
+                    "depends_on": [
+                        0,
+                        1
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 3
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 3271,
+        "error": false,
+        "instruction": "Move my everyday dinnerware set from the dining table to the kitchen counter and place them next to each other.",
+        "replanning_count_0": 27.0,
+        "run_id": 0,
+        "runtime": 274.32110357284546,
+        "sim_step_count": 1783.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "3271",
+            "instruction": "Move my everyday dinnerware set from the dining table to the kitchen counter and place them next to each other.",
+            "original_data_info": {
+                "episode_id": "511",
+                "instruction": "Move the plate and bowl from the dining table to the kitchen counter. Place them next to each other on the counter.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1271",
+                "episode_type": "object_semantics",
+                "target_objects": [
+                    {
+                        "id": "Plate_14",
+                        "caption": "A white square plate.",
+                        "source": "ai2thorhab",
+                        "category": "plate",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "Bowl_24",
+                        "caption": "A gray bowl with a faceted design.",
+                        "source": "ai2thorhab",
+                        "category": "bowl",
+                        "cluster": 0
+                    }
+                ],
+                "distractors": [
+                    {
+                        "id": "Plate_22",
+                        "caption": "A black plate with a polka dot pattern.",
+                        "source": "ai2thorhab",
+                        "category": "plate",
+                        "cluster": 0,
+                        "pair_id": "Plate_14"
+                    },
+                    {
+                        "id": "Threshold_Porcelain_Serving_Bowl_Coupe_White",
+                        "caption": "A white porcelain serving bowl, Threshold.",
+                        "source": "google",
+                        "category": "bowl",
+                        "cluster": 1,
+                        "pair_id": "Bowl_24"
+                    }
+                ],
+                "subtype": "group",
+                "num_targets": 2,
+                "memory": "The white square plate and the gray faceted bowl are part of the user's everyday dinnerware set.",
+                "used_object": [
+                    "plate",
+                    "bowl"
+                ]
+            },
+            "scene_id": "104348010_171512832",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Plate_14_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "27903d5a77d900067dd9031caf2f229776d800d4_:0000",
+                            "27903d5a77d900067dd9031caf2f229776d800d4_:0001",
+                            "27903d5a77d900067dd9031caf2f229776d800d4_:0002",
+                            "27903d5a77d900067dd9031caf2f229776d800d4_:0003",
+                            "55dcc18191c2412b899ff405d5d0574571bb81cf_:0000",
+                            "55dcc18191c2412b899ff405d5d0574571bb81cf_:0001"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Bowl_24_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "27903d5a77d900067dd9031caf2f229776d800d4_:0000",
+                            "27903d5a77d900067dd9031caf2f229776d800d4_:0001",
+                            "27903d5a77d900067dd9031caf2f229776d800d4_:0002",
+                            "27903d5a77d900067dd9031caf2f229776d800d4_:0003",
+                            "55dcc18191c2412b899ff405d5d0574571bb81cf_:0000",
+                            "55dcc18191c2412b899ff405d5d0574571bb81cf_:0001"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "Plate_14_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "Bowl_24_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        2
+                    ],
+                    "depends_on": [
+                        0,
+                        1
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 3
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    }
+]

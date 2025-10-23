@@ -1,0 +1,891 @@
+[
+    {
+        "episode_id": 3137,
+        "error": "False",
+        "instruction": "Could you first move my favorite candle to the chair in the TV room, and then place it on the TV table?",
+        "replanning_count_0": 12.0,
+        "run_id": 0,
+        "runtime": 111.79144358634947,
+        "sim_step_count": 1636.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "3137",
+            "instruction": "Could you first move my favorite candle to the chair in the TV room, and then place it on the TV table?",
+            "original_data_info": {
+                "episode_id": "674",
+                "instruction": "First, move the candle from the table to the chair in the tv room. Then, place it on tv the table.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1137",
+                "episode_type": "object_semantics",
+                "target_objects": [
+                    {
+                        "id": "b012e7b6b46475fdee5e0d64dfbb5b359e1c7e5b",
+                        "caption": "A mint green candle with white butterfly designs.",
+                        "source": "hssd_hab",
+                        "category": "candle",
+                        "cluster": 0
+                    }
+                ],
+                "distractors": [
+                    {
+                        "id": "36f46c7b967c8101325848bcf43db07589ae2cc1",
+                        "caption": "A white candle with a light blue base in a round holder.",
+                        "source": "hssd_hab",
+                        "category": "candle",
+                        "cluster": 1,
+                        "pair_id": "b012e7b6b46475fdee5e0d64dfbb5b359e1c7e5b"
+                    }
+                ],
+                "subtype": "preference",
+                "num_targets": 1,
+                "memory": "The mint green candle with white butterfly designs is the user's favorite.",
+                "used_object": [
+                    "candle"
+                ]
+            },
+            "scene_id": "102344529",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "b012e7b6b46475fdee5e0d64dfbb5b359e1c7e5b_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "3b77d0a7c6b76e39f050385d2548c0de327b76f2_:0000",
+                            "4857100a62e0e8ae2bf7d58e34ce9a84f9c27bd2_:0000",
+                            "a8bdceeb3b502b9755a0ec55b776a874d74cd343_:0000",
+                            "c62bd3f57959ef6e18c81d003f3c55fdde452e52_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "b012e7b6b46475fdee5e0d64dfbb5b359e1c7e5b_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "1f20f5194541179686f9bff3a01d002076751910_:0000",
+                            "9812cf1f7ced3de9596d88244068b628e346069c_:0000",
+                            "9b2f527215b5f508680ff582ad412a68407c07bd_:0000",
+                            "cb0d27b5428679b54fc8bf347ccc168cba08092f_:0000",
+                            "f1a090d794cf38e36a584e07672edf7ad1a70f8a_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        1
+                    ],
+                    "depends_on": [
+                        0
+                    ],
+                    "relation_type": "after_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [
+                            [
+                                0,
+                                1
+                            ]
+                        ],
+                        "n_propositions": 2
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            1
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 3207,
+        "error": "False",
+        "instruction": "First, take my favorite stuffed toy from the bedroom to the laundry room/mudroom. Then, move it to the living room and place it on the couch.",
+        "replanning_count_0": 14.0,
+        "run_id": 0,
+        "runtime": 146.96044754981995,
+        "sim_step_count": 1654.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "3207",
+            "instruction": "First, take my favorite stuffed toy from the bedroom to the laundry room/mudroom. Then, move it to the living room and place it on the couch.",
+            "original_data_info": {
+                "episode_id": "755",
+                "instruction": "First, take the stuffed toy from the bedroom to the laundryroom/mudroom. Then, move it to the living room and place it on couch.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1207",
+                "episode_type": "object_semantics",
+                "target_objects": [
+                    {
+                        "id": "Shark",
+                        "caption": "A blue and white stuffed toy shark.",
+                        "source": "google",
+                        "category": "stuffed_toy",
+                        "cluster": 0
+                    }
+                ],
+                "distractors": [
+                    {
+                        "id": "Racoon",
+                        "caption": "A plush raccoon stuffed toy with gray and black fur.",
+                        "source": "google",
+                        "category": "stuffed_toy",
+                        "cluster": 1,
+                        "pair_id": "Shark"
+                    }
+                ],
+                "subtype": "preference",
+                "num_targets": 1,
+                "memory": "The blue and white stuffed toy shark is the user's favorite stuffed toy.",
+                "used_object": [
+                    "stuffed_toy"
+                ]
+            },
+            "scene_id": "106366410_174226806",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_in_room",
+                    "args": {
+                        "object_handles": [
+                            "Shark_:0000"
+                        ],
+                        "room_ids": [
+                            "laundryroom"
+                        ],
+                        "number": 1,
+                        "is_same_room": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Shark_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "265b95037433ed097b550c434029af9fb4c0d907_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        1
+                    ],
+                    "depends_on": [
+                        0
+                    ],
+                    "relation_type": "after_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [
+                            [
+                                0,
+                                1
+                            ]
+                        ],
+                        "n_propositions": 2
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            1
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 3012,
+        "error": "False",
+        "instruction": "Could you move the red jug with a white dot pattern and my favorite coffee mug from the kitchen counter to the living room table, and place them next to each other?",
+        "replanning_count_0": 15.0,
+        "run_id": 0,
+        "runtime": 129.10284543037417,
+        "sim_step_count": 1621.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "3012",
+            "instruction": "Could you move the red jug with a white dot pattern and my favorite coffee mug from the kitchen counter to the living room table, and place them next to each other?",
+            "original_data_info": {
+                "episode_id": "399",
+                "instruction": "Move the jug and cup from the kitchen counter to the living room table. Place them next to each other.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1012",
+                "episode_type": "object_semantics",
+                "target_objects": [
+                    {
+                        "id": "381a128d056d4db0e70276aa918065ca42f89e8f",
+                        "caption": "A red jug with a white dot pattern.",
+                        "source": "hssd_hab",
+                        "category": "jug",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "ACE_Coffee_Mug_Kristen_16_oz_cup",
+                        "caption": "A white, 16 oz coffee mug, ACE Coffee Mug Kristen.",
+                        "source": "google",
+                        "category": "cup",
+                        "cluster": 1
+                    }
+                ],
+                "distractors": [
+                    {
+                        "id": "260b77a7bb7899bbe4665886be2af5e303a6e4f1",
+                        "caption": "A yellow jug with a narrow spout and round base.",
+                        "source": "hssd_hab",
+                        "category": "jug",
+                        "cluster": 1,
+                        "pair_id": "381a128d056d4db0e70276aa918065ca42f89e8f"
+                    },
+                    {
+                        "id": "Cup_15",
+                        "caption": "An orange cup with a faceted design.",
+                        "source": "ai2thorhab",
+                        "category": "cup",
+                        "cluster": 0,
+                        "pair_id": "ACE_Coffee_Mug_Kristen_16_oz_cup"
+                    }
+                ],
+                "subtype": "preference",
+                "num_targets": 1,
+                "memory": "The white, 16 oz coffee mug, ACE Coffee Mug Kristen is the user's favorite.",
+                "used_object": [
+                    "cup"
+                ]
+            },
+            "scene_id": "102817140",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "381a128d056d4db0e70276aa918065ca42f89e8f_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "0239c03b6896e4e4fad328885cf078995c913046_:0000",
+                            "925f48efff312862677c9517a8ec0faba4909570_part_1_:0000",
+                            "d886d10e71a0365a725abcf139142223409f7b4f_:0000",
+                            "d886d10e71a0365a725abcf139142223409f7b4f_:0001"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "ACE_Coffee_Mug_Kristen_16_oz_cup_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "0239c03b6896e4e4fad328885cf078995c913046_:0000",
+                            "925f48efff312862677c9517a8ec0faba4909570_part_1_:0000",
+                            "d886d10e71a0365a725abcf139142223409f7b4f_:0000",
+                            "d886d10e71a0365a725abcf139142223409f7b4f_:0001"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "381a128d056d4db0e70276aa918065ca42f89e8f_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "ACE_Coffee_Mug_Kristen_16_oz_cup_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        2
+                    ],
+                    "depends_on": [
+                        0,
+                        1
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 3
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 3242,
+        "error": "False",
+        "instruction": "Could you first move my favorite candle for relaxation and then the dark blue vase with a faceted design from the living room shelves to the bathroom toilet and place them next to each other?",
+        "replanning_count_0": 41.0,
+        "run_id": 0,
+        "runtime": 314.7774839401245,
+        "sim_step_count": 2410.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "3242",
+            "instruction": "Could you first move my favorite candle for relaxation and then the dark blue vase with a faceted design from the living room shelves to the bathroom toilet and place them next to each other?",
+            "original_data_info": {
+                "episode_id": "620",
+                "instruction": "First, move the candle and then the vase from the living room shelves to the bathroom toilet? Place them next to each other on the toilet.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1242",
+                "episode_type": "object_semantics",
+                "target_objects": [
+                    {
+                        "id": "9dfbc1df2349093e0444dfabb8789296c83561cf",
+                        "caption": "A tall, cylindrical lavender candle.",
+                        "source": "hssd_hab",
+                        "category": "candle",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "Vase_Open_2",
+                        "caption": "A dark blue vase with a faceted design.",
+                        "source": "ai2thorhab",
+                        "category": "vase",
+                        "cluster": 1
+                    }
+                ],
+                "distractors": [
+                    {
+                        "id": "36f46c7b967c8101325848bcf43db07589ae2cc1",
+                        "caption": "A white candle with a light blue base in a round holder.",
+                        "source": "hssd_hab",
+                        "category": "candle",
+                        "cluster": 1,
+                        "pair_id": "9dfbc1df2349093e0444dfabb8789296c83561cf"
+                    },
+                    {
+                        "id": "Vase_Tall_1",
+                        "caption": "A white vase with a narrow neck.",
+                        "source": "ai2thorhab",
+                        "category": "vase",
+                        "cluster": 0,
+                        "pair_id": "Vase_Open_2"
+                    }
+                ],
+                "subtype": "preference",
+                "num_targets": 1,
+                "memory": "The tall cylindrical lavender candle is the user's favorite for relaxation.",
+                "used_object": [
+                    "candle"
+                ]
+            },
+            "scene_id": "103997895_171031182",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "9dfbc1df2349093e0444dfabb8789296c83561cf_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "3bd3f3a882da9283719fe1d238ad49d88760d0c3_:0000",
+                            "7ff8c2d48e8d49e2f1504bc83d16ef933cd7163b_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Vase_Open_2_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "3bd3f3a882da9283719fe1d238ad49d88760d0c3_:0000",
+                            "7ff8c2d48e8d49e2f1504bc83d16ef933cd7163b_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "9dfbc1df2349093e0444dfabb8789296c83561cf_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "Vase_Open_2_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        2
+                    ],
+                    "depends_on": [
+                        0,
+                        1
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 3
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 3168,
+        "error": false,
+        "instruction": "Please move my favorite jug for serving drinks, along with the white kettle with a black handle and lid, and the loaf of brown bread from the kitchen counter to the living room table, placing them next to each other.",
+        "replanning_count_0": 21.0,
+        "run_id": 0,
+        "runtime": 160.803142786026,
+        "sim_step_count": 1070.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "3168",
+            "instruction": "Please move my favorite jug for serving drinks, along with the white kettle with a black handle and lid, and the loaf of brown bread from the kitchen counter to the living room table, placing them next to each other.",
+            "original_data_info": {
+                "episode_id": "467",
+                "instruction": "Move the jug, kettle, and bread from the kitchen counter to the living room table. Place them next to each other.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1168",
+                "episode_type": "object_semantics",
+                "target_objects": [
+                    {
+                        "id": "ad87281ca93b236560306a08f0953ba340e85c3c",
+                        "caption": "A dark green jug with a wavy top and abstract pattern.",
+                        "source": "hssd_hab",
+                        "category": "jug",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "5a2d4315640f464391c6a256818c3c11fdd8f4f6",
+                        "caption": "A white kettle with a black handle and lid.",
+                        "source": "hssd_hab",
+                        "category": "kettle",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "Bread_1",
+                        "caption": "A loaf of brown bread.",
+                        "source": "ai2thorhab",
+                        "category": "bread",
+                        "cluster": 0
+                    }
+                ],
+                "distractors": [
+                    {
+                        "id": "381a128d056d4db0e70276aa918065ca42f89e8f",
+                        "caption": "A red jug with a white dot pattern.",
+                        "source": "hssd_hab",
+                        "category": "jug",
+                        "cluster": 0,
+                        "pair_id": "ad87281ca93b236560306a08f0953ba340e85c3c"
+                    },
+                    {
+                        "id": "Kettle_1",
+                        "caption": "A black kettle with a pixelated pattern.",
+                        "source": "ai2thorhab",
+                        "category": "kettle",
+                        "cluster": 1,
+                        "pair_id": "5a2d4315640f464391c6a256818c3c11fdd8f4f6"
+                    },
+                    {
+                        "id": "Bread_10",
+                        "caption": "A loaf of brown bread with a textured surface.",
+                        "source": "ai2thorhab",
+                        "category": "bread",
+                        "cluster": 1,
+                        "pair_id": "Bread_1"
+                    }
+                ],
+                "subtype": "preference",
+                "num_targets": 1,
+                "memory": "The dark green jug with a wavy top and abstract pattern is the user's favorite item for serving drinks.",
+                "used_object": [
+                    "jug"
+                ]
+            },
+            "scene_id": "107734176_176000019",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "ad87281ca93b236560306a08f0953ba340e85c3c_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "033774ae209de7a75a61ef44b69e42189f9af358_:0000",
+                            "086ae0df95ac1b212fabe2f0b8bf5c63968dfb69_:0000",
+                            "174666b4a100a3e62f73d11e96a2ff9c432cd731_:0000",
+                            "174666b4a100a3e62f73d11e96a2ff9c432cd731_:0001",
+                            "1f366035e778f93cff51f06f392d86814b3eab65_:0000",
+                            "24304078d26588e2d78d4db014c5804506388cf5_:0000",
+                            "9d5c4c5e897817e769610d84c3fa695b4f4fee0b_:0000",
+                            "b39d5fdf03917dbc9ef22c8b7d310e2f3675c4c6_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "5a2d4315640f464391c6a256818c3c11fdd8f4f6_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "033774ae209de7a75a61ef44b69e42189f9af358_:0000",
+                            "086ae0df95ac1b212fabe2f0b8bf5c63968dfb69_:0000",
+                            "174666b4a100a3e62f73d11e96a2ff9c432cd731_:0000",
+                            "174666b4a100a3e62f73d11e96a2ff9c432cd731_:0001",
+                            "1f366035e778f93cff51f06f392d86814b3eab65_:0000",
+                            "24304078d26588e2d78d4db014c5804506388cf5_:0000",
+                            "9d5c4c5e897817e769610d84c3fa695b4f4fee0b_:0000",
+                            "b39d5fdf03917dbc9ef22c8b7d310e2f3675c4c6_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Bread_1_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "033774ae209de7a75a61ef44b69e42189f9af358_:0000",
+                            "086ae0df95ac1b212fabe2f0b8bf5c63968dfb69_:0000",
+                            "174666b4a100a3e62f73d11e96a2ff9c432cd731_:0000",
+                            "174666b4a100a3e62f73d11e96a2ff9c432cd731_:0001",
+                            "1f366035e778f93cff51f06f392d86814b3eab65_:0000",
+                            "24304078d26588e2d78d4db014c5804506388cf5_:0000",
+                            "9d5c4c5e897817e769610d84c3fa695b4f4fee0b_:0000",
+                            "b39d5fdf03917dbc9ef22c8b7d310e2f3675c4c6_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "ad87281ca93b236560306a08f0953ba340e85c3c_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "5a2d4315640f464391c6a256818c3c11fdd8f4f6_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "5a2d4315640f464391c6a256818c3c11fdd8f4f6_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "Bread_1_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        3
+                    ],
+                    "depends_on": [
+                        0,
+                        1
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                },
+                {
+                    "proposition_indices": [
+                        4
+                    ],
+                    "depends_on": [
+                        1,
+                        2
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 5
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2,
+                            3,
+                            4
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 3174,
+        "error": false,
+        "instruction": "Could you move my favorite vase and the picture frame with a light blue border and multicolored accents from the living room table to the lounge chair? Place them next to each other on the chair.",
+        "replanning_count_0": 18.0,
+        "run_id": 0,
+        "runtime": 208.4093725681305,
+        "sim_step_count": 2511.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "3174",
+            "instruction": "Could you move my favorite vase and the picture frame with a light blue border and multicolored accents from the living room table to the lounge chair? Place them next to each other on the chair.",
+            "original_data_info": {
+                "episode_id": "518",
+                "instruction": "Move the vase and picture frame from the living room table to the lounge chair. Place them next to each other on the chair.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1174",
+                "episode_type": "object_semantics",
+                "target_objects": [
+                    {
+                        "id": "Vase_Open_2",
+                        "caption": "A dark blue vase with a faceted design.",
+                        "source": "ai2thorhab",
+                        "category": "vase",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "5063d7a560f9af30a6fdec857fc51d7008c60fd3",
+                        "caption": "A decorative picture frame with a light blue border and multicolored accents.",
+                        "source": "hssd_hab",
+                        "category": "picture_frame",
+                        "cluster": 1
+                    }
+                ],
+                "distractors": [
+                    {
+                        "id": "B075HR7DM7",
+                        "caption": "A white vase with a geometric pattern.",
+                        "source": "amazon_berkeley",
+                        "category": "vase",
+                        "cluster": 0,
+                        "pair_id": "Vase_Open_2"
+                    },
+                    {
+                        "id": "844510f08ce0cfae1b8e6079c03896aa649cbcc7",
+                        "caption": "A white picture frame with scalloped edges.",
+                        "source": "hssd_hab",
+                        "category": "picture_frame",
+                        "cluster": 0,
+                        "pair_id": "5063d7a560f9af30a6fdec857fc51d7008c60fd3"
+                    }
+                ],
+                "subtype": "preference",
+                "num_targets": 1,
+                "memory": "The dark blue vase with a faceted design is the user's personal favorite.",
+                "used_object": [
+                    "vase"
+                ]
+            },
+            "scene_id": "107734176_176000019",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Vase_Open_2_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "0bd3fff760626beb3b250521c516ebc696984229_:0000",
+                            "bbe458f78e3686c63a219a0b9a6fcd785b55cf3d_:0000",
+                            "bbe458f78e3686c63a219a0b9a6fcd785b55cf3d_:0001",
+                            "bbe458f78e3686c63a219a0b9a6fcd785b55cf3d_:0002"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "5063d7a560f9af30a6fdec857fc51d7008c60fd3_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "0bd3fff760626beb3b250521c516ebc696984229_:0000",
+                            "bbe458f78e3686c63a219a0b9a6fcd785b55cf3d_:0000",
+                            "bbe458f78e3686c63a219a0b9a6fcd785b55cf3d_:0001",
+                            "bbe458f78e3686c63a219a0b9a6fcd785b55cf3d_:0002"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "Vase_Open_2_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "5063d7a560f9af30a6fdec857fc51d7008c60fd3_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        2
+                    ],
+                    "depends_on": [
+                        0,
+                        1
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 3
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    }
+]

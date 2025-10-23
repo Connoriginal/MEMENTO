@@ -34,9 +34,9 @@ evaluation:
       ####### SHOULD CHANGE
 
       rag_dataset_dir: ####### SHOULD CHANGE
-        - "./data/memory/acquisition_stage" # path of the memory
+        - "./resource/memory/acquisition_stage" # path of the memory
 
-      memory_path: "gpt-4o" # memory 이름 path
+      memory_path: "gpt-4o" # memory path
       ####### SHOULD CHANGE
     
       top_k: 5 # RAG top k 
@@ -47,6 +47,11 @@ evaluation:
 
       ensure_same_scene: true # retrieve memory from the same scene
       ####### SHOULD CHANGE
+
+      enable_user_profile_rag: true # enable user profile RAG
+      #TODO: should change the path
+      user_profile_memory_path: "/HabitatLLM/resource/user_profile_memory/gpt-4o/scenes"
+      user_profile_top_k: 5 # user profile RAG top k
   
 habitat:
   environment:

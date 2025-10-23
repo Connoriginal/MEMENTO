@@ -1,0 +1,143 @@
+[
+    {
+        "episode_id": 3241,
+        "error": false,
+        "instruction": "Please move the black kettle with a silver handle and my Japan trip souvenir keychain from the kitchen cabinet to the bedroom filing cabinet, placing them next to each other.",
+        "replanning_count_0": 41.0,
+        "run_id": 0,
+        "runtime": 223.0035235881805,
+        "sim_step_count": 1629.0,
+        "task_percent_complete": 0.0,
+        "task_state_success": 0.0,
+        "org_data": {
+            "episode_id": "3241",
+            "instruction": "Please move the black kettle with a silver handle and my Japan trip souvenir keychain from the kitchen cabinet to the bedroom filing cabinet, placing them next to each other.",
+            "original_data_info": {
+                "episode_id": "616",
+                "instruction": "Move the kettle and keychain from the kitchen cabinet to the bedroom filing cabinet. Place them next to each other on the filing cabinet.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1241",
+                "episode_type": "object_semantics",
+                "target_objects": [
+                    {
+                        "id": "6982c7794384aecaa6134b600d473e98d812b8be",
+                        "caption": "A black kettle with a silver handle.",
+                        "source": "hssd_hab",
+                        "category": "kettle",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "Keychain_1",
+                        "caption": "A black and orange keychain with a circular pendant.",
+                        "source": "ai2thorhab",
+                        "category": "keychain",
+                        "cluster": 0
+                    }
+                ],
+                "distractors": [
+                    {
+                        "id": "Kettle_1",
+                        "caption": "A black kettle with a pixelated pattern.",
+                        "source": "ai2thorhab",
+                        "category": "kettle",
+                        "cluster": 1,
+                        "pair_id": "6982c7794384aecaa6134b600d473e98d812b8be"
+                    },
+                    {
+                        "id": "Keychain_2",
+                        "caption": "A black keychain with white buttons and silver keys.",
+                        "source": "ai2thorhab",
+                        "category": "keychain",
+                        "cluster": 1,
+                        "pair_id": "Keychain_1"
+                    }
+                ],
+                "subtype": "history",
+                "num_targets": 1,
+                "memory": "The black and orange keychain with a circular pendant is a souvenir from the user's trip to Japan.",
+                "used_object": [
+                    "keychain"
+                ]
+            },
+            "scene_id": "103997895_171031182",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "6982c7794384aecaa6134b600d473e98d812b8be_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "f70c9cd37e4949edaa532254729fb3153ff6a76f_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Keychain_1_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "f70c9cd37e4949edaa532254729fb3153ff6a76f_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "6982c7794384aecaa6134b600d473e98d812b8be_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "Keychain_1_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        2
+                    ],
+                    "depends_on": [
+                        0,
+                        1
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 3
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    }
+]

@@ -1,0 +1,1087 @@
+[
+    {
+        "episode_id": 10028,
+        "error": false,
+        "instruction": "Can you organize the workspace in the bedroom? Additionally, could you set up my late-night snack spot?",
+        "replanning_count_0": 39.0,
+        "run_id": 0,
+        "runtime": 223.42647552490237,
+        "sim_step_count": 3620.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "10028",
+            "instruction": "Can you organize the workspace in the bedroom? Additionally, could you set up my late-night snack spot?",
+            "original_data_info": {
+                "episode_id": [
+                    "3056",
+                    "3057"
+                ],
+                "instruction": [
+                    "Can you organize the workspace in the bedroom?",
+                    "Could you set up my late-night snack spot?"
+                ],
+                "data_path": [
+                    "data/datasets/partnr_episodes/v0_0/val.json",
+                    "data/datasets/partnr_episodes/v0_0/val.json"
+                ]
+            },
+            "metadata": {
+                "subtype": [
+                    "preference",
+                    "preference"
+                ],
+                "memory": [
+                    "Arrange the phone stand, laptop stand, and multiport hub on the table in the bedroom for a tidy workspace.",
+                    "Place the plate next to the bed on the bedroom shelves for late-night snacks."
+                ],
+                "episode_type": [
+                    "user_pattern",
+                    "user_pattern"
+                ],
+                "related_episode_id": [
+                    "1056",
+                    "1057"
+                ],
+                "stage": "2",
+                "target_objects_original": [
+                    [
+                        {
+                            "id": "B01IJ5A2UA",
+                            "caption": "A black phone stand with a minimalist design.",
+                            "source": "amazon_berkeley",
+                            "category": "phone_stand",
+                            "cluster": 0
+                        },
+                        {
+                            "id": "B00WRDRRWW",
+                            "caption": "A black laptop stand with a rounded design.",
+                            "source": "amazon_berkeley",
+                            "category": "laptop_stand",
+                            "cluster": 1
+                        },
+                        {
+                            "id": "B076YFNTRS",
+                            "caption": "A silver multiport hub with multiple USB ports.",
+                            "source": "amazon_berkeley",
+                            "category": "multiport_hub",
+                            "cluster": 1
+                        }
+                    ],
+                    [
+                        {
+                            "id": "cc9929ee326793bba8cc58e9120ef2262f087ca4",
+                            "caption": "A pink plate with a white polka dot pattern.",
+                            "source": "hssd_hab",
+                            "category": "plate",
+                            "cluster": 1
+                        }
+                    ]
+                ],
+                "target_objects": [
+                    {
+                        "id": "B01IJ5A2UA",
+                        "caption": "A black phone stand with a minimalist design.",
+                        "source": "amazon_berkeley",
+                        "category": "phone_stand",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "B00WRDRRWW",
+                        "caption": "A black laptop stand with a rounded design.",
+                        "source": "amazon_berkeley",
+                        "category": "laptop_stand",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "B076YFNTRS",
+                        "caption": "A silver multiport hub with multiple USB ports.",
+                        "source": "amazon_berkeley",
+                        "category": "multiport_hub",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "cc9929ee326793bba8cc58e9120ef2262f087ca4",
+                        "caption": "A pink plate with a white polka dot pattern.",
+                        "source": "hssd_hab",
+                        "category": "plate",
+                        "cluster": 1
+                    }
+                ],
+                "distractors_original": [
+                    [],
+                    []
+                ],
+                "distractors": [],
+                "used_object_original": [
+                    [],
+                    []
+                ],
+                "used_object": [],
+                "combination_type": "User Pattern + User Pattern",
+                "object_overlaps": {
+                    "target_target": [],
+                    "distractor_distractor": [],
+                    "target1_distractor2": [],
+                    "target2_distractor1": [],
+                    "target_category_overlap": [],
+                    "counts": {
+                        "target_target": 0,
+                        "distractor_distractor": 0,
+                        "target1_distractor2": 0,
+                        "target2_distractor1": 0,
+                        "target_category_overlap": 0,
+                        "total_overlap": 0
+                    },
+                    "has_target_category_overlap": false,
+                    "has_target_distractor_overlap": false
+                },
+                "receptacle_overlaps": {
+                    "has_overlaps": false,
+                    "common_receptacles": [],
+                    "overlap_count": 0
+                }
+            },
+            "scene_id": "106878915_174887025",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "B01IJ5A2UA_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "4a5f3b29cc15b191bb35bfae6c5918087a173827_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "B00WRDRRWW_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "4a5f3b29cc15b191bb35bfae6c5918087a173827_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "B076YFNTRS_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "4a5f3b29cc15b191bb35bfae6c5918087a173827_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "cc9929ee326793bba8cc58e9120ef2262f087ca4_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "3220d21b0885b4f0ac2c044d00a76c2ff7844dca_:0000",
+                            "679d4207f433ee1bb6030bae48df158a775d2b0b_part_64_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "cc9929ee326793bba8cc58e9120ef2262f087ca4_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "a9bb13d8f342efded56484a24b16f896d95a749f_:0000",
+                            "e1d008861be1c6252e581526031b15ca5be867b1_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        4
+                    ],
+                    "depends_on": [
+                        3
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [
+                            [
+                                0,
+                                3
+                            ],
+                            [
+                                1,
+                                3
+                            ],
+                            [
+                                2,
+                                3
+                            ]
+                        ],
+                        "n_propositions": 5
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2,
+                            3,
+                            4
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 10029,
+        "error": false,
+        "instruction": "Can you arrange the vase and stuffed toy in their usual place? Additionally, can you set the tray and plate for meal prep?",
+        "replanning_count_0": 24.0,
+        "run_id": 0,
+        "runtime": 213.4809331893921,
+        "sim_step_count": 2335.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "10029",
+            "instruction": "Can you arrange the vase and stuffed toy in their usual place? Additionally, can you set the tray and plate for meal prep?",
+            "original_data_info": {
+                "episode_id": [
+                    "3082",
+                    "3083"
+                ],
+                "instruction": [
+                    "Can you arrange the vase and stuffed toy in their usual place?",
+                    "Can you set the tray and plate for meal prep?"
+                ],
+                "data_path": [
+                    "data/datasets/partnr_episodes/v0_0/val.json",
+                    "data/datasets/partnr_episodes/v0_0/val.json"
+                ]
+            },
+            "metadata": {
+                "subtype": [
+                    "preference",
+                    "preference"
+                ],
+                "memory": [
+                    "Keep the vase and stuffed toy together on the office shelves for a personal touch in the workspace.",
+                    "Arrange the tray and plate together on the counter for easy access during meal prep."
+                ],
+                "episode_type": [
+                    "user_pattern",
+                    "user_pattern"
+                ],
+                "related_episode_id": [
+                    "1082",
+                    "1083"
+                ],
+                "stage": "2",
+                "target_objects_original": [
+                    [
+                        {
+                            "id": "a21f46139ac72eca15b4240cf8055b984d593af1",
+                            "caption": "A brown vase with a ribbed design.",
+                            "source": "hssd_hab",
+                            "category": "vase",
+                            "cluster": 1
+                        },
+                        {
+                            "id": "b469cdabd74ce7e2a4cfb787504e17a8e71f172d",
+                            "caption": "A blue stuffed toy with a textured pattern and a white snout.",
+                            "source": "hssd_hab",
+                            "category": "stuffed_toy",
+                            "cluster": 1
+                        }
+                    ],
+                    [
+                        {
+                            "id": "xxxx1ae0e97exf786x4862x8c5ex80b5044f44c0",
+                            "caption": "A beige square tray with a marbled texture.",
+                            "source": "hssd_hab",
+                            "category": "tray",
+                            "cluster": 1
+                        },
+                        {
+                            "id": "Plate_22",
+                            "caption": "A black plate with a polka dot pattern.",
+                            "source": "ai2thorhab",
+                            "category": "plate",
+                            "cluster": 0
+                        }
+                    ]
+                ],
+                "target_objects": [
+                    {
+                        "id": "a21f46139ac72eca15b4240cf8055b984d593af1",
+                        "caption": "A brown vase with a ribbed design.",
+                        "source": "hssd_hab",
+                        "category": "vase",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "b469cdabd74ce7e2a4cfb787504e17a8e71f172d",
+                        "caption": "A blue stuffed toy with a textured pattern and a white snout.",
+                        "source": "hssd_hab",
+                        "category": "stuffed_toy",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "xxxx1ae0e97exf786x4862x8c5ex80b5044f44c0",
+                        "caption": "A beige square tray with a marbled texture.",
+                        "source": "hssd_hab",
+                        "category": "tray",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "Plate_22",
+                        "caption": "A black plate with a polka dot pattern.",
+                        "source": "ai2thorhab",
+                        "category": "plate",
+                        "cluster": 0
+                    }
+                ],
+                "distractors_original": [
+                    [],
+                    []
+                ],
+                "distractors": [],
+                "used_object_original": [
+                    [],
+                    []
+                ],
+                "used_object": [],
+                "combination_type": "User Pattern + User Pattern",
+                "object_overlaps": {
+                    "target_target": [],
+                    "distractor_distractor": [],
+                    "target1_distractor2": [],
+                    "target2_distractor1": [],
+                    "target_category_overlap": [],
+                    "counts": {
+                        "target_target": 0,
+                        "distractor_distractor": 0,
+                        "target1_distractor2": 0,
+                        "target2_distractor1": 0,
+                        "target_category_overlap": 0,
+                        "total_overlap": 0
+                    },
+                    "has_target_category_overlap": false,
+                    "has_target_distractor_overlap": false
+                },
+                "receptacle_overlaps": {
+                    "has_overlaps": false,
+                    "common_receptacles": [],
+                    "overlap_count": 0
+                }
+            },
+            "scene_id": "106878960_174887073",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "a21f46139ac72eca15b4240cf8055b984d593af1_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "2ad85bce6b2b0aa63f224958abe390b9be0ab72f_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "b469cdabd74ce7e2a4cfb787504e17a8e71f172d_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "2ad85bce6b2b0aa63f224958abe390b9be0ab72f_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "a21f46139ac72eca15b4240cf8055b984d593af1_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "b469cdabd74ce7e2a4cfb787504e17a8e71f172d_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "xxxx1ae0e97exf786x4862x8c5ex80b5044f44c0_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "51c3494e896f54f12169c9a6a054960048899cdf_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Plate_22_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "51c3494e896f54f12169c9a6a054960048899cdf_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "xxxx1ae0e97exf786x4862x8c5ex80b5044f44c0_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "Plate_22_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        2
+                    ],
+                    "depends_on": [
+                        0,
+                        1
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                },
+                {
+                    "proposition_indices": [
+                        5
+                    ],
+                    "depends_on": [
+                        3,
+                        4
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [
+                            [
+                                0,
+                                3
+                            ],
+                            [
+                                1,
+                                3
+                            ],
+                            [
+                                2,
+                                3
+                            ]
+                        ],
+                        "n_propositions": 6
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2,
+                            3,
+                            4,
+                            5
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 10030,
+        "error": false,
+        "instruction": "Can you set up my work area? Additionally, could you organize the phone stand and statue as usual?",
+        "replanning_count_0": 27.0,
+        "run_id": 0,
+        "runtime": 192.66721296310425,
+        "sim_step_count": 2071.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "10030",
+            "instruction": "Can you set up my work area? Additionally, could you organize the phone stand and statue as usual?",
+            "original_data_info": {
+                "episode_id": [
+                    "3113",
+                    "3114"
+                ],
+                "instruction": [
+                    "Can you set up my work area?",
+                    "Could you organize the phone stand and statue as usual?"
+                ],
+                "data_path": [
+                    "data/datasets/partnr_episodes/v0_0/val.json",
+                    "data/datasets/partnr_episodes/v0_0/val.json"
+                ]
+            },
+            "metadata": {
+                "subtype": [
+                    "preference",
+                    "preference"
+                ],
+                "memory": [
+                    "Arrange the laptop and stand on the dining room table for a comfortable working setup.",
+                    "Keep the phone stand on the TV table and the statue on the lounge counter for better aesthetics and accessibility."
+                ],
+                "episode_type": [
+                    "user_pattern",
+                    "user_pattern"
+                ],
+                "related_episode_id": [
+                    "1113",
+                    "1114"
+                ],
+                "stage": "2",
+                "target_objects_original": [
+                    [
+                        {
+                            "id": "Laptop_2",
+                            "caption": "A black laptop with a dark keyboard.",
+                            "source": "ai2thorhab",
+                            "category": "laptop",
+                            "cluster": 1
+                        },
+                        {
+                            "id": "B00WRDRRWW",
+                            "caption": "A black laptop stand with a rounded design.",
+                            "source": "amazon_berkeley",
+                            "category": "laptop_stand",
+                            "cluster": 1
+                        }
+                    ],
+                    [
+                        {
+                            "id": "B01IJ5A2UA",
+                            "caption": "A black phone stand with a minimalist design.",
+                            "source": "amazon_berkeley",
+                            "category": "phone_stand",
+                            "cluster": 0
+                        },
+                        {
+                            "id": "Dog_Statue_1",
+                            "caption": "A green statue of a sitting dog.",
+                            "source": "ai2thorhab",
+                            "category": "statue",
+                            "cluster": 1
+                        }
+                    ]
+                ],
+                "target_objects": [
+                    {
+                        "id": "Laptop_2",
+                        "caption": "A black laptop with a dark keyboard.",
+                        "source": "ai2thorhab",
+                        "category": "laptop",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "B00WRDRRWW",
+                        "caption": "A black laptop stand with a rounded design.",
+                        "source": "amazon_berkeley",
+                        "category": "laptop_stand",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "B01IJ5A2UA",
+                        "caption": "A black phone stand with a minimalist design.",
+                        "source": "amazon_berkeley",
+                        "category": "phone_stand",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "Dog_Statue_1",
+                        "caption": "A green statue of a sitting dog.",
+                        "source": "ai2thorhab",
+                        "category": "statue",
+                        "cluster": 1
+                    }
+                ],
+                "distractors_original": [
+                    [],
+                    []
+                ],
+                "distractors": [],
+                "used_object_original": [
+                    [],
+                    []
+                ],
+                "used_object": [],
+                "combination_type": "User Pattern + User Pattern",
+                "object_overlaps": {
+                    "target_target": [],
+                    "distractor_distractor": [],
+                    "target1_distractor2": [],
+                    "target2_distractor1": [],
+                    "target_category_overlap": [],
+                    "counts": {
+                        "target_target": 0,
+                        "distractor_distractor": 0,
+                        "target1_distractor2": 0,
+                        "target2_distractor1": 0,
+                        "target_category_overlap": 0,
+                        "total_overlap": 0
+                    },
+                    "has_target_category_overlap": false,
+                    "has_target_distractor_overlap": false
+                },
+                "receptacle_overlaps": {
+                    "has_overlaps": false,
+                    "common_receptacles": [],
+                    "overlap_count": 0
+                }
+            },
+            "scene_id": "102344529",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Laptop_2_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "3631f4924b2008d86b4a02c6cbf4ef640a10c4e6_part_6_:0000",
+                            "43cc99743f6d75e5f7b92ab8e5c9ba7f3e932ad0_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "B00WRDRRWW_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "3631f4924b2008d86b4a02c6cbf4ef640a10c4e6_part_6_:0000",
+                            "43cc99743f6d75e5f7b92ab8e5c9ba7f3e932ad0_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "Laptop_2_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "B00WRDRRWW_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "B01IJ5A2UA_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "1f20f5194541179686f9bff3a01d002076751910_:0000",
+                            "9812cf1f7ced3de9596d88244068b628e346069c_:0000",
+                            "9b2f527215b5f508680ff582ad412a68407c07bd_:0000",
+                            "cb0d27b5428679b54fc8bf347ccc168cba08092f_:0000",
+                            "f1a090d794cf38e36a584e07672edf7ad1a70f8a_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Dog_Statue_1_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "15a81c5727eba4e4a4161e1cf2c76fe2c601ae15_:0001"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        2
+                    ],
+                    "depends_on": [
+                        0,
+                        1
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [
+                            [
+                                0,
+                                3
+                            ],
+                            [
+                                1,
+                                3
+                            ],
+                            [
+                                2,
+                                3
+                            ]
+                        ],
+                        "n_propositions": 5
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2,
+                            3,
+                            4
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 10032,
+        "error": false,
+        "instruction": "Could you set up my relaxing spot with the vase and plate? Additionally, could you set up my plants in their usual spot?",
+        "replanning_count_0": 23.0,
+        "run_id": 0,
+        "runtime": 302.5475022792816,
+        "sim_step_count": 3286.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "10032",
+            "instruction": "Could you set up my relaxing spot with the vase and plate? Additionally, could you set up my plants in their usual spot?",
+            "original_data_info": {
+                "episode_id": [
+                    "3155",
+                    "3164"
+                ],
+                "instruction": [
+                    "Could you set up my relaxing spot with the vase and plate?",
+                    "Could you set up my plants in their usual spot?"
+                ],
+                "data_path": [
+                    "data/datasets/partnr_episodes/v0_0/val.json",
+                    "data/datasets/partnr_episodes/v0_0/val.json"
+                ]
+            },
+            "metadata": {
+                "subtype": [
+                    "preference",
+                    "preference"
+                ],
+                "memory": [
+                    "Place the vase and plate on the lounge chair for easy access while relaxing.",
+                    "Place the plant saucer and plant container on the bench in the bathroom for better humidity and sunlight."
+                ],
+                "episode_type": [
+                    "user_pattern",
+                    "user_pattern"
+                ],
+                "related_episode_id": [
+                    "1155",
+                    "1164"
+                ],
+                "stage": "2",
+                "target_objects_original": [
+                    [
+                        {
+                            "id": "Plate_10",
+                            "caption": "A brown square plate.",
+                            "source": "ai2thorhab",
+                            "category": "plate",
+                            "cluster": 1
+                        },
+                        {
+                            "id": "Vase_Tall_2",
+                            "caption": "A red vase with a long neck and bulbous base.",
+                            "source": "ai2thorhab",
+                            "category": "vase",
+                            "cluster": 1
+                        }
+                    ],
+                    [
+                        {
+                            "id": "Central_Garden_Flower_Pot_Goo_425",
+                            "caption": "A green plant container, Central Garden Flower Pot Goo 425.",
+                            "source": "google",
+                            "category": "plant_container",
+                            "cluster": 0
+                        },
+                        {
+                            "id": "Ecoforms_Quadra_Saucer_SQ1_Avocado",
+                            "caption": "A green, square plant saucer, Ecoforms Quadra Saucer SQ1 Avocado.",
+                            "source": "google",
+                            "category": "plant_saucer",
+                            "cluster": 0
+                        }
+                    ]
+                ],
+                "target_objects": [
+                    {
+                        "id": "Plate_10",
+                        "caption": "A brown square plate.",
+                        "source": "ai2thorhab",
+                        "category": "plate",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "Vase_Tall_2",
+                        "caption": "A red vase with a long neck and bulbous base.",
+                        "source": "ai2thorhab",
+                        "category": "vase",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "Central_Garden_Flower_Pot_Goo_425",
+                        "caption": "A green plant container, Central Garden Flower Pot Goo 425.",
+                        "source": "google",
+                        "category": "plant_container",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "Ecoforms_Quadra_Saucer_SQ1_Avocado",
+                        "caption": "A green, square plant saucer, Ecoforms Quadra Saucer SQ1 Avocado.",
+                        "source": "google",
+                        "category": "plant_saucer",
+                        "cluster": 0
+                    }
+                ],
+                "distractors_original": [
+                    [],
+                    []
+                ],
+                "distractors": [],
+                "used_object_original": [
+                    [],
+                    []
+                ],
+                "used_object": [],
+                "combination_type": "User Pattern + User Pattern",
+                "object_overlaps": {
+                    "target_target": [],
+                    "distractor_distractor": [],
+                    "target1_distractor2": [],
+                    "target2_distractor1": [],
+                    "target_category_overlap": [],
+                    "counts": {
+                        "target_target": 0,
+                        "distractor_distractor": 0,
+                        "target1_distractor2": 0,
+                        "target2_distractor1": 0,
+                        "target_category_overlap": 0,
+                        "total_overlap": 0
+                    },
+                    "has_target_category_overlap": false,
+                    "has_target_distractor_overlap": false
+                },
+                "receptacle_overlaps": {
+                    "has_overlaps": false,
+                    "common_receptacles": [],
+                    "overlap_count": 0
+                }
+            },
+            "scene_id": "107734176_176000019",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Plate_10_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "0bd3fff760626beb3b250521c516ebc696984229_:0000",
+                            "bbe458f78e3686c63a219a0b9a6fcd785b55cf3d_:0000",
+                            "bbe458f78e3686c63a219a0b9a6fcd785b55cf3d_:0001",
+                            "bbe458f78e3686c63a219a0b9a6fcd785b55cf3d_:0002"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Vase_Tall_2_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "0bd3fff760626beb3b250521c516ebc696984229_:0000",
+                            "bbe458f78e3686c63a219a0b9a6fcd785b55cf3d_:0000",
+                            "bbe458f78e3686c63a219a0b9a6fcd785b55cf3d_:0001",
+                            "bbe458f78e3686c63a219a0b9a6fcd785b55cf3d_:0002"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Central_Garden_Flower_Pot_Goo_425_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "257f0502154f87737d29e4c63b90197f77808640_:0000",
+                            "9e94bcd5f087018a11366b769a6fc6ec05a7f1b3_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Ecoforms_Quadra_Saucer_SQ1_Avocado_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "257f0502154f87737d29e4c63b90197f77808640_:0000",
+                            "9e94bcd5f087018a11366b769a6fc6ec05a7f1b3_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "Central_Garden_Flower_Pot_Goo_425_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "Ecoforms_Quadra_Saucer_SQ1_Avocado_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        4
+                    ],
+                    "depends_on": [
+                        2,
+                        3
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [
+                            [
+                                0,
+                                2
+                            ],
+                            [
+                                1,
+                                2
+                            ]
+                        ],
+                        "n_propositions": 5
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2,
+                            3,
+                            4
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    }
+]

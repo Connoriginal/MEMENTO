@@ -1,0 +1,340 @@
+[
+    {
+        "episode_id": 2947,
+        "error": false,
+        "instruction": "Can you set the jug and cup for lunch?",
+        "replanning_count_0": 14.0,
+        "run_id": 0,
+        "runtime": 174.87924718856812,
+        "sim_step_count": 2018.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "2947",
+            "instruction": "Can you set the jug and cup for lunch?",
+            "original_data_info": {
+                "episode_id": "765",
+                "instruction": "Help me prepare for lunch by moving the jug and cup from the kitchen counter to the dining table. Place them next to each other.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "947",
+                "episode_type": "user_pattern",
+                "target_objects": [
+                    {
+                        "id": "2f8ce20db01f6f9cff0d3170271f45ef139276ed",
+                        "caption": "A light green jug with a curved spout.",
+                        "source": "hssd_hab",
+                        "category": "jug",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "5742501065a46cf69165e60257b42a86f5fadf8b",
+                        "caption": "A light pink cup with Pantone 337 C marking.",
+                        "source": "hssd_hab",
+                        "category": "cup",
+                        "cluster": 1
+                    }
+                ],
+                "subtype": "preference",
+                "memory": "Place the jug and cup together on the dining table for easy access during lunch."
+            },
+            "scene_id": "102816756",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "2f8ce20db01f6f9cff0d3170271f45ef139276ed_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "786845ecaee2a43d135f922f4d617da02c8543b6_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "5742501065a46cf69165e60257b42a86f5fadf8b_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "786845ecaee2a43d135f922f4d617da02c8543b6_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "2f8ce20db01f6f9cff0d3170271f45ef139276ed_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "5742501065a46cf69165e60257b42a86f5fadf8b_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        2
+                    ],
+                    "depends_on": [
+                        0,
+                        1
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 3
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 2988,
+        "error": false,
+        "instruction": "Can you enhance the shelf's visual appeal for me?",
+        "replanning_count_0": 21.0,
+        "run_id": 0,
+        "runtime": 206.85350251197812,
+        "sim_step_count": 4393.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "2988",
+            "instruction": "Can you enhance the shelf's visual appeal for me?",
+            "original_data_info": {
+                "episode_id": "397",
+                "instruction": "Help me set up some visuals on the shelves. Move the picture frame and lamp there. The book can stay where it is.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "988",
+                "episode_type": "user_pattern",
+                "target_objects": [
+                    {
+                        "id": "B07HK3PNSK",
+                        "caption": "A lamp with a pineapple-shaped neon outline and a black base.",
+                        "source": "amazon_berkeley",
+                        "category": "lamp",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "3bfcfba0a45e2072466f4b9adb6efb1bc4344b75",
+                        "caption": "A gold picture frame with a dark central image.",
+                        "source": "hssd_hab",
+                        "category": "picture_frame",
+                        "cluster": 1
+                    }
+                ],
+                "subtype": "preference",
+                "memory": "Arrange the picture frame and lamp on the shelves to enhance the room's visual appeal."
+            },
+            "scene_id": "102817140",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "B07HK3PNSK_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "3bd0e65f7e1c55fe38c4b6101e30f44fe392151a_:0000",
+                            "7b395deb580a75ca10a361d25b5e10b1bab8464b_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "3bfcfba0a45e2072466f4b9adb6efb1bc4344b75_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "3bd0e65f7e1c55fe38c4b6101e30f44fe392151a_:0000",
+                            "7b395deb580a75ca10a361d25b5e10b1bab8464b_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 2
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 2990,
+        "error": false,
+        "instruction": "Can you arrange my afternoon refreshment setup?",
+        "replanning_count_0": 13.0,
+        "run_id": 0,
+        "runtime": 123.53856897354126,
+        "sim_step_count": 2378.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "2990",
+            "instruction": "Can you arrange my afternoon refreshment setup?",
+            "original_data_info": {
+                "episode_id": "399",
+                "instruction": "Move the jug and cup from the kitchen counter to the living room table. Place them next to each other.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "990",
+                "episode_type": "user_pattern",
+                "target_objects": [
+                    {
+                        "id": "381a128d056d4db0e70276aa918065ca42f89e8f",
+                        "caption": "A red jug with a white dot pattern.",
+                        "source": "hssd_hab",
+                        "category": "jug",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "ACE_Coffee_Mug_Kristen_16_oz_cup",
+                        "caption": "A white, 16 oz coffee mug, ACE Coffee Mug Kristen.",
+                        "source": "google",
+                        "category": "cup",
+                        "cluster": 1
+                    }
+                ],
+                "subtype": "preference",
+                "memory": "Place the jug and cup together on the living room table for afternoon refreshments."
+            },
+            "scene_id": "102817140",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "381a128d056d4db0e70276aa918065ca42f89e8f_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "0239c03b6896e4e4fad328885cf078995c913046_:0000",
+                            "925f48efff312862677c9517a8ec0faba4909570_part_1_:0000",
+                            "d886d10e71a0365a725abcf139142223409f7b4f_:0000",
+                            "d886d10e71a0365a725abcf139142223409f7b4f_:0001"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "ACE_Coffee_Mug_Kristen_16_oz_cup_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "0239c03b6896e4e4fad328885cf078995c913046_:0000",
+                            "925f48efff312862677c9517a8ec0faba4909570_part_1_:0000",
+                            "d886d10e71a0365a725abcf139142223409f7b4f_:0000",
+                            "d886d10e71a0365a725abcf139142223409f7b4f_:0001"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "381a128d056d4db0e70276aa918065ca42f89e8f_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "ACE_Coffee_Mug_Kristen_16_oz_cup_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        2
+                    ],
+                    "depends_on": [
+                        0,
+                        1
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 3
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    }
+]

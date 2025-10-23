@@ -1,0 +1,2069 @@
+[
+    {
+        "episode_id": 2986,
+        "error": "False",
+        "instruction": "First, move my travel essentials from the bedroom to the office and set them on the floor. Then, place them next to each other on the office table.",
+        "replanning_count_0": 41.0,
+        "run_id": 0,
+        "runtime": 546.8902409076691,
+        "sim_step_count": 4351.0,
+        "task_percent_complete": 0.0,
+        "task_state_success": 0.0,
+        "org_data": {
+            "episode_id": "2986",
+            "instruction": "First, move my travel essentials from the bedroom to the office and set them on the floor. Then, place them next to each other on the office table.",
+            "original_data_info": {
+                "episode_id": "664",
+                "instruction": "First, move the shoe and then the hat from the bedroom to the office and set them on the floor. Then, place them next to each other on the office table.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "986",
+                "episode_type": "object_semantics",
+                "target_objects": [
+                    {
+                        "id": "ASICS_GEL1140V_WhiteRoyalSilver",
+                        "caption": "A white and silver ASICS shoe with royal blue accents, GEL-1140V model.",
+                        "source": "google",
+                        "category": "shoe",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "DPC_tropical_Trends_Hat",
+                        "caption": "A beige straw hat with a black band, DPC Tropical Trends Hat.",
+                        "source": "google",
+                        "category": "hat",
+                        "cluster": 0
+                    }
+                ],
+                "distractors": [
+                    {
+                        "id": "Cream_Tieks_Italian_Leather_Ballet_Flats",
+                        "caption": "Cream-colored, Italian leather ballet flats, Tieks.",
+                        "source": "google",
+                        "category": "shoe",
+                        "cluster": 1,
+                        "pair_id": "ASICS_GEL1140V_WhiteRoyalSilver"
+                    },
+                    {
+                        "id": "DPC_Handmade_Hat_Brown",
+                        "caption": "A brown, handmade hat, DPC Handmade Hat.",
+                        "source": "google",
+                        "category": "hat",
+                        "cluster": 1,
+                        "pair_id": "DPC_tropical_Trends_Hat"
+                    }
+                ],
+                "subtype": "group",
+                "num_targets": 2,
+                "memory": "The white and silver ASICS shoe with royal blue accents and the beige straw hat with a black band are part of the user's travel essentials.",
+                "used_object": [
+                    "shoe",
+                    "hat"
+                ]
+            },
+            "scene_id": "107733960_175999701",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_in_room",
+                    "args": {
+                        "object_handles": [
+                            "ASICS_GEL1140V_WhiteRoyalSilver_:0000"
+                        ],
+                        "room_ids": [
+                            "office"
+                        ],
+                        "number": 1,
+                        "is_same_room": false
+                    }
+                },
+                {
+                    "function_name": "is_in_room",
+                    "args": {
+                        "object_handles": [
+                            "DPC_tropical_Trends_Hat_:0000"
+                        ],
+                        "room_ids": [
+                            "office"
+                        ],
+                        "number": 1,
+                        "is_same_room": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "ASICS_GEL1140V_WhiteRoyalSilver_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "6b63013dfa25cabaa2ef3d0830c19c823e6b1f7d_:0001"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "DPC_tropical_Trends_Hat_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "6b63013dfa25cabaa2ef3d0830c19c823e6b1f7d_:0001"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "ASICS_GEL1140V_WhiteRoyalSilver_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "DPC_tropical_Trends_Hat_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        4
+                    ],
+                    "depends_on": [
+                        2,
+                        3
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                },
+                {
+                    "proposition_indices": [
+                        2
+                    ],
+                    "depends_on": [
+                        0
+                    ],
+                    "relation_type": "after_satisfied",
+                    "dependency_mode": "any"
+                },
+                {
+                    "proposition_indices": [
+                        3
+                    ],
+                    "depends_on": [
+                        1
+                    ],
+                    "relation_type": "after_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [
+                            [
+                                0,
+                                2
+                            ],
+                            [
+                                0,
+                                3
+                            ],
+                            [
+                                0,
+                                4
+                            ],
+                            [
+                                1,
+                                2
+                            ],
+                            [
+                                1,
+                                3
+                            ],
+                            [
+                                1,
+                                4
+                            ]
+                        ],
+                        "n_propositions": 5
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            2,
+                            3,
+                            4
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 3047,
+        "error": "False",
+        "instruction": "Could you help me move my childhood collection and the black shallow bowl from the dining room table to the living room table and place them next to each other?",
+        "replanning_count_0": 41.0,
+        "run_id": 0,
+        "runtime": 275.18620467185974,
+        "sim_step_count": 1118.0,
+        "task_percent_complete": 0.2,
+        "task_state_success": 0.0,
+        "org_data": {
+            "episode_id": "3047",
+            "instruction": "Could you help me move my childhood collection and the black shallow bowl from the dining room table to the living room table and place them next to each other?",
+            "original_data_info": {
+                "episode_id": "648",
+                "instruction": "Help me move some toys and a bowl from the dining room to the living room. Take the toy airplane toy animal, and bowl from the table in the dining room. Place them next to each other on the table in the living room.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1047",
+                "episode_type": "object_semantics",
+                "target_objects": [
+                    {
+                        "id": "Air_Hogs_Wind_Flyers_Set_Airplane_Red",
+                        "caption": "A red toy airplane, Air Hogs Wind Flyers Set.",
+                        "source": "google",
+                        "category": "toy_airplane",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "Schleich_African_Black_Rhino",
+                        "caption": "A detailed, gray Schleich African Black Rhino toy animal.",
+                        "source": "google",
+                        "category": "toy_animal",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "391972f73810b6eab26e322652d88a61aea7a739",
+                        "caption": "A black shallow bowl.",
+                        "source": "hssd_hab",
+                        "category": "bowl",
+                        "cluster": 1
+                    }
+                ],
+                "distractors": [
+                    {
+                        "id": "TURBOPROP_AIRPLANE_WITH_PILOT",
+                        "caption": "A red and white toy turboprop airplane with a pilot.",
+                        "source": "google",
+                        "category": "toy_airplane",
+                        "cluster": 0,
+                        "pair_id": "Air_Hogs_Wind_Flyers_Set_Airplane_Red"
+                    },
+                    {
+                        "id": "DANCING_ALLIGATOR_zoWBjc0jbTs",
+                        "caption": "A green, wooden, dancing alligator toy.",
+                        "source": "google",
+                        "category": "toy_animal",
+                        "cluster": 1,
+                        "pair_id": "Schleich_African_Black_Rhino"
+                    },
+                    {
+                        "id": "Bowl_13",
+                        "caption": "A gray bowl with a smooth surface.",
+                        "source": "ai2thorhab",
+                        "category": "bowl",
+                        "cluster": 0,
+                        "pair_id": "391972f73810b6eab26e322652d88a61aea7a739"
+                    }
+                ],
+                "subtype": "group",
+                "num_targets": 2,
+                "memory": "The red Air Hogs Wind Flyers Set toy airplane and the gray Schleich African Black Rhino toy are part of the user's childhood collection.",
+                "used_object": [
+                    "toy_animal",
+                    "toy_airplane"
+                ]
+            },
+            "scene_id": "106366386_174226770",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Air_Hogs_Wind_Flyers_Set_Airplane_Red_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "138009a6121d7ebb8c3b78e3a411b4e33c388efb_:0000",
+                            "1a4841c613e9f5c2ba492107fb6aff4692c564a4_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Schleich_African_Black_Rhino_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "138009a6121d7ebb8c3b78e3a411b4e33c388efb_:0000",
+                            "1a4841c613e9f5c2ba492107fb6aff4692c564a4_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "Air_Hogs_Wind_Flyers_Set_Airplane_Red_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "Schleich_African_Black_Rhino_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "391972f73810b6eab26e322652d88a61aea7a739_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "138009a6121d7ebb8c3b78e3a411b4e33c388efb_:0000",
+                            "1a4841c613e9f5c2ba492107fb6aff4692c564a4_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "Schleich_African_Black_Rhino_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "391972f73810b6eab26e322652d88a61aea7a739_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        2
+                    ],
+                    "depends_on": [
+                        0,
+                        1
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                },
+                {
+                    "proposition_indices": [
+                        4
+                    ],
+                    "depends_on": [
+                        1,
+                        3
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 5
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2,
+                            3,
+                            4
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 3045,
+        "error": "False",
+        "instruction": "Could you move my decorative set and the Cole Hardware Orchid Pot 85 from the dining table to the living room couch and place them next to each other?",
+        "replanning_count_0": 41.0,
+        "run_id": 0,
+        "runtime": 253.8130190372467,
+        "sim_step_count": 1128.0,
+        "task_percent_complete": 0.4,
+        "task_state_success": 0.0,
+        "org_data": {
+            "episode_id": "3045",
+            "instruction": "Could you move my decorative set and the Cole Hardware Orchid Pot 85 from the dining table to the living room couch and place them next to each other?",
+            "original_data_info": {
+                "episode_id": "412",
+                "instruction": "Move the candle holder, candle, and plant container from the dining table to the living room couch? Place them next to each other on the couch.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1045",
+                "episode_type": "object_semantics",
+                "target_objects": [
+                    {
+                        "id": "B075HR7LD2",
+                        "caption": "A white candle holder with a gold rim on a wooden base.",
+                        "source": "amazon_berkeley",
+                        "category": "candle_holder",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "8afd350c5cc0029c3604c697947d1e1399403955",
+                        "caption": "A blue and brown candle with a gradient pattern.",
+                        "source": "hssd_hab",
+                        "category": "candle",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "Cole_Hardware_Orchid_Pot_85",
+                        "caption": "A white and green orchid pot, Cole Hardware Orchid Pot 85.",
+                        "source": "google",
+                        "category": "plant_container",
+                        "cluster": 0
+                    }
+                ],
+                "distractors": [
+                    {
+                        "id": "B075HXHKTZ",
+                        "caption": "A white and tan candle holder with a rounded base.",
+                        "source": "amazon_berkeley",
+                        "category": "candle_holder",
+                        "cluster": 1,
+                        "pair_id": "B075HR7LD2"
+                    },
+                    {
+                        "id": "9c762323bc8e1c45b31ee978e21749a1cb218446",
+                        "caption": "A red and white candle with a unique abstract design.",
+                        "source": "hssd_hab",
+                        "category": "candle",
+                        "cluster": 1,
+                        "pair_id": "8afd350c5cc0029c3604c697947d1e1399403955"
+                    },
+                    {
+                        "id": "Ecoforms_Plant_Pot_GP9_SAND",
+                        "caption": "A sand-colored plant pot, Ecoforms GP9.",
+                        "source": "google",
+                        "category": "plant_container",
+                        "cluster": 1,
+                        "pair_id": "Cole_Hardware_Orchid_Pot_85"
+                    }
+                ],
+                "subtype": "group",
+                "num_targets": 2,
+                "memory": "The white candle holder with a gold rim and the blue and brown gradient candle are part of the user's decorative set.",
+                "used_object": [
+                    "candle",
+                    "candle_holder"
+                ]
+            },
+            "scene_id": "106366386_174226770",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "B075HR7LD2_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "72c768666c398f91a5e4755d569f4d7097acc297_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "8afd350c5cc0029c3604c697947d1e1399403955_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "72c768666c398f91a5e4755d569f4d7097acc297_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Cole_Hardware_Orchid_Pot_85_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "72c768666c398f91a5e4755d569f4d7097acc297_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "B075HR7LD2_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "8afd350c5cc0029c3604c697947d1e1399403955_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "8afd350c5cc0029c3604c697947d1e1399403955_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "Cole_Hardware_Orchid_Pot_85_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        3
+                    ],
+                    "depends_on": [
+                        0,
+                        1
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                },
+                {
+                    "proposition_indices": [
+                        4
+                    ],
+                    "depends_on": [
+                        1,
+                        2
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 5
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2,
+                            3,
+                            4
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 3147,
+        "error": "False",
+        "instruction": "Please move my cooking essentials from the office to the kitchen and place them next to each other on the counter.",
+        "replanning_count_0": 13.0,
+        "run_id": 0,
+        "runtime": 108.2244930267334,
+        "sim_step_count": 1232.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "3147",
+            "instruction": "Please move my cooking essentials from the office to the kitchen and place them next to each other on the counter.",
+            "original_data_info": {
+                "episode_id": "560",
+                "instruction": "Move the kettle and ladle from the office to the kitchen and place them next to each other on the counter.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1147",
+                "episode_type": "object_semantics",
+                "target_objects": [
+                    {
+                        "id": "e41fb9d079791e99e3ff9e216c5e4416a9a83570",
+                        "caption": "A black kettle with a curved handle.",
+                        "source": "hssd_hab",
+                        "category": "kettle",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "Ladle_2",
+                        "caption": "A black ladle with a round scoop.",
+                        "source": "ai2thorhab",
+                        "category": "ladle",
+                        "cluster": 0
+                    }
+                ],
+                "distractors": [
+                    {
+                        "id": "Kettle_1",
+                        "caption": "A black kettle with a pixelated pattern.",
+                        "source": "ai2thorhab",
+                        "category": "kettle",
+                        "cluster": 1,
+                        "pair_id": "e41fb9d079791e99e3ff9e216c5e4416a9a83570"
+                    },
+                    {
+                        "id": "Ladle_3",
+                        "caption": "A black ladle with a blue handle.",
+                        "source": "ai2thorhab",
+                        "category": "ladle",
+                        "cluster": 1,
+                        "pair_id": "Ladle_2"
+                    }
+                ],
+                "subtype": "group",
+                "num_targets": 2,
+                "memory": "The black kettle with a curved handle and the black ladle with a round scoop are part of the user's cooking essentials.",
+                "used_object": [
+                    "ladle",
+                    "kettle"
+                ]
+            },
+            "scene_id": "104348361_171513414",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "e41fb9d079791e99e3ff9e216c5e4416a9a83570_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "55dcc18191c2412b899ff405d5d0574571bb81cf_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Ladle_2_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "55dcc18191c2412b899ff405d5d0574571bb81cf_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "e41fb9d079791e99e3ff9e216c5e4416a9a83570_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "Ladle_2_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        2
+                    ],
+                    "depends_on": [
+                        0,
+                        1
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 3
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 3201,
+        "error": "False",
+        "instruction": "Could you please move my favorite childhood toys from the bedroom table to the workout table and place them next to each other?",
+        "replanning_count_0": 16.0,
+        "run_id": 0,
+        "runtime": 154.84565830230713,
+        "sim_step_count": 1455.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "3201",
+            "instruction": "Could you please move my favorite childhood toys from the bedroom table to the workout table and place them next to each other?",
+            "original_data_info": {
+                "episode_id": "483",
+                "instruction": "Move the toy airplane and stuffed toy from the bedroom table to the workout table. Place them next to each other on the table.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1201",
+                "episode_type": "object_semantics",
+                "target_objects": [
+                    {
+                        "id": "Air_Hogs_Wind_Flyers_Set_Airplane_Red",
+                        "caption": "A red toy airplane, Air Hogs Wind Flyers Set.",
+                        "source": "google",
+                        "category": "toy_airplane",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "Animal_Planet_Foam_2Headed_Dragon",
+                        "caption": "A green and blue two-headed dragon stuffed toy, Animal Planet Foam.",
+                        "source": "google",
+                        "category": "stuffed_toy",
+                        "cluster": 0
+                    }
+                ],
+                "distractors": [
+                    {
+                        "id": "TURBOPROP_AIRPLANE_WITH_PILOT",
+                        "caption": "A red and white toy turboprop airplane with a pilot.",
+                        "source": "google",
+                        "category": "toy_airplane",
+                        "cluster": 0,
+                        "pair_id": "Air_Hogs_Wind_Flyers_Set_Airplane_Red"
+                    },
+                    {
+                        "id": "567ba453e60735e7667f25ea6d09377be18bda66",
+                        "caption": "A white stuffed bear with pink accents and a heart.",
+                        "source": "hssd_hab",
+                        "category": "stuffed_toy",
+                        "cluster": 1,
+                        "pair_id": "Animal_Planet_Foam_2Headed_Dragon"
+                    }
+                ],
+                "subtype": "group",
+                "num_targets": 2,
+                "memory": "The red Air Hogs Wind Flyers Set toy airplane and the green and blue two-headed dragon stuffed toy are part of the user's favorite childhood toys.",
+                "used_object": [
+                    "stuffed_toy",
+                    "toy_airplane"
+                ]
+            },
+            "scene_id": "106366410_174226806",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Air_Hogs_Wind_Flyers_Set_Airplane_Red_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "47da03c52e0003488334f8dea02c926cbe66029c_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Animal_Planet_Foam_2Headed_Dragon_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "47da03c52e0003488334f8dea02c926cbe66029c_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "Air_Hogs_Wind_Flyers_Set_Airplane_Red_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "Animal_Planet_Foam_2Headed_Dragon_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        2
+                    ],
+                    "depends_on": [
+                        0,
+                        1
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 3
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 2958,
+        "error": "False",
+        "instruction": "Please put my dinnerware set together in another cabinet in the kitchen, placing them next to each other.",
+        "replanning_count_0": 41.0,
+        "run_id": 0,
+        "runtime": 332.43526315689087,
+        "sim_step_count": 1711.0,
+        "task_percent_complete": 0.0,
+        "task_state_success": 0.0,
+        "org_data": {
+            "episode_id": "2958",
+            "instruction": "Please put my dinnerware set together in another cabinet in the kitchen, placing them next to each other.",
+            "original_data_info": {
+                "episode_id": "536",
+                "instruction": "Put the plate and bowl together in another cabinet in the kitchen and place them next to each other.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "958",
+                "episode_type": "object_semantics",
+                "target_objects": [
+                    {
+                        "id": "Plate_28",
+                        "caption": "A square white plate with a black geometric pattern.",
+                        "source": "ai2thorhab",
+                        "category": "plate",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "B075HWTX4Z",
+                        "caption": "A white bowl with a brown lid.",
+                        "source": "amazon_berkeley",
+                        "category": "bowl",
+                        "cluster": 1
+                    }
+                ],
+                "distractors": [
+                    {
+                        "id": "Plate_22",
+                        "caption": "A black plate with a polka dot pattern.",
+                        "source": "ai2thorhab",
+                        "category": "plate",
+                        "cluster": 0,
+                        "pair_id": "Plate_28"
+                    },
+                    {
+                        "id": "Bowl_28",
+                        "caption": "A sleek, dark blue bowl.",
+                        "source": "ai2thorhab",
+                        "category": "bowl",
+                        "cluster": 0,
+                        "pair_id": "B075HWTX4Z"
+                    }
+                ],
+                "subtype": "group",
+                "num_targets": 2,
+                "memory": "The square white plate with a black geometric pattern and the white bowl with a brown lid are part of the user's dinnerware set.",
+                "used_object": [
+                    "plate",
+                    "bowl"
+                ]
+            },
+            "scene_id": "102816756",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_inside",
+                    "args": {
+                        "object_handles": [
+                            "Plate_28_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "33c1689bc5fb3b6f599f261ad069d9510804deb9_:0000",
+                            "33c1689bc5fb3b6f599f261ad069d9510804deb9_:0001",
+                            "424d7e7d258370736e6cfdbad2b253e521f80c79_:0000",
+                            "42c2fce42ed600de5f0c6919ba47fe97e60ab673_:0000",
+                            "77af27c6a414131f13d2aac55153720028fd4ed5_:0000",
+                            "a19b47699883e5841599452274d671a1bb2c775e_:0000",
+                            "bdab4ca579230f7652590bc19fa00a35701857ef_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_inside",
+                    "args": {
+                        "object_handles": [
+                            "B075HWTX4Z_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "33c1689bc5fb3b6f599f261ad069d9510804deb9_:0000",
+                            "33c1689bc5fb3b6f599f261ad069d9510804deb9_:0001",
+                            "424d7e7d258370736e6cfdbad2b253e521f80c79_:0000",
+                            "42c2fce42ed600de5f0c6919ba47fe97e60ab673_:0000",
+                            "77af27c6a414131f13d2aac55153720028fd4ed5_:0000",
+                            "a19b47699883e5841599452274d671a1bb2c775e_:0000",
+                            "bdab4ca579230f7652590bc19fa00a35701857ef_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "Plate_28_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "B075HWTX4Z_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        2
+                    ],
+                    "depends_on": [
+                        0,
+                        1
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 3
+                    }
+                },
+                {
+                    "type": "SameArgConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1
+                        ],
+                        "arg_names": [
+                            "receptacle_handles",
+                            "receptacle_handles"
+                        ],
+                        "n_propositions": null
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 3200,
+        "error": "False",
+        "instruction": "Could you move my personal workout gear and the transparent spray bottle from the workout table to the office table?",
+        "replanning_count_0": 23.0,
+        "run_id": 0,
+        "runtime": 123.81653308868408,
+        "sim_step_count": 1200.0,
+        "task_percent_complete": 0.6666666666666666,
+        "task_state_success": 0.0,
+        "org_data": {
+            "episode_id": "3200",
+            "instruction": "Could you move my personal workout gear and the transparent spray bottle from the workout table to the office table?",
+            "original_data_info": {
+                "episode_id": "481",
+                "instruction": "Move the dumbbell, tennis racquet, and spray bottle from the workout table to the office table.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1200",
+                "episode_type": "object_semantics",
+                "target_objects": [
+                    {
+                        "id": "B01LR5RO5U",
+                        "caption": "A green dumbbell with a smooth finish.",
+                        "source": "amazon_berkeley",
+                        "category": "dumbbell",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "Tennis_Racquet_2",
+                        "caption": "A black tennis racquet with a brown handle.",
+                        "source": "ai2thorhab",
+                        "category": "tennis_racquet",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "Spray_Bottle_7",
+                        "caption": "A transparent spray bottle with a sleek design.",
+                        "source": "ai2thorhab",
+                        "category": "spray_bottle",
+                        "cluster": 1
+                    }
+                ],
+                "distractors": [
+                    {
+                        "id": "B074DZNJ3T",
+                        "caption": "A black hexagonal dumbbell with a metal handle.",
+                        "source": "amazon_berkeley",
+                        "category": "dumbbell",
+                        "cluster": 0,
+                        "pair_id": "B01LR5RO5U"
+                    },
+                    {
+                        "id": "Tennis_Racquet_5",
+                        "caption": "A tennis racquet with an orange frame, yellow strings, and a green handle.",
+                        "source": "ai2thorhab",
+                        "category": "tennis_racquet",
+                        "cluster": 1,
+                        "pair_id": "Tennis_Racquet_2"
+                    },
+                    {
+                        "id": "Spray_Bottle_3",
+                        "caption": "A black spray bottle with a silver nozzle.",
+                        "source": "ai2thorhab",
+                        "category": "spray_bottle",
+                        "cluster": 0,
+                        "pair_id": "Spray_Bottle_7"
+                    }
+                ],
+                "subtype": "group",
+                "num_targets": 2,
+                "memory": "The green dumbbell and black tennis racquet with a brown handle are part of the user's personal workout gear.",
+                "used_object": [
+                    "tennis_racquet",
+                    "dumbbell"
+                ]
+            },
+            "scene_id": "106366410_174226806",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "B01LR5RO5U_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "62d5b81040a4546e5fda73df2e6a9648eb6ceb52_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Tennis_Racquet_2_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "62d5b81040a4546e5fda73df2e6a9648eb6ceb52_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Spray_Bottle_7_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "62d5b81040a4546e5fda73df2e6a9648eb6ceb52_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 3
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 3126,
+        "error": "False",
+        "instruction": "Could you move my work setup from the lounge counter to the dining room table and place them side by side?",
+        "replanning_count_0": 11.0,
+        "run_id": 0,
+        "runtime": 93.70855236053468,
+        "sim_step_count": 965.0,
+        "task_percent_complete": 0.0,
+        "task_state_success": 0.0,
+        "org_data": {
+            "episode_id": "3126",
+            "instruction": "Could you move my work setup from the lounge counter to the dining room table and place them side by side?",
+            "original_data_info": {
+                "episode_id": "442",
+                "instruction": "Move a laptop and a laptop stand from the lounge counter to the dining room table. Place them next to each other on the table.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1126",
+                "episode_type": "object_semantics",
+                "target_objects": [
+                    {
+                        "id": "Laptop_2",
+                        "caption": "A black laptop with a dark keyboard.",
+                        "source": "ai2thorhab",
+                        "category": "laptop",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "B00WRDRRWW",
+                        "caption": "A black laptop stand with a rounded design.",
+                        "source": "amazon_berkeley",
+                        "category": "laptop_stand",
+                        "cluster": 1
+                    }
+                ],
+                "distractors": [
+                    {
+                        "id": "Laptop_3",
+                        "caption": "A black laptop with a gray keyboard.",
+                        "source": "ai2thorhab",
+                        "category": "laptop",
+                        "cluster": 0,
+                        "pair_id": "Laptop_2"
+                    },
+                    {
+                        "id": "B00WRDS8H0",
+                        "caption": "A sleek black laptop stand with a glass surface.",
+                        "source": "amazon_berkeley",
+                        "category": "laptop_stand",
+                        "cluster": 0,
+                        "pair_id": "B00WRDRRWW"
+                    }
+                ],
+                "subtype": "group",
+                "num_targets": 2,
+                "memory": "The black laptop with a dark keyboard and the black laptop stand with a rounded design are part of the user's work setup.",
+                "used_object": [
+                    "laptop_stand",
+                    "laptop"
+                ]
+            },
+            "scene_id": "102344529",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Laptop_2_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "3631f4924b2008d86b4a02c6cbf4ef640a10c4e6_part_6_:0000",
+                            "43cc99743f6d75e5f7b92ab8e5c9ba7f3e932ad0_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "B00WRDRRWW_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "3631f4924b2008d86b4a02c6cbf4ef640a10c4e6_part_6_:0000",
+                            "43cc99743f6d75e5f7b92ab8e5c9ba7f3e932ad0_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "Laptop_2_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "B00WRDRRWW_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        2
+                    ],
+                    "depends_on": [
+                        0,
+                        1
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 3
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 3129,
+        "error": "False",
+        "instruction": "Can you move my cherished collection from the TV table to the garage bench and place them next to each other?",
+        "replanning_count_0": 41.0,
+        "run_id": 0,
+        "runtime": 316.6111392974853,
+        "sim_step_count": 2236.0,
+        "task_percent_complete": 0.3333333333333333,
+        "task_state_success": 0.0,
+        "org_data": {
+            "episode_id": "3129",
+            "instruction": "Can you move my cherished collection from the TV table to the garage bench and place them next to each other?",
+            "original_data_info": {
+                "episode_id": "449",
+                "instruction": "Move the toy airplane and toy vehicle from the tv table to the garage bench. Place them next to each other on the bench.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1129",
+                "episode_type": "object_semantics",
+                "target_objects": [
+                    {
+                        "id": "TURBOPROP_AIRPLANE_WITH_PILOT",
+                        "caption": "A red and white toy turboprop airplane with a pilot.",
+                        "source": "google",
+                        "category": "toy_airplane",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "Thomas_Friends_Wooden_Railway_Talking_Thomas_z7yi7UFHJRj",
+                        "caption": "A blue toy train with a smiling face, Thomas & Friends Wooden Railway Talking Thomas.",
+                        "source": "google",
+                        "category": "toy_vehicle",
+                        "cluster": 0
+                    }
+                ],
+                "distractors": [
+                    {
+                        "id": "Air_Hogs_Wind_Flyers_Set_Airplane_Red",
+                        "caption": "A red toy airplane, Air Hogs Wind Flyers Set.",
+                        "source": "google",
+                        "category": "toy_airplane",
+                        "cluster": 1,
+                        "pair_id": "TURBOPROP_AIRPLANE_WITH_PILOT"
+                    },
+                    {
+                        "id": "BABY_CAR",
+                        "caption": "A colorful toy vehicle with rounded edges, BABY_CAR.",
+                        "source": "google",
+                        "category": "toy_vehicle",
+                        "cluster": 1,
+                        "pair_id": "Thomas_Friends_Wooden_Railway_Talking_Thomas_z7yi7UFHJRj"
+                    }
+                ],
+                "subtype": "group",
+                "num_targets": 2,
+                "memory": "The red and white toy airplane with a pilot and the blue toy train with a smiling face are part of the user's cherished collection.",
+                "used_object": [
+                    "toy_vehicle",
+                    "toy_airplane"
+                ]
+            },
+            "scene_id": "102344529",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "TURBOPROP_AIRPLANE_WITH_PILOT_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "34f429667e91c7e3fc8c608be4f620fe095a0bc1_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Thomas_Friends_Wooden_Railway_Talking_Thomas_z7yi7UFHJRj_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "34f429667e91c7e3fc8c608be4f620fe095a0bc1_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "TURBOPROP_AIRPLANE_WITH_PILOT_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "Thomas_Friends_Wooden_Railway_Talking_Thomas_z7yi7UFHJRj_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        2
+                    ],
+                    "depends_on": [
+                        0,
+                        1
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 3
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 3231,
+        "error": "False",
+        "instruction": "Please move my work setup to the bedroom chair and bring the green sketchbook with a spiral binding and brown central design from the bedroom chair to the living room table.",
+        "replanning_count_0": 27.0,
+        "run_id": 0,
+        "runtime": 240.0156216621399,
+        "sim_step_count": 4897.0,
+        "task_percent_complete": 0.3333333333333333,
+        "task_state_success": 0.0,
+        "org_data": {
+            "episode_id": "3231",
+            "instruction": "Please move my work setup to the bedroom chair and bring the green sketchbook with a spiral binding and brown central design from the bedroom chair to the living room table.",
+            "original_data_info": {
+                "episode_id": "486",
+                "instruction": "Move the laptop and laptop stand from the living room table to the bedroom chair. Also, bring a book from the bedroom chair to the living room table.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1231",
+                "episode_type": "object_semantics",
+                "target_objects": [
+                    {
+                        "id": "Laptop_23",
+                        "caption": "A gray laptop with a black keyboard and touchpad.",
+                        "source": "ai2thorhab",
+                        "category": "laptop",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "B00WRDRRWW",
+                        "caption": "A black laptop stand with a rounded design.",
+                        "source": "amazon_berkeley",
+                        "category": "laptop_stand",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "edf5a667080ed733fda55514ee18a8081f9dcf9c",
+                        "caption": "A green sketchbook with a spiral binding and brown central design.",
+                        "source": "hssd_hab",
+                        "category": "book",
+                        "cluster": 0
+                    }
+                ],
+                "distractors": [
+                    {
+                        "id": "Laptop_5",
+                        "caption": "A black laptop with a touchpad.",
+                        "source": "ai2thorhab",
+                        "category": "laptop",
+                        "cluster": 1,
+                        "pair_id": "Laptop_23"
+                    },
+                    {
+                        "id": "B00WRDS8H0",
+                        "caption": "A sleek black laptop stand with a glass surface.",
+                        "source": "amazon_berkeley",
+                        "category": "laptop_stand",
+                        "cluster": 0,
+                        "pair_id": "B00WRDRRWW"
+                    },
+                    {
+                        "id": "Book_7",
+                        "caption": "A white book with a blue cover image.",
+                        "source": "ai2thorhab",
+                        "category": "book",
+                        "cluster": 1,
+                        "pair_id": "edf5a667080ed733fda55514ee18a8081f9dcf9c"
+                    }
+                ],
+                "subtype": "group",
+                "num_targets": 2,
+                "memory": "The gray laptop and black laptop stand are essential for the user's work setup.",
+                "used_object": [
+                    "laptop_stand",
+                    "laptop"
+                ]
+            },
+            "scene_id": "103997895_171031182",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Laptop_23_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "04801d6f327197470d63bfd728d4cf02bd33ec56_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "B00WRDRRWW_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "04801d6f327197470d63bfd728d4cf02bd33ec56_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "edf5a667080ed733fda55514ee18a8081f9dcf9c_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "2f38b4f83d8a77af0eb36406b0f00df98cef5e47_:0000",
+                            "735845d0674f69f736af7e0f116767a01392f9b8_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 3
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 3238,
+        "error": "False",
+        "instruction": "Could you move my work setup from the bedroom table to the kitchen counter and arrange them next to each other?",
+        "replanning_count_0": 14.0,
+        "run_id": 0,
+        "runtime": 157.89087677001953,
+        "sim_step_count": 3444.0,
+        "task_percent_complete": 0.3333333333333333,
+        "task_state_success": 0.0,
+        "org_data": {
+            "episode_id": "3238",
+            "instruction": "Could you move my work setup from the bedroom table to the kitchen counter and arrange them next to each other?",
+            "original_data_info": {
+                "episode_id": "496",
+                "instruction": "Move the laptop and mouse pad from the table in the bedroom to the counter in the kitchen. Place them next to each other on the counter.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1238",
+                "episode_type": "object_semantics",
+                "target_objects": [
+                    {
+                        "id": "Laptop_29",
+                        "caption": "A black rugged laptop with a gray touchpad.",
+                        "source": "ai2thorhab",
+                        "category": "laptop",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "B003QTD4Y6",
+                        "caption": "A black mouse pad with a logo in the corner.",
+                        "source": "amazon_berkeley",
+                        "category": "mouse_pad",
+                        "cluster": 0
+                    }
+                ],
+                "distractors": [
+                    {
+                        "id": "Laptop_23",
+                        "caption": "A gray laptop with a black keyboard and touchpad.",
+                        "source": "ai2thorhab",
+                        "category": "laptop",
+                        "cluster": 0,
+                        "pair_id": "Laptop_29"
+                    }
+                ],
+                "subtype": "group",
+                "num_targets": 2,
+                "memory": "The black rugged laptop and black mouse pad with a logo are part of the user's work setup.",
+                "used_object": [
+                    "laptop",
+                    "mouse_pad"
+                ]
+            },
+            "scene_id": "103997895_171031182",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Laptop_29_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "559f21c7f5628a83b31d616e90bdcc02e7744731_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "B003QTD4Y6_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "559f21c7f5628a83b31d616e90bdcc02e7744731_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "Laptop_29_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "B003QTD4Y6_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        2
+                    ],
+                    "depends_on": [
+                        0,
+                        1
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 3
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 3179,
+        "error": false,
+        "instruction": "Move my indoor gardening set from the table in the living room to the bench in the bathroom and place them next to each other.",
+        "replanning_count_0": 13.0,
+        "run_id": 0,
+        "runtime": 211.4369833469391,
+        "sim_step_count": 2285.0,
+        "task_percent_complete": 0.3333333333333333,
+        "task_state_success": 0.0,
+        "org_data": {
+            "episode_id": "3179",
+            "instruction": "Move my indoor gardening set from the table in the living room to the bench in the bathroom and place them next to each other.",
+            "original_data_info": {
+                "episode_id": "733",
+                "instruction": "Move the plant saucer and plant container from the table in the living room to the bench in the bathroom. Place them next to each other.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1179",
+                "episode_type": "object_semantics",
+                "target_objects": [
+                    {
+                        "id": "Central_Garden_Flower_Pot_Goo_425",
+                        "caption": "A green plant container, Central Garden Flower Pot Goo 425.",
+                        "source": "google",
+                        "category": "plant_container",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "Ecoforms_Quadra_Saucer_SQ1_Avocado",
+                        "caption": "A green, square plant saucer, Ecoforms Quadra Saucer SQ1 Avocado.",
+                        "source": "google",
+                        "category": "plant_saucer",
+                        "cluster": 0
+                    }
+                ],
+                "distractors": [
+                    {
+                        "id": "Ecoforms_Plant_Pot_GP9AAvocado",
+                        "caption": "A green and beige plant pot, Ecoforms GP9A Avocado.",
+                        "source": "google",
+                        "category": "plant_container",
+                        "cluster": 1,
+                        "pair_id": "Central_Garden_Flower_Pot_Goo_425"
+                    },
+                    {
+                        "id": "Cole_Hardware_Saucer_Electric",
+                        "caption": "A green plant saucer, Cole Hardware Saucer Electric.",
+                        "source": "google",
+                        "category": "plant_saucer",
+                        "cluster": 1,
+                        "pair_id": "Ecoforms_Quadra_Saucer_SQ1_Avocado"
+                    }
+                ],
+                "subtype": "group",
+                "num_targets": 2,
+                "memory": "The green Central Garden Flower Pot Goo 425 and the green, square Ecoforms Quadra Saucer SQ1 Avocado are part of the user's indoor gardening set.",
+                "used_object": [
+                    "plant_container",
+                    "plant_saucer"
+                ]
+            },
+            "scene_id": "107734176_176000019",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Central_Garden_Flower_Pot_Goo_425_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "257f0502154f87737d29e4c63b90197f77808640_:0000",
+                            "9e94bcd5f087018a11366b769a6fc6ec05a7f1b3_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Ecoforms_Quadra_Saucer_SQ1_Avocado_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "257f0502154f87737d29e4c63b90197f77808640_:0000",
+                            "9e94bcd5f087018a11366b769a6fc6ec05a7f1b3_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "Central_Garden_Flower_Pot_Goo_425_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "Ecoforms_Quadra_Saucer_SQ1_Avocado_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        2
+                    ],
+                    "depends_on": [
+                        0,
+                        1
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 3
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 3271,
+        "error": false,
+        "instruction": "Move my everyday dinnerware set from the dining table to the kitchen counter and place them next to each other.",
+        "replanning_count_0": 27.0,
+        "run_id": 0,
+        "runtime": 274.32110357284546,
+        "sim_step_count": 1783.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "3271",
+            "instruction": "Move my everyday dinnerware set from the dining table to the kitchen counter and place them next to each other.",
+            "original_data_info": {
+                "episode_id": "511",
+                "instruction": "Move the plate and bowl from the dining table to the kitchen counter. Place them next to each other on the counter.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1271",
+                "episode_type": "object_semantics",
+                "target_objects": [
+                    {
+                        "id": "Plate_14",
+                        "caption": "A white square plate.",
+                        "source": "ai2thorhab",
+                        "category": "plate",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "Bowl_24",
+                        "caption": "A gray bowl with a faceted design.",
+                        "source": "ai2thorhab",
+                        "category": "bowl",
+                        "cluster": 0
+                    }
+                ],
+                "distractors": [
+                    {
+                        "id": "Plate_22",
+                        "caption": "A black plate with a polka dot pattern.",
+                        "source": "ai2thorhab",
+                        "category": "plate",
+                        "cluster": 0,
+                        "pair_id": "Plate_14"
+                    },
+                    {
+                        "id": "Threshold_Porcelain_Serving_Bowl_Coupe_White",
+                        "caption": "A white porcelain serving bowl, Threshold.",
+                        "source": "google",
+                        "category": "bowl",
+                        "cluster": 1,
+                        "pair_id": "Bowl_24"
+                    }
+                ],
+                "subtype": "group",
+                "num_targets": 2,
+                "memory": "The white square plate and the gray faceted bowl are part of the user's everyday dinnerware set.",
+                "used_object": [
+                    "plate",
+                    "bowl"
+                ]
+            },
+            "scene_id": "104348010_171512832",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Plate_14_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "27903d5a77d900067dd9031caf2f229776d800d4_:0000",
+                            "27903d5a77d900067dd9031caf2f229776d800d4_:0001",
+                            "27903d5a77d900067dd9031caf2f229776d800d4_:0002",
+                            "27903d5a77d900067dd9031caf2f229776d800d4_:0003",
+                            "55dcc18191c2412b899ff405d5d0574571bb81cf_:0000",
+                            "55dcc18191c2412b899ff405d5d0574571bb81cf_:0001"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Bowl_24_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "27903d5a77d900067dd9031caf2f229776d800d4_:0000",
+                            "27903d5a77d900067dd9031caf2f229776d800d4_:0001",
+                            "27903d5a77d900067dd9031caf2f229776d800d4_:0002",
+                            "27903d5a77d900067dd9031caf2f229776d800d4_:0003",
+                            "55dcc18191c2412b899ff405d5d0574571bb81cf_:0000",
+                            "55dcc18191c2412b899ff405d5d0574571bb81cf_:0001"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "Plate_14_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "Bowl_24_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        2
+                    ],
+                    "depends_on": [
+                        0,
+                        1
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 3
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    }
+]

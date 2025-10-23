@@ -1,0 +1,233 @@
+[
+    {
+        "episode_id": 3250,
+        "error": false,
+        "instruction": "Could you place the toy airplane, which is a gift from my childhood friend, next to the couch on the living room table?",
+        "replanning_count_0": 9.0,
+        "run_id": 0,
+        "runtime": 55.74039149284363,
+        "sim_step_count": 1093.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "3250",
+            "instruction": "Could you place the toy airplane, which is a gift from my childhood friend, next to the couch on the living room table?",
+            "original_data_info": {
+                "episode_id": "749",
+                "instruction": "Move the toy airplane from the bedroom to the living room table. Place it next to the couch.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1250",
+                "episode_type": "object_semantics",
+                "target_objects": [
+                    {
+                        "id": "Air_Hogs_Wind_Flyers_Set_Airplane_Red",
+                        "caption": "A red toy airplane, Air Hogs Wind Flyers Set.",
+                        "source": "google",
+                        "category": "toy_airplane",
+                        "cluster": 1
+                    }
+                ],
+                "distractors": [
+                    {
+                        "id": "TURBOPROP_AIRPLANE_WITH_PILOT",
+                        "caption": "A red and white toy turboprop airplane with a pilot.",
+                        "source": "google",
+                        "category": "toy_airplane",
+                        "cluster": 0,
+                        "pair_id": "Air_Hogs_Wind_Flyers_Set_Airplane_Red"
+                    }
+                ],
+                "subtype": "history",
+                "num_targets": 1,
+                "memory": "The red toy airplane, part of the Air Hogs Wind Flyers Set, is a gift from the user's childhood friend.",
+                "used_object": [
+                    "toy_airplane"
+                ]
+            },
+            "scene_id": "103997895_171031182",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Air_Hogs_Wind_Flyers_Set_Airplane_Red_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "2f38b4f83d8a77af0eb36406b0f00df98cef5e47_:0000",
+                            "735845d0674f69f736af7e0f116767a01392f9b8_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "Air_Hogs_Wind_Flyers_Set_Airplane_Red_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "50bf1434785c2776eac002be0f7c3abeff54709c_:0000",
+                            "809aa90d72a9aa73fadef388620c7ca3668f9d00_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        1
+                    ],
+                    "depends_on": [
+                        0
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 2
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 3009,
+        "error": false,
+        "instruction": "Please move the gift lamp from my grandmother to the bedroom table and then place the black hand-shaped statue with a glossy finish on the living room shelves.",
+        "replanning_count_0": 17.0,
+        "run_id": 0,
+        "runtime": 285.92423391342163,
+        "sim_step_count": 6113.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "3009",
+            "instruction": "Please move the gift lamp from my grandmother to the bedroom table and then place the black hand-shaped statue with a glossy finish on the living room shelves.",
+            "original_data_info": {
+                "episode_id": "393",
+                "instruction": "Move the lamp to the bedroom table. Move the statue to the living room shelves.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1009",
+                "episode_type": "object_semantics",
+                "target_objects": [
+                    {
+                        "id": "B07HK83QRB",
+                        "caption": "A wooden lamp with a white spherical shade.",
+                        "source": "amazon_berkeley",
+                        "category": "lamp",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "Hand_Statue_3",
+                        "caption": "A black hand-shaped statue with a glossy finish.",
+                        "source": "ai2thorhab",
+                        "category": "statue",
+                        "cluster": 1
+                    }
+                ],
+                "distractors": [
+                    {
+                        "id": "B07HK3PNSK",
+                        "caption": "A lamp with a pineapple-shaped neon outline and a black base.",
+                        "source": "amazon_berkeley",
+                        "category": "lamp",
+                        "cluster": 1,
+                        "pair_id": "B07HK83QRB"
+                    },
+                    {
+                        "id": "Towel_Statue_1",
+                        "caption": "A dark bronze statue of a standing figure with an umbrella.",
+                        "source": "ai2thorhab",
+                        "category": "statue",
+                        "cluster": 0,
+                        "pair_id": "Hand_Statue_3"
+                    }
+                ],
+                "subtype": "history",
+                "num_targets": 1,
+                "memory": "The wooden lamp with a white spherical shade is a gift from the user's grandmother.",
+                "used_object": [
+                    "lamp"
+                ]
+            },
+            "scene_id": "102817140",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "B07HK83QRB_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "2d677064b6bd4a3ba262cd510fd03c58efb57533_:0000",
+                            "689340fdf94601c7e57aabc45c1f1752bc7791da_:0000",
+                            "72305abe342ae61ffd01243a6acfcdb8aa0381c6_:0000",
+                            "72305abe342ae61ffd01243a6acfcdb8aa0381c6_:0001",
+                            "a858cba39573583f6aff0a31d237bcebabaaf503_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Hand_Statue_3_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "7b395deb580a75ca10a361d25b5e10b1bab8464b_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 2
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    }
+]

@@ -1,0 +1,336 @@
+[
+    {
+        "episode_id": 10031,
+        "error": false,
+        "instruction": "Can you arrange the kettle and ladle for my cooking routine? Additionally, can you set up the table for afternoon tea?",
+        "replanning_count_0": 28.0,
+        "run_id": 0,
+        "runtime": 179.98011803627014,
+        "sim_step_count": 2746.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "10031",
+            "instruction": "Can you arrange the kettle and ladle for my cooking routine? Additionally, can you set up the table for afternoon tea?",
+            "original_data_info": {
+                "episode_id": [
+                    "3140",
+                    "3141"
+                ],
+                "instruction": [
+                    "Can you arrange the kettle and ladle for my cooking routine?",
+                    "Can you set up the table for afternoon tea?"
+                ],
+                "data_path": [
+                    "data/datasets/partnr_episodes/v0_0/val.json",
+                    "data/datasets/partnr_episodes/v0_0/val.json"
+                ]
+            },
+            "metadata": {
+                "subtype": [
+                    "routine",
+                    "routine"
+                ],
+                "memory": [
+                    "Keep the kettle and ladle next to each other on the kitchen counter for easy access during cooking.",
+                    "Arrange the jug, cup, and plate on the living room table for afternoon tea."
+                ],
+                "episode_type": [
+                    "user_pattern",
+                    "user_pattern"
+                ],
+                "related_episode_id": [
+                    "1140",
+                    "1141"
+                ],
+                "stage": "2",
+                "target_objects_original": [
+                    [
+                        {
+                            "id": "e41fb9d079791e99e3ff9e216c5e4416a9a83570",
+                            "caption": "A black kettle with a curved handle.",
+                            "source": "hssd_hab",
+                            "category": "kettle",
+                            "cluster": 0
+                        },
+                        {
+                            "id": "Ladle_2",
+                            "caption": "A black ladle with a round scoop.",
+                            "source": "ai2thorhab",
+                            "category": "ladle",
+                            "cluster": 0
+                        }
+                    ],
+                    [
+                        {
+                            "id": "aaf1ba3e91ae781751ab5eba22ec2bbd30e05365",
+                            "caption": "A blue jug with a round lid.",
+                            "source": "hssd_hab",
+                            "category": "jug",
+                            "cluster": 1
+                        },
+                        {
+                            "id": "6a833596dd725a0044674dbaada29368ebe7a53e",
+                            "caption": "A yellow cup with a white interior.",
+                            "source": "hssd_hab",
+                            "category": "cup",
+                            "cluster": 1
+                        },
+                        {
+                            "id": "b599eb548442db2690265de15d2bf8aa549acd02",
+                            "caption": "A plain white plate with a smooth, circular design.",
+                            "source": "hssd_hab",
+                            "category": "plate",
+                            "cluster": 1
+                        }
+                    ]
+                ],
+                "target_objects": [
+                    {
+                        "id": "e41fb9d079791e99e3ff9e216c5e4416a9a83570",
+                        "caption": "A black kettle with a curved handle.",
+                        "source": "hssd_hab",
+                        "category": "kettle",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "Ladle_2",
+                        "caption": "A black ladle with a round scoop.",
+                        "source": "ai2thorhab",
+                        "category": "ladle",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "aaf1ba3e91ae781751ab5eba22ec2bbd30e05365",
+                        "caption": "A blue jug with a round lid.",
+                        "source": "hssd_hab",
+                        "category": "jug",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "6a833596dd725a0044674dbaada29368ebe7a53e",
+                        "caption": "A yellow cup with a white interior.",
+                        "source": "hssd_hab",
+                        "category": "cup",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "b599eb548442db2690265de15d2bf8aa549acd02",
+                        "caption": "A plain white plate with a smooth, circular design.",
+                        "source": "hssd_hab",
+                        "category": "plate",
+                        "cluster": 1
+                    }
+                ],
+                "distractors_original": [
+                    [],
+                    []
+                ],
+                "distractors": [],
+                "used_object_original": [
+                    [],
+                    []
+                ],
+                "used_object": [],
+                "combination_type": "User Pattern + User Pattern",
+                "object_overlaps": {
+                    "target_target": [],
+                    "distractor_distractor": [],
+                    "target1_distractor2": [],
+                    "target2_distractor1": [],
+                    "target_category_overlap": [],
+                    "counts": {
+                        "target_target": 0,
+                        "distractor_distractor": 0,
+                        "target1_distractor2": 0,
+                        "target2_distractor1": 0,
+                        "target_category_overlap": 0,
+                        "total_overlap": 0
+                    },
+                    "has_target_category_overlap": false,
+                    "has_target_distractor_overlap": false
+                },
+                "receptacle_overlaps": {
+                    "has_overlaps": false,
+                    "common_receptacles": [],
+                    "overlap_count": 0
+                }
+            },
+            "scene_id": "104348361_171513414",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "e41fb9d079791e99e3ff9e216c5e4416a9a83570_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "55dcc18191c2412b899ff405d5d0574571bb81cf_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Ladle_2_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "55dcc18191c2412b899ff405d5d0574571bb81cf_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "e41fb9d079791e99e3ff9e216c5e4416a9a83570_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "Ladle_2_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "aaf1ba3e91ae781751ab5eba22ec2bbd30e05365_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "2e7f82e48f14d6fb2ad6a6b1a8d0429e76401542_part_7_:0000",
+                            "7adfff7e2fab4e59b6390f012d434a6239b04e66_:0000",
+                            "87ec2d5fefc4493289c251c6eb84f1c02371addc_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "6a833596dd725a0044674dbaada29368ebe7a53e_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "2e7f82e48f14d6fb2ad6a6b1a8d0429e76401542_part_7_:0000",
+                            "7adfff7e2fab4e59b6390f012d434a6239b04e66_:0000",
+                            "87ec2d5fefc4493289c251c6eb84f1c02371addc_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "b599eb548442db2690265de15d2bf8aa549acd02_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "2e7f82e48f14d6fb2ad6a6b1a8d0429e76401542_part_7_:0000",
+                            "7adfff7e2fab4e59b6390f012d434a6239b04e66_:0000",
+                            "87ec2d5fefc4493289c251c6eb84f1c02371addc_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "6a833596dd725a0044674dbaada29368ebe7a53e_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "b599eb548442db2690265de15d2bf8aa549acd02_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        2
+                    ],
+                    "depends_on": [
+                        0,
+                        1
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                },
+                {
+                    "proposition_indices": [
+                        6
+                    ],
+                    "depends_on": [
+                        4,
+                        5
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [
+                            [
+                                3,
+                                4
+                            ],
+                            [
+                                3,
+                                5
+                            ],
+                            [
+                                3,
+                                6
+                            ],
+                            [
+                                0,
+                                3
+                            ],
+                            [
+                                1,
+                                3
+                            ],
+                            [
+                                2,
+                                3
+                            ]
+                        ],
+                        "n_propositions": 7
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2,
+                            3,
+                            4,
+                            5,
+                            6
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    }
+]

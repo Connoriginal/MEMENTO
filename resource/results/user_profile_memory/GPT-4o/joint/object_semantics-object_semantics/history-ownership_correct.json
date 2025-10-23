@@ -1,0 +1,344 @@
+[
+    {
+        "episode_id": 10001,
+        "error": false,
+        "instruction": "Could you move the book gifted by my dear friend and the Olive Kids Paisley Pencil Case from the bedroom to the living room and place them on the table? Then, could you move my personal work device and the black mouse pad with the logo from the office table to the bedroom chest of drawers? Place them next to each other on the chest of drawers.",
+        "replanning_count_0": 26.0,
+        "run_id": 0,
+        "runtime": 199.9861421585083,
+        "sim_step_count": 2499.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "10001",
+            "instruction": "Could you move the book gifted by my dear friend and the Olive Kids Paisley Pencil Case from the bedroom to the living room and place them on the table? Then, could you move my personal work device and the black mouse pad with the logo from the office table to the bedroom chest of drawers? Place them next to each other on the chest of drawers.",
+            "original_data_info": {
+                "episode_id": [
+                    "2978",
+                    "2979"
+                ],
+                "instruction": [
+                    "Could you move the book gifted by my dear friend and the Olive Kids Paisley Pencil Case from the bedroom to the living room and place them on the table?",
+                    "Could you move my personal work device and the black mouse pad with the logo from the office table to the bedroom chest of drawers? Place them next to each other on the chest of drawers."
+                ],
+                "data_path": [
+                    "data/datasets/partnr_episodes/v0_0/val.json",
+                    "data/datasets/partnr_episodes/v0_0/val.json"
+                ]
+            },
+            "metadata": {
+                "subtype": [
+                    "history",
+                    "ownership"
+                ],
+                "memory": [
+                    "The book with a cover image of a modern interior was a gift from the user's dear friend.",
+                    "The black laptop with a backlit keyboard is the user's personal work device."
+                ],
+                "episode_type": [
+                    "object_semantics",
+                    "object_semantics"
+                ],
+                "num_targets": [
+                    1,
+                    1
+                ],
+                "related_episode_id": [
+                    "978",
+                    "979"
+                ],
+                "stage": "2",
+                "target_objects_original": [
+                    [
+                        {
+                            "id": "81c6dd3830a8df6644bd1f6b9a239615234e888f",
+                            "caption": "A book with a cover image of a modern interior.",
+                            "source": "hssd_hab",
+                            "category": "book",
+                            "cluster": 1
+                        },
+                        {
+                            "id": "Olive_Kids_Paisley_Pencil_Case",
+                            "caption": "A colorful, paisley-patterned pencil case, Olive Kids Paisley Pencil Case.",
+                            "source": "google",
+                            "category": "pencil_case",
+                            "cluster": 0
+                        }
+                    ],
+                    [
+                        {
+                            "id": "Laptop_10",
+                            "caption": "A black laptop with a backlit keyboard.",
+                            "source": "ai2thorhab",
+                            "category": "laptop",
+                            "cluster": 1
+                        },
+                        {
+                            "id": "B06X3W3YQD",
+                            "caption": "A black mouse pad with a logo in the corner.",
+                            "source": "amazon_berkeley",
+                            "category": "mouse_pad",
+                            "cluster": 0
+                        }
+                    ]
+                ],
+                "target_objects": [
+                    {
+                        "id": "81c6dd3830a8df6644bd1f6b9a239615234e888f",
+                        "caption": "A book with a cover image of a modern interior.",
+                        "source": "hssd_hab",
+                        "category": "book",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "Olive_Kids_Paisley_Pencil_Case",
+                        "caption": "A colorful, paisley-patterned pencil case, Olive Kids Paisley Pencil Case.",
+                        "source": "google",
+                        "category": "pencil_case",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "Laptop_10",
+                        "caption": "A black laptop with a backlit keyboard.",
+                        "source": "ai2thorhab",
+                        "category": "laptop",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "B06X3W3YQD",
+                        "caption": "A black mouse pad with a logo in the corner.",
+                        "source": "amazon_berkeley",
+                        "category": "mouse_pad",
+                        "cluster": 0
+                    }
+                ],
+                "distractors_original": [
+                    [
+                        {
+                            "id": "7c4abfaad6caa34008cf4aac249adcba013ad51b",
+                            "caption": "A black book with a slim profile.",
+                            "source": "hssd_hab",
+                            "category": "book",
+                            "cluster": 0,
+                            "pair_id": "81c6dd3830a8df6644bd1f6b9a239615234e888f"
+                        },
+                        {
+                            "id": "Big_Dot_Pink_Pencil_Case",
+                            "caption": "A pink pencil case with large white dots, Big Dot Pink Pencil Case.",
+                            "source": "google",
+                            "category": "pencil_case",
+                            "cluster": 1,
+                            "pair_id": "Olive_Kids_Paisley_Pencil_Case"
+                        }
+                    ],
+                    [
+                        {
+                            "id": "Laptop_6",
+                            "caption": "A gray laptop with a black screen.",
+                            "source": "ai2thorhab",
+                            "category": "laptop",
+                            "cluster": 0,
+                            "pair_id": "Laptop_10"
+                        }
+                    ]
+                ],
+                "distractors": [
+                    {
+                        "id": "7c4abfaad6caa34008cf4aac249adcba013ad51b",
+                        "caption": "A black book with a slim profile.",
+                        "source": "hssd_hab",
+                        "category": "book",
+                        "cluster": 0,
+                        "pair_id": "81c6dd3830a8df6644bd1f6b9a239615234e888f"
+                    },
+                    {
+                        "id": "Big_Dot_Pink_Pencil_Case",
+                        "caption": "A pink pencil case with large white dots, Big Dot Pink Pencil Case.",
+                        "source": "google",
+                        "category": "pencil_case",
+                        "cluster": 1,
+                        "pair_id": "Olive_Kids_Paisley_Pencil_Case"
+                    },
+                    {
+                        "id": "Laptop_6",
+                        "caption": "A gray laptop with a black screen.",
+                        "source": "ai2thorhab",
+                        "category": "laptop",
+                        "cluster": 0,
+                        "pair_id": "Laptop_10"
+                    }
+                ],
+                "used_object_original": [
+                    [
+                        "book"
+                    ],
+                    [
+                        "laptop"
+                    ]
+                ],
+                "used_object": [
+                    "book",
+                    "laptop"
+                ],
+                "combination_type": "Object Semantics + Object Semantics",
+                "object_overlaps": {
+                    "target_target": [],
+                    "distractor_distractor": [],
+                    "target1_distractor2": [],
+                    "target2_distractor1": [],
+                    "target_category_overlap": [],
+                    "counts": {
+                        "target_target": 0,
+                        "distractor_distractor": 0,
+                        "target1_distractor2": 0,
+                        "target2_distractor1": 0,
+                        "target_category_overlap": 0,
+                        "total_overlap": 0
+                    },
+                    "has_target_category_overlap": false,
+                    "has_target_distractor_overlap": false
+                },
+                "receptacle_overlaps": {
+                    "has_overlaps": false,
+                    "common_receptacles": [],
+                    "overlap_count": 0
+                }
+            },
+            "scene_id": "107733960_175999701",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "81c6dd3830a8df6644bd1f6b9a239615234e888f_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "7d32f5f7ab814a5cbe9b8eff80e139d2d9f13cf7_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Olive_Kids_Paisley_Pencil_Case_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "7d32f5f7ab814a5cbe9b8eff80e139d2d9f13cf7_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Laptop_10_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "084ff2a0e018cec0a68d318cc0f37f0b7624c8b8_:0000",
+                            "084ff2a0e018cec0a68d318cc0f37f0b7624c8b8_:0001",
+                            "084ff2a0e018cec0a68d318cc0f37f0b7624c8b8_:0002",
+                            "084ff2a0e018cec0a68d318cc0f37f0b7624c8b8_:0003",
+                            "084ff2a0e018cec0a68d318cc0f37f0b7624c8b8_:0004",
+                            "2abfe2c185d18cf31e3dcfd8833207d78daae258_:0000",
+                            "2abfe2c185d18cf31e3dcfd8833207d78daae258_:0001",
+                            "2abfe2c185d18cf31e3dcfd8833207d78daae258_:0002",
+                            "2abfe2c185d18cf31e3dcfd8833207d78daae258_:0003",
+                            "2abfe2c185d18cf31e3dcfd8833207d78daae258_:0004",
+                            "2abfe2c185d18cf31e3dcfd8833207d78daae258_:0005",
+                            "2abfe2c185d18cf31e3dcfd8833207d78daae258_:0006"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "B06X3W3YQD_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "084ff2a0e018cec0a68d318cc0f37f0b7624c8b8_:0000",
+                            "084ff2a0e018cec0a68d318cc0f37f0b7624c8b8_:0001",
+                            "084ff2a0e018cec0a68d318cc0f37f0b7624c8b8_:0002",
+                            "084ff2a0e018cec0a68d318cc0f37f0b7624c8b8_:0003",
+                            "084ff2a0e018cec0a68d318cc0f37f0b7624c8b8_:0004",
+                            "2abfe2c185d18cf31e3dcfd8833207d78daae258_:0000",
+                            "2abfe2c185d18cf31e3dcfd8833207d78daae258_:0001",
+                            "2abfe2c185d18cf31e3dcfd8833207d78daae258_:0002",
+                            "2abfe2c185d18cf31e3dcfd8833207d78daae258_:0003",
+                            "2abfe2c185d18cf31e3dcfd8833207d78daae258_:0004",
+                            "2abfe2c185d18cf31e3dcfd8833207d78daae258_:0005",
+                            "2abfe2c185d18cf31e3dcfd8833207d78daae258_:0006"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "Laptop_10_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "B06X3W3YQD_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        4
+                    ],
+                    "depends_on": [
+                        2,
+                        3
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [
+                            [
+                                0,
+                                2
+                            ],
+                            [
+                                1,
+                                2
+                            ]
+                        ],
+                        "n_propositions": 5
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2,
+                            3,
+                            4
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    }
+]

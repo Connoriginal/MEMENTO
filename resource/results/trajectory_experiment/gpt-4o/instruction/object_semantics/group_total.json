@@ -1,0 +1,315 @@
+[
+    {
+        "episode_id": 3231,
+        "error": false,
+        "instruction": "Please move my work setup to the bedroom chair and bring the green sketchbook with a spiral binding and brown central design from the bedroom chair to the living room table.",
+        "replanning_count_0": 14.0,
+        "run_id": 0,
+        "runtime": 104.87736344337463,
+        "sim_step_count": 2128.0,
+        "task_percent_complete": 0.3333333333333333,
+        "task_state_success": 0.0,
+        "org_data": {
+            "episode_id": "3231",
+            "instruction": "Please move my work setup to the bedroom chair and bring the green sketchbook with a spiral binding and brown central design from the bedroom chair to the living room table.",
+            "original_data_info": {
+                "episode_id": "486",
+                "instruction": "Move the laptop and laptop stand from the living room table to the bedroom chair. Also, bring a book from the bedroom chair to the living room table.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1231",
+                "episode_type": "object_semantics",
+                "target_objects": [
+                    {
+                        "id": "Laptop_23",
+                        "caption": "A gray laptop with a black keyboard and touchpad.",
+                        "source": "ai2thorhab",
+                        "category": "laptop",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "B00WRDRRWW",
+                        "caption": "A black laptop stand with a rounded design.",
+                        "source": "amazon_berkeley",
+                        "category": "laptop_stand",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "edf5a667080ed733fda55514ee18a8081f9dcf9c",
+                        "caption": "A green sketchbook with a spiral binding and brown central design.",
+                        "source": "hssd_hab",
+                        "category": "book",
+                        "cluster": 0
+                    }
+                ],
+                "distractors": [
+                    {
+                        "id": "Laptop_5",
+                        "caption": "A black laptop with a touchpad.",
+                        "source": "ai2thorhab",
+                        "category": "laptop",
+                        "cluster": 1,
+                        "pair_id": "Laptop_23"
+                    },
+                    {
+                        "id": "B00WRDS8H0",
+                        "caption": "A sleek black laptop stand with a glass surface.",
+                        "source": "amazon_berkeley",
+                        "category": "laptop_stand",
+                        "cluster": 0,
+                        "pair_id": "B00WRDRRWW"
+                    },
+                    {
+                        "id": "Book_7",
+                        "caption": "A white book with a blue cover image.",
+                        "source": "ai2thorhab",
+                        "category": "book",
+                        "cluster": 1,
+                        "pair_id": "edf5a667080ed733fda55514ee18a8081f9dcf9c"
+                    }
+                ],
+                "subtype": "group",
+                "num_targets": 2,
+                "memory": "The gray laptop and black laptop stand are essential for the user's work setup.",
+                "used_object": [
+                    "laptop_stand",
+                    "laptop"
+                ]
+            },
+            "scene_id": "103997895_171031182",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Laptop_23_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "04801d6f327197470d63bfd728d4cf02bd33ec56_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "B00WRDRRWW_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "04801d6f327197470d63bfd728d4cf02bd33ec56_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "edf5a667080ed733fda55514ee18a8081f9dcf9c_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "2f38b4f83d8a77af0eb36406b0f00df98cef5e47_:0000",
+                            "735845d0674f69f736af7e0f116767a01392f9b8_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 3
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 2958,
+        "error": false,
+        "instruction": "Please put my dinnerware set together in another cabinet in the kitchen, placing them next to each other.",
+        "replanning_count_0": 13.0,
+        "run_id": 0,
+        "runtime": 175.7932300567627,
+        "sim_step_count": 1818.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "2958",
+            "instruction": "Please put my dinnerware set together in another cabinet in the kitchen, placing them next to each other.",
+            "original_data_info": {
+                "episode_id": "536",
+                "instruction": "Put the plate and bowl together in another cabinet in the kitchen and place them next to each other.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "958",
+                "episode_type": "object_semantics",
+                "target_objects": [
+                    {
+                        "id": "Plate_28",
+                        "caption": "A square white plate with a black geometric pattern.",
+                        "source": "ai2thorhab",
+                        "category": "plate",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "B075HWTX4Z",
+                        "caption": "A white bowl with a brown lid.",
+                        "source": "amazon_berkeley",
+                        "category": "bowl",
+                        "cluster": 1
+                    }
+                ],
+                "distractors": [
+                    {
+                        "id": "Plate_22",
+                        "caption": "A black plate with a polka dot pattern.",
+                        "source": "ai2thorhab",
+                        "category": "plate",
+                        "cluster": 0,
+                        "pair_id": "Plate_28"
+                    },
+                    {
+                        "id": "Bowl_28",
+                        "caption": "A sleek, dark blue bowl.",
+                        "source": "ai2thorhab",
+                        "category": "bowl",
+                        "cluster": 0,
+                        "pair_id": "B075HWTX4Z"
+                    }
+                ],
+                "subtype": "group",
+                "num_targets": 2,
+                "memory": "The square white plate with a black geometric pattern and the white bowl with a brown lid are part of the user's dinnerware set.",
+                "used_object": [
+                    "plate",
+                    "bowl"
+                ]
+            },
+            "scene_id": "102816756",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_inside",
+                    "args": {
+                        "object_handles": [
+                            "Plate_28_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "33c1689bc5fb3b6f599f261ad069d9510804deb9_:0000",
+                            "33c1689bc5fb3b6f599f261ad069d9510804deb9_:0001",
+                            "424d7e7d258370736e6cfdbad2b253e521f80c79_:0000",
+                            "42c2fce42ed600de5f0c6919ba47fe97e60ab673_:0000",
+                            "77af27c6a414131f13d2aac55153720028fd4ed5_:0000",
+                            "a19b47699883e5841599452274d671a1bb2c775e_:0000",
+                            "bdab4ca579230f7652590bc19fa00a35701857ef_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_inside",
+                    "args": {
+                        "object_handles": [
+                            "B075HWTX4Z_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "33c1689bc5fb3b6f599f261ad069d9510804deb9_:0000",
+                            "33c1689bc5fb3b6f599f261ad069d9510804deb9_:0001",
+                            "424d7e7d258370736e6cfdbad2b253e521f80c79_:0000",
+                            "42c2fce42ed600de5f0c6919ba47fe97e60ab673_:0000",
+                            "77af27c6a414131f13d2aac55153720028fd4ed5_:0000",
+                            "a19b47699883e5841599452274d671a1bb2c775e_:0000",
+                            "bdab4ca579230f7652590bc19fa00a35701857ef_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "Plate_28_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "B075HWTX4Z_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        2
+                    ],
+                    "depends_on": [
+                        0,
+                        1
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 3
+                    }
+                },
+                {
+                    "type": "SameArgConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1
+                        ],
+                        "arg_names": [
+                            "receptacle_handles",
+                            "receptacle_handles"
+                        ],
+                        "n_propositions": null
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    }
+]

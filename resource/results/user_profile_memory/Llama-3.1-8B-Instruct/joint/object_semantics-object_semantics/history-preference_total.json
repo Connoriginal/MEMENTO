@@ -1,0 +1,1142 @@
+[
+    {
+        "episode_id": 10005,
+        "error": false,
+        "instruction": "Could you please take the teal plastic basket, my favorite coffee can, and the white and green Cole Hardware Orchid Pot 85 from the kitchen cabinet to the dining table? Then, could you please move the brown vase with a ribbed design and my favorite childhood toy from the dining table to the office shelves, and place them next to each other?",
+        "replanning_count_0": 41.0,
+        "run_id": 0,
+        "runtime": 194.6484477519989,
+        "sim_step_count": 1776.0,
+        "task_percent_complete": 0.3333333333333333,
+        "task_state_success": 0.0,
+        "org_data": {
+            "episode_id": "10005",
+            "instruction": "Could you please take the teal plastic basket, my favorite coffee can, and the white and green Cole Hardware Orchid Pot 85 from the kitchen cabinet to the dining table? Then, could you please move the brown vase with a ribbed design and my favorite childhood toy from the dining table to the office shelves, and place them next to each other?",
+            "original_data_info": {
+                "episode_id": [
+                    "3096",
+                    "3097"
+                ],
+                "instruction": [
+                    "Could you please take the teal plastic basket, my favorite coffee can, and the white and green Cole Hardware Orchid Pot 85 from the kitchen cabinet to the dining table?",
+                    "Could you please move the brown vase with a ribbed design and my favorite childhood toy from the dining table to the office shelves, and place them next to each other?"
+                ],
+                "data_path": [
+                    "data/datasets/partnr_episodes/v0_0/val.json",
+                    "data/datasets/partnr_episodes/v0_0/val.json"
+                ]
+            },
+            "metadata": {
+                "subtype": [
+                    "preference",
+                    "history"
+                ],
+                "memory": [
+                    "The brown and yellow coffee can, Don Francisco's Gourmet Coffee Medium Decaf, is the user's favorite brand.",
+                    "The blue stuffed toy with a textured pattern and a white snout is the user's favorite childhood toy."
+                ],
+                "episode_type": [
+                    "object_semantics",
+                    "object_semantics"
+                ],
+                "num_targets": [
+                    1,
+                    1
+                ],
+                "related_episode_id": [
+                    "1096",
+                    "1097"
+                ],
+                "stage": "2",
+                "target_objects_original": [
+                    [
+                        {
+                            "id": "Spritz_Easter_Basket_Plastic_Teal",
+                            "caption": "A teal plastic basket, Spritz Easter Basket.",
+                            "source": "google",
+                            "category": "basket",
+                            "cluster": 0
+                        },
+                        {
+                            "id": "Don_Franciscos_Gourmet_Coffee_Medium_Decaf_100_Colombian_12_oz_340_g",
+                            "caption": "A brown and yellow coffee can, Don Francisco's Gourmet Coffee Medium Decaf.",
+                            "source": "google",
+                            "category": "can",
+                            "cluster": 1
+                        },
+                        {
+                            "id": "Cole_Hardware_Orchid_Pot_85",
+                            "caption": "A white and green orchid pot, Cole Hardware Orchid Pot 85.",
+                            "source": "google",
+                            "category": "plant_container",
+                            "cluster": 0
+                        }
+                    ],
+                    [
+                        {
+                            "id": "a21f46139ac72eca15b4240cf8055b984d593af1",
+                            "caption": "A brown vase with a ribbed design.",
+                            "source": "hssd_hab",
+                            "category": "vase",
+                            "cluster": 1
+                        },
+                        {
+                            "id": "b469cdabd74ce7e2a4cfb787504e17a8e71f172d",
+                            "caption": "A blue stuffed toy with a textured pattern and a white snout.",
+                            "source": "hssd_hab",
+                            "category": "stuffed_toy",
+                            "cluster": 1
+                        }
+                    ]
+                ],
+                "target_objects": [
+                    {
+                        "id": "Spritz_Easter_Basket_Plastic_Teal",
+                        "caption": "A teal plastic basket, Spritz Easter Basket.",
+                        "source": "google",
+                        "category": "basket",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "Don_Franciscos_Gourmet_Coffee_Medium_Decaf_100_Colombian_12_oz_340_g",
+                        "caption": "A brown and yellow coffee can, Don Francisco's Gourmet Coffee Medium Decaf.",
+                        "source": "google",
+                        "category": "can",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "Cole_Hardware_Orchid_Pot_85",
+                        "caption": "A white and green orchid pot, Cole Hardware Orchid Pot 85.",
+                        "source": "google",
+                        "category": "plant_container",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "a21f46139ac72eca15b4240cf8055b984d593af1",
+                        "caption": "A brown vase with a ribbed design.",
+                        "source": "hssd_hab",
+                        "category": "vase",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "b469cdabd74ce7e2a4cfb787504e17a8e71f172d",
+                        "caption": "A blue stuffed toy with a textured pattern and a white snout.",
+                        "source": "hssd_hab",
+                        "category": "stuffed_toy",
+                        "cluster": 1
+                    }
+                ],
+                "distractors_original": [
+                    [
+                        {
+                            "id": "RJ_Rabbit_Easter_Basket_Blue",
+                            "caption": "A blue Easter basket with rabbit ears, RJ_Rabbit_Easter_Basket_Blue.",
+                            "source": "google",
+                            "category": "basket",
+                            "cluster": 1,
+                            "pair_id": "Spritz_Easter_Basket_Plastic_Teal"
+                        },
+                        {
+                            "id": "Polar_Herring_Fillets_Smoked_Peppered_705_oz_total",
+                            "caption": "A silver can of Polar Herring Fillets, Smoked & Peppered, 7.05 oz.",
+                            "source": "google",
+                            "category": "can",
+                            "cluster": 0,
+                            "pair_id": "Don_Franciscos_Gourmet_Coffee_Medium_Decaf_100_Colombian_12_oz_340_g"
+                        },
+                        {
+                            "id": "Ecoforms_Plant_Pot_GP9AAvocado",
+                            "caption": "A green and beige plant pot, Ecoforms GP9A Avocado.",
+                            "source": "google",
+                            "category": "plant_container",
+                            "cluster": 1,
+                            "pair_id": "Cole_Hardware_Orchid_Pot_85"
+                        }
+                    ],
+                    [
+                        {
+                            "id": "66d17b302cff7b3baffdccbb52f16325ff35c623",
+                            "caption": "A white vase with a green nature pattern.",
+                            "source": "hssd_hab",
+                            "category": "vase",
+                            "cluster": 0,
+                            "pair_id": "a21f46139ac72eca15b4240cf8055b984d593af1"
+                        },
+                        {
+                            "id": "Ortho_Forward_Facing_QCaor9ImJ2G",
+                            "caption": "A blue stuffed toy with a friendly face, Ortho_Forward_Facing_QCaor9ImJ2G.",
+                            "source": "google",
+                            "category": "stuffed_toy",
+                            "cluster": 0,
+                            "pair_id": "b469cdabd74ce7e2a4cfb787504e17a8e71f172d"
+                        }
+                    ]
+                ],
+                "distractors": [
+                    {
+                        "id": "RJ_Rabbit_Easter_Basket_Blue",
+                        "caption": "A blue Easter basket with rabbit ears, RJ_Rabbit_Easter_Basket_Blue.",
+                        "source": "google",
+                        "category": "basket",
+                        "cluster": 1,
+                        "pair_id": "Spritz_Easter_Basket_Plastic_Teal"
+                    },
+                    {
+                        "id": "Polar_Herring_Fillets_Smoked_Peppered_705_oz_total",
+                        "caption": "A silver can of Polar Herring Fillets, Smoked & Peppered, 7.05 oz.",
+                        "source": "google",
+                        "category": "can",
+                        "cluster": 0,
+                        "pair_id": "Don_Franciscos_Gourmet_Coffee_Medium_Decaf_100_Colombian_12_oz_340_g"
+                    },
+                    {
+                        "id": "Ecoforms_Plant_Pot_GP9AAvocado",
+                        "caption": "A green and beige plant pot, Ecoforms GP9A Avocado.",
+                        "source": "google",
+                        "category": "plant_container",
+                        "cluster": 1,
+                        "pair_id": "Cole_Hardware_Orchid_Pot_85"
+                    },
+                    {
+                        "id": "66d17b302cff7b3baffdccbb52f16325ff35c623",
+                        "caption": "A white vase with a green nature pattern.",
+                        "source": "hssd_hab",
+                        "category": "vase",
+                        "cluster": 0,
+                        "pair_id": "a21f46139ac72eca15b4240cf8055b984d593af1"
+                    },
+                    {
+                        "id": "Ortho_Forward_Facing_QCaor9ImJ2G",
+                        "caption": "A blue stuffed toy with a friendly face, Ortho_Forward_Facing_QCaor9ImJ2G.",
+                        "source": "google",
+                        "category": "stuffed_toy",
+                        "cluster": 0,
+                        "pair_id": "b469cdabd74ce7e2a4cfb787504e17a8e71f172d"
+                    }
+                ],
+                "used_object_original": [
+                    [
+                        "can"
+                    ],
+                    [
+                        "stuffed_toy"
+                    ]
+                ],
+                "used_object": [
+                    "can",
+                    "stuffed_toy"
+                ],
+                "combination_type": "Object Semantics + Object Semantics",
+                "object_overlaps": {
+                    "target_target": [],
+                    "distractor_distractor": [],
+                    "target1_distractor2": [],
+                    "target2_distractor1": [],
+                    "target_category_overlap": [],
+                    "counts": {
+                        "target_target": 0,
+                        "distractor_distractor": 0,
+                        "target1_distractor2": 0,
+                        "target2_distractor1": 0,
+                        "target_category_overlap": 0,
+                        "total_overlap": 0
+                    },
+                    "has_target_category_overlap": false,
+                    "has_target_distractor_overlap": false
+                },
+                "receptacle_overlaps": {
+                    "has_overlaps": false,
+                    "common_receptacles": [],
+                    "overlap_count": 0
+                }
+            },
+            "scene_id": "106878960_174887073",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Spritz_Easter_Basket_Plastic_Teal_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "125fb3495160325540ca5e61fd4e1bbbcee3ed9e_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Don_Franciscos_Gourmet_Coffee_Medium_Decaf_100_Colombian_12_oz_340_g_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "125fb3495160325540ca5e61fd4e1bbbcee3ed9e_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Cole_Hardware_Orchid_Pot_85_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "125fb3495160325540ca5e61fd4e1bbbcee3ed9e_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "a21f46139ac72eca15b4240cf8055b984d593af1_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "2ad85bce6b2b0aa63f224958abe390b9be0ab72f_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "b469cdabd74ce7e2a4cfb787504e17a8e71f172d_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "2ad85bce6b2b0aa63f224958abe390b9be0ab72f_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "a21f46139ac72eca15b4240cf8055b984d593af1_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "b469cdabd74ce7e2a4cfb787504e17a8e71f172d_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        5
+                    ],
+                    "depends_on": [
+                        3,
+                        4
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [
+                            [
+                                0,
+                                3
+                            ],
+                            [
+                                1,
+                                3
+                            ],
+                            [
+                                2,
+                                3
+                            ]
+                        ],
+                        "n_propositions": 6
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2,
+                            3,
+                            4,
+                            5
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 10007,
+        "error": false,
+        "instruction": "Move the brown and black digital clock and the gift candle holder from my friend to a new living room table. Then, place my favorite mug on the kitchen counter and move the black laptop stand with foldable legs to a different kitchen counter.",
+        "replanning_count_0": 26.0,
+        "run_id": 0,
+        "runtime": 142.06879043579102,
+        "sim_step_count": 1960.0,
+        "task_percent_complete": 0.75,
+        "task_state_success": 0.0,
+        "org_data": {
+            "episode_id": "10007",
+            "instruction": "Move the brown and black digital clock and the gift candle holder from my friend to a new living room table. Then, place my favorite mug on the kitchen counter and move the black laptop stand with foldable legs to a different kitchen counter.",
+            "original_data_info": {
+                "episode_id": [
+                    "3145",
+                    "3146"
+                ],
+                "instruction": [
+                    "Move the brown and black digital clock and the gift candle holder from my friend to a new living room table.",
+                    "Place my favorite mug on the kitchen counter and move the black laptop stand with foldable legs to a different kitchen counter."
+                ],
+                "data_path": [
+                    "data/datasets/partnr_episodes/v0_0/val.json",
+                    "data/datasets/partnr_episodes/v0_0/val.json"
+                ]
+            },
+            "metadata": {
+                "subtype": [
+                    "history",
+                    "preference"
+                ],
+                "memory": [
+                    "The white candle holder with a gold rim on a wooden base is a gift from the user's friend.",
+                    "The gray cup with a handle and two white birds design is the user's favorite mug."
+                ],
+                "episode_type": [
+                    "object_semantics",
+                    "object_semantics"
+                ],
+                "num_targets": [
+                    1,
+                    1
+                ],
+                "related_episode_id": [
+                    "1145",
+                    "1146"
+                ],
+                "stage": "2",
+                "target_objects_original": [
+                    [
+                        {
+                            "id": "Alarm_Clock_23",
+                            "caption": "A brown and black digital clock with a green display.",
+                            "source": "ai2thorhab",
+                            "category": "clock",
+                            "cluster": 1
+                        },
+                        {
+                            "id": "B075HR7LD2",
+                            "caption": "A white candle holder with a gold rim on a wooden base.",
+                            "source": "amazon_berkeley",
+                            "category": "candle_holder",
+                            "cluster": 0
+                        }
+                    ],
+                    [
+                        {
+                            "id": "fcae3d93545969544b5aec155f56fda69f1a2f9a",
+                            "caption": "A gray cup with a handle and two white birds design.",
+                            "source": "hssd_hab",
+                            "category": "cup",
+                            "cluster": 1
+                        },
+                        {
+                            "id": "B01MZ81SKB",
+                            "caption": "A black laptop stand with foldable legs.",
+                            "source": "amazon_berkeley",
+                            "category": "laptop_stand",
+                            "cluster": 1
+                        }
+                    ]
+                ],
+                "target_objects": [
+                    {
+                        "id": "Alarm_Clock_23",
+                        "caption": "A brown and black digital clock with a green display.",
+                        "source": "ai2thorhab",
+                        "category": "clock",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "B075HR7LD2",
+                        "caption": "A white candle holder with a gold rim on a wooden base.",
+                        "source": "amazon_berkeley",
+                        "category": "candle_holder",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "fcae3d93545969544b5aec155f56fda69f1a2f9a",
+                        "caption": "A gray cup with a handle and two white birds design.",
+                        "source": "hssd_hab",
+                        "category": "cup",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "B01MZ81SKB",
+                        "caption": "A black laptop stand with foldable legs.",
+                        "source": "amazon_berkeley",
+                        "category": "laptop_stand",
+                        "cluster": 1
+                    }
+                ],
+                "distractors_original": [
+                    [
+                        {
+                            "id": "Alarm_Clock_5",
+                            "caption": "A black clock with a hexagonal frame.",
+                            "source": "ai2thorhab",
+                            "category": "clock",
+                            "cluster": 0,
+                            "pair_id": "Alarm_Clock_23"
+                        },
+                        {
+                            "id": "B075HXHKTZ",
+                            "caption": "A white and tan candle holder with a rounded base.",
+                            "source": "amazon_berkeley",
+                            "category": "candle_holder",
+                            "cluster": 1,
+                            "pair_id": "B075HR7LD2"
+                        }
+                    ],
+                    [
+                        {
+                            "id": "Cup_15",
+                            "caption": "An orange cup with a faceted design.",
+                            "source": "ai2thorhab",
+                            "category": "cup",
+                            "cluster": 0,
+                            "pair_id": "fcae3d93545969544b5aec155f56fda69f1a2f9a"
+                        },
+                        {
+                            "id": "B00WRDS8H0",
+                            "caption": "A sleek black laptop stand with a glass surface.",
+                            "source": "amazon_berkeley",
+                            "category": "laptop_stand",
+                            "cluster": 0,
+                            "pair_id": "B01MZ81SKB"
+                        }
+                    ]
+                ],
+                "distractors": [
+                    {
+                        "id": "Alarm_Clock_5",
+                        "caption": "A black clock with a hexagonal frame.",
+                        "source": "ai2thorhab",
+                        "category": "clock",
+                        "cluster": 0,
+                        "pair_id": "Alarm_Clock_23"
+                    },
+                    {
+                        "id": "B075HXHKTZ",
+                        "caption": "A white and tan candle holder with a rounded base.",
+                        "source": "amazon_berkeley",
+                        "category": "candle_holder",
+                        "cluster": 1,
+                        "pair_id": "B075HR7LD2"
+                    },
+                    {
+                        "id": "Cup_15",
+                        "caption": "An orange cup with a faceted design.",
+                        "source": "ai2thorhab",
+                        "category": "cup",
+                        "cluster": 0,
+                        "pair_id": "fcae3d93545969544b5aec155f56fda69f1a2f9a"
+                    },
+                    {
+                        "id": "B00WRDS8H0",
+                        "caption": "A sleek black laptop stand with a glass surface.",
+                        "source": "amazon_berkeley",
+                        "category": "laptop_stand",
+                        "cluster": 0,
+                        "pair_id": "B01MZ81SKB"
+                    }
+                ],
+                "used_object_original": [
+                    [
+                        "candle_holder"
+                    ],
+                    [
+                        "cup"
+                    ]
+                ],
+                "used_object": [
+                    "candle_holder",
+                    "cup"
+                ],
+                "combination_type": "Object Semantics + Object Semantics",
+                "object_overlaps": {
+                    "target_target": [],
+                    "distractor_distractor": [],
+                    "target1_distractor2": [],
+                    "target2_distractor1": [],
+                    "target_category_overlap": [],
+                    "counts": {
+                        "target_target": 0,
+                        "distractor_distractor": 0,
+                        "target1_distractor2": 0,
+                        "target2_distractor1": 0,
+                        "target_category_overlap": 0,
+                        "total_overlap": 0
+                    },
+                    "has_target_category_overlap": false,
+                    "has_target_distractor_overlap": false
+                },
+                "receptacle_overlaps": {
+                    "has_overlaps": false,
+                    "common_receptacles": [],
+                    "overlap_count": 0
+                }
+            },
+            "scene_id": "104348361_171513414",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Alarm_Clock_23_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "2e7f82e48f14d6fb2ad6a6b1a8d0429e76401542_part_7_:0000",
+                            "87ec2d5fefc4493289c251c6eb84f1c02371addc_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "B075HR7LD2_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "2e7f82e48f14d6fb2ad6a6b1a8d0429e76401542_part_7_:0000",
+                            "87ec2d5fefc4493289c251c6eb84f1c02371addc_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "fcae3d93545969544b5aec155f56fda69f1a2f9a_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "55dcc18191c2412b899ff405d5d0574571bb81cf_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "B01MZ81SKB_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "55dcc18191c2412b899ff405d5d0574571bb81cf_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [
+                            [
+                                0,
+                                2
+                            ],
+                            [
+                                1,
+                                2
+                            ]
+                        ],
+                        "n_propositions": 4
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2,
+                            3
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 10008,
+        "error": false,
+        "instruction": "Please move my favorite jug for serving drinks, along with the white kettle with a black handle and lid, and the loaf of brown bread from the kitchen counter to the living room table, placing them next to each other. Then, could you move the souvenir vase from my Italy trip and the brown square plate from the living room table to the lounge chair?",
+        "replanning_count_0": 41.0,
+        "run_id": 0,
+        "runtime": 243.34519600868225,
+        "sim_step_count": 2543.0,
+        "task_percent_complete": 0.1428571428571428,
+        "task_state_success": 0.0,
+        "org_data": {
+            "episode_id": "10008",
+            "instruction": "Please move my favorite jug for serving drinks, along with the white kettle with a black handle and lid, and the loaf of brown bread from the kitchen counter to the living room table, placing them next to each other. Then, could you move the souvenir vase from my Italy trip and the brown square plate from the living room table to the lounge chair?",
+            "original_data_info": {
+                "episode_id": [
+                    "3168",
+                    "3169"
+                ],
+                "instruction": [
+                    "Please move my favorite jug for serving drinks, along with the white kettle with a black handle and lid, and the loaf of brown bread from the kitchen counter to the living room table, placing them next to each other.",
+                    "Could you move the souvenir vase from my Italy trip and the brown square plate from the living room table to the lounge chair?"
+                ],
+                "data_path": [
+                    "data/datasets/partnr_episodes/v0_0/val.json",
+                    "data/datasets/partnr_episodes/v0_0/val.json"
+                ]
+            },
+            "metadata": {
+                "subtype": [
+                    "preference",
+                    "history"
+                ],
+                "memory": [
+                    "The dark green jug with a wavy top and abstract pattern is the user's favorite item for serving drinks.",
+                    "The red vase with a long neck and bulbous base is a souvenir from the user's trip to Italy."
+                ],
+                "episode_type": [
+                    "object_semantics",
+                    "object_semantics"
+                ],
+                "num_targets": [
+                    1,
+                    1
+                ],
+                "related_episode_id": [
+                    "1168",
+                    "1169"
+                ],
+                "stage": "2",
+                "target_objects_original": [
+                    [
+                        {
+                            "id": "ad87281ca93b236560306a08f0953ba340e85c3c",
+                            "caption": "A dark green jug with a wavy top and abstract pattern.",
+                            "source": "hssd_hab",
+                            "category": "jug",
+                            "cluster": 1
+                        },
+                        {
+                            "id": "5a2d4315640f464391c6a256818c3c11fdd8f4f6",
+                            "caption": "A white kettle with a black handle and lid.",
+                            "source": "hssd_hab",
+                            "category": "kettle",
+                            "cluster": 0
+                        },
+                        {
+                            "id": "Bread_1",
+                            "caption": "A loaf of brown bread.",
+                            "source": "ai2thorhab",
+                            "category": "bread",
+                            "cluster": 0
+                        }
+                    ],
+                    [
+                        {
+                            "id": "Plate_10",
+                            "caption": "A brown square plate.",
+                            "source": "ai2thorhab",
+                            "category": "plate",
+                            "cluster": 1
+                        },
+                        {
+                            "id": "Vase_Tall_2",
+                            "caption": "A red vase with a long neck and bulbous base.",
+                            "source": "ai2thorhab",
+                            "category": "vase",
+                            "cluster": 1
+                        }
+                    ]
+                ],
+                "target_objects": [
+                    {
+                        "id": "ad87281ca93b236560306a08f0953ba340e85c3c",
+                        "caption": "A dark green jug with a wavy top and abstract pattern.",
+                        "source": "hssd_hab",
+                        "category": "jug",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "5a2d4315640f464391c6a256818c3c11fdd8f4f6",
+                        "caption": "A white kettle with a black handle and lid.",
+                        "source": "hssd_hab",
+                        "category": "kettle",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "Bread_1",
+                        "caption": "A loaf of brown bread.",
+                        "source": "ai2thorhab",
+                        "category": "bread",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "Plate_10",
+                        "caption": "A brown square plate.",
+                        "source": "ai2thorhab",
+                        "category": "plate",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "Vase_Tall_2",
+                        "caption": "A red vase with a long neck and bulbous base.",
+                        "source": "ai2thorhab",
+                        "category": "vase",
+                        "cluster": 1
+                    }
+                ],
+                "distractors_original": [
+                    [
+                        {
+                            "id": "381a128d056d4db0e70276aa918065ca42f89e8f",
+                            "caption": "A red jug with a white dot pattern.",
+                            "source": "hssd_hab",
+                            "category": "jug",
+                            "cluster": 0,
+                            "pair_id": "ad87281ca93b236560306a08f0953ba340e85c3c"
+                        },
+                        {
+                            "id": "Kettle_1",
+                            "caption": "A black kettle with a pixelated pattern.",
+                            "source": "ai2thorhab",
+                            "category": "kettle",
+                            "cluster": 1,
+                            "pair_id": "5a2d4315640f464391c6a256818c3c11fdd8f4f6"
+                        },
+                        {
+                            "id": "Bread_10",
+                            "caption": "A loaf of brown bread with a textured surface.",
+                            "source": "ai2thorhab",
+                            "category": "bread",
+                            "cluster": 1,
+                            "pair_id": "Bread_1"
+                        }
+                    ],
+                    [
+                        {
+                            "id": "Plate_22",
+                            "caption": "A black plate with a polka dot pattern.",
+                            "source": "ai2thorhab",
+                            "category": "plate",
+                            "cluster": 0,
+                            "pair_id": "Plate_10"
+                        },
+                        {
+                            "id": "7d38434695df81af30390db76c89bcc04529b406",
+                            "caption": "A white vase with black bird decorations.",
+                            "source": "hssd_hab",
+                            "category": "vase",
+                            "cluster": 0,
+                            "pair_id": "Vase_Tall_2"
+                        }
+                    ]
+                ],
+                "distractors": [
+                    {
+                        "id": "381a128d056d4db0e70276aa918065ca42f89e8f",
+                        "caption": "A red jug with a white dot pattern.",
+                        "source": "hssd_hab",
+                        "category": "jug",
+                        "cluster": 0,
+                        "pair_id": "ad87281ca93b236560306a08f0953ba340e85c3c"
+                    },
+                    {
+                        "id": "Kettle_1",
+                        "caption": "A black kettle with a pixelated pattern.",
+                        "source": "ai2thorhab",
+                        "category": "kettle",
+                        "cluster": 1,
+                        "pair_id": "5a2d4315640f464391c6a256818c3c11fdd8f4f6"
+                    },
+                    {
+                        "id": "Bread_10",
+                        "caption": "A loaf of brown bread with a textured surface.",
+                        "source": "ai2thorhab",
+                        "category": "bread",
+                        "cluster": 1,
+                        "pair_id": "Bread_1"
+                    },
+                    {
+                        "id": "Plate_22",
+                        "caption": "A black plate with a polka dot pattern.",
+                        "source": "ai2thorhab",
+                        "category": "plate",
+                        "cluster": 0,
+                        "pair_id": "Plate_10"
+                    },
+                    {
+                        "id": "7d38434695df81af30390db76c89bcc04529b406",
+                        "caption": "A white vase with black bird decorations.",
+                        "source": "hssd_hab",
+                        "category": "vase",
+                        "cluster": 0,
+                        "pair_id": "Vase_Tall_2"
+                    }
+                ],
+                "used_object_original": [
+                    [
+                        "jug"
+                    ],
+                    [
+                        "vase"
+                    ]
+                ],
+                "used_object": [
+                    "jug",
+                    "vase"
+                ],
+                "combination_type": "Object Semantics + Object Semantics",
+                "object_overlaps": {
+                    "target_target": [],
+                    "distractor_distractor": [],
+                    "target1_distractor2": [],
+                    "target2_distractor1": [],
+                    "target_category_overlap": [],
+                    "counts": {
+                        "target_target": 0,
+                        "distractor_distractor": 0,
+                        "target1_distractor2": 0,
+                        "target2_distractor1": 0,
+                        "target_category_overlap": 0,
+                        "total_overlap": 0
+                    },
+                    "has_target_category_overlap": false,
+                    "has_target_distractor_overlap": false
+                },
+                "receptacle_overlaps": {
+                    "has_overlaps": false,
+                    "common_receptacles": [],
+                    "overlap_count": 0
+                }
+            },
+            "scene_id": "107734176_176000019",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "ad87281ca93b236560306a08f0953ba340e85c3c_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "033774ae209de7a75a61ef44b69e42189f9af358_:0000",
+                            "086ae0df95ac1b212fabe2f0b8bf5c63968dfb69_:0000",
+                            "174666b4a100a3e62f73d11e96a2ff9c432cd731_:0000",
+                            "174666b4a100a3e62f73d11e96a2ff9c432cd731_:0001",
+                            "1f366035e778f93cff51f06f392d86814b3eab65_:0000",
+                            "24304078d26588e2d78d4db014c5804506388cf5_:0000",
+                            "9d5c4c5e897817e769610d84c3fa695b4f4fee0b_:0000",
+                            "b39d5fdf03917dbc9ef22c8b7d310e2f3675c4c6_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "5a2d4315640f464391c6a256818c3c11fdd8f4f6_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "033774ae209de7a75a61ef44b69e42189f9af358_:0000",
+                            "086ae0df95ac1b212fabe2f0b8bf5c63968dfb69_:0000",
+                            "174666b4a100a3e62f73d11e96a2ff9c432cd731_:0000",
+                            "174666b4a100a3e62f73d11e96a2ff9c432cd731_:0001",
+                            "1f366035e778f93cff51f06f392d86814b3eab65_:0000",
+                            "24304078d26588e2d78d4db014c5804506388cf5_:0000",
+                            "9d5c4c5e897817e769610d84c3fa695b4f4fee0b_:0000",
+                            "b39d5fdf03917dbc9ef22c8b7d310e2f3675c4c6_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Bread_1_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "033774ae209de7a75a61ef44b69e42189f9af358_:0000",
+                            "086ae0df95ac1b212fabe2f0b8bf5c63968dfb69_:0000",
+                            "174666b4a100a3e62f73d11e96a2ff9c432cd731_:0000",
+                            "174666b4a100a3e62f73d11e96a2ff9c432cd731_:0001",
+                            "1f366035e778f93cff51f06f392d86814b3eab65_:0000",
+                            "24304078d26588e2d78d4db014c5804506388cf5_:0000",
+                            "9d5c4c5e897817e769610d84c3fa695b4f4fee0b_:0000",
+                            "b39d5fdf03917dbc9ef22c8b7d310e2f3675c4c6_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "ad87281ca93b236560306a08f0953ba340e85c3c_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "5a2d4315640f464391c6a256818c3c11fdd8f4f6_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "5a2d4315640f464391c6a256818c3c11fdd8f4f6_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "Bread_1_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Plate_10_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "0bd3fff760626beb3b250521c516ebc696984229_:0000",
+                            "bbe458f78e3686c63a219a0b9a6fcd785b55cf3d_:0000",
+                            "bbe458f78e3686c63a219a0b9a6fcd785b55cf3d_:0001",
+                            "bbe458f78e3686c63a219a0b9a6fcd785b55cf3d_:0002"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Vase_Tall_2_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "0bd3fff760626beb3b250521c516ebc696984229_:0000",
+                            "bbe458f78e3686c63a219a0b9a6fcd785b55cf3d_:0000",
+                            "bbe458f78e3686c63a219a0b9a6fcd785b55cf3d_:0001",
+                            "bbe458f78e3686c63a219a0b9a6fcd785b55cf3d_:0002"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        3
+                    ],
+                    "depends_on": [
+                        0,
+                        1
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                },
+                {
+                    "proposition_indices": [
+                        4
+                    ],
+                    "depends_on": [
+                        1,
+                        2
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [
+                            [
+                                0,
+                                5
+                            ],
+                            [
+                                1,
+                                5
+                            ],
+                            [
+                                2,
+                                5
+                            ],
+                            [
+                                3,
+                                5
+                            ],
+                            [
+                                4,
+                                5
+                            ]
+                        ],
+                        "n_propositions": 7
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2,
+                            3,
+                            4,
+                            5,
+                            6
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    }
+]

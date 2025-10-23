@@ -1,0 +1,350 @@
+[
+    {
+        "episode_id": 10011,
+        "error": false,
+        "instruction": "Could you swap my favorite food collection can with the black and white bottle with a leaf pattern to the office table? Then, move my everyday dinnerware set from the dining table to the kitchen counter and place them next to each other.",
+        "replanning_count_0": 32.0,
+        "run_id": 0,
+        "runtime": 524.1764070987701,
+        "sim_step_count": 3967.0,
+        "task_percent_complete": 0.6,
+        "task_state_success": 0.0,
+        "org_data": {
+            "episode_id": "10011",
+            "instruction": "Could you swap my favorite food collection can with the black and white bottle with a leaf pattern to the office table? Then, move my everyday dinnerware set from the dining table to the kitchen counter and place them next to each other.",
+            "original_data_info": {
+                "episode_id": [
+                    "3268",
+                    "3271"
+                ],
+                "instruction": [
+                    "Could you swap my favorite food collection can with the black and white bottle with a leaf pattern to the office table?",
+                    "Move my everyday dinnerware set from the dining table to the kitchen counter and place them next to each other."
+                ],
+                "data_path": [
+                    "data/datasets/partnr_episodes/v0_0/val.json",
+                    "data/datasets/partnr_episodes/v0_0/val.json"
+                ]
+            },
+            "metadata": {
+                "subtype": [
+                    "preference",
+                    "group"
+                ],
+                "memory": [
+                    "The silver can containing Polar Herring Fillets, Smoked & Peppered, is part of the user's favorite food collection.",
+                    "The white square plate and the gray faceted bowl are part of the user's everyday dinnerware set."
+                ],
+                "episode_type": [
+                    "object_semantics",
+                    "object_semantics"
+                ],
+                "num_targets": [
+                    1,
+                    2
+                ],
+                "related_episode_id": [
+                    "1268",
+                    "1271"
+                ],
+                "stage": "2",
+                "target_objects_original": [
+                    [
+                        {
+                            "id": "Polar_Herring_Fillets_Smoked_Peppered_705_oz_total",
+                            "caption": "A silver can of Polar Herring Fillets, Smoked & Peppered, 7.05 oz.",
+                            "source": "google",
+                            "category": "can",
+                            "cluster": 0
+                        },
+                        {
+                            "id": "867cf3a6f88aa00b97aee772c2349bff732fbac5",
+                            "caption": "A black and white bottle with a leaf pattern.",
+                            "source": "hssd_hab",
+                            "category": "bottle",
+                            "cluster": 0
+                        }
+                    ],
+                    [
+                        {
+                            "id": "Plate_14",
+                            "caption": "A white square plate.",
+                            "source": "ai2thorhab",
+                            "category": "plate",
+                            "cluster": 1
+                        },
+                        {
+                            "id": "Bowl_24",
+                            "caption": "A gray bowl with a faceted design.",
+                            "source": "ai2thorhab",
+                            "category": "bowl",
+                            "cluster": 0
+                        }
+                    ]
+                ],
+                "target_objects": [
+                    {
+                        "id": "Polar_Herring_Fillets_Smoked_Peppered_705_oz_total",
+                        "caption": "A silver can of Polar Herring Fillets, Smoked & Peppered, 7.05 oz.",
+                        "source": "google",
+                        "category": "can",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "867cf3a6f88aa00b97aee772c2349bff732fbac5",
+                        "caption": "A black and white bottle with a leaf pattern.",
+                        "source": "hssd_hab",
+                        "category": "bottle",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "Plate_14",
+                        "caption": "A white square plate.",
+                        "source": "ai2thorhab",
+                        "category": "plate",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "Bowl_24",
+                        "caption": "A gray bowl with a faceted design.",
+                        "source": "ai2thorhab",
+                        "category": "bowl",
+                        "cluster": 0
+                    }
+                ],
+                "distractors_original": [
+                    [
+                        {
+                            "id": "Don_Franciscos_Gourmet_Coffee_Medium_Decaf_100_Colombian_12_oz_340_g",
+                            "caption": "A brown and yellow coffee can, Don Francisco's Gourmet Coffee Medium Decaf.",
+                            "source": "google",
+                            "category": "can",
+                            "cluster": 1,
+                            "pair_id": "Polar_Herring_Fillets_Smoked_Peppered_705_oz_total"
+                        },
+                        {
+                            "id": "Sleep_Optimizer",
+                            "caption": "A transparent bottle with a blue label, Sleep_Optimizer.",
+                            "source": "google",
+                            "category": "bottle",
+                            "cluster": 1,
+                            "pair_id": "867cf3a6f88aa00b97aee772c2349bff732fbac5"
+                        }
+                    ],
+                    [
+                        {
+                            "id": "Plate_22",
+                            "caption": "A black plate with a polka dot pattern.",
+                            "source": "ai2thorhab",
+                            "category": "plate",
+                            "cluster": 0,
+                            "pair_id": "Plate_14"
+                        },
+                        {
+                            "id": "Threshold_Porcelain_Serving_Bowl_Coupe_White",
+                            "caption": "A white porcelain serving bowl, Threshold.",
+                            "source": "google",
+                            "category": "bowl",
+                            "cluster": 1,
+                            "pair_id": "Bowl_24"
+                        }
+                    ]
+                ],
+                "distractors": [
+                    {
+                        "id": "Don_Franciscos_Gourmet_Coffee_Medium_Decaf_100_Colombian_12_oz_340_g",
+                        "caption": "A brown and yellow coffee can, Don Francisco's Gourmet Coffee Medium Decaf.",
+                        "source": "google",
+                        "category": "can",
+                        "cluster": 1,
+                        "pair_id": "Polar_Herring_Fillets_Smoked_Peppered_705_oz_total"
+                    },
+                    {
+                        "id": "Sleep_Optimizer",
+                        "caption": "A transparent bottle with a blue label, Sleep_Optimizer.",
+                        "source": "google",
+                        "category": "bottle",
+                        "cluster": 1,
+                        "pair_id": "867cf3a6f88aa00b97aee772c2349bff732fbac5"
+                    },
+                    {
+                        "id": "Plate_22",
+                        "caption": "A black plate with a polka dot pattern.",
+                        "source": "ai2thorhab",
+                        "category": "plate",
+                        "cluster": 0,
+                        "pair_id": "Plate_14"
+                    },
+                    {
+                        "id": "Threshold_Porcelain_Serving_Bowl_Coupe_White",
+                        "caption": "A white porcelain serving bowl, Threshold.",
+                        "source": "google",
+                        "category": "bowl",
+                        "cluster": 1,
+                        "pair_id": "Bowl_24"
+                    }
+                ],
+                "used_object_original": [
+                    [
+                        "can"
+                    ],
+                    [
+                        "plate",
+                        "bowl"
+                    ]
+                ],
+                "used_object": [
+                    "can",
+                    "plate",
+                    "bowl"
+                ],
+                "combination_type": "Object Semantics + Object Semantics",
+                "object_overlaps": {
+                    "target_target": [],
+                    "distractor_distractor": [],
+                    "target1_distractor2": [],
+                    "target2_distractor1": [],
+                    "target_category_overlap": [],
+                    "counts": {
+                        "target_target": 0,
+                        "distractor_distractor": 0,
+                        "target1_distractor2": 0,
+                        "target2_distractor1": 0,
+                        "target_category_overlap": 0,
+                        "total_overlap": 0
+                    },
+                    "has_target_category_overlap": false,
+                    "has_target_distractor_overlap": false
+                },
+                "receptacle_overlaps": {
+                    "has_overlaps": false,
+                    "common_receptacles": [],
+                    "overlap_count": 0
+                }
+            },
+            "scene_id": "104348010_171512832",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Polar_Herring_Fillets_Smoked_Peppered_705_oz_total_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "2aa6ddd969d37db340725a8fcf11d95df87023f6_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "867cf3a6f88aa00b97aee772c2349bff732fbac5_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "2aa6ddd969d37db340725a8fcf11d95df87023f6_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Plate_14_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "27903d5a77d900067dd9031caf2f229776d800d4_:0000",
+                            "27903d5a77d900067dd9031caf2f229776d800d4_:0001",
+                            "27903d5a77d900067dd9031caf2f229776d800d4_:0002",
+                            "27903d5a77d900067dd9031caf2f229776d800d4_:0003",
+                            "55dcc18191c2412b899ff405d5d0574571bb81cf_:0000",
+                            "55dcc18191c2412b899ff405d5d0574571bb81cf_:0001"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Bowl_24_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "27903d5a77d900067dd9031caf2f229776d800d4_:0000",
+                            "27903d5a77d900067dd9031caf2f229776d800d4_:0001",
+                            "27903d5a77d900067dd9031caf2f229776d800d4_:0002",
+                            "27903d5a77d900067dd9031caf2f229776d800d4_:0003",
+                            "55dcc18191c2412b899ff405d5d0574571bb81cf_:0000",
+                            "55dcc18191c2412b899ff405d5d0574571bb81cf_:0001"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "Plate_14_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "Bowl_24_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        4
+                    ],
+                    "depends_on": [
+                        2,
+                        3
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [
+                            [
+                                0,
+                                2
+                            ],
+                            [
+                                1,
+                                2
+                            ]
+                        ],
+                        "n_propositions": 5
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2,
+                            3,
+                            4
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    }
+]

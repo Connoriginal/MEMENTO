@@ -1,0 +1,889 @@
+[
+    {
+        "episode_id": 10027,
+        "error": false,
+        "instruction": "Could you set up the cozy evening atmosphere for me? Additionally, can you store the jug and cup where I usually keep them for breakfast?",
+        "replanning_count_0": 26.0,
+        "run_id": 0,
+        "runtime": 142.00458765029907,
+        "sim_step_count": 1553.0,
+        "task_percent_complete": 0.7142857142857143,
+        "task_state_success": 0.0,
+        "org_data": {
+            "episode_id": "10027",
+            "instruction": "Could you set up the cozy evening atmosphere for me? Additionally, can you store the jug and cup where I usually keep them for breakfast?",
+            "original_data_info": {
+                "episode_id": [
+                    "3033",
+                    "3034"
+                ],
+                "instruction": [
+                    "Could you set up the cozy evening atmosphere for me?",
+                    "Can you store the jug and cup where I usually keep them for breakfast?"
+                ],
+                "data_path": [
+                    "data/datasets/partnr_episodes/v0_0/val.json",
+                    "data/datasets/partnr_episodes/v0_0/val.json"
+                ]
+            },
+            "metadata": {
+                "subtype": [
+                    "preference",
+                    "preference"
+                ],
+                "memory": [
+                    "Arrange the candle holder, candle, and plant container next to each other on the couch for a cozy evening atmosphere.",
+                    "Store the jug and cup in the kitchen cabinet for easy access during breakfast."
+                ],
+                "episode_type": [
+                    "user_pattern",
+                    "user_pattern"
+                ],
+                "related_episode_id": [
+                    "1033",
+                    "1034"
+                ],
+                "stage": "2",
+                "target_objects_original": [
+                    [
+                        {
+                            "id": "B075HR7LD2",
+                            "caption": "A white candle holder with a gold rim on a wooden base.",
+                            "source": "amazon_berkeley",
+                            "category": "candle_holder",
+                            "cluster": 0
+                        },
+                        {
+                            "id": "8afd350c5cc0029c3604c697947d1e1399403955",
+                            "caption": "A blue and brown candle with a gradient pattern.",
+                            "source": "hssd_hab",
+                            "category": "candle",
+                            "cluster": 0
+                        },
+                        {
+                            "id": "Cole_Hardware_Orchid_Pot_85",
+                            "caption": "A white and green orchid pot, Cole Hardware Orchid Pot 85.",
+                            "source": "google",
+                            "category": "plant_container",
+                            "cluster": 0
+                        }
+                    ],
+                    [
+                        {
+                            "id": "67428f64fcb9f822080d8d77c4991cc5c075f15d",
+                            "caption": "A plain white jug with a handle.",
+                            "source": "hssd_hab",
+                            "category": "jug",
+                            "cluster": 0
+                        },
+                        {
+                            "id": "c707408215afcc11910353f0ccbe67eb53cb1e49",
+                            "caption": "A white cup with a black abstract pattern.",
+                            "source": "hssd_hab",
+                            "category": "cup",
+                            "cluster": 1
+                        }
+                    ]
+                ],
+                "target_objects": [
+                    {
+                        "id": "B075HR7LD2",
+                        "caption": "A white candle holder with a gold rim on a wooden base.",
+                        "source": "amazon_berkeley",
+                        "category": "candle_holder",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "8afd350c5cc0029c3604c697947d1e1399403955",
+                        "caption": "A blue and brown candle with a gradient pattern.",
+                        "source": "hssd_hab",
+                        "category": "candle",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "Cole_Hardware_Orchid_Pot_85",
+                        "caption": "A white and green orchid pot, Cole Hardware Orchid Pot 85.",
+                        "source": "google",
+                        "category": "plant_container",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "67428f64fcb9f822080d8d77c4991cc5c075f15d",
+                        "caption": "A plain white jug with a handle.",
+                        "source": "hssd_hab",
+                        "category": "jug",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "c707408215afcc11910353f0ccbe67eb53cb1e49",
+                        "caption": "A white cup with a black abstract pattern.",
+                        "source": "hssd_hab",
+                        "category": "cup",
+                        "cluster": 1
+                    }
+                ],
+                "distractors_original": [
+                    [],
+                    []
+                ],
+                "distractors": [],
+                "used_object_original": [
+                    [],
+                    []
+                ],
+                "used_object": [],
+                "combination_type": "User Pattern + User Pattern",
+                "object_overlaps": {
+                    "target_target": [],
+                    "distractor_distractor": [],
+                    "target1_distractor2": [],
+                    "target2_distractor1": [],
+                    "target_category_overlap": [],
+                    "counts": {
+                        "target_target": 0,
+                        "distractor_distractor": 0,
+                        "target1_distractor2": 0,
+                        "target2_distractor1": 0,
+                        "target_category_overlap": 0,
+                        "total_overlap": 0
+                    },
+                    "has_target_category_overlap": false,
+                    "has_target_distractor_overlap": false
+                },
+                "receptacle_overlaps": {
+                    "has_overlaps": false,
+                    "common_receptacles": [],
+                    "overlap_count": 0
+                }
+            },
+            "scene_id": "106366386_174226770",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "B075HR7LD2_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "72c768666c398f91a5e4755d569f4d7097acc297_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "8afd350c5cc0029c3604c697947d1e1399403955_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "72c768666c398f91a5e4755d569f4d7097acc297_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Cole_Hardware_Orchid_Pot_85_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "72c768666c398f91a5e4755d569f4d7097acc297_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "B075HR7LD2_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "8afd350c5cc0029c3604c697947d1e1399403955_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "8afd350c5cc0029c3604c697947d1e1399403955_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "Cole_Hardware_Orchid_Pot_85_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                },
+                {
+                    "function_name": "is_inside",
+                    "args": {
+                        "object_handles": [
+                            "67428f64fcb9f822080d8d77c4991cc5c075f15d_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "0db565d684b7c6ca584a63184869a4077bbd7155_:0000",
+                            "db74ce14813eb0d5c54c8992806b22fb846ee34c_:0000",
+                            "edd29c09710bf64c66065b6d884f573bc48682f5_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_inside",
+                    "args": {
+                        "object_handles": [
+                            "c707408215afcc11910353f0ccbe67eb53cb1e49_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "0db565d684b7c6ca584a63184869a4077bbd7155_:0000",
+                            "db74ce14813eb0d5c54c8992806b22fb846ee34c_:0000",
+                            "edd29c09710bf64c66065b6d884f573bc48682f5_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        3
+                    ],
+                    "depends_on": [
+                        0,
+                        1
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                },
+                {
+                    "proposition_indices": [
+                        4
+                    ],
+                    "depends_on": [
+                        1,
+                        2
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [
+                            [
+                                0,
+                                5
+                            ],
+                            [
+                                1,
+                                5
+                            ],
+                            [
+                                2,
+                                5
+                            ],
+                            [
+                                3,
+                                5
+                            ],
+                            [
+                                4,
+                                5
+                            ]
+                        ],
+                        "n_propositions": 7
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2,
+                            3,
+                            4,
+                            5,
+                            6
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 10026,
+        "error": false,
+        "instruction": "Can you arrange the lamp for reading and the statue for display? Additionally, can you arrange my afternoon refreshment setup?",
+        "replanning_count_0": 28.0,
+        "run_id": 0,
+        "runtime": 406.4000635147095,
+        "sim_step_count": 7811.0,
+        "task_percent_complete": 0.4,
+        "task_state_success": 0.0,
+        "org_data": {
+            "episode_id": "10026",
+            "instruction": "Can you arrange the lamp for reading and the statue for display? Additionally, can you arrange my afternoon refreshment setup?",
+            "original_data_info": {
+                "episode_id": [
+                    "2987",
+                    "2990"
+                ],
+                "instruction": [
+                    "Can you arrange the lamp for reading and the statue for display?",
+                    "Can you arrange my afternoon refreshment setup?"
+                ],
+                "data_path": [
+                    "data/datasets/partnr_episodes/v0_0/val.json",
+                    "data/datasets/partnr_episodes/v0_0/val.json"
+                ]
+            },
+            "metadata": {
+                "subtype": [
+                    "preference",
+                    "preference"
+                ],
+                "memory": [
+                    "Place the lamp on the bedroom table for reading and the statue on the living room shelves for display.",
+                    "Place the jug and cup together on the living room table for afternoon refreshments."
+                ],
+                "episode_type": [
+                    "user_pattern",
+                    "user_pattern"
+                ],
+                "related_episode_id": [
+                    "987",
+                    "990"
+                ],
+                "stage": "2",
+                "target_objects_original": [
+                    [
+                        {
+                            "id": "B07HK83QRB",
+                            "caption": "A wooden lamp with a white spherical shade.",
+                            "source": "amazon_berkeley",
+                            "category": "lamp",
+                            "cluster": 0
+                        },
+                        {
+                            "id": "Hand_Statue_3",
+                            "caption": "A black hand-shaped statue with a glossy finish.",
+                            "source": "ai2thorhab",
+                            "category": "statue",
+                            "cluster": 1
+                        }
+                    ],
+                    [
+                        {
+                            "id": "381a128d056d4db0e70276aa918065ca42f89e8f",
+                            "caption": "A red jug with a white dot pattern.",
+                            "source": "hssd_hab",
+                            "category": "jug",
+                            "cluster": 0
+                        },
+                        {
+                            "id": "ACE_Coffee_Mug_Kristen_16_oz_cup",
+                            "caption": "A white, 16 oz coffee mug, ACE Coffee Mug Kristen.",
+                            "source": "google",
+                            "category": "cup",
+                            "cluster": 1
+                        }
+                    ]
+                ],
+                "target_objects": [
+                    {
+                        "id": "B07HK83QRB",
+                        "caption": "A wooden lamp with a white spherical shade.",
+                        "source": "amazon_berkeley",
+                        "category": "lamp",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "Hand_Statue_3",
+                        "caption": "A black hand-shaped statue with a glossy finish.",
+                        "source": "ai2thorhab",
+                        "category": "statue",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "381a128d056d4db0e70276aa918065ca42f89e8f",
+                        "caption": "A red jug with a white dot pattern.",
+                        "source": "hssd_hab",
+                        "category": "jug",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "ACE_Coffee_Mug_Kristen_16_oz_cup",
+                        "caption": "A white, 16 oz coffee mug, ACE Coffee Mug Kristen.",
+                        "source": "google",
+                        "category": "cup",
+                        "cluster": 1
+                    }
+                ],
+                "distractors_original": [
+                    [],
+                    []
+                ],
+                "distractors": [],
+                "used_object_original": [
+                    [],
+                    []
+                ],
+                "used_object": [],
+                "combination_type": "User Pattern + User Pattern",
+                "object_overlaps": {
+                    "target_target": [],
+                    "distractor_distractor": [],
+                    "target1_distractor2": [],
+                    "target2_distractor1": [],
+                    "target_category_overlap": [],
+                    "counts": {
+                        "target_target": 0,
+                        "distractor_distractor": 0,
+                        "target1_distractor2": 0,
+                        "target2_distractor1": 0,
+                        "target_category_overlap": 0,
+                        "total_overlap": 0
+                    },
+                    "has_target_category_overlap": false,
+                    "has_target_distractor_overlap": false
+                },
+                "receptacle_overlaps": {
+                    "has_overlaps": false,
+                    "common_receptacles": [],
+                    "overlap_count": 0
+                }
+            },
+            "scene_id": "102817140",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "B07HK83QRB_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "2d677064b6bd4a3ba262cd510fd03c58efb57533_:0000",
+                            "689340fdf94601c7e57aabc45c1f1752bc7791da_:0000",
+                            "72305abe342ae61ffd01243a6acfcdb8aa0381c6_:0000",
+                            "72305abe342ae61ffd01243a6acfcdb8aa0381c6_:0001",
+                            "a858cba39573583f6aff0a31d237bcebabaaf503_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Hand_Statue_3_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "7b395deb580a75ca10a361d25b5e10b1bab8464b_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "381a128d056d4db0e70276aa918065ca42f89e8f_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "0239c03b6896e4e4fad328885cf078995c913046_:0000",
+                            "925f48efff312862677c9517a8ec0faba4909570_part_1_:0000",
+                            "d886d10e71a0365a725abcf139142223409f7b4f_:0000",
+                            "d886d10e71a0365a725abcf139142223409f7b4f_:0001"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "ACE_Coffee_Mug_Kristen_16_oz_cup_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "0239c03b6896e4e4fad328885cf078995c913046_:0000",
+                            "925f48efff312862677c9517a8ec0faba4909570_part_1_:0000",
+                            "d886d10e71a0365a725abcf139142223409f7b4f_:0000",
+                            "d886d10e71a0365a725abcf139142223409f7b4f_:0001"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "381a128d056d4db0e70276aa918065ca42f89e8f_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "ACE_Coffee_Mug_Kristen_16_oz_cup_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        4
+                    ],
+                    "depends_on": [
+                        2,
+                        3
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [
+                            [
+                                0,
+                                2
+                            ],
+                            [
+                                1,
+                                2
+                            ]
+                        ],
+                        "n_propositions": 5
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2,
+                            3,
+                            4
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 10033,
+        "error": false,
+        "instruction": "Can you set up my work and relaxation area? Additionally, can you tidy up the workout area for me?",
+        "replanning_count_0": 40.0,
+        "run_id": 0,
+        "runtime": 304.1504542827606,
+        "sim_step_count": 5495.0,
+        "task_percent_complete": 0.3333333333333333,
+        "task_state_success": 0.0,
+        "org_data": {
+            "episode_id": "10033",
+            "instruction": "Can you set up my work and relaxation area? Additionally, can you tidy up the workout area for me?",
+            "original_data_info": {
+                "episode_id": [
+                    "3184",
+                    "3185"
+                ],
+                "instruction": [
+                    "Can you set up my work and relaxation area?",
+                    "Can you tidy up the workout area for me?"
+                ],
+                "data_path": [
+                    "data/datasets/partnr_episodes/v0_0/val.json",
+                    "data/datasets/partnr_episodes/v0_0/val.json"
+                ]
+            },
+            "metadata": {
+                "subtype": [
+                    "preference",
+                    "preference"
+                ],
+                "memory": [
+                    "Keep the book and laptop on the table for daytime access, with the candle holder nearby for evening relaxation.",
+                    "Transfer the dumbbell, tennis racquet, and spray bottle to the office table to keep the workout area clear when not in use."
+                ],
+                "episode_type": [
+                    "user_pattern",
+                    "user_pattern"
+                ],
+                "related_episode_id": [
+                    "1184",
+                    "1185"
+                ],
+                "stage": "2",
+                "target_objects_original": [
+                    [
+                        {
+                            "id": "21e5c7cabc2047f82439c63c8e5e785d58a67bfc",
+                            "caption": "A black book with a sleek cover and an elastic band.",
+                            "source": "hssd_hab",
+                            "category": "book",
+                            "cluster": 0
+                        },
+                        {
+                            "id": "Laptop_6",
+                            "caption": "A gray laptop with a black screen.",
+                            "source": "ai2thorhab",
+                            "category": "laptop",
+                            "cluster": 0
+                        },
+                        {
+                            "id": "B075HXHKTZ",
+                            "caption": "A white and tan candle holder with a rounded base.",
+                            "source": "amazon_berkeley",
+                            "category": "candle_holder",
+                            "cluster": 1
+                        }
+                    ],
+                    [
+                        {
+                            "id": "B01LR5RO5U",
+                            "caption": "A green dumbbell with a smooth finish.",
+                            "source": "amazon_berkeley",
+                            "category": "dumbbell",
+                            "cluster": 1
+                        },
+                        {
+                            "id": "Tennis_Racquet_2",
+                            "caption": "A black tennis racquet with a brown handle.",
+                            "source": "ai2thorhab",
+                            "category": "tennis_racquet",
+                            "cluster": 0
+                        },
+                        {
+                            "id": "Spray_Bottle_7",
+                            "caption": "A transparent spray bottle with a sleek design.",
+                            "source": "ai2thorhab",
+                            "category": "spray_bottle",
+                            "cluster": 1
+                        }
+                    ]
+                ],
+                "target_objects": [
+                    {
+                        "id": "21e5c7cabc2047f82439c63c8e5e785d58a67bfc",
+                        "caption": "A black book with a sleek cover and an elastic band.",
+                        "source": "hssd_hab",
+                        "category": "book",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "Laptop_6",
+                        "caption": "A gray laptop with a black screen.",
+                        "source": "ai2thorhab",
+                        "category": "laptop",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "B075HXHKTZ",
+                        "caption": "A white and tan candle holder with a rounded base.",
+                        "source": "amazon_berkeley",
+                        "category": "candle_holder",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "B01LR5RO5U",
+                        "caption": "A green dumbbell with a smooth finish.",
+                        "source": "amazon_berkeley",
+                        "category": "dumbbell",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "Tennis_Racquet_2",
+                        "caption": "A black tennis racquet with a brown handle.",
+                        "source": "ai2thorhab",
+                        "category": "tennis_racquet",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "Spray_Bottle_7",
+                        "caption": "A transparent spray bottle with a sleek design.",
+                        "source": "ai2thorhab",
+                        "category": "spray_bottle",
+                        "cluster": 1
+                    }
+                ],
+                "distractors_original": [
+                    [],
+                    []
+                ],
+                "distractors": [],
+                "used_object_original": [
+                    [],
+                    []
+                ],
+                "used_object": [],
+                "combination_type": "User Pattern + User Pattern",
+                "object_overlaps": {
+                    "target_target": [],
+                    "distractor_distractor": [],
+                    "target1_distractor2": [],
+                    "target2_distractor1": [],
+                    "target_category_overlap": [],
+                    "counts": {
+                        "target_target": 0,
+                        "distractor_distractor": 0,
+                        "target1_distractor2": 0,
+                        "target2_distractor1": 0,
+                        "target_category_overlap": 0,
+                        "total_overlap": 0
+                    },
+                    "has_target_category_overlap": false,
+                    "has_target_distractor_overlap": false
+                },
+                "receptacle_overlaps": {
+                    "has_overlaps": false,
+                    "common_receptacles": [],
+                    "overlap_count": 0
+                }
+            },
+            "scene_id": "106366410_174226806",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "21e5c7cabc2047f82439c63c8e5e785d58a67bfc_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "88cc870eaace923c89c47a1c3ffd3e48afdea16f_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Laptop_6_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "88cc870eaace923c89c47a1c3ffd3e48afdea16f_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "B075HXHKTZ_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "88cc870eaace923c89c47a1c3ffd3e48afdea16f_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "B01LR5RO5U_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "62d5b81040a4546e5fda73df2e6a9648eb6ceb52_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Tennis_Racquet_2_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "62d5b81040a4546e5fda73df2e6a9648eb6ceb52_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Spray_Bottle_7_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "62d5b81040a4546e5fda73df2e6a9648eb6ceb52_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [
+                            [
+                                0,
+                                3
+                            ],
+                            [
+                                1,
+                                3
+                            ],
+                            [
+                                2,
+                                3
+                            ]
+                        ],
+                        "n_propositions": 6
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2,
+                            3,
+                            4,
+                            5
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    }
+]

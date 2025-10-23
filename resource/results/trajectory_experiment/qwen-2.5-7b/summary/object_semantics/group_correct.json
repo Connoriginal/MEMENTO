@@ -1,0 +1,147 @@
+[
+    {
+        "episode_id": 3231,
+        "error": false,
+        "instruction": "Please move my work setup to the bedroom chair and bring the green sketchbook with a spiral binding and brown central design from the bedroom chair to the living room table.",
+        "replanning_count_0": 31.0,
+        "run_id": 0,
+        "runtime": 143.70525288581848,
+        "sim_step_count": 2224.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "3231",
+            "instruction": "Please move my work setup to the bedroom chair and bring the green sketchbook with a spiral binding and brown central design from the bedroom chair to the living room table.",
+            "original_data_info": {
+                "episode_id": "486",
+                "instruction": "Move the laptop and laptop stand from the living room table to the bedroom chair. Also, bring a book from the bedroom chair to the living room table.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1231",
+                "episode_type": "object_semantics",
+                "target_objects": [
+                    {
+                        "id": "Laptop_23",
+                        "caption": "A gray laptop with a black keyboard and touchpad.",
+                        "source": "ai2thorhab",
+                        "category": "laptop",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "B00WRDRRWW",
+                        "caption": "A black laptop stand with a rounded design.",
+                        "source": "amazon_berkeley",
+                        "category": "laptop_stand",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "edf5a667080ed733fda55514ee18a8081f9dcf9c",
+                        "caption": "A green sketchbook with a spiral binding and brown central design.",
+                        "source": "hssd_hab",
+                        "category": "book",
+                        "cluster": 0
+                    }
+                ],
+                "distractors": [
+                    {
+                        "id": "Laptop_5",
+                        "caption": "A black laptop with a touchpad.",
+                        "source": "ai2thorhab",
+                        "category": "laptop",
+                        "cluster": 1,
+                        "pair_id": "Laptop_23"
+                    },
+                    {
+                        "id": "B00WRDS8H0",
+                        "caption": "A sleek black laptop stand with a glass surface.",
+                        "source": "amazon_berkeley",
+                        "category": "laptop_stand",
+                        "cluster": 0,
+                        "pair_id": "B00WRDRRWW"
+                    },
+                    {
+                        "id": "Book_7",
+                        "caption": "A white book with a blue cover image.",
+                        "source": "ai2thorhab",
+                        "category": "book",
+                        "cluster": 1,
+                        "pair_id": "edf5a667080ed733fda55514ee18a8081f9dcf9c"
+                    }
+                ],
+                "subtype": "group",
+                "num_targets": 2,
+                "memory": "The gray laptop and black laptop stand are essential for the user's work setup.",
+                "used_object": [
+                    "laptop_stand",
+                    "laptop"
+                ]
+            },
+            "scene_id": "103997895_171031182",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Laptop_23_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "04801d6f327197470d63bfd728d4cf02bd33ec56_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "B00WRDRRWW_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "04801d6f327197470d63bfd728d4cf02bd33ec56_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "edf5a667080ed733fda55514ee18a8081f9dcf9c_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "2f38b4f83d8a77af0eb36406b0f00df98cef5e47_:0000",
+                            "735845d0674f69f736af7e0f116767a01392f9b8_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 3
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    }
+]

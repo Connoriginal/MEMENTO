@@ -1,0 +1,121 @@
+[
+    {
+        "episode_id": 2947,
+        "error": false,
+        "instruction": "Can you set the jug and cup for lunch?",
+        "replanning_count_0": 15.0,
+        "run_id": 0,
+        "runtime": 770.8423836231232,
+        "sim_step_count": 9997.0,
+        "task_percent_complete": 0.0,
+        "task_state_success": 0.0,
+        "org_data": {
+            "episode_id": "2947",
+            "instruction": "Can you set the jug and cup for lunch?",
+            "original_data_info": {
+                "episode_id": "765",
+                "instruction": "Help me prepare for lunch by moving the jug and cup from the kitchen counter to the dining table. Place them next to each other.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "947",
+                "episode_type": "user_pattern",
+                "target_objects": [
+                    {
+                        "id": "2f8ce20db01f6f9cff0d3170271f45ef139276ed",
+                        "caption": "A light green jug with a curved spout.",
+                        "source": "hssd_hab",
+                        "category": "jug",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "5742501065a46cf69165e60257b42a86f5fadf8b",
+                        "caption": "A light pink cup with Pantone 337 C marking.",
+                        "source": "hssd_hab",
+                        "category": "cup",
+                        "cluster": 1
+                    }
+                ],
+                "subtype": "preference",
+                "memory": "Place the jug and cup together on the dining table for easy access during lunch."
+            },
+            "scene_id": "102816756",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "2f8ce20db01f6f9cff0d3170271f45ef139276ed_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "786845ecaee2a43d135f922f4d617da02c8543b6_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "5742501065a46cf69165e60257b42a86f5fadf8b_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "786845ecaee2a43d135f922f4d617da02c8543b6_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "2f8ce20db01f6f9cff0d3170271f45ef139276ed_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "5742501065a46cf69165e60257b42a86f5fadf8b_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        2
+                    ],
+                    "depends_on": [
+                        0,
+                        1
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 3
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    }
+]

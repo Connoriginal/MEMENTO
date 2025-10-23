@@ -1,0 +1,471 @@
+[
+    {
+        "episode_id": 3250,
+        "error": false,
+        "instruction": "Could you place the toy airplane, which is a gift from my childhood friend, next to the couch on the living room table?",
+        "replanning_count_0": 6.0,
+        "run_id": 0,
+        "runtime": 45.644689083099365,
+        "sim_step_count": 953.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "3250",
+            "instruction": "Could you place the toy airplane, which is a gift from my childhood friend, next to the couch on the living room table?",
+            "original_data_info": {
+                "episode_id": "749",
+                "instruction": "Move the toy airplane from the bedroom to the living room table. Place it next to the couch.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1250",
+                "episode_type": "object_semantics",
+                "target_objects": [
+                    {
+                        "id": "Air_Hogs_Wind_Flyers_Set_Airplane_Red",
+                        "caption": "A red toy airplane, Air Hogs Wind Flyers Set.",
+                        "source": "google",
+                        "category": "toy_airplane",
+                        "cluster": 1
+                    }
+                ],
+                "distractors": [
+                    {
+                        "id": "TURBOPROP_AIRPLANE_WITH_PILOT",
+                        "caption": "A red and white toy turboprop airplane with a pilot.",
+                        "source": "google",
+                        "category": "toy_airplane",
+                        "cluster": 0,
+                        "pair_id": "Air_Hogs_Wind_Flyers_Set_Airplane_Red"
+                    }
+                ],
+                "subtype": "history",
+                "num_targets": 1,
+                "memory": "The red toy airplane, part of the Air Hogs Wind Flyers Set, is a gift from the user's childhood friend.",
+                "used_object": [
+                    "toy_airplane"
+                ]
+            },
+            "scene_id": "103997895_171031182",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Air_Hogs_Wind_Flyers_Set_Airplane_Red_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "2f38b4f83d8a77af0eb36406b0f00df98cef5e47_:0000",
+                            "735845d0674f69f736af7e0f116767a01392f9b8_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "Air_Hogs_Wind_Flyers_Set_Airplane_Red_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "50bf1434785c2776eac002be0f7c3abeff54709c_:0000",
+                            "809aa90d72a9aa73fadef388620c7ca3668f9d00_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        1
+                    ],
+                    "depends_on": [
+                        0
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 2
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 3009,
+        "error": false,
+        "instruction": "Please move the gift lamp from my grandmother to the bedroom table and then place the black hand-shaped statue with a glossy finish on the living room shelves.",
+        "replanning_count_0": 17.0,
+        "run_id": 0,
+        "runtime": 137.86710906028748,
+        "sim_step_count": 2784.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "3009",
+            "instruction": "Please move the gift lamp from my grandmother to the bedroom table and then place the black hand-shaped statue with a glossy finish on the living room shelves.",
+            "original_data_info": {
+                "episode_id": "393",
+                "instruction": "Move the lamp to the bedroom table. Move the statue to the living room shelves.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1009",
+                "episode_type": "object_semantics",
+                "target_objects": [
+                    {
+                        "id": "B07HK83QRB",
+                        "caption": "A wooden lamp with a white spherical shade.",
+                        "source": "amazon_berkeley",
+                        "category": "lamp",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "Hand_Statue_3",
+                        "caption": "A black hand-shaped statue with a glossy finish.",
+                        "source": "ai2thorhab",
+                        "category": "statue",
+                        "cluster": 1
+                    }
+                ],
+                "distractors": [
+                    {
+                        "id": "B07HK3PNSK",
+                        "caption": "A lamp with a pineapple-shaped neon outline and a black base.",
+                        "source": "amazon_berkeley",
+                        "category": "lamp",
+                        "cluster": 1,
+                        "pair_id": "B07HK83QRB"
+                    },
+                    {
+                        "id": "Towel_Statue_1",
+                        "caption": "A dark bronze statue of a standing figure with an umbrella.",
+                        "source": "ai2thorhab",
+                        "category": "statue",
+                        "cluster": 0,
+                        "pair_id": "Hand_Statue_3"
+                    }
+                ],
+                "subtype": "history",
+                "num_targets": 1,
+                "memory": "The wooden lamp with a white spherical shade is a gift from the user's grandmother.",
+                "used_object": [
+                    "lamp"
+                ]
+            },
+            "scene_id": "102817140",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "B07HK83QRB_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "2d677064b6bd4a3ba262cd510fd03c58efb57533_:0000",
+                            "689340fdf94601c7e57aabc45c1f1752bc7791da_:0000",
+                            "72305abe342ae61ffd01243a6acfcdb8aa0381c6_:0000",
+                            "72305abe342ae61ffd01243a6acfcdb8aa0381c6_:0001",
+                            "a858cba39573583f6aff0a31d237bcebabaaf503_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Hand_Statue_3_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "7b395deb580a75ca10a361d25b5e10b1bab8464b_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 2
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 2952,
+        "error": false,
+        "instruction": "Could you move the Cole Hardware plant container from the bedroom table to the living room table? Then place the gift toy from my friend on the bedroom table.",
+        "replanning_count_0": 13.0,
+        "run_id": 0,
+        "runtime": 335.8234736919403,
+        "sim_step_count": 4440.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "2952",
+            "instruction": "Could you move the Cole Hardware plant container from the bedroom table to the living room table? Then place the gift toy from my friend on the bedroom table.",
+            "original_data_info": {
+                "episode_id": "379",
+                "instruction": "Move the plant container from the bedroom table to the living room table. Take the stuffed toy from the kitchen cabinet and put it on a bedroom table.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "952",
+                "episode_type": "object_semantics",
+                "target_objects": [
+                    {
+                        "id": "Cole_Hardware_Electric_Pot_Assortment_55",
+                        "caption": "A colorful assortment of electric pots, Cole Hardware.",
+                        "source": "google",
+                        "category": "plant_container",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "b4ba58ab622b84b76b98a8d4f907116425d68f3b",
+                        "caption": "A gray stuffed toy bear with a paw print on its scarf.",
+                        "source": "hssd_hab",
+                        "category": "stuffed_toy",
+                        "cluster": 1
+                    }
+                ],
+                "distractors": [
+                    {
+                        "id": "Ecoforms_Plant_Pot_GP9_SAND",
+                        "caption": "A sand-colored plant pot, Ecoforms GP9.",
+                        "source": "google",
+                        "category": "plant_container",
+                        "cluster": 1,
+                        "pair_id": "Cole_Hardware_Electric_Pot_Assortment_55"
+                    },
+                    {
+                        "id": "Ortho_Forward_Facing_3Q6J2oKJD92",
+                        "caption": "A plush stuffed toy, Ortho_Forward_Facing_3Q6J2oKJD92.",
+                        "source": "google",
+                        "category": "stuffed_toy",
+                        "cluster": 0,
+                        "pair_id": "b4ba58ab622b84b76b98a8d4f907116425d68f3b"
+                    }
+                ],
+                "subtype": "history",
+                "num_targets": 1,
+                "memory": "The gray stuffed toy bear with a paw print on its scarf is a gift from the user's friend.",
+                "used_object": [
+                    "stuffed_toy"
+                ]
+            },
+            "scene_id": "102816756",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Cole_Hardware_Electric_Pot_Assortment_55_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "786845ecaee2a43d135f922f4d617da02c8543b6_:0000",
+                            "7dd70791b3608b7a7e5f24b451cf7b11cdadcba5_:0000",
+                            "c95a77cb5c2b67768b566f45b25ccd726be5bead_:0000",
+                            "d60340031eacc7eba62900753ddb800d5d022e69_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "b4ba58ab622b84b76b98a8d4f907116425d68f3b_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "e1d51fa2fae90a92cbb8876689336c9ae07cb5a9_:0000",
+                            "e773f6b54137ce8acdf013c000fc8dbf29071e1d_:0000",
+                            "ff6b4958d22c4a1a423dc32fb35b794ed075411c_:0000",
+                            "a32ed32cc5693cb1ccd4792b7c3f0340cc8eda91_:0000",
+                            "c76cf29427780abebb11688b4815cbe59d54819a_:0000",
+                            "c76cf29427780abebb11688b4815cbe59d54819a_:0002"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 2
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 2959,
+        "error": false,
+        "instruction": "Could you first move my favorite childhood toy to the living room, and then place it on the couch?",
+        "replanning_count_0": 10.0,
+        "run_id": 0,
+        "runtime": 369.5158281326294,
+        "sim_step_count": 5014.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "2959",
+            "instruction": "Could you first move my favorite childhood toy to the living room, and then place it on the couch?",
+            "original_data_info": {
+                "episode_id": "762",
+                "instruction": "First, move the toy vehicle from the bedroom to the living room. Then, place it on the couch in the living room.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "959",
+                "episode_type": "object_semantics",
+                "target_objects": [
+                    {
+                        "id": "Thomas_Friends_Woodan_Railway_Henry",
+                        "caption": "A green toy train with red and black details, Thomas Friends Woodan Railway Henry.",
+                        "source": "google",
+                        "category": "toy_vehicle",
+                        "cluster": 0
+                    }
+                ],
+                "distractors": [
+                    {
+                        "id": "COAST_GUARD_BOAT",
+                        "caption": "A white and orange toy boat with COAST GUARD markings.",
+                        "source": "google",
+                        "category": "toy_vehicle",
+                        "cluster": 1,
+                        "pair_id": "Thomas_Friends_Woodan_Railway_Henry"
+                    }
+                ],
+                "subtype": "history",
+                "num_targets": 1,
+                "memory": "The green toy train with red and black details, Thomas Friends Wooden Railway Henry, was the user's favorite childhood toy.",
+                "used_object": [
+                    "toy_vehicle"
+                ]
+            },
+            "scene_id": "102816756",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_in_room",
+                    "args": {
+                        "object_handles": [
+                            "Thomas_Friends_Woodan_Railway_Henry_:0000"
+                        ],
+                        "room_ids": [
+                            "living room"
+                        ],
+                        "number": 1,
+                        "is_same_room": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Thomas_Friends_Woodan_Railway_Henry_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "174ea8cf2a80b38b2ce4dbbda6de2fee33d3870b_:0000",
+                            "540236e6b30d9bfad48bae8adbe876f42d088131_:0000",
+                            "540236e6b30d9bfad48bae8adbe876f42d088131_:0001"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        1
+                    ],
+                    "depends_on": [
+                        0
+                    ],
+                    "relation_type": "after_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [
+                            [
+                                0,
+                                1
+                            ]
+                        ],
+                        "n_propositions": 2
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            1
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    }
+]

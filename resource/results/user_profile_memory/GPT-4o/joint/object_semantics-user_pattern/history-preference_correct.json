@@ -1,0 +1,1621 @@
+[
+    {
+        "episode_id": 10014,
+        "error": false,
+        "instruction": "Could you set up the shelves by moving the picture frame with my family reunion photo and the lamp with a pineapple-shaped neon outline and a black base? After that, could you set the relaxing ambiance in the bedroom for me?",
+        "replanning_count_0": 23.0,
+        "run_id": 0,
+        "runtime": 175.87565636634827,
+        "sim_step_count": 3135.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "10014",
+            "instruction": "Could you set up the shelves by moving the picture frame with my family reunion photo and the lamp with a pineapple-shaped neon outline and a black base? After that, could you set the relaxing ambiance in the bedroom for me?",
+            "original_data_info": {
+                "episode_id": [
+                    "3010",
+                    "2989"
+                ],
+                "instruction": [
+                    "Could you set up the shelves by moving the picture frame with my family reunion photo and the lamp with a pineapple-shaped neon outline and a black base?",
+                    "Could you set the relaxing ambiance in the bedroom for me?"
+                ],
+                "data_path": [
+                    "data/datasets/partnr_episodes/v0_0/val.json",
+                    "data/datasets/partnr_episodes/v0_0/val.json"
+                ]
+            },
+            "metadata": {
+                "subtype": [
+                    "history",
+                    "preference"
+                ],
+                "memory": [
+                    "The gold picture frame with a dark central image contains a special photo from the user's family reunion.",
+                    "Place the candle and vase on the bedroom chest of drawers for a relaxing ambiance."
+                ],
+                "episode_type": [
+                    "object_semantics",
+                    "user_pattern"
+                ],
+                "num_targets": [
+                    1,
+                    null
+                ],
+                "related_episode_id": [
+                    "1010",
+                    "989"
+                ],
+                "stage": "2",
+                "target_objects_original": [
+                    [
+                        {
+                            "id": "B07HK3PNSK",
+                            "caption": "A lamp with a pineapple-shaped neon outline and a black base.",
+                            "source": "amazon_berkeley",
+                            "category": "lamp",
+                            "cluster": 1
+                        },
+                        {
+                            "id": "3bfcfba0a45e2072466f4b9adb6efb1bc4344b75",
+                            "caption": "A gold picture frame with a dark central image.",
+                            "source": "hssd_hab",
+                            "category": "picture_frame",
+                            "cluster": 1
+                        }
+                    ],
+                    [
+                        {
+                            "id": "36f46c7b967c8101325848bcf43db07589ae2cc1",
+                            "caption": "A white candle with a light blue base in a round holder.",
+                            "source": "hssd_hab",
+                            "category": "candle",
+                            "cluster": 1
+                        },
+                        {
+                            "id": "c3a6db9251980820f1e2ddcabebf8d21f059e0a4",
+                            "caption": "A black vase with white geometric patterns.",
+                            "source": "hssd_hab",
+                            "category": "vase",
+                            "cluster": 0
+                        }
+                    ]
+                ],
+                "target_objects": [
+                    {
+                        "id": "B07HK3PNSK",
+                        "caption": "A lamp with a pineapple-shaped neon outline and a black base.",
+                        "source": "amazon_berkeley",
+                        "category": "lamp",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "3bfcfba0a45e2072466f4b9adb6efb1bc4344b75",
+                        "caption": "A gold picture frame with a dark central image.",
+                        "source": "hssd_hab",
+                        "category": "picture_frame",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "36f46c7b967c8101325848bcf43db07589ae2cc1",
+                        "caption": "A white candle with a light blue base in a round holder.",
+                        "source": "hssd_hab",
+                        "category": "candle",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "c3a6db9251980820f1e2ddcabebf8d21f059e0a4",
+                        "caption": "A black vase with white geometric patterns.",
+                        "source": "hssd_hab",
+                        "category": "vase",
+                        "cluster": 0
+                    }
+                ],
+                "distractors_original": [
+                    [
+                        {
+                            "id": "B07HK83QRB",
+                            "caption": "A wooden lamp with a white spherical shade.",
+                            "source": "amazon_berkeley",
+                            "category": "lamp",
+                            "cluster": 0,
+                            "pair_id": "B07HK3PNSK"
+                        },
+                        {
+                            "id": "c8d16af73e07db7b9ff1aea7bc583f22f9166d72",
+                            "caption": "A beige picture frame with a bird illustration.",
+                            "source": "hssd_hab",
+                            "category": "picture_frame",
+                            "cluster": 0,
+                            "pair_id": "3bfcfba0a45e2072466f4b9adb6efb1bc4344b75"
+                        }
+                    ],
+                    []
+                ],
+                "distractors": [
+                    {
+                        "id": "B07HK83QRB",
+                        "caption": "A wooden lamp with a white spherical shade.",
+                        "source": "amazon_berkeley",
+                        "category": "lamp",
+                        "cluster": 0,
+                        "pair_id": "B07HK3PNSK"
+                    },
+                    {
+                        "id": "c8d16af73e07db7b9ff1aea7bc583f22f9166d72",
+                        "caption": "A beige picture frame with a bird illustration.",
+                        "source": "hssd_hab",
+                        "category": "picture_frame",
+                        "cluster": 0,
+                        "pair_id": "3bfcfba0a45e2072466f4b9adb6efb1bc4344b75"
+                    }
+                ],
+                "used_object_original": [
+                    [
+                        "picture_frame"
+                    ],
+                    []
+                ],
+                "used_object": [
+                    "picture_frame"
+                ],
+                "combination_type": "Object Semantics + User Pattern",
+                "object_overlaps": {
+                    "target_target": [],
+                    "distractor_distractor": [],
+                    "target1_distractor2": [],
+                    "target2_distractor1": [],
+                    "target_category_overlap": [],
+                    "counts": {
+                        "target_target": 0,
+                        "distractor_distractor": 0,
+                        "target1_distractor2": 0,
+                        "target2_distractor1": 0,
+                        "target_category_overlap": 0,
+                        "total_overlap": 0
+                    },
+                    "has_target_category_overlap": false,
+                    "has_target_distractor_overlap": false
+                },
+                "receptacle_overlaps": {
+                    "has_overlaps": false,
+                    "common_receptacles": [],
+                    "overlap_count": 0
+                }
+            },
+            "scene_id": "102817140",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "B07HK3PNSK_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "3bd0e65f7e1c55fe38c4b6101e30f44fe392151a_:0000",
+                            "7b395deb580a75ca10a361d25b5e10b1bab8464b_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "3bfcfba0a45e2072466f4b9adb6efb1bc4344b75_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "3bd0e65f7e1c55fe38c4b6101e30f44fe392151a_:0000",
+                            "7b395deb580a75ca10a361d25b5e10b1bab8464b_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "36f46c7b967c8101325848bcf43db07589ae2cc1_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "2d93837fd0fb80b2f2e9b0d3d55eb6506b22d4c1_:0000",
+                            "47c28745703eaa9b3bfe792ad97a4de3467d3bc3_:0000",
+                            "ee4b6239be4a2513feccbe0a96c2a59cda30b1ee_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "c3a6db9251980820f1e2ddcabebf8d21f059e0a4_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "2d93837fd0fb80b2f2e9b0d3d55eb6506b22d4c1_:0000",
+                            "47c28745703eaa9b3bfe792ad97a4de3467d3bc3_:0000",
+                            "ee4b6239be4a2513feccbe0a96c2a59cda30b1ee_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [
+                            [
+                                0,
+                                2
+                            ],
+                            [
+                                1,
+                                2
+                            ]
+                        ],
+                        "n_propositions": 4
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2,
+                            3
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 10012,
+        "error": false,
+        "instruction": "Please move the teal vase, the brown wooden bowl, and my gift candle from my friend to a different table in the living room. After that, can you organize my plants and toys as I usually do?",
+        "replanning_count_0": 35.0,
+        "run_id": 0,
+        "runtime": 419.9375865459442,
+        "sim_step_count": 5083.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "10012",
+            "instruction": "Please move the teal vase, the brown wooden bowl, and my gift candle from my friend to a different table in the living room. After that, can you organize my plants and toys as I usually do?",
+            "original_data_info": {
+                "episode_id": [
+                    "2950",
+                    "2937"
+                ],
+                "instruction": [
+                    "Please move the teal vase, the brown wooden bowl, and my gift candle from my friend to a different table in the living room.",
+                    "Can you organize my plants and toys as I usually do?"
+                ],
+                "data_path": [
+                    "data/datasets/partnr_episodes/v0_0/val.json",
+                    "data/datasets/partnr_episodes/v0_0/val.json"
+                ]
+            },
+            "metadata": {
+                "subtype": [
+                    "history",
+                    "preference"
+                ],
+                "memory": [
+                    "The gradient teal candle with a white top is a gift from the user's friend.",
+                    "Place the plant container in the living room for better sunlight and the stuffed toy on the bedroom table for a cozy touch."
+                ],
+                "episode_type": [
+                    "object_semantics",
+                    "user_pattern"
+                ],
+                "num_targets": [
+                    1,
+                    null
+                ],
+                "related_episode_id": [
+                    "950",
+                    "937"
+                ],
+                "stage": "2",
+                "target_objects_original": [
+                    [
+                        {
+                            "id": "56a3cb5686d12e4bad648c325ae998def645c997",
+                            "caption": "A teal vase with a tall, slender neck.",
+                            "source": "hssd_hab",
+                            "category": "vase",
+                            "cluster": 1
+                        },
+                        {
+                            "id": "xxxx575beb73xadbex4b2axbc06x2273ca72ce73",
+                            "caption": "A gradient teal candle with a white top.",
+                            "source": "hssd_hab",
+                            "category": "candle",
+                            "cluster": 0
+                        },
+                        {
+                            "id": "xxxxbcdf0625xdd05x4bb0x8c90x522f58f47de3",
+                            "caption": "A brown wooden bowl with a smooth finish.",
+                            "source": "hssd_hab",
+                            "category": "bowl",
+                            "cluster": 0
+                        }
+                    ],
+                    [
+                        {
+                            "id": "Cole_Hardware_Electric_Pot_Assortment_55",
+                            "caption": "A colorful assortment of electric pots, Cole Hardware.",
+                            "source": "google",
+                            "category": "plant_container",
+                            "cluster": 0
+                        },
+                        {
+                            "id": "b4ba58ab622b84b76b98a8d4f907116425d68f3b",
+                            "caption": "A gray stuffed toy bear with a paw print on its scarf.",
+                            "source": "hssd_hab",
+                            "category": "stuffed_toy",
+                            "cluster": 1
+                        }
+                    ]
+                ],
+                "target_objects": [
+                    {
+                        "id": "56a3cb5686d12e4bad648c325ae998def645c997",
+                        "caption": "A teal vase with a tall, slender neck.",
+                        "source": "hssd_hab",
+                        "category": "vase",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "xxxx575beb73xadbex4b2axbc06x2273ca72ce73",
+                        "caption": "A gradient teal candle with a white top.",
+                        "source": "hssd_hab",
+                        "category": "candle",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "xxxxbcdf0625xdd05x4bb0x8c90x522f58f47de3",
+                        "caption": "A brown wooden bowl with a smooth finish.",
+                        "source": "hssd_hab",
+                        "category": "bowl",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "Cole_Hardware_Electric_Pot_Assortment_55",
+                        "caption": "A colorful assortment of electric pots, Cole Hardware.",
+                        "source": "google",
+                        "category": "plant_container",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "b4ba58ab622b84b76b98a8d4f907116425d68f3b",
+                        "caption": "A gray stuffed toy bear with a paw print on its scarf.",
+                        "source": "hssd_hab",
+                        "category": "stuffed_toy",
+                        "cluster": 1
+                    }
+                ],
+                "distractors_original": [
+                    [
+                        {
+                            "id": "66d17b302cff7b3baffdccbb52f16325ff35c623",
+                            "caption": "A white vase with a green nature pattern.",
+                            "source": "hssd_hab",
+                            "category": "vase",
+                            "cluster": 0,
+                            "pair_id": "56a3cb5686d12e4bad648c325ae998def645c997"
+                        },
+                        {
+                            "id": "Candle_3",
+                            "caption": "A white candle on a black, geometric holder.",
+                            "source": "ai2thorhab",
+                            "category": "candle",
+                            "cluster": 1,
+                            "pair_id": "xxxx575beb73xadbex4b2axbc06x2273ca72ce73"
+                        },
+                        {
+                            "id": "7aec926807a58f4ec2071758b4e6d46f91de9d08",
+                            "caption": "A white bowl with a blue star pattern.",
+                            "source": "hssd_hab",
+                            "category": "bowl",
+                            "cluster": 1,
+                            "pair_id": "xxxxbcdf0625xdd05x4bb0x8c90x522f58f47de3"
+                        }
+                    ],
+                    []
+                ],
+                "distractors": [
+                    {
+                        "id": "66d17b302cff7b3baffdccbb52f16325ff35c623",
+                        "caption": "A white vase with a green nature pattern.",
+                        "source": "hssd_hab",
+                        "category": "vase",
+                        "cluster": 0,
+                        "pair_id": "56a3cb5686d12e4bad648c325ae998def645c997"
+                    },
+                    {
+                        "id": "Candle_3",
+                        "caption": "A white candle on a black, geometric holder.",
+                        "source": "ai2thorhab",
+                        "category": "candle",
+                        "cluster": 1,
+                        "pair_id": "xxxx575beb73xadbex4b2axbc06x2273ca72ce73"
+                    },
+                    {
+                        "id": "7aec926807a58f4ec2071758b4e6d46f91de9d08",
+                        "caption": "A white bowl with a blue star pattern.",
+                        "source": "hssd_hab",
+                        "category": "bowl",
+                        "cluster": 1,
+                        "pair_id": "xxxxbcdf0625xdd05x4bb0x8c90x522f58f47de3"
+                    }
+                ],
+                "used_object_original": [
+                    [
+                        "candle"
+                    ],
+                    []
+                ],
+                "used_object": [
+                    "candle"
+                ],
+                "combination_type": "Object Semantics + User Pattern",
+                "object_overlaps": {
+                    "target_target": [],
+                    "distractor_distractor": [],
+                    "target1_distractor2": [],
+                    "target2_distractor1": [],
+                    "target_category_overlap": [],
+                    "counts": {
+                        "target_target": 0,
+                        "distractor_distractor": 0,
+                        "target1_distractor2": 0,
+                        "target2_distractor1": 0,
+                        "target_category_overlap": 0,
+                        "total_overlap": 0
+                    },
+                    "has_target_category_overlap": false,
+                    "has_target_distractor_overlap": false
+                },
+                "receptacle_overlaps": {
+                    "has_overlaps": false,
+                    "common_receptacles": [],
+                    "overlap_count": 0
+                }
+            },
+            "scene_id": "102816756",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "56a3cb5686d12e4bad648c325ae998def645c997_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "7dd70791b3608b7a7e5f24b451cf7b11cdadcba5_:0000",
+                            "c95a77cb5c2b67768b566f45b25ccd726be5bead_:0000",
+                            "d60340031eacc7eba62900753ddb800d5d022e69_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "xxxx575beb73xadbex4b2axbc06x2273ca72ce73_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "7dd70791b3608b7a7e5f24b451cf7b11cdadcba5_:0000",
+                            "c95a77cb5c2b67768b566f45b25ccd726be5bead_:0000",
+                            "d60340031eacc7eba62900753ddb800d5d022e69_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "xxxxbcdf0625xdd05x4bb0x8c90x522f58f47de3_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "7dd70791b3608b7a7e5f24b451cf7b11cdadcba5_:0000",
+                            "c95a77cb5c2b67768b566f45b25ccd726be5bead_:0000",
+                            "d60340031eacc7eba62900753ddb800d5d022e69_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Cole_Hardware_Electric_Pot_Assortment_55_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "786845ecaee2a43d135f922f4d617da02c8543b6_:0000",
+                            "7dd70791b3608b7a7e5f24b451cf7b11cdadcba5_:0000",
+                            "c95a77cb5c2b67768b566f45b25ccd726be5bead_:0000",
+                            "d60340031eacc7eba62900753ddb800d5d022e69_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "b4ba58ab622b84b76b98a8d4f907116425d68f3b_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "e1d51fa2fae90a92cbb8876689336c9ae07cb5a9_:0000",
+                            "e773f6b54137ce8acdf013c000fc8dbf29071e1d_:0000",
+                            "ff6b4958d22c4a1a423dc32fb35b794ed075411c_:0000",
+                            "a32ed32cc5693cb1ccd4792b7c3f0340cc8eda91_:0000",
+                            "c76cf29427780abebb11688b4815cbe59d54819a_:0000",
+                            "c76cf29427780abebb11688b4815cbe59d54819a_:0002"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [
+                            [
+                                0,
+                                3
+                            ],
+                            [
+                                1,
+                                3
+                            ],
+                            [
+                                2,
+                                3
+                            ]
+                        ],
+                        "n_propositions": 5
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2,
+                            3,
+                            4
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 10017,
+        "error": false,
+        "instruction": "Move the gift vase from my friend and the natural-colored Ecoforms plant saucer from the living room table to the hallway couch, placing them next to each other. After that, can you arrange the basket, can, and plant container for my centerpiece setup?",
+        "replanning_count_0": 32.0,
+        "run_id": 0,
+        "runtime": 195.87012934684756,
+        "sim_step_count": 2745.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "10017",
+            "instruction": "Move the gift vase from my friend and the natural-colored Ecoforms plant saucer from the living room table to the hallway couch, placing them next to each other. After that, can you arrange the basket, can, and plant container for my centerpiece setup?",
+            "original_data_info": {
+                "episode_id": [
+                    "3103",
+                    "3081"
+                ],
+                "instruction": [
+                    "Move the gift vase from my friend and the natural-colored Ecoforms plant saucer from the living room table to the hallway couch, placing them next to each other.",
+                    "Can you arrange the basket, can, and plant container for my centerpiece setup?"
+                ],
+                "data_path": [
+                    "data/datasets/partnr_episodes/v0_0/val.json",
+                    "data/datasets/partnr_episodes/v0_0/val.json"
+                ]
+            },
+            "metadata": {
+                "subtype": [
+                    "history",
+                    "preference"
+                ],
+                "memory": [
+                    "The tall, dark green vase with a narrow neck is a gift from the user's friend.",
+                    "Place the basket, can, and plant container on the dining table for organizing a centerpiece."
+                ],
+                "episode_type": [
+                    "object_semantics",
+                    "user_pattern"
+                ],
+                "num_targets": [
+                    1,
+                    null
+                ],
+                "related_episode_id": [
+                    "1103",
+                    "1081"
+                ],
+                "stage": "2",
+                "target_objects_original": [
+                    [
+                        {
+                            "id": "3448a0f2142df518fd92e165207bf1d58dd05fa0",
+                            "caption": "A tall, dark green vase with a narrow neck.",
+                            "source": "hssd_hab",
+                            "category": "vase",
+                            "cluster": 1
+                        },
+                        {
+                            "id": "Ecoforms_Plant_Saucer_S14NATURAL",
+                            "caption": "A natural-colored, round Ecoforms plant saucer.",
+                            "source": "google",
+                            "category": "plant_saucer",
+                            "cluster": 0
+                        }
+                    ],
+                    [
+                        {
+                            "id": "Spritz_Easter_Basket_Plastic_Teal",
+                            "caption": "A teal plastic basket, Spritz Easter Basket.",
+                            "source": "google",
+                            "category": "basket",
+                            "cluster": 0
+                        },
+                        {
+                            "id": "Don_Franciscos_Gourmet_Coffee_Medium_Decaf_100_Colombian_12_oz_340_g",
+                            "caption": "A brown and yellow coffee can, Don Francisco's Gourmet Coffee Medium Decaf.",
+                            "source": "google",
+                            "category": "can",
+                            "cluster": 1
+                        },
+                        {
+                            "id": "Cole_Hardware_Orchid_Pot_85",
+                            "caption": "A white and green orchid pot, Cole Hardware Orchid Pot 85.",
+                            "source": "google",
+                            "category": "plant_container",
+                            "cluster": 0
+                        }
+                    ]
+                ],
+                "target_objects": [
+                    {
+                        "id": "3448a0f2142df518fd92e165207bf1d58dd05fa0",
+                        "caption": "A tall, dark green vase with a narrow neck.",
+                        "source": "hssd_hab",
+                        "category": "vase",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "Ecoforms_Plant_Saucer_S14NATURAL",
+                        "caption": "A natural-colored, round Ecoforms plant saucer.",
+                        "source": "google",
+                        "category": "plant_saucer",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "Spritz_Easter_Basket_Plastic_Teal",
+                        "caption": "A teal plastic basket, Spritz Easter Basket.",
+                        "source": "google",
+                        "category": "basket",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "Don_Franciscos_Gourmet_Coffee_Medium_Decaf_100_Colombian_12_oz_340_g",
+                        "caption": "A brown and yellow coffee can, Don Francisco's Gourmet Coffee Medium Decaf.",
+                        "source": "google",
+                        "category": "can",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "Cole_Hardware_Orchid_Pot_85",
+                        "caption": "A white and green orchid pot, Cole Hardware Orchid Pot 85.",
+                        "source": "google",
+                        "category": "plant_container",
+                        "cluster": 0
+                    }
+                ],
+                "distractors_original": [
+                    [
+                        {
+                            "id": "B075HR7KY9",
+                            "caption": "A white vase with a textured pattern.",
+                            "source": "amazon_berkeley",
+                            "category": "vase",
+                            "cluster": 0,
+                            "pair_id": "3448a0f2142df518fd92e165207bf1d58dd05fa0"
+                        },
+                        {
+                            "id": "Cole_Hardware_Plant_Saucer_Glazed_9",
+                            "caption": "A glazed ceramic plant saucer, predominantly beige, Cole Hardware Plant Saucer Glazed 9.",
+                            "source": "google",
+                            "category": "plant_saucer",
+                            "cluster": 1,
+                            "pair_id": "Ecoforms_Plant_Saucer_S14NATURAL"
+                        }
+                    ],
+                    []
+                ],
+                "distractors": [
+                    {
+                        "id": "B075HR7KY9",
+                        "caption": "A white vase with a textured pattern.",
+                        "source": "amazon_berkeley",
+                        "category": "vase",
+                        "cluster": 0,
+                        "pair_id": "3448a0f2142df518fd92e165207bf1d58dd05fa0"
+                    },
+                    {
+                        "id": "Cole_Hardware_Plant_Saucer_Glazed_9",
+                        "caption": "A glazed ceramic plant saucer, predominantly beige, Cole Hardware Plant Saucer Glazed 9.",
+                        "source": "google",
+                        "category": "plant_saucer",
+                        "cluster": 1,
+                        "pair_id": "Ecoforms_Plant_Saucer_S14NATURAL"
+                    }
+                ],
+                "used_object_original": [
+                    [
+                        "vase"
+                    ],
+                    []
+                ],
+                "used_object": [
+                    "vase"
+                ],
+                "combination_type": "Object Semantics + User Pattern",
+                "object_overlaps": {
+                    "target_target": [],
+                    "distractor_distractor": [],
+                    "target1_distractor2": [],
+                    "target2_distractor1": [],
+                    "target_category_overlap": [],
+                    "counts": {
+                        "target_target": 0,
+                        "distractor_distractor": 0,
+                        "target1_distractor2": 0,
+                        "target2_distractor1": 0,
+                        "target_category_overlap": 0,
+                        "total_overlap": 0
+                    },
+                    "has_target_category_overlap": false,
+                    "has_target_distractor_overlap": false
+                },
+                "receptacle_overlaps": {
+                    "has_overlaps": false,
+                    "common_receptacles": [],
+                    "overlap_count": 0
+                }
+            },
+            "scene_id": "106878960_174887073",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "3448a0f2142df518fd92e165207bf1d58dd05fa0_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "9a0e617b83c901d346ce9fb020b49bf91442273c_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Ecoforms_Plant_Saucer_S14NATURAL_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "9a0e617b83c901d346ce9fb020b49bf91442273c_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "3448a0f2142df518fd92e165207bf1d58dd05fa0_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "Ecoforms_Plant_Saucer_S14NATURAL_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Spritz_Easter_Basket_Plastic_Teal_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "125fb3495160325540ca5e61fd4e1bbbcee3ed9e_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Don_Franciscos_Gourmet_Coffee_Medium_Decaf_100_Colombian_12_oz_340_g_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "125fb3495160325540ca5e61fd4e1bbbcee3ed9e_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Cole_Hardware_Orchid_Pot_85_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "125fb3495160325540ca5e61fd4e1bbbcee3ed9e_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        2
+                    ],
+                    "depends_on": [
+                        0,
+                        1
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [
+                            [
+                                0,
+                                3
+                            ],
+                            [
+                                1,
+                                3
+                            ],
+                            [
+                                2,
+                                3
+                            ]
+                        ],
+                        "n_propositions": 6
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2,
+                            3,
+                            4,
+                            5
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 10018,
+        "error": false,
+        "instruction": "Could you move the minimalist phone stand to the tv table and then place the gift statue from my best friend on the lounge counter? After that, can you set up for movie night with the kettle and tray?",
+        "replanning_count_0": 24.0,
+        "run_id": 0,
+        "runtime": 137.44233417510986,
+        "sim_step_count": 1417.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "10018",
+            "instruction": "Could you move the minimalist phone stand to the tv table and then place the gift statue from my best friend on the lounge counter? After that, can you set up for movie night with the kettle and tray?",
+            "original_data_info": {
+                "episode_id": [
+                    "3127",
+                    "3111"
+                ],
+                "instruction": [
+                    "Could you move the minimalist phone stand to the tv table and then place the gift statue from my best friend on the lounge counter?",
+                    "Can you set up for movie night with the kettle and tray?"
+                ],
+                "data_path": [
+                    "data/datasets/partnr_episodes/v0_0/val.json",
+                    "data/datasets/partnr_episodes/v0_0/val.json"
+                ]
+            },
+            "metadata": {
+                "subtype": [
+                    "history",
+                    "preference"
+                ],
+                "memory": [
+                    "The green statue of a sitting dog was a gift from the user's best friend.",
+                    "Place the kettle and tray on the TV table for easy access during movie nights."
+                ],
+                "episode_type": [
+                    "object_semantics",
+                    "user_pattern"
+                ],
+                "num_targets": [
+                    1,
+                    null
+                ],
+                "related_episode_id": [
+                    "1127",
+                    "1111"
+                ],
+                "stage": "2",
+                "target_objects_original": [
+                    [
+                        {
+                            "id": "B01IJ5A2UA",
+                            "caption": "A black phone stand with a minimalist design.",
+                            "source": "amazon_berkeley",
+                            "category": "phone_stand",
+                            "cluster": 0
+                        },
+                        {
+                            "id": "Dog_Statue_1",
+                            "caption": "A green statue of a sitting dog.",
+                            "source": "ai2thorhab",
+                            "category": "statue",
+                            "cluster": 1
+                        }
+                    ],
+                    [
+                        {
+                            "id": "e41fb9d079791e99e3ff9e216c5e4416a9a83570",
+                            "caption": "A black kettle with a curved handle.",
+                            "source": "hssd_hab",
+                            "category": "kettle",
+                            "cluster": 0
+                        },
+                        {
+                            "id": "45ef260cbb5f19848878081e98db6af0fa1b155c",
+                            "caption": "A speckled brown circular tray.",
+                            "source": "hssd_hab",
+                            "category": "tray",
+                            "cluster": 1
+                        }
+                    ]
+                ],
+                "target_objects": [
+                    {
+                        "id": "B01IJ5A2UA",
+                        "caption": "A black phone stand with a minimalist design.",
+                        "source": "amazon_berkeley",
+                        "category": "phone_stand",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "Dog_Statue_1",
+                        "caption": "A green statue of a sitting dog.",
+                        "source": "ai2thorhab",
+                        "category": "statue",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "e41fb9d079791e99e3ff9e216c5e4416a9a83570",
+                        "caption": "A black kettle with a curved handle.",
+                        "source": "hssd_hab",
+                        "category": "kettle",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "45ef260cbb5f19848878081e98db6af0fa1b155c",
+                        "caption": "A speckled brown circular tray.",
+                        "source": "hssd_hab",
+                        "category": "tray",
+                        "cluster": 1
+                    }
+                ],
+                "distractors_original": [
+                    [
+                        {
+                            "id": "B01IJ5A0PC",
+                            "caption": "A silver and light blue phone stand with a sleek design.",
+                            "source": "amazon_berkeley",
+                            "category": "phone_stand",
+                            "cluster": 1,
+                            "pair_id": "B01IJ5A2UA"
+                        },
+                        {
+                            "id": "Stone_Statue_3",
+                            "caption": "A bronze statue with an abstract human form.",
+                            "source": "ai2thorhab",
+                            "category": "statue",
+                            "cluster": 0,
+                            "pair_id": "Dog_Statue_1"
+                        }
+                    ],
+                    []
+                ],
+                "distractors": [
+                    {
+                        "id": "B01IJ5A0PC",
+                        "caption": "A silver and light blue phone stand with a sleek design.",
+                        "source": "amazon_berkeley",
+                        "category": "phone_stand",
+                        "cluster": 1,
+                        "pair_id": "B01IJ5A2UA"
+                    },
+                    {
+                        "id": "Stone_Statue_3",
+                        "caption": "A bronze statue with an abstract human form.",
+                        "source": "ai2thorhab",
+                        "category": "statue",
+                        "cluster": 0,
+                        "pair_id": "Dog_Statue_1"
+                    }
+                ],
+                "used_object_original": [
+                    [
+                        "statue"
+                    ],
+                    []
+                ],
+                "used_object": [
+                    "statue"
+                ],
+                "combination_type": "Object Semantics + User Pattern",
+                "object_overlaps": {
+                    "target_target": [],
+                    "distractor_distractor": [],
+                    "target1_distractor2": [],
+                    "target2_distractor1": [],
+                    "target_category_overlap": [],
+                    "counts": {
+                        "target_target": 0,
+                        "distractor_distractor": 0,
+                        "target1_distractor2": 0,
+                        "target2_distractor1": 0,
+                        "target_category_overlap": 0,
+                        "total_overlap": 0
+                    },
+                    "has_target_category_overlap": false,
+                    "has_target_distractor_overlap": false
+                },
+                "receptacle_overlaps": {
+                    "has_overlaps": false,
+                    "common_receptacles": [],
+                    "overlap_count": 0
+                }
+            },
+            "scene_id": "102344529",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "B01IJ5A2UA_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "1f20f5194541179686f9bff3a01d002076751910_:0000",
+                            "9812cf1f7ced3de9596d88244068b628e346069c_:0000",
+                            "9b2f527215b5f508680ff582ad412a68407c07bd_:0000",
+                            "cb0d27b5428679b54fc8bf347ccc168cba08092f_:0000",
+                            "f1a090d794cf38e36a584e07672edf7ad1a70f8a_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Dog_Statue_1_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "15a81c5727eba4e4a4161e1cf2c76fe2c601ae15_:0001"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "e41fb9d079791e99e3ff9e216c5e4416a9a83570_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "1f20f5194541179686f9bff3a01d002076751910_:0000",
+                            "9812cf1f7ced3de9596d88244068b628e346069c_:0000",
+                            "9b2f527215b5f508680ff582ad412a68407c07bd_:0000",
+                            "cb0d27b5428679b54fc8bf347ccc168cba08092f_:0000",
+                            "f1a090d794cf38e36a584e07672edf7ad1a70f8a_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "45ef260cbb5f19848878081e98db6af0fa1b155c_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "1f20f5194541179686f9bff3a01d002076751910_:0000",
+                            "9812cf1f7ced3de9596d88244068b628e346069c_:0000",
+                            "9b2f527215b5f508680ff582ad412a68407c07bd_:0000",
+                            "cb0d27b5428679b54fc8bf347ccc168cba08092f_:0000",
+                            "f1a090d794cf38e36a584e07672edf7ad1a70f8a_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "e41fb9d079791e99e3ff9e216c5e4416a9a83570_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "45ef260cbb5f19848878081e98db6af0fa1b155c_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        4
+                    ],
+                    "depends_on": [
+                        2,
+                        3
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [
+                            [
+                                0,
+                                2
+                            ],
+                            [
+                                1,
+                                2
+                            ]
+                        ],
+                        "n_propositions": 5
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2,
+                            3,
+                            4
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 10023,
+        "error": false,
+        "instruction": "Can you tidy up the hallway shelves? First, move the book with the colorful architectural cover, the gift vase from my friend, and the Sootheze Cold Therapy Elephant to the living room table and place them next to each other. After that, could you set up my relaxation spot in the bedroom?",
+        "replanning_count_0": 31.0,
+        "run_id": 0,
+        "runtime": 461.7848308086395,
+        "sim_step_count": 3356.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "10023",
+            "instruction": "Can you tidy up the hallway shelves? First, move the book with the colorful architectural cover, the gift vase from my friend, and the Sootheze Cold Therapy Elephant to the living room table and place them next to each other. After that, could you set up my relaxation spot in the bedroom?",
+            "original_data_info": {
+                "episode_id": [
+                    "3273",
+                    "3255"
+                ],
+                "instruction": [
+                    "Can you tidy up the hallway shelves? First, move the book with the colorful architectural cover, the gift vase from my friend, and the Sootheze Cold Therapy Elephant to the living room table and place them next to each other.",
+                    "Could you set up my relaxation spot in the bedroom?"
+                ],
+                "data_path": [
+                    "data/datasets/partnr_episodes/v0_0/val.json",
+                    "data/datasets/partnr_episodes/v0_0/val.json"
+                ]
+            },
+            "metadata": {
+                "subtype": [
+                    "history",
+                    "preference"
+                ],
+                "memory": [
+                    "The white vase with brown accents and a glossy finish is a gift from the user's friend.",
+                    "Leave one action figure on the table and place the tray on the bed for easy access during relaxation in the bedroom."
+                ],
+                "episode_type": [
+                    "object_semantics",
+                    "user_pattern"
+                ],
+                "num_targets": [
+                    1,
+                    null
+                ],
+                "related_episode_id": [
+                    "1273",
+                    "1255"
+                ],
+                "stage": "2",
+                "target_objects_original": [
+                    [
+                        {
+                            "id": "c42c9cc7db0f5e58e14f3d6acfff94c9b2c5f488",
+                            "caption": "A book with a colorful cover featuring architectural imagery.",
+                            "source": "hssd_hab",
+                            "category": "book",
+                            "cluster": 1
+                        },
+                        {
+                            "id": "B07B8NZQ68",
+                            "caption": "A white vase with brown accents and a glossy finish.",
+                            "source": "amazon_berkeley",
+                            "category": "vase",
+                            "cluster": 0
+                        },
+                        {
+                            "id": "Sootheze_Cold_Therapy_Elephant",
+                            "caption": "A gray elephant stuffed toy with a soft, plush texture, Sootheze Cold Therapy Elephant.",
+                            "source": "google",
+                            "category": "stuffed_toy",
+                            "cluster": 0
+                        }
+                    ],
+                    [
+                        {
+                            "id": "13619669d6d62bdab8d04a4b61c2083af5e61819",
+                            "caption": "A black rectangular tray.",
+                            "source": "hssd_hab",
+                            "category": "tray",
+                            "cluster": 1
+                        }
+                    ]
+                ],
+                "target_objects": [
+                    {
+                        "id": "c42c9cc7db0f5e58e14f3d6acfff94c9b2c5f488",
+                        "caption": "A book with a colorful cover featuring architectural imagery.",
+                        "source": "hssd_hab",
+                        "category": "book",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "B07B8NZQ68",
+                        "caption": "A white vase with brown accents and a glossy finish.",
+                        "source": "amazon_berkeley",
+                        "category": "vase",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "Sootheze_Cold_Therapy_Elephant",
+                        "caption": "A gray elephant stuffed toy with a soft, plush texture, Sootheze Cold Therapy Elephant.",
+                        "source": "google",
+                        "category": "stuffed_toy",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "13619669d6d62bdab8d04a4b61c2083af5e61819",
+                        "caption": "A black rectangular tray.",
+                        "source": "hssd_hab",
+                        "category": "tray",
+                        "cluster": 1
+                    }
+                ],
+                "distractors_original": [
+                    [
+                        {
+                            "id": "361a6c08b1137a16977f5a00761aabcb311a7475",
+                            "caption": "A black hardcover book with an elastic band.",
+                            "source": "hssd_hab",
+                            "category": "book",
+                            "cluster": 0,
+                            "pair_id": "c42c9cc7db0f5e58e14f3d6acfff94c9b2c5f488"
+                        },
+                        {
+                            "id": "a17f03892b9f71801e057be9db2de908464d1fba",
+                            "caption": "A beige vase with vintage text and floral design.",
+                            "source": "hssd_hab",
+                            "category": "vase",
+                            "cluster": 1,
+                            "pair_id": "B07B8NZQ68"
+                        },
+                        {
+                            "id": "5149957d46a31be888657d1b041130d8dc7ed905",
+                            "caption": "A brown stuffed toy with antlers and big eyes.",
+                            "source": "hssd_hab",
+                            "category": "stuffed_toy",
+                            "cluster": 1,
+                            "pair_id": "Sootheze_Cold_Therapy_Elephant"
+                        }
+                    ],
+                    []
+                ],
+                "distractors": [
+                    {
+                        "id": "361a6c08b1137a16977f5a00761aabcb311a7475",
+                        "caption": "A black hardcover book with an elastic band.",
+                        "source": "hssd_hab",
+                        "category": "book",
+                        "cluster": 0,
+                        "pair_id": "c42c9cc7db0f5e58e14f3d6acfff94c9b2c5f488"
+                    },
+                    {
+                        "id": "a17f03892b9f71801e057be9db2de908464d1fba",
+                        "caption": "A beige vase with vintage text and floral design.",
+                        "source": "hssd_hab",
+                        "category": "vase",
+                        "cluster": 1,
+                        "pair_id": "B07B8NZQ68"
+                    },
+                    {
+                        "id": "5149957d46a31be888657d1b041130d8dc7ed905",
+                        "caption": "A brown stuffed toy with antlers and big eyes.",
+                        "source": "hssd_hab",
+                        "category": "stuffed_toy",
+                        "cluster": 1,
+                        "pair_id": "Sootheze_Cold_Therapy_Elephant"
+                    }
+                ],
+                "used_object_original": [
+                    [
+                        "vase"
+                    ],
+                    []
+                ],
+                "used_object": [
+                    "vase"
+                ],
+                "combination_type": "Object Semantics + User Pattern",
+                "object_overlaps": {
+                    "target_target": [],
+                    "distractor_distractor": [],
+                    "target1_distractor2": [],
+                    "target2_distractor1": [],
+                    "target_category_overlap": [],
+                    "counts": {
+                        "target_target": 0,
+                        "distractor_distractor": 0,
+                        "target1_distractor2": 0,
+                        "target2_distractor1": 0,
+                        "target_category_overlap": 0,
+                        "total_overlap": 0
+                    },
+                    "has_target_category_overlap": false,
+                    "has_target_distractor_overlap": false
+                },
+                "receptacle_overlaps": {
+                    "has_overlaps": false,
+                    "common_receptacles": [],
+                    "overlap_count": 0
+                }
+            },
+            "scene_id": "104348010_171512832",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "c42c9cc7db0f5e58e14f3d6acfff94c9b2c5f488_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "5d70cc76c99acee4513ec5f7fad497d2baebca9e_:0000",
+                            "5d70cc76c99acee4513ec5f7fad497d2baebca9e_:0001",
+                            "b7be6ad871800511e7a320626aac37272eb919c4_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "B07B8NZQ68_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "5d70cc76c99acee4513ec5f7fad497d2baebca9e_:0000",
+                            "5d70cc76c99acee4513ec5f7fad497d2baebca9e_:0001",
+                            "b7be6ad871800511e7a320626aac37272eb919c4_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Sootheze_Cold_Therapy_Elephant_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "5d70cc76c99acee4513ec5f7fad497d2baebca9e_:0000",
+                            "5d70cc76c99acee4513ec5f7fad497d2baebca9e_:0001",
+                            "b7be6ad871800511e7a320626aac37272eb919c4_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "c42c9cc7db0f5e58e14f3d6acfff94c9b2c5f488_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "B07B8NZQ68_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "B07B8NZQ68_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "Sootheze_Cold_Therapy_Elephant_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "13619669d6d62bdab8d04a4b61c2083af5e61819_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "1374247abf518672db6fc171085369477faae04e_:0000",
+                            "97b2012d718d2bde287e331b3569b8ad2cbdc007_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        3
+                    ],
+                    "depends_on": [
+                        0,
+                        1
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                },
+                {
+                    "proposition_indices": [
+                        4
+                    ],
+                    "depends_on": [
+                        1,
+                        2
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [
+                            [
+                                0,
+                                5
+                            ],
+                            [
+                                1,
+                                5
+                            ],
+                            [
+                                2,
+                                5
+                            ],
+                            [
+                                3,
+                                5
+                            ],
+                            [
+                                4,
+                                5
+                            ]
+                        ],
+                        "n_propositions": 6
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2,
+                            3,
+                            4,
+                            5
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    }
+]

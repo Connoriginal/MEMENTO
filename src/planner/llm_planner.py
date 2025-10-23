@@ -75,7 +75,8 @@ class LLMPlanner(Planner):
         self.rag: Optional["RAG"] = None
         
         self.consecutive_bracket_errors = 0
-        self.max_bracket_errors = 5  # 최대 허용 브라켓 에러 횟수
+        self.max_bracket_errors = 5  # Maximum allowed bracket error count
+        
 
         self.reset()
 
@@ -92,6 +93,21 @@ class LLMPlanner(Planner):
                 plan_config.memory_path,
                 plan_config.corresponding_memory,
                 plan_config.ensure_same_scene
+            )
+            
+        if self.enable_user_profile_rag:
+            from src.planner.user_profile_rag import UserProfileRAG
+            
+            #TODO: 기본 Path로 넣어준 것인데, 바꿔야 함
+            semantic_memory_path = getattr(plan_config, 'semantic_memory_path', 
+                                         "/HabitatLLM/rebuttal/structurize/test_output/openai_gpt_4o/scenes")
+            
+            self.user_profile_rag = UserProfileRAG(
+                plan_config.user_profile_memory_path,
+                env_interface.env.env.env._env.current_episode.scene_id,
+                plan_config.ensure_same_scene,
+                self.llm,  # Use actual LLM instance, not config
+                plan_config.openai_api_key
             )
 
     def reset(self):
@@ -265,6 +281,50 @@ class LLMPlanner(Planner):
                     example_str += f"Example {i + 1}:\n" + self.rag.data_dict[index]["trace"] + "\n"
                 
                 params["rag_examples"] = example_str
+                
+                if self.enable_user_profile_rag:
+                    related_episode_id = self.env_interface.env.env.env._env.current_episode.metadata.get("related_episode_id", None)
+                    if related_episode_id is not None:
+                        if isinstance(related_episode_id, int):
+                            related_episode_id = [related_episode_id]
+
+                    # Set current episode ID for logging
+                    current_episode_id = self.env_interface.env.env.env._env.current_episode.episode_id
+                    self.user_profile_rag.current_episode_id = current_episode_id
+                    
+                    # Search with UserProfileRAG (knowledge embedding 기반)
+                    user_profile_scores, user_profile_indices = self.user_profile_rag.retrieve_top_k_given_query(
+                        input_instruction,
+                        top_k=self.planner_config.get('semantic_top_k', 3),  # 기본값 3
+                        agent_id=self._agents[0].uid,
+                        related_episode_id=related_episode_id
+                    )
+                
+                    # Add user profile memory into the prompt
+                    if len(user_profile_indices) > 0:
+                        user_profile_str = f"\n\n{self.planner_config.llm.user_tag}Below are the user's personal knowledges that might be relevant to this task:\n"
+                        
+                        for i, idx in enumerate(user_profile_indices):
+                            memory = self.user_profile_rag.data_dict[idx]
+                            
+                            if isinstance(memory["knowledge"], list):
+                                knowledge = "; ".join(memory["knowledge"]) if memory["knowledge"] else "None"
+                            else:
+                                knowledge = memory["knowledge"] if memory["knowledge"] else "None"
+                                
+                            if isinstance(memory["descriptions"], list):
+                                descriptions = "; ".join(memory["descriptions"]) if memory["descriptions"] else "None"
+                            else:
+                                descriptions = memory["descriptions"] if memory["descriptions"] else "None"
+                                
+                            user_profile_str += f"Personal Memory {i+1}: {knowledge}\n"
+                            user_profile_str += f"  Description: {descriptions}\n"
+                        
+                        user_profile_str += "\nUse these personal knowledges to better understand the objects and preferences mentioned in the instruction.\n"
+                        user_profile_str += f"{self.planner_config.llm.eot_tag}"
+                        
+                        params["rag_examples"] += user_profile_str
+                
             else:
                 params["rag_examples"] = ""
         if "{tool_descriptions}" in self.prompt:

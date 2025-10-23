@@ -1,0 +1,684 @@
+[
+    {
+        "episode_id": 10004,
+        "error": "False",
+        "instruction": "Could you first move my grandfather's gift clock in the bedroom to the stand and place it next to the black vase with a round shape? Then, move the vase to the shelves in the living room. Then, please move my primary work device from the living room to the bedside table in the bedroom and then to the stool in the bedroom.",
+        "replanning_count_0": 31.0,
+        "run_id": 0,
+        "runtime": 260.5792067050934,
+        "sim_step_count": 3237.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "10004",
+            "instruction": "Could you first move my grandfather's gift clock in the bedroom to the stand and place it next to the black vase with a round shape? Then, move the vase to the shelves in the living room. Then, please move my primary work device from the living room to the bedside table in the bedroom and then to the stool in the bedroom.",
+            "original_data_info": {
+                "episode_id": [
+                    "3079",
+                    "3080"
+                ],
+                "instruction": [
+                    "Could you first move my grandfather's gift clock in the bedroom to the stand and place it next to the black vase with a round shape? Then, move the vase to the shelves in the living room.",
+                    "Please move my primary work device from the living room to the bedside table in the bedroom and then to the stool in the bedroom."
+                ],
+                "data_path": [
+                    "data/datasets/partnr_episodes/v0_0/val.json",
+                    "data/datasets/partnr_episodes/v0_0/val.json"
+                ]
+            },
+            "metadata": {
+                "subtype": [
+                    "history",
+                    "ownership"
+                ],
+                "memory": [
+                    "The maroon square clock with a patterned face was a gift from 3the user's grandfather.",
+                    "The black laptop with a sleek design is the user's primary work device."
+                ],
+                "episode_type": [
+                    "object_semantics",
+                    "object_semantics"
+                ],
+                "num_targets": [
+                    1,
+                    1
+                ],
+                "related_episode_id": [
+                    "1079",
+                    "1080"
+                ],
+                "stage": "2",
+                "target_objects_original": [
+                    [
+                        {
+                            "id": "f03a9160a43f06d49d579eb58f6ed63740afa2e4",
+                            "caption": "A maroon square clock with a patterned face.",
+                            "source": "hssd_hab",
+                            "category": "clock",
+                            "cluster": 0
+                        },
+                        {
+                            "id": "2b6a6f943bdaf73ef2018a02ceb1720ab04b5b2d",
+                            "caption": "A black vase with a round shape.",
+                            "source": "hssd_hab",
+                            "category": "vase",
+                            "cluster": 1
+                        }
+                    ],
+                    [
+                        {
+                            "id": "Laptop_21",
+                            "caption": "A black laptop with a sleek design.",
+                            "source": "ai2thorhab",
+                            "category": "laptop",
+                            "cluster": 1
+                        }
+                    ]
+                ],
+                "target_objects": [
+                    {
+                        "id": "f03a9160a43f06d49d579eb58f6ed63740afa2e4",
+                        "caption": "A maroon square clock with a patterned face.",
+                        "source": "hssd_hab",
+                        "category": "clock",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "2b6a6f943bdaf73ef2018a02ceb1720ab04b5b2d",
+                        "caption": "A black vase with a round shape.",
+                        "source": "hssd_hab",
+                        "category": "vase",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "Laptop_21",
+                        "caption": "A black laptop with a sleek design.",
+                        "source": "ai2thorhab",
+                        "category": "laptop",
+                        "cluster": 1
+                    }
+                ],
+                "distractors_original": [
+                    [
+                        {
+                            "id": "Alarm_Clock_25",
+                            "caption": "A black digital clock with a red LED display.",
+                            "source": "ai2thorhab",
+                            "category": "clock",
+                            "cluster": 1,
+                            "pair_id": "f03a9160a43f06d49d579eb58f6ed63740afa2e4"
+                        },
+                        {
+                            "id": "18a2fab4d1fe71c969e654740028d422d18ad9b6",
+                            "caption": "A white vase with a textured geometric pattern.",
+                            "source": "hssd_hab",
+                            "category": "vase",
+                            "cluster": 0,
+                            "pair_id": "2b6a6f943bdaf73ef2018a02ceb1720ab04b5b2d"
+                        }
+                    ],
+                    [
+                        {
+                            "id": "Laptop_23",
+                            "caption": "A gray laptop with a black keyboard and touchpad.",
+                            "source": "ai2thorhab",
+                            "category": "laptop",
+                            "cluster": 0,
+                            "pair_id": "Laptop_21"
+                        }
+                    ]
+                ],
+                "distractors": [
+                    {
+                        "id": "Alarm_Clock_25",
+                        "caption": "A black digital clock with a red LED display.",
+                        "source": "ai2thorhab",
+                        "category": "clock",
+                        "cluster": 1,
+                        "pair_id": "f03a9160a43f06d49d579eb58f6ed63740afa2e4"
+                    },
+                    {
+                        "id": "18a2fab4d1fe71c969e654740028d422d18ad9b6",
+                        "caption": "A white vase with a textured geometric pattern.",
+                        "source": "hssd_hab",
+                        "category": "vase",
+                        "cluster": 0,
+                        "pair_id": "2b6a6f943bdaf73ef2018a02ceb1720ab04b5b2d"
+                    },
+                    {
+                        "id": "Laptop_23",
+                        "caption": "A gray laptop with a black keyboard and touchpad.",
+                        "source": "ai2thorhab",
+                        "category": "laptop",
+                        "cluster": 0,
+                        "pair_id": "Laptop_21"
+                    }
+                ],
+                "used_object_original": [
+                    [
+                        "clock"
+                    ],
+                    [
+                        "laptop"
+                    ]
+                ],
+                "used_object": [
+                    "clock",
+                    "laptop"
+                ],
+                "combination_type": "Object Semantics + Object Semantics",
+                "object_overlaps": {
+                    "target_target": [],
+                    "distractor_distractor": [],
+                    "target1_distractor2": [],
+                    "target2_distractor1": [],
+                    "target_category_overlap": [],
+                    "counts": {
+                        "target_target": 0,
+                        "distractor_distractor": 0,
+                        "target1_distractor2": 0,
+                        "target2_distractor1": 0,
+                        "target_category_overlap": 0,
+                        "total_overlap": 0
+                    },
+                    "has_target_category_overlap": false,
+                    "has_target_distractor_overlap": false
+                },
+                "receptacle_overlaps": {
+                    "has_overlaps": false,
+                    "common_receptacles": [],
+                    "overlap_count": 0
+                }
+            },
+            "scene_id": "106878915_174887025",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "f03a9160a43f06d49d579eb58f6ed63740afa2e4_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "e194cb80e9941fcf08be2185146d4dccf9d532c2_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "f03a9160a43f06d49d579eb58f6ed63740afa2e4_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "2b6a6f943bdaf73ef2018a02ceb1720ab04b5b2d_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "2b6a6f943bdaf73ef2018a02ceb1720ab04b5b2d_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "3220d21b0885b4f0ac2c044d00a76c2ff7844dca_:0000",
+                            "679d4207f433ee1bb6030bae48df158a775d2b0b_part_64_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Laptop_21_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "4a5f3b29cc15b191bb35bfae6c5918087a173827_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Laptop_21_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "8a2d6c76deccf5964e793c0e591b985590bb916a_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        1
+                    ],
+                    "depends_on": [
+                        0
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                },
+                {
+                    "proposition_indices": [
+                        2
+                    ],
+                    "depends_on": [
+                        1
+                    ],
+                    "relation_type": "after_satisfied",
+                    "dependency_mode": "any"
+                },
+                {
+                    "proposition_indices": [
+                        4
+                    ],
+                    "depends_on": [
+                        3
+                    ],
+                    "relation_type": "after_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [
+                            [
+                                0,
+                                2
+                            ],
+                            [
+                                1,
+                                2
+                            ],
+                            [
+                                3,
+                                4
+                            ],
+                            [
+                                0,
+                                3
+                            ],
+                            [
+                                1,
+                                3
+                            ],
+                            [
+                                2,
+                                3
+                            ]
+                        ],
+                        "n_propositions": 5
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            2,
+                            4
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 10001,
+        "error": "False",
+        "instruction": "Could you move the book gifted by my dear friend and the Olive Kids Paisley Pencil Case from the bedroom to the living room and place them on the table? Then, could you move my personal work device and the black mouse pad with the logo from the office table to the bedroom chest of drawers? Place them next to each other on the chest of drawers.",
+        "replanning_count_0": 41.0,
+        "run_id": 0,
+        "runtime": 434.5036737918854,
+        "sim_step_count": 5194.0,
+        "task_percent_complete": 0.2,
+        "task_state_success": 0.0,
+        "org_data": {
+            "episode_id": "10001",
+            "instruction": "Could you move the book gifted by my dear friend and the Olive Kids Paisley Pencil Case from the bedroom to the living room and place them on the table? Then, could you move my personal work device and the black mouse pad with the logo from the office table to the bedroom chest of drawers? Place them next to each other on the chest of drawers.",
+            "original_data_info": {
+                "episode_id": [
+                    "2978",
+                    "2979"
+                ],
+                "instruction": [
+                    "Could you move the book gifted by my dear friend and the Olive Kids Paisley Pencil Case from the bedroom to the living room and place them on the table?",
+                    "Could you move my personal work device and the black mouse pad with the logo from the office table to the bedroom chest of drawers? Place them next to each other on the chest of drawers."
+                ],
+                "data_path": [
+                    "data/datasets/partnr_episodes/v0_0/val.json",
+                    "data/datasets/partnr_episodes/v0_0/val.json"
+                ]
+            },
+            "metadata": {
+                "subtype": [
+                    "history",
+                    "ownership"
+                ],
+                "memory": [
+                    "The book with a cover image of a modern interior was a gift from the user's dear friend.",
+                    "The black laptop with a backlit keyboard is the user's personal work device."
+                ],
+                "episode_type": [
+                    "object_semantics",
+                    "object_semantics"
+                ],
+                "num_targets": [
+                    1,
+                    1
+                ],
+                "related_episode_id": [
+                    "978",
+                    "979"
+                ],
+                "stage": "2",
+                "target_objects_original": [
+                    [
+                        {
+                            "id": "81c6dd3830a8df6644bd1f6b9a239615234e888f",
+                            "caption": "A book with a cover image of a modern interior.",
+                            "source": "hssd_hab",
+                            "category": "book",
+                            "cluster": 1
+                        },
+                        {
+                            "id": "Olive_Kids_Paisley_Pencil_Case",
+                            "caption": "A colorful, paisley-patterned pencil case, Olive Kids Paisley Pencil Case.",
+                            "source": "google",
+                            "category": "pencil_case",
+                            "cluster": 0
+                        }
+                    ],
+                    [
+                        {
+                            "id": "Laptop_10",
+                            "caption": "A black laptop with a backlit keyboard.",
+                            "source": "ai2thorhab",
+                            "category": "laptop",
+                            "cluster": 1
+                        },
+                        {
+                            "id": "B06X3W3YQD",
+                            "caption": "A black mouse pad with a logo in the corner.",
+                            "source": "amazon_berkeley",
+                            "category": "mouse_pad",
+                            "cluster": 0
+                        }
+                    ]
+                ],
+                "target_objects": [
+                    {
+                        "id": "81c6dd3830a8df6644bd1f6b9a239615234e888f",
+                        "caption": "A book with a cover image of a modern interior.",
+                        "source": "hssd_hab",
+                        "category": "book",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "Olive_Kids_Paisley_Pencil_Case",
+                        "caption": "A colorful, paisley-patterned pencil case, Olive Kids Paisley Pencil Case.",
+                        "source": "google",
+                        "category": "pencil_case",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "Laptop_10",
+                        "caption": "A black laptop with a backlit keyboard.",
+                        "source": "ai2thorhab",
+                        "category": "laptop",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "B06X3W3YQD",
+                        "caption": "A black mouse pad with a logo in the corner.",
+                        "source": "amazon_berkeley",
+                        "category": "mouse_pad",
+                        "cluster": 0
+                    }
+                ],
+                "distractors_original": [
+                    [
+                        {
+                            "id": "7c4abfaad6caa34008cf4aac249adcba013ad51b",
+                            "caption": "A black book with a slim profile.",
+                            "source": "hssd_hab",
+                            "category": "book",
+                            "cluster": 0,
+                            "pair_id": "81c6dd3830a8df6644bd1f6b9a239615234e888f"
+                        },
+                        {
+                            "id": "Big_Dot_Pink_Pencil_Case",
+                            "caption": "A pink pencil case with large white dots, Big Dot Pink Pencil Case.",
+                            "source": "google",
+                            "category": "pencil_case",
+                            "cluster": 1,
+                            "pair_id": "Olive_Kids_Paisley_Pencil_Case"
+                        }
+                    ],
+                    [
+                        {
+                            "id": "Laptop_6",
+                            "caption": "A gray laptop with a black screen.",
+                            "source": "ai2thorhab",
+                            "category": "laptop",
+                            "cluster": 0,
+                            "pair_id": "Laptop_10"
+                        }
+                    ]
+                ],
+                "distractors": [
+                    {
+                        "id": "7c4abfaad6caa34008cf4aac249adcba013ad51b",
+                        "caption": "A black book with a slim profile.",
+                        "source": "hssd_hab",
+                        "category": "book",
+                        "cluster": 0,
+                        "pair_id": "81c6dd3830a8df6644bd1f6b9a239615234e888f"
+                    },
+                    {
+                        "id": "Big_Dot_Pink_Pencil_Case",
+                        "caption": "A pink pencil case with large white dots, Big Dot Pink Pencil Case.",
+                        "source": "google",
+                        "category": "pencil_case",
+                        "cluster": 1,
+                        "pair_id": "Olive_Kids_Paisley_Pencil_Case"
+                    },
+                    {
+                        "id": "Laptop_6",
+                        "caption": "A gray laptop with a black screen.",
+                        "source": "ai2thorhab",
+                        "category": "laptop",
+                        "cluster": 0,
+                        "pair_id": "Laptop_10"
+                    }
+                ],
+                "used_object_original": [
+                    [
+                        "book"
+                    ],
+                    [
+                        "laptop"
+                    ]
+                ],
+                "used_object": [
+                    "book",
+                    "laptop"
+                ],
+                "combination_type": "Object Semantics + Object Semantics",
+                "object_overlaps": {
+                    "target_target": [],
+                    "distractor_distractor": [],
+                    "target1_distractor2": [],
+                    "target2_distractor1": [],
+                    "target_category_overlap": [],
+                    "counts": {
+                        "target_target": 0,
+                        "distractor_distractor": 0,
+                        "target1_distractor2": 0,
+                        "target2_distractor1": 0,
+                        "target_category_overlap": 0,
+                        "total_overlap": 0
+                    },
+                    "has_target_category_overlap": false,
+                    "has_target_distractor_overlap": false
+                },
+                "receptacle_overlaps": {
+                    "has_overlaps": false,
+                    "common_receptacles": [],
+                    "overlap_count": 0
+                }
+            },
+            "scene_id": "107733960_175999701",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "81c6dd3830a8df6644bd1f6b9a239615234e888f_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "7d32f5f7ab814a5cbe9b8eff80e139d2d9f13cf7_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Olive_Kids_Paisley_Pencil_Case_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "7d32f5f7ab814a5cbe9b8eff80e139d2d9f13cf7_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Laptop_10_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "084ff2a0e018cec0a68d318cc0f37f0b7624c8b8_:0000",
+                            "084ff2a0e018cec0a68d318cc0f37f0b7624c8b8_:0001",
+                            "084ff2a0e018cec0a68d318cc0f37f0b7624c8b8_:0002",
+                            "084ff2a0e018cec0a68d318cc0f37f0b7624c8b8_:0003",
+                            "084ff2a0e018cec0a68d318cc0f37f0b7624c8b8_:0004",
+                            "2abfe2c185d18cf31e3dcfd8833207d78daae258_:0000",
+                            "2abfe2c185d18cf31e3dcfd8833207d78daae258_:0001",
+                            "2abfe2c185d18cf31e3dcfd8833207d78daae258_:0002",
+                            "2abfe2c185d18cf31e3dcfd8833207d78daae258_:0003",
+                            "2abfe2c185d18cf31e3dcfd8833207d78daae258_:0004",
+                            "2abfe2c185d18cf31e3dcfd8833207d78daae258_:0005",
+                            "2abfe2c185d18cf31e3dcfd8833207d78daae258_:0006"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "B06X3W3YQD_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "084ff2a0e018cec0a68d318cc0f37f0b7624c8b8_:0000",
+                            "084ff2a0e018cec0a68d318cc0f37f0b7624c8b8_:0001",
+                            "084ff2a0e018cec0a68d318cc0f37f0b7624c8b8_:0002",
+                            "084ff2a0e018cec0a68d318cc0f37f0b7624c8b8_:0003",
+                            "084ff2a0e018cec0a68d318cc0f37f0b7624c8b8_:0004",
+                            "2abfe2c185d18cf31e3dcfd8833207d78daae258_:0000",
+                            "2abfe2c185d18cf31e3dcfd8833207d78daae258_:0001",
+                            "2abfe2c185d18cf31e3dcfd8833207d78daae258_:0002",
+                            "2abfe2c185d18cf31e3dcfd8833207d78daae258_:0003",
+                            "2abfe2c185d18cf31e3dcfd8833207d78daae258_:0004",
+                            "2abfe2c185d18cf31e3dcfd8833207d78daae258_:0005",
+                            "2abfe2c185d18cf31e3dcfd8833207d78daae258_:0006"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "Laptop_10_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "B06X3W3YQD_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        4
+                    ],
+                    "depends_on": [
+                        2,
+                        3
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [
+                            [
+                                0,
+                                2
+                            ],
+                            [
+                                1,
+                                2
+                            ]
+                        ],
+                        "n_propositions": 5
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2,
+                            3,
+                            4
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    }
+]

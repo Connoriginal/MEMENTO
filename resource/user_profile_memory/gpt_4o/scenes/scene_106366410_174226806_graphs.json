@@ -1,0 +1,1723 @@
+{
+  "scene_id": "106366410_174226806",
+  "total_graphs": 15,
+  "graphs": [
+    {
+      "nodes": [
+        {
+          "id": "u1",
+          "type": "User",
+          "name": "user_A"
+        },
+        {
+          "id": "k1",
+          "type": "Knowledge",
+          "subtype": "object_semantics",
+          "alias": "essential work laptop",
+          "description": "black laptop with a sleek design"
+        },
+        {
+          "id": "o1",
+          "type": "Object",
+          "name": "laptop",
+          "granularity": "instance",
+          "attributes": [
+            "black",
+            "sleek design"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "source": "u1",
+          "target": "k1",
+          "type": "Hierarchical",
+          "relation": "owns"
+        },
+        {
+          "source": "k1",
+          "target": "o1",
+          "type": "Hierarchical",
+          "relation": "alias_of"
+        }
+      ],
+      "episode_id": "1205",
+      "scene_id": "106366410_174226806",
+      "instruction": "Move the laptop from the office to the dining room. Place it on the table. The laptop is black with a sleek design. This laptop is essential for my work.",
+      "answer_knowledge_type": "object_semantics"
+    },
+    {
+      "nodes": [
+        {
+          "id": "u1",
+          "type": "User",
+          "name": "user_A"
+        },
+        {
+          "id": "k1",
+          "type": "Knowledge",
+          "subtype": "object_semantics",
+          "alias": "favorite stuffed toy",
+          "description": "blue and white shark stuffed toy"
+        },
+        {
+          "id": "o1",
+          "type": "Object",
+          "name": "stuffed toy",
+          "granularity": "instance",
+          "attributes": [
+            "blue",
+            "white",
+            "shark"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "source": "u1",
+          "target": "k1",
+          "type": "Hierarchical",
+          "relation": "owns"
+        },
+        {
+          "source": "k1",
+          "target": "o1",
+          "type": "Hierarchical",
+          "relation": "alias_of"
+        }
+      ],
+      "episode_id": "1207",
+      "scene_id": "106366410_174226806",
+      "instruction": "First, take the stuffed toy from the bedroom to the laundry room/mudroom. Then, move it to the living room and place it on the couch. The stuffed toy is a blue and white shark. It is my favorite stuffed toy.",
+      "answer_knowledge_type": "object_semantics"
+    },
+    {
+      "nodes": [
+        {
+          "id": "u1",
+          "type": "User",
+          "name": "user_A"
+        },
+        {
+          "id": "k1",
+          "type": "Knowledge",
+          "subtype": "object_semantics",
+          "alias": "gift candle from friend",
+          "description": "blue and black candle with a textured pattern"
+        },
+        {
+          "id": "o1",
+          "type": "Object",
+          "name": "candle",
+          "granularity": "instance",
+          "attributes": [
+            "blue",
+            "black",
+            "textured pattern"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "source": "u1",
+          "target": "k1",
+          "type": "Hierarchical",
+          "relation": "owns"
+        },
+        {
+          "source": "k1",
+          "target": "o1",
+          "type": "Hierarchical",
+          "relation": "alias_of"
+        }
+      ],
+      "episode_id": "1203",
+      "scene_id": "106366410_174226806",
+      "instruction": "Move the candle from the living room stand to the office chair and place it next to the table. The candle is blue and black with a textured pattern. This candle was a gift from my friend.",
+      "answer_knowledge_type": "object_semantics"
+    },
+    {
+      "nodes": [
+        {
+          "id": "u1",
+          "type": "User",
+          "name": "user_A"
+        },
+        {
+          "id": "k1",
+          "type": "Knowledge",
+          "subtype": "object_semantics",
+          "alias": "personal workout gear",
+          "description": "green dumbbell with a smooth finish and black tennis racquet with a brown handle"
+        },
+        {
+          "id": "o1",
+          "type": "Object",
+          "name": "dumbbell",
+          "granularity": "instance",
+          "attributes": [
+            "green",
+            "smooth finish"
+          ]
+        },
+        {
+          "id": "o2",
+          "type": "Object",
+          "name": "tennis racquet",
+          "granularity": "instance",
+          "attributes": [
+            "black",
+            "brown handle"
+          ]
+        },
+        {
+          "id": "o3",
+          "type": "Object",
+          "name": "spray bottle",
+          "granularity": "instance",
+          "attributes": [
+            "transparent",
+            "sleek design"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "source": "u1",
+          "target": "k1",
+          "type": "Hierarchical",
+          "relation": "owns"
+        },
+        {
+          "source": "k1",
+          "target": "o1",
+          "type": "Hierarchical",
+          "relation": "alias_of"
+        },
+        {
+          "source": "k1",
+          "target": "o2",
+          "type": "Hierarchical",
+          "relation": "alias_of"
+        }
+      ],
+      "episode_id": "1200",
+      "scene_id": "106366410_174226806",
+      "instruction": "Move the dumbbell, tennis racquet, and spray bottle from the workout table to the office table. The dumbbell is green with a smooth finish, the tennis racquet is black with a brown handle, and the spray bottle is transparent with a sleek design. The dumbbell and tennis racquet are part of my personal workout gear.",
+      "answer_knowledge_type": "object_semantics"
+    },
+    {
+      "nodes": [
+        {
+          "id": "u1",
+          "type": "User",
+          "name": "user_A"
+        },
+        {
+          "id": "k1",
+          "type": "Knowledge",
+          "subtype": "object_semantics",
+          "alias": "gift candle from best friend",
+          "description": "mint green candle with white butterfly designs"
+        },
+        {
+          "id": "o1",
+          "type": "Object",
+          "name": "candle",
+          "granularity": "instance",
+          "attributes": [
+            "mint green",
+            "white butterfly designs"
+          ]
+        },
+        {
+          "id": "o2",
+          "type": "Object",
+          "name": "phone stand",
+          "granularity": "instance",
+          "attributes": [
+            "black",
+            "minimalist design"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "source": "u1",
+          "target": "k1",
+          "type": "Hierarchical",
+          "relation": "owns"
+        },
+        {
+          "source": "k1",
+          "target": "o1",
+          "type": "Hierarchical",
+          "relation": "alias_of"
+        }
+      ],
+      "episode_id": "1209",
+      "scene_id": "106366410_174226806",
+      "instruction": "First, move the phone stand and candle to the bedroom couch. Then, relocate them to the dining table and place them next to each other. Leave the doll on the living room couch. The phone stand is black with a minimalist design, and the candle is mint green with white butterfly designs. The candle was a gift from my best friend.",
+      "answer_knowledge_type": "object_semantics"
+    },
+    {
+      "nodes": [
+        {
+          "id": "u1",
+          "type": "User",
+          "name": "user_A"
+        },
+        {
+          "id": "k1",
+          "type": "Knowledge",
+          "subtype": "object_semantics",
+          "alias": "gift vase from friend",
+          "description": "tall and slender dark green vase"
+        },
+        {
+          "id": "o1",
+          "type": "Object",
+          "name": "clock",
+          "granularity": "instance",
+          "attributes": [
+            "dark blue",
+            "patterned face",
+            "handle"
+          ]
+        },
+        {
+          "id": "o2",
+          "type": "Object",
+          "name": "vase",
+          "granularity": "instance",
+          "attributes": [
+            "tall",
+            "slender",
+            "dark green"
+          ]
+        },
+        {
+          "id": "o3",
+          "type": "Object",
+          "name": "picture frame",
+          "granularity": "instance",
+          "attributes": [
+            "wooden",
+            "colorful illustration inside"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "source": "u1",
+          "target": "k1",
+          "type": "Hierarchical",
+          "relation": "owns"
+        },
+        {
+          "source": "k1",
+          "target": "o2",
+          "type": "Hierarchical",
+          "relation": "alias_of"
+        }
+      ],
+      "episode_id": "1206",
+      "scene_id": "106366410_174226806",
+      "instruction": "Move the clock, then the vase, and finally the picture frame to the table in the living room. Then move them to the bench in the living room and place them next to each other. The clock is dark blue with a patterned face and a handle, the vase is tall and slender in dark green, and the picture frame is wooden with a colorful illustration inside. The vase is a gift from my friend.",
+      "answer_knowledge_type": "object_semantics"
+    },
+    {
+      "nodes": [
+        {
+          "id": "u1",
+          "type": "User",
+          "name": "user_A"
+        },
+        {
+          "id": "k1",
+          "type": "Knowledge",
+          "subtype": "object_semantics",
+          "alias": "favorite childhood toys",
+          "description": "red Air Hogs Wind Flyers Set toy airplane and green and blue two-headed dragon stuffed toy from Animal Planet Foam"
+        },
+        {
+          "id": "o1",
+          "type": "Object",
+          "name": "toy airplane",
+          "granularity": "instance",
+          "attributes": [
+            "red",
+            "Air Hogs Wind Flyers Set"
+          ]
+        },
+        {
+          "id": "o2",
+          "type": "Object",
+          "name": "stuffed toy",
+          "granularity": "instance",
+          "attributes": [
+            "green",
+            "blue",
+            "two-headed dragon",
+            "Animal Planet Foam"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "source": "u1",
+          "target": "k1",
+          "type": "Hierarchical",
+          "relation": "owns"
+        },
+        {
+          "source": "k1",
+          "target": "o1",
+          "type": "Hierarchical",
+          "relation": "alias_of"
+        },
+        {
+          "source": "k1",
+          "target": "o2",
+          "type": "Hierarchical",
+          "relation": "alias_of"
+        }
+      ],
+      "episode_id": "1201",
+      "scene_id": "106366410_174226806",
+      "instruction": "Move the toy airplane and stuffed toy from the bedroom table to the workout table. Place them next to each other on the table. The toy airplane is a red Air Hogs Wind Flyers Set, and the stuffed toy is a green and blue two-headed dragon from Animal Planet Foam. They are part of my favorite childhood toys.",
+      "answer_knowledge_type": "object_semantics"
+    },
+    {
+      "nodes": [
+        {
+          "id": "u1",
+          "type": "User",
+          "name": "user_A"
+        },
+        {
+          "id": "k1",
+          "type": "Knowledge",
+          "subtype": "user_pattern",
+          "alias": "bedroom organization routine",
+          "description": "keep book and laptop on the table for easy access during the day, and candle holder nearby for evening relaxation"
+        },
+        {
+          "id": "p1",
+          "type": "Pattern",
+          "name": "place",
+          "args": [
+            "book",
+            "on table",
+            "in bedroom"
+          ]
+        },
+        {
+          "id": "p2",
+          "type": "Pattern",
+          "name": "place",
+          "args": [
+            "laptop",
+            "on table",
+            "in bedroom"
+          ]
+        },
+        {
+          "id": "p3",
+          "type": "Pattern",
+          "name": "place",
+          "args": [
+            "candle holder",
+            "near table",
+            "in bedroom"
+          ]
+        },
+        {
+          "id": "o1",
+          "type": "Object",
+          "name": "book",
+          "granularity": "type"
+        },
+        {
+          "id": "o2",
+          "type": "Object",
+          "name": "laptop",
+          "granularity": "type"
+        },
+        {
+          "id": "o3",
+          "type": "Object",
+          "name": "candle holder",
+          "granularity": "type"
+        },
+        {
+          "id": "l1",
+          "type": "Location",
+          "name": "table",
+          "expression": "on the table in the bedroom"
+        }
+      ],
+      "edges": [
+        {
+          "source": "u1",
+          "target": "k1",
+          "type": "Hierarchical",
+          "relation": "owns"
+        },
+        {
+          "source": "k1",
+          "target": "p1",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "k1",
+          "target": "p2",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "k1",
+          "target": "p3",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "p1",
+          "target": "o1",
+          "type": "Hierarchical",
+          "relation": "target_object"
+        },
+        {
+          "source": "p1",
+          "target": "l1",
+          "type": "Hierarchical",
+          "relation": "target_location",
+          "object": "o1"
+        },
+        {
+          "source": "p2",
+          "target": "o2",
+          "type": "Hierarchical",
+          "relation": "target_object"
+        },
+        {
+          "source": "p2",
+          "target": "l1",
+          "type": "Hierarchical",
+          "relation": "target_location",
+          "object": "o2"
+        },
+        {
+          "source": "p3",
+          "target": "o3",
+          "type": "Hierarchical",
+          "relation": "target_object"
+        },
+        {
+          "source": "p3",
+          "target": "l1",
+          "type": "Hierarchical",
+          "relation": "target_location",
+          "object": "o3"
+        }
+      ],
+      "episode_id": "1184",
+      "scene_id": "106366410_174226806",
+      "instruction": "Organize the bedroom. Place the book, laptop, and candle holder back on the table. I prefer to keep the book and laptop on the table for easy access during the day, and the candle holder is always nearby for evening relaxation.",
+      "answer_knowledge_type": "user_pattern"
+    },
+    {
+      "nodes": [
+        {
+          "id": "u1",
+          "type": "User",
+          "name": "user_A"
+        },
+        {
+          "id": "k1",
+          "type": "Knowledge",
+          "subtype": "user_pattern",
+          "alias": "evening workspace setup",
+          "description": "use the dining room table as workspace in the evenings"
+        },
+        {
+          "id": "p1",
+          "type": "Pattern",
+          "name": "move",
+          "args": [
+            "laptop",
+            "from office",
+            "to dining room"
+          ]
+        },
+        {
+          "id": "p2",
+          "type": "Pattern",
+          "name": "place",
+          "args": [
+            "laptop",
+            "on table",
+            "in dining room"
+          ]
+        },
+        {
+          "id": "o1",
+          "type": "Object",
+          "name": "laptop",
+          "granularity": "type"
+        },
+        {
+          "id": "l1",
+          "type": "Location",
+          "name": "office",
+          "expression": "in the office"
+        },
+        {
+          "id": "l2",
+          "type": "Location",
+          "name": "dining_room",
+          "expression": "in the dining room"
+        },
+        {
+          "id": "l3",
+          "type": "Location",
+          "name": "table",
+          "expression": "on the table in the dining room"
+        }
+      ],
+      "edges": [
+        {
+          "source": "u1",
+          "target": "k1",
+          "type": "Hierarchical",
+          "relation": "owns"
+        },
+        {
+          "source": "k1",
+          "target": "p1",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "k1",
+          "target": "p2",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "p1",
+          "target": "o1",
+          "type": "Hierarchical",
+          "relation": "target"
+        },
+        {
+          "source": "p1",
+          "target": "l1",
+          "type": "Hierarchical",
+          "relation": "source_location"
+        },
+        {
+          "source": "p1",
+          "target": "l2",
+          "type": "Hierarchical",
+          "relation": "target_location"
+        },
+        {
+          "source": "p2",
+          "target": "o1",
+          "type": "Hierarchical",
+          "relation": "target"
+        },
+        {
+          "source": "p2",
+          "target": "l3",
+          "type": "Hierarchical",
+          "relation": "target_location"
+        },
+        {
+          "source": "p1",
+          "target": "p2",
+          "type": "Temporal",
+          "relation": "before"
+        }
+      ],
+      "episode_id": "1189",
+      "scene_id": "106366410_174226806",
+      "instruction": "Move the laptop from the office to the dining room. Place it on the table. I prefer to use the dining room table as my workspace in the evenings.",
+      "answer_knowledge_type": "user_pattern"
+    },
+    {
+      "nodes": [
+        {
+          "id": "u1",
+          "type": "User",
+          "name": "user_A"
+        },
+        {
+          "id": "k1",
+          "type": "Knowledge",
+          "subtype": "object_semantics",
+          "alias": "gift picture frame from best friend",
+          "description": "gray picture frame with a wavy border"
+        },
+        {
+          "id": "o1",
+          "type": "Object",
+          "name": "vase",
+          "granularity": "instance",
+          "attributes": [
+            "tall",
+            "light green"
+          ]
+        },
+        {
+          "id": "o2",
+          "type": "Object",
+          "name": "candle holder",
+          "granularity": "instance",
+          "attributes": [
+            "white",
+            "tan",
+            "rounded base"
+          ]
+        },
+        {
+          "id": "o3",
+          "type": "Object",
+          "name": "picture frame",
+          "granularity": "instance",
+          "attributes": [
+            "gray",
+            "wavy border"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "source": "u1",
+          "target": "k1",
+          "type": "Hierarchical",
+          "relation": "owns"
+        },
+        {
+          "source": "k1",
+          "target": "o3",
+          "type": "Hierarchical",
+          "relation": "alias_of"
+        }
+      ],
+      "episode_id": "1198",
+      "scene_id": "106366410_174226806",
+      "instruction": "Move the vase, candle holder, and picture frame from the living room to the office? Place them on the table. The vase is tall and light green, the candle holder is white and tan with a rounded base, and the picture frame is gray with a wavy border. The picture frame is a gift from my best friend.",
+      "answer_knowledge_type": "object_semantics"
+    },
+    {
+      "nodes": [
+        {
+          "id": "u1",
+          "type": "User",
+          "name": "user_A"
+        },
+        {
+          "id": "k1",
+          "type": "Knowledge",
+          "subtype": "user_pattern",
+          "alias": "workout play setup",
+          "description": "keep toy airplane and stuffed toy together on the workout table for kids to play while exercising"
+        },
+        {
+          "id": "p1",
+          "type": "Pattern",
+          "name": "move",
+          "args": [
+            "toy airplane",
+            "from bedroom table",
+            "to workout table"
+          ]
+        },
+        {
+          "id": "p2",
+          "type": "Pattern",
+          "name": "move",
+          "args": [
+            "stuffed toy",
+            "from bedroom table",
+            "to workout table"
+          ]
+        },
+        {
+          "id": "p3",
+          "type": "Pattern",
+          "name": "place",
+          "args": [
+            "toy airplane",
+            "next to stuffed toy",
+            "on workout table"
+          ]
+        },
+        {
+          "id": "o1",
+          "type": "Object",
+          "name": "toy airplane",
+          "granularity": "type"
+        },
+        {
+          "id": "o2",
+          "type": "Object",
+          "name": "stuffed toy",
+          "granularity": "type"
+        },
+        {
+          "id": "l1",
+          "type": "Location",
+          "name": "bedroom_table",
+          "expression": "on the bedroom table"
+        },
+        {
+          "id": "l2",
+          "type": "Location",
+          "name": "workout_table",
+          "expression": "on the workout table"
+        }
+      ],
+      "edges": [
+        {
+          "source": "u1",
+          "target": "k1",
+          "type": "Hierarchical",
+          "relation": "owns"
+        },
+        {
+          "source": "k1",
+          "target": "p1",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "k1",
+          "target": "p2",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "k1",
+          "target": "p3",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "p1",
+          "target": "o1",
+          "type": "Hierarchical",
+          "relation": "target"
+        },
+        {
+          "source": "p1",
+          "target": "l1",
+          "type": "Hierarchical",
+          "relation": "source_location"
+        },
+        {
+          "source": "p1",
+          "target": "l2",
+          "type": "Hierarchical",
+          "relation": "target_location"
+        },
+        {
+          "source": "p2",
+          "target": "o2",
+          "type": "Hierarchical",
+          "relation": "target"
+        },
+        {
+          "source": "p2",
+          "target": "l1",
+          "type": "Hierarchical",
+          "relation": "source_location"
+        },
+        {
+          "source": "p2",
+          "target": "l2",
+          "type": "Hierarchical",
+          "relation": "target_location"
+        },
+        {
+          "source": "p3",
+          "target": "o1",
+          "type": "Hierarchical",
+          "relation": "target"
+        },
+        {
+          "source": "p3",
+          "target": "o2",
+          "type": "Hierarchical",
+          "relation": "target"
+        },
+        {
+          "source": "p3",
+          "target": "l2",
+          "type": "Hierarchical",
+          "relation": "target_location"
+        },
+        {
+          "source": "p1",
+          "target": "p3",
+          "type": "Temporal",
+          "relation": "before"
+        },
+        {
+          "source": "p2",
+          "target": "p3",
+          "type": "Temporal",
+          "relation": "before"
+        }
+      ],
+      "episode_id": "1186",
+      "scene_id": "106366410_174226806",
+      "instruction": "Move the toy airplane and stuffed toy from the bedroom table to the workout table. Place them next to each other on the table. I like to keep the toys together on the workout table for when the kids play while I exercise.",
+      "answer_knowledge_type": "user_pattern"
+    },
+    {
+      "nodes": [
+        {
+          "id": "u1",
+          "type": "User",
+          "name": "user_A"
+        },
+        {
+          "id": "k1",
+          "type": "Knowledge",
+          "subtype": "user_pattern",
+          "alias": "workout area clearing routine",
+          "description": "keep dumbbell, tennis racquet, and spray bottle on the office table when not working out to keep the workout area clear"
+        },
+        {
+          "id": "p1",
+          "type": "Pattern",
+          "name": "move",
+          "args": [
+            "dumbbell",
+            "from workout table",
+            "to office table"
+          ]
+        },
+        {
+          "id": "p2",
+          "type": "Pattern",
+          "name": "move",
+          "args": [
+            "tennis racquet",
+            "from workout table",
+            "to office table"
+          ]
+        },
+        {
+          "id": "p3",
+          "type": "Pattern",
+          "name": "move",
+          "args": [
+            "spray bottle",
+            "from workout table",
+            "to office table"
+          ]
+        },
+        {
+          "id": "o1",
+          "type": "Object",
+          "name": "dumbbell",
+          "granularity": "type"
+        },
+        {
+          "id": "o2",
+          "type": "Object",
+          "name": "tennis racquet",
+          "granularity": "type"
+        },
+        {
+          "id": "o3",
+          "type": "Object",
+          "name": "spray bottle",
+          "granularity": "type"
+        },
+        {
+          "id": "l1",
+          "type": "Location",
+          "name": "workout_table",
+          "expression": "on the workout table"
+        },
+        {
+          "id": "l2",
+          "type": "Location",
+          "name": "office_table",
+          "expression": "on the office table"
+        }
+      ],
+      "edges": [
+        {
+          "source": "u1",
+          "target": "k1",
+          "type": "Hierarchical",
+          "relation": "owns"
+        },
+        {
+          "source": "k1",
+          "target": "p1",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "k1",
+          "target": "p2",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "k1",
+          "target": "p3",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "p1",
+          "target": "o1",
+          "type": "Hierarchical",
+          "relation": "target"
+        },
+        {
+          "source": "p1",
+          "target": "l1",
+          "type": "Hierarchical",
+          "relation": "source_location"
+        },
+        {
+          "source": "p1",
+          "target": "l2",
+          "type": "Hierarchical",
+          "relation": "target_location"
+        },
+        {
+          "source": "p2",
+          "target": "o2",
+          "type": "Hierarchical",
+          "relation": "target"
+        },
+        {
+          "source": "p2",
+          "target": "l1",
+          "type": "Hierarchical",
+          "relation": "source_location"
+        },
+        {
+          "source": "p2",
+          "target": "l2",
+          "type": "Hierarchical",
+          "relation": "target_location"
+        },
+        {
+          "source": "p3",
+          "target": "o3",
+          "type": "Hierarchical",
+          "relation": "target"
+        },
+        {
+          "source": "p3",
+          "target": "l1",
+          "type": "Hierarchical",
+          "relation": "source_location"
+        },
+        {
+          "source": "p3",
+          "target": "l2",
+          "type": "Hierarchical",
+          "relation": "target_location"
+        }
+      ],
+      "episode_id": "1185",
+      "scene_id": "106366410_174226806",
+      "instruction": "Move the dumbbell, tennis racquet, and spray bottle from the workout table to the office table. I like to keep these items on the office table when I'm not working out to keep the workout area clear.",
+      "answer_knowledge_type": "user_pattern"
+    },
+    {
+      "nodes": [
+        {
+          "id": "u1",
+          "type": "User",
+          "name": "user_A"
+        },
+        {
+          "id": "k1",
+          "type": "Knowledge",
+          "subtype": "user_pattern",
+          "alias": "impromptu workout area setup",
+          "description": "set up exercise equipment in the dining room for a workout area"
+        },
+        {
+          "id": "p1",
+          "type": "Pattern",
+          "name": "move",
+          "args": [
+            "dumbbell",
+            "from table",
+            "to dining table"
+          ]
+        },
+        {
+          "id": "p2",
+          "type": "Pattern",
+          "name": "move",
+          "args": [
+            "tennis racquet",
+            "from chair",
+            "to another chair"
+          ]
+        },
+        {
+          "id": "p3",
+          "type": "Pattern",
+          "name": "move",
+          "args": [
+            "basketball",
+            "from table",
+            "to floor"
+          ]
+        },
+        {
+          "id": "o1",
+          "type": "Object",
+          "name": "dumbbell",
+          "granularity": "type"
+        },
+        {
+          "id": "o2",
+          "type": "Object",
+          "name": "tennis racquet",
+          "granularity": "type"
+        },
+        {
+          "id": "o3",
+          "type": "Object",
+          "name": "basketball",
+          "granularity": "type"
+        },
+        {
+          "id": "l1",
+          "type": "Location",
+          "name": "workout_room_table",
+          "expression": "on the table in the workout room"
+        },
+        {
+          "id": "l2",
+          "type": "Location",
+          "name": "dining_table",
+          "expression": "on the dining table"
+        },
+        {
+          "id": "l3",
+          "type": "Location",
+          "name": "workout_room_chair",
+          "expression": "on the chair in the workout room"
+        },
+        {
+          "id": "l4",
+          "type": "Location",
+          "name": "another_chair",
+          "expression": "on another chair"
+        },
+        {
+          "id": "l5",
+          "type": "Location",
+          "name": "floor",
+          "expression": "on the floor"
+        }
+      ],
+      "edges": [
+        {
+          "source": "u1",
+          "target": "k1",
+          "type": "Hierarchical",
+          "relation": "owns"
+        },
+        {
+          "source": "k1",
+          "target": "p1",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "k1",
+          "target": "p2",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "k1",
+          "target": "p3",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "p1",
+          "target": "o1",
+          "type": "Hierarchical",
+          "relation": "target"
+        },
+        {
+          "source": "p1",
+          "target": "l1",
+          "type": "Hierarchical",
+          "relation": "source_location"
+        },
+        {
+          "source": "p1",
+          "target": "l2",
+          "type": "Hierarchical",
+          "relation": "target_location"
+        },
+        {
+          "source": "p2",
+          "target": "o2",
+          "type": "Hierarchical",
+          "relation": "target"
+        },
+        {
+          "source": "p2",
+          "target": "l3",
+          "type": "Hierarchical",
+          "relation": "source_location"
+        },
+        {
+          "source": "p2",
+          "target": "l4",
+          "type": "Hierarchical",
+          "relation": "target_location"
+        },
+        {
+          "source": "p3",
+          "target": "o3",
+          "type": "Hierarchical",
+          "relation": "target"
+        },
+        {
+          "source": "p3",
+          "target": "l1",
+          "type": "Hierarchical",
+          "relation": "source_location"
+        },
+        {
+          "source": "p3",
+          "target": "l5",
+          "type": "Hierarchical",
+          "relation": "target_location"
+        },
+        {
+          "source": "p1",
+          "target": "p2",
+          "type": "Temporal",
+          "relation": "before"
+        },
+        {
+          "source": "p2",
+          "target": "p3",
+          "type": "Temporal",
+          "relation": "before"
+        }
+      ],
+      "episode_id": "1187",
+      "scene_id": "106366410_174226806",
+      "instruction": "Help me move these objects from the workout room to the dining room. First, take the dumbbell from the table and place it on the dining table. Then, bring the tennis racquet from the chair and place it on another chair. Finally, take the basketball from the table and place it on the floor. I usually set up exercise equipment in the dining room to create an impromptu workout area.",
+      "answer_knowledge_type": "user_pattern"
+    },
+    {
+      "nodes": [
+        {
+          "id": "u1",
+          "type": "User",
+          "name": "user_A"
+        },
+        {
+          "id": "k1",
+          "type": "Knowledge",
+          "subtype": "user_pattern",
+          "alias": "dining ambiance setup",
+          "description": "move phone stand and candle to the bedroom couch before placing them on the dining table next to each other for dining ambiance"
+        },
+        {
+          "id": "p1",
+          "type": "Pattern",
+          "name": "move",
+          "args": [
+            "phone stand",
+            "to bedroom couch"
+          ]
+        },
+        {
+          "id": "p2",
+          "type": "Pattern",
+          "name": "move",
+          "args": [
+            "candle",
+            "to bedroom couch"
+          ]
+        },
+        {
+          "id": "p3",
+          "type": "Pattern",
+          "name": "relocate",
+          "args": [
+            "phone stand",
+            "to dining table"
+          ]
+        },
+        {
+          "id": "p4",
+          "type": "Pattern",
+          "name": "relocate",
+          "args": [
+            "candle",
+            "to dining table"
+          ]
+        },
+        {
+          "id": "p5",
+          "type": "Pattern",
+          "name": "place",
+          "args": [
+            "doll",
+            "on living room couch"
+          ]
+        },
+        {
+          "id": "o1",
+          "type": "Object",
+          "name": "phone stand",
+          "granularity": "type"
+        },
+        {
+          "id": "o2",
+          "type": "Object",
+          "name": "candle",
+          "granularity": "type"
+        },
+        {
+          "id": "o3",
+          "type": "Object",
+          "name": "doll",
+          "granularity": "type"
+        },
+        {
+          "id": "l1",
+          "type": "Location",
+          "name": "bedroom couch",
+          "expression": "on the bedroom couch"
+        },
+        {
+          "id": "l2",
+          "type": "Location",
+          "name": "dining table",
+          "expression": "on the dining table"
+        },
+        {
+          "id": "l3",
+          "type": "Location",
+          "name": "living room couch",
+          "expression": "on the living room couch"
+        }
+      ],
+      "edges": [
+        {
+          "source": "u1",
+          "target": "k1",
+          "type": "Hierarchical",
+          "relation": "owns"
+        },
+        {
+          "source": "k1",
+          "target": "p1",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "k1",
+          "target": "p2",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "k1",
+          "target": "p3",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "k1",
+          "target": "p4",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "k1",
+          "target": "p5",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "p1",
+          "target": "o1",
+          "type": "Hierarchical",
+          "relation": "target_object"
+        },
+        {
+          "source": "p1",
+          "target": "l1",
+          "type": "Hierarchical",
+          "relation": "target_location"
+        },
+        {
+          "source": "p2",
+          "target": "o2",
+          "type": "Hierarchical",
+          "relation": "target_object"
+        },
+        {
+          "source": "p2",
+          "target": "l1",
+          "type": "Hierarchical",
+          "relation": "target_location"
+        },
+        {
+          "source": "p3",
+          "target": "o1",
+          "type": "Hierarchical",
+          "relation": "target_object"
+        },
+        {
+          "source": "p3",
+          "target": "l2",
+          "type": "Hierarchical",
+          "relation": "target_location"
+        },
+        {
+          "source": "p4",
+          "target": "o2",
+          "type": "Hierarchical",
+          "relation": "target_object"
+        },
+        {
+          "source": "p4",
+          "target": "l2",
+          "type": "Hierarchical",
+          "relation": "target_location"
+        },
+        {
+          "source": "p5",
+          "target": "o3",
+          "type": "Hierarchical",
+          "relation": "target_object"
+        },
+        {
+          "source": "p5",
+          "target": "l3",
+          "type": "Hierarchical",
+          "relation": "target_location"
+        },
+        {
+          "source": "p1",
+          "target": "p2",
+          "type": "Temporal",
+          "relation": "before"
+        },
+        {
+          "source": "p2",
+          "target": "p3",
+          "type": "Temporal",
+          "relation": "before"
+        },
+        {
+          "source": "p3",
+          "target": "p4",
+          "type": "Temporal",
+          "relation": "before"
+        },
+        {
+          "source": "o1",
+          "target": "o2",
+          "type": "Hierarchical",
+          "relation": "next_to"
+        }
+      ],
+      "episode_id": "1193",
+      "scene_id": "106366410_174226806",
+      "instruction": "First, move the phone stand and candle to the bedroom couch? Then, relocate them to the dining table and place them next to each other. Leave the doll on the living room couch. I like to move the phone stand and candle to the bedroom couch occasionally before finally placing them on the dining table next to each other for dining ambiance. The doll stays on the living room couch as part of the decor.",
+      "answer_knowledge_type": "user_pattern"
+    },
+    {
+      "nodes": [
+        {
+          "id": "u1",
+          "type": "User",
+          "name": "user_A"
+        },
+        {
+          "id": "k1",
+          "type": "Knowledge",
+          "subtype": "user_pattern",
+          "alias": "office workspace setup",
+          "description": "keep vase, candle holder, and picture frame in the office for a calming and personalized workspace"
+        },
+        {
+          "id": "p1",
+          "type": "Pattern",
+          "name": "move",
+          "args": [
+            "vase",
+            "from living room",
+            "to office"
+          ]
+        },
+        {
+          "id": "p2",
+          "type": "Pattern",
+          "name": "move",
+          "args": [
+            "candle holder",
+            "from living room",
+            "to office"
+          ]
+        },
+        {
+          "id": "p3",
+          "type": "Pattern",
+          "name": "move",
+          "args": [
+            "picture frame",
+            "from living room",
+            "to office"
+          ]
+        },
+        {
+          "id": "p4",
+          "type": "Pattern",
+          "name": "place",
+          "args": [
+            "vase",
+            "on table",
+            "in office"
+          ]
+        },
+        {
+          "id": "p5",
+          "type": "Pattern",
+          "name": "place",
+          "args": [
+            "candle holder",
+            "on table",
+            "in office"
+          ]
+        },
+        {
+          "id": "p6",
+          "type": "Pattern",
+          "name": "place",
+          "args": [
+            "picture frame",
+            "on table",
+            "in office"
+          ]
+        },
+        {
+          "id": "o1",
+          "type": "Object",
+          "name": "vase",
+          "granularity": "type"
+        },
+        {
+          "id": "o2",
+          "type": "Object",
+          "name": "candle holder",
+          "granularity": "type"
+        },
+        {
+          "id": "o3",
+          "type": "Object",
+          "name": "picture frame",
+          "granularity": "type"
+        },
+        {
+          "id": "l1",
+          "type": "Location",
+          "name": "livingroom",
+          "expression": "in the living room"
+        },
+        {
+          "id": "l2",
+          "type": "Location",
+          "name": "office",
+          "expression": "in the office"
+        },
+        {
+          "id": "l3",
+          "type": "Location",
+          "name": "table",
+          "expression": "on the table in the office"
+        }
+      ],
+      "edges": [
+        {
+          "source": "u1",
+          "target": "k1",
+          "type": "Hierarchical",
+          "relation": "owns"
+        },
+        {
+          "source": "k1",
+          "target": "p1",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "k1",
+          "target": "p2",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "k1",
+          "target": "p3",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "k1",
+          "target": "p4",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "k1",
+          "target": "p5",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "k1",
+          "target": "p6",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "p1",
+          "target": "o1",
+          "type": "Hierarchical",
+          "relation": "target"
+        },
+        {
+          "source": "p1",
+          "target": "l1",
+          "type": "Hierarchical",
+          "relation": "source_location"
+        },
+        {
+          "source": "p1",
+          "target": "l2",
+          "type": "Hierarchical",
+          "relation": "target_location"
+        },
+        {
+          "source": "p2",
+          "target": "o2",
+          "type": "Hierarchical",
+          "relation": "target"
+        },
+        {
+          "source": "p2",
+          "target": "l1",
+          "type": "Hierarchical",
+          "relation": "source_location"
+        },
+        {
+          "source": "p2",
+          "target": "l2",
+          "type": "Hierarchical",
+          "relation": "target_location"
+        },
+        {
+          "source": "p3",
+          "target": "o3",
+          "type": "Hierarchical",
+          "relation": "target"
+        },
+        {
+          "source": "p3",
+          "target": "l1",
+          "type": "Hierarchical",
+          "relation": "source_location"
+        },
+        {
+          "source": "p3",
+          "target": "l2",
+          "type": "Hierarchical",
+          "relation": "target_location"
+        },
+        {
+          "source": "p4",
+          "target": "o1",
+          "type": "Hierarchical",
+          "relation": "target"
+        },
+        {
+          "source": "p4",
+          "target": "l3",
+          "type": "Hierarchical",
+          "relation": "target_location"
+        },
+        {
+          "source": "p5",
+          "target": "o2",
+          "type": "Hierarchical",
+          "relation": "target"
+        },
+        {
+          "source": "p5",
+          "target": "l3",
+          "type": "Hierarchical",
+          "relation": "target_location"
+        },
+        {
+          "source": "p6",
+          "target": "o3",
+          "type": "Hierarchical",
+          "relation": "target"
+        },
+        {
+          "source": "p6",
+          "target": "l3",
+          "type": "Hierarchical",
+          "relation": "target_location"
+        },
+        {
+          "source": "p1",
+          "target": "p4",
+          "type": "Temporal",
+          "relation": "before"
+        },
+        {
+          "source": "p2",
+          "target": "p5",
+          "type": "Temporal",
+          "relation": "before"
+        },
+        {
+          "source": "p3",
+          "target": "p6",
+          "type": "Temporal",
+          "relation": "before"
+        }
+      ],
+      "episode_id": "1183",
+      "scene_id": "106366410_174226806",
+      "instruction": "Move the vase, candle holder, and picture frame from the living room to the office. Place them on the table. I usually like to have these items in the office for a calming and personalized workspace.",
+      "answer_knowledge_type": "user_pattern"
+    }
+  ]
+}

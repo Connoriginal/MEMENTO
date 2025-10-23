@@ -18,3 +18,8 @@ plan_config:
     rag_data_source_name: "" # rag_data_source_name folder itself
     example_type: "react" # The prompting format
 
+    # UserProfileRAG
+    enable_user_profile_rag: False # Activate UserProfileRAG
+    #TODO: should change the path
+    user_profile_memory_path: "/HabitatLLM/resource/user_profile_memory/gpt-4o/scenes" # UserProfile memory file path
+    user_profile_top_k: 5 # Number of knowledge items to retrieve in UserProfile RAG

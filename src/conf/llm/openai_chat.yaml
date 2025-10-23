@@ -10,7 +10,7 @@ verbose       : True
   # model        : gpt-4o-mini-2024-07-18
 # model_name       : "gpt-4o-mini-2024-07-18"
 model_name       : "gpt-4o"
-api_key   : "OPENAI_API_KEY"
+api_key   : "YOUR_API_KEY"
 
 # The system message helps set the behavior of the assistant.
 # "You are a helpful assistant." or "You're an expert in deep learning."

@@ -1,0 +1,545 @@
+[
+    {
+        "episode_id": 2995,
+        "error": false,
+        "instruction": "Can you arrange my bedtime cozy setup?",
+        "replanning_count_0": 23.0,
+        "run_id": 0,
+        "runtime": 173.08578419685364,
+        "sim_step_count": 3132.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "2995",
+            "instruction": "Can you arrange my bedtime cozy setup?",
+            "original_data_info": {
+                "episode_id": "577",
+                "instruction": "Move the lamp, vase, and picture frame from the living room table to the bedroom table. Place them next to each other on the bedroom table.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "995",
+                "episode_type": "user_pattern",
+                "target_objects": [
+                    {
+                        "id": "B07HK83QRB",
+                        "caption": "A wooden lamp with a white spherical shade.",
+                        "source": "amazon_berkeley",
+                        "category": "lamp",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "Vase_Tall_1",
+                        "caption": "A white vase with a narrow neck.",
+                        "source": "ai2thorhab",
+                        "category": "vase",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "0369f773266cd0aadce9e6ccdaf6d3f321ddab3e",
+                        "caption": "A copper picture frame with a diamond pattern.",
+                        "source": "hssd_hab",
+                        "category": "picture_frame",
+                        "cluster": 1
+                    }
+                ],
+                "subtype": "preference",
+                "memory": "Keep the lamp, vase, and picture frame together on the bedroom table for a cozy atmosphere."
+            },
+            "scene_id": "102817140",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "B07HK83QRB_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "2d677064b6bd4a3ba262cd510fd03c58efb57533_:0000",
+                            "689340fdf94601c7e57aabc45c1f1752bc7791da_:0000",
+                            "72305abe342ae61ffd01243a6acfcdb8aa0381c6_:0000",
+                            "72305abe342ae61ffd01243a6acfcdb8aa0381c6_:0001",
+                            "a858cba39573583f6aff0a31d237bcebabaaf503_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Vase_Tall_1_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "2d677064b6bd4a3ba262cd510fd03c58efb57533_:0000",
+                            "689340fdf94601c7e57aabc45c1f1752bc7791da_:0000",
+                            "72305abe342ae61ffd01243a6acfcdb8aa0381c6_:0000",
+                            "72305abe342ae61ffd01243a6acfcdb8aa0381c6_:0001",
+                            "a858cba39573583f6aff0a31d237bcebabaaf503_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "0369f773266cd0aadce9e6ccdaf6d3f321ddab3e_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "2d677064b6bd4a3ba262cd510fd03c58efb57533_:0000",
+                            "689340fdf94601c7e57aabc45c1f1752bc7791da_:0000",
+                            "72305abe342ae61ffd01243a6acfcdb8aa0381c6_:0000",
+                            "72305abe342ae61ffd01243a6acfcdb8aa0381c6_:0001",
+                            "a858cba39573583f6aff0a31d237bcebabaaf503_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "B07HK83QRB_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "Vase_Tall_1_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "Vase_Tall_1_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "0369f773266cd0aadce9e6ccdaf6d3f321ddab3e_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        3
+                    ],
+                    "depends_on": [
+                        0,
+                        1
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                },
+                {
+                    "proposition_indices": [
+                        4
+                    ],
+                    "depends_on": [
+                        1,
+                        2
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 5
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2,
+                            3,
+                            4
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 3223,
+        "error": false,
+        "instruction": "Could you arrange the bathroom for a calming vibe?",
+        "replanning_count_0": 16.0,
+        "run_id": 0,
+        "runtime": 136.96862745285034,
+        "sim_step_count": 2853.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "3223",
+            "instruction": "Could you arrange the bathroom for a calming vibe?",
+            "original_data_info": {
+                "episode_id": "620",
+                "instruction": "First, move the candle and then the vase from the living room shelves to the bathroom toilet? Place them next to each other on the toilet.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1223",
+                "episode_type": "user_pattern",
+                "target_objects": [
+                    {
+                        "id": "9dfbc1df2349093e0444dfabb8789296c83561cf",
+                        "caption": "A tall, cylindrical lavender candle.",
+                        "source": "hssd_hab",
+                        "category": "candle",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "Vase_Open_2",
+                        "caption": "A dark blue vase with a faceted design.",
+                        "source": "ai2thorhab",
+                        "category": "vase",
+                        "cluster": 1
+                    }
+                ],
+                "subtype": "preference",
+                "memory": "Keep the candle and vase together on the bathroom toilet for a calming atmosphere."
+            },
+            "scene_id": "103997895_171031182",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "9dfbc1df2349093e0444dfabb8789296c83561cf_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "3bd3f3a882da9283719fe1d238ad49d88760d0c3_:0000",
+                            "7ff8c2d48e8d49e2f1504bc83d16ef933cd7163b_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Vase_Open_2_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "3bd3f3a882da9283719fe1d238ad49d88760d0c3_:0000",
+                            "7ff8c2d48e8d49e2f1504bc83d16ef933cd7163b_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "9dfbc1df2349093e0444dfabb8789296c83561cf_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "Vase_Open_2_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        2
+                    ],
+                    "depends_on": [
+                        0,
+                        1
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 3
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 2990,
+        "error": false,
+        "instruction": "Can you arrange my afternoon refreshment setup?",
+        "replanning_count_0": 12.0,
+        "run_id": 0,
+        "runtime": 110.03314065933228,
+        "sim_step_count": 2233.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "2990",
+            "instruction": "Can you arrange my afternoon refreshment setup?",
+            "original_data_info": {
+                "episode_id": "399",
+                "instruction": "Move the jug and cup from the kitchen counter to the living room table. Place them next to each other.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "990",
+                "episode_type": "user_pattern",
+                "target_objects": [
+                    {
+                        "id": "381a128d056d4db0e70276aa918065ca42f89e8f",
+                        "caption": "A red jug with a white dot pattern.",
+                        "source": "hssd_hab",
+                        "category": "jug",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "ACE_Coffee_Mug_Kristen_16_oz_cup",
+                        "caption": "A white, 16 oz coffee mug, ACE Coffee Mug Kristen.",
+                        "source": "google",
+                        "category": "cup",
+                        "cluster": 1
+                    }
+                ],
+                "subtype": "preference",
+                "memory": "Place the jug and cup together on the living room table for afternoon refreshments."
+            },
+            "scene_id": "102817140",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "381a128d056d4db0e70276aa918065ca42f89e8f_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "0239c03b6896e4e4fad328885cf078995c913046_:0000",
+                            "925f48efff312862677c9517a8ec0faba4909570_part_1_:0000",
+                            "d886d10e71a0365a725abcf139142223409f7b4f_:0000",
+                            "d886d10e71a0365a725abcf139142223409f7b4f_:0001"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "ACE_Coffee_Mug_Kristen_16_oz_cup_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "0239c03b6896e4e4fad328885cf078995c913046_:0000",
+                            "925f48efff312862677c9517a8ec0faba4909570_part_1_:0000",
+                            "d886d10e71a0365a725abcf139142223409f7b4f_:0000",
+                            "d886d10e71a0365a725abcf139142223409f7b4f_:0001"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "381a128d056d4db0e70276aa918065ca42f89e8f_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "ACE_Coffee_Mug_Kristen_16_oz_cup_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        2
+                    ],
+                    "depends_on": [
+                        0,
+                        1
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 3
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 2945,
+        "error": false,
+        "instruction": "Can you arrange my cozy reading setup on the dining table?",
+        "replanning_count_0": 14.0,
+        "run_id": 0,
+        "runtime": 275.30280208587646,
+        "sim_step_count": 3377.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "2945",
+            "instruction": "Can you arrange my cozy reading setup on the dining table?",
+            "original_data_info": {
+                "episode_id": "763",
+                "instruction": "Move the book and candle from the living room couch to the dining table? Place them next to each other on the table.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "945",
+                "episode_type": "user_pattern",
+                "target_objects": [
+                    {
+                        "id": "Book_15",
+                        "caption": "A beige book titled \"UNIX\" with a simple cover design.",
+                        "source": "ai2thorhab",
+                        "category": "book",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "Candle_6",
+                        "caption": "A white candle on a black holder.",
+                        "source": "ai2thorhab",
+                        "category": "candle",
+                        "cluster": 1
+                    }
+                ],
+                "subtype": "preference",
+                "memory": "Keep the book and candle together on the dining table for a cozy reading time."
+            },
+            "scene_id": "102816756",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Book_15_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "786845ecaee2a43d135f922f4d617da02c8543b6_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Candle_6_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "786845ecaee2a43d135f922f4d617da02c8543b6_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "Book_15_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "Candle_6_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        2
+                    ],
+                    "depends_on": [
+                        0,
+                        1
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 3
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    }
+]

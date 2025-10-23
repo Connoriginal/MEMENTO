@@ -34,7 +34,7 @@ evaluation:
       ####### SHOULD CHANGE
 
       rag_dataset_dir: ####### SHOULD CHANGE
-        - "./data/memory/acquisition_stage" # path of the memory
+        - "./resource/memory/acquisition_stage" # path of the memory
       
       memory_path: "gpt-4o" # path of the memory
       ####### SHOULD CHANGE
@@ -45,7 +45,13 @@ evaluation:
       example_type: "react"
       corresponding_memory: true # always retrieve corresponding memory
 
-      ensure_same_scene: true # retrieve memory from the same scene
+      ensure_same_scene: True # retrieve memory from the same scene
+
+      enable_user_profile_rag: true # enable user profile RAG
+      #TODO: should change the path
+      user_profile_memory_path: "/HabitatLLM/resource/user_profile_memory/gpt_4o/scenes"
+      user_profile_top_k: 5 # user profile RAG top k
+
       
   
 habitat:

@@ -1,0 +1,3315 @@
+{
+  "scene_id": "103997895_171031182",
+  "total_graphs": 31,
+  "graphs": [
+    {
+      "nodes": [
+        {
+          "id": "u1",
+          "type": "User",
+          "name": "user_A"
+        },
+        {
+          "id": "k1",
+          "type": "Knowledge",
+          "subtype": "object_semantics",
+          "alias": "favorite candle for relaxation",
+          "description": "tall and cylindrical candle with a lavender color"
+        },
+        {
+          "id": "k2",
+          "type": "Knowledge",
+          "subtype": "object_semantics",
+          "alias": "vase with faceted design",
+          "description": "dark blue vase with a faceted design"
+        },
+        {
+          "id": "o1",
+          "type": "Object",
+          "name": "candle",
+          "granularity": "instance",
+          "attributes": [
+            "tall",
+            "cylindrical",
+            "lavender color"
+          ]
+        },
+        {
+          "id": "o2",
+          "type": "Object",
+          "name": "vase",
+          "granularity": "instance",
+          "attributes": [
+            "dark blue",
+            "faceted design"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "source": "u1",
+          "target": "k1",
+          "type": "Hierarchical",
+          "relation": "owns"
+        },
+        {
+          "source": "k1",
+          "target": "o1",
+          "type": "Hierarchical",
+          "relation": "alias_of"
+        },
+        {
+          "source": "u1",
+          "target": "k2",
+          "type": "Hierarchical",
+          "relation": "owns"
+        },
+        {
+          "source": "k2",
+          "target": "o2",
+          "type": "Hierarchical",
+          "relation": "alias_of"
+        }
+      ],
+      "episode_id": "1242",
+      "scene_id": "103997895_171031182",
+      "instruction": "First, move the candle and then the vase from the living room shelves to the bathroom toilet. Place them next to each other on the toilet. The candle is tall and cylindrical with a lavender color, and the vase is dark blue with a faceted design. The candle is my favorite for relaxation.",
+      "answer_knowledge_type": "object_semantics"
+    },
+    {
+      "nodes": [
+        {
+          "id": "u1",
+          "type": "User",
+          "name": "user_A"
+        },
+        {
+          "id": "k1",
+          "type": "Knowledge",
+          "subtype": "object_semantics",
+          "alias": "work setup laptop and stand",
+          "description": "gray laptop with a black keyboard and touchpad and black laptop stand with a rounded design"
+        },
+        {
+          "id": "o1",
+          "type": "Object",
+          "name": "laptop",
+          "granularity": "instance",
+          "attributes": [
+            "gray",
+            "black keyboard and touchpad"
+          ]
+        },
+        {
+          "id": "o2",
+          "type": "Object",
+          "name": "laptop stand",
+          "granularity": "instance",
+          "attributes": [
+            "black",
+            "rounded design"
+          ]
+        },
+        {
+          "id": "o3",
+          "type": "Object",
+          "name": "book",
+          "granularity": "instance",
+          "attributes": [
+            "green",
+            "spiral binding",
+            "brown central design"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "source": "u1",
+          "target": "k1",
+          "type": "Hierarchical",
+          "relation": "owns"
+        },
+        {
+          "source": "k1",
+          "target": "o1",
+          "type": "Hierarchical",
+          "relation": "alias_of"
+        },
+        {
+          "source": "k1",
+          "target": "o2",
+          "type": "Hierarchical",
+          "relation": "alias_of"
+        },
+        {
+          "source": "k1",
+          "target": "o3",
+          "type": "Hierarchical",
+          "relation": "alias_of"
+        }
+      ],
+      "episode_id": "1231",
+      "scene_id": "103997895_171031182",
+      "instruction": "Move the laptop and laptop stand from the living room table to the bedroom chair. Also, bring a book from the bedroom chair to the living room table. The laptop is gray with a black keyboard and touchpad, the laptop stand is black with a rounded design, and the book is a green sketchbook with a spiral binding and brown central design. The laptop and the laptop stand are essential for my work setup.",
+      "answer_knowledge_type": "object_semantics"
+    },
+    {
+      "nodes": [
+        {
+          "id": "u1",
+          "type": "User",
+          "name": "user_A"
+        },
+        {
+          "id": "k1",
+          "type": "Knowledge",
+          "subtype": "object_semantics",
+          "alias": "bedroom organization setup",
+          "description": "vase, book, and clock on the chest of drawers"
+        },
+        {
+          "id": "o1",
+          "type": "Object",
+          "name": "vase",
+          "granularity": "instance",
+          "attributes": [
+            "white",
+            "beige geometric pattern"
+          ]
+        },
+        {
+          "id": "o2",
+          "type": "Object",
+          "name": "book",
+          "granularity": "instance",
+          "attributes": [
+            "multicolored",
+            "geometric design"
+          ]
+        },
+        {
+          "id": "o3",
+          "type": "Object",
+          "name": "clock",
+          "granularity": "instance",
+          "attributes": [
+            "maroon",
+            "green digital display"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "source": "u1",
+          "target": "k1",
+          "type": "Hierarchical",
+          "relation": "owns"
+        },
+        {
+          "source": "k1",
+          "target": "o1",
+          "type": "Hierarchical",
+          "relation": "alias_of"
+        },
+        {
+          "source": "k1",
+          "target": "o2",
+          "type": "Hierarchical",
+          "relation": "alias_of"
+        },
+        {
+          "source": "k1",
+          "target": "o3",
+          "type": "Hierarchical",
+          "relation": "alias_of"
+        }
+      ],
+      "episode_id": "1237",
+      "scene_id": "103997895_171031182",
+      "instruction": "Organize the bedroom. Put the vase, book, and clock on the chest of drawers. The vase is white with a beige geometric pattern, the book is a multicolored hardcover with a geometric design, and the clock is maroon with a green digital display. The book is a gift from my best friend.",
+      "answer_knowledge_type": "object_semantics"
+    },
+    {
+      "nodes": [
+        {
+          "id": "u1",
+          "type": "User",
+          "name": "user_A"
+        },
+        {
+          "id": "k1",
+          "type": "Knowledge",
+          "subtype": "object_semantics",
+          "alias": "statue from travels",
+          "description": "beige statue on a black base"
+        },
+        {
+          "id": "o1",
+          "type": "Object",
+          "name": "statue",
+          "granularity": "instance",
+          "attributes": [
+            "beige",
+            "on a black base"
+          ]
+        },
+        {
+          "id": "k2",
+          "type": "Knowledge",
+          "subtype": "object_semantics",
+          "alias": "picture frame",
+          "description": "silver picture frame with an ornate border"
+        },
+        {
+          "id": "o2",
+          "type": "Object",
+          "name": "picture frame",
+          "granularity": "instance",
+          "attributes": [
+            "silver",
+            "ornate border"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "source": "u1",
+          "target": "k1",
+          "type": "Hierarchical",
+          "relation": "owns"
+        },
+        {
+          "source": "k1",
+          "target": "o1",
+          "type": "Hierarchical",
+          "relation": "alias_of"
+        },
+        {
+          "source": "u1",
+          "target": "k2",
+          "type": "Hierarchical",
+          "relation": "owns"
+        },
+        {
+          "source": "k2",
+          "target": "o2",
+          "type": "Hierarchical",
+          "relation": "alias_of"
+        }
+      ],
+      "episode_id": "1249",
+      "scene_id": "103997895_171031182",
+      "instruction": "Move the statue and picture frame from the table in the living room to the shelves in the bedroom. Place them next to each other on the shelves. The statue is beige on a black base, and the picture frame is silver with an ornate border. The statue is a keepsake from my travels.",
+      "answer_knowledge_type": "object_semantics"
+    },
+    {
+      "nodes": [
+        {
+          "id": "u1",
+          "type": "User",
+          "name": "user_A"
+        },
+        {
+          "id": "k1",
+          "type": "Knowledge",
+          "subtype": "object_semantics",
+          "alias": "gift toy airplane from childhood friend",
+          "description": "red toy airplane from Air Hogs Wind Flyers Set"
+        },
+        {
+          "id": "o1",
+          "type": "Object",
+          "name": "toy airplane",
+          "granularity": "instance",
+          "attributes": [
+            "red"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "source": "u1",
+          "target": "k1",
+          "type": "Hierarchical",
+          "relation": "owns"
+        },
+        {
+          "source": "k1",
+          "target": "o1",
+          "type": "Hierarchical",
+          "relation": "alias_of"
+        }
+      ],
+      "episode_id": "1250",
+      "scene_id": "103997895_171031182",
+      "instruction": "Move the toy airplane from the bedroom to the living room table. Place it next to the couch. The toy airplane is red, part of the Air Hogs Wind Flyers Set. It's a gift from my childhood friend.",
+      "answer_knowledge_type": "object_semantics"
+    },
+    {
+      "nodes": [
+        {
+          "id": "u1",
+          "type": "User",
+          "name": "user_A"
+        },
+        {
+          "id": "k1",
+          "type": "Knowledge",
+          "subtype": "object_semantics",
+          "alias": "favorite pencil case",
+          "description": "pink pencil case with large white dots called Big Dot Pink Pencil Case"
+        },
+        {
+          "id": "o1",
+          "type": "Object",
+          "name": "book",
+          "granularity": "instance",
+          "attributes": [
+            "hardcover",
+            "colorful cover design"
+          ]
+        },
+        {
+          "id": "o2",
+          "type": "Object",
+          "name": "pencil_case",
+          "granularity": "instance",
+          "attributes": [
+            "pink",
+            "large white dots",
+            "called Big Dot Pink Pencil Case"
+          ]
+        },
+        {
+          "id": "o3",
+          "type": "Object",
+          "name": "multiport_hub",
+          "granularity": "instance",
+          "attributes": [
+            "gray",
+            "multiple USB ports"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "source": "u1",
+          "target": "k1",
+          "type": "Hierarchical",
+          "relation": "owns"
+        },
+        {
+          "source": "k1",
+          "target": "o2",
+          "type": "Hierarchical",
+          "relation": "alias_of"
+        },
+        {
+          "source": "k1",
+          "target": "o2",
+          "type": "Hierarchical",
+          "relation": "target_object"
+        }
+      ],
+      "episode_id": "1240",
+      "scene_id": "103997895_171031182",
+      "instruction": "Take the book, pencil case, and multiport hub from the table in the living room and put them on the shelves in the bedroom, placing them next to each other. The book is a hardcover with a colorful cover design, the pencil case is pink with large white dots called Big Dot Pink Pencil Case, and the multiport hub is gray with multiple USB ports. The pencil case is my favorite.",
+      "answer_knowledge_type": "object_semantics"
+    },
+    {
+      "nodes": [
+        {
+          "id": "u1",
+          "type": "User",
+          "name": "user_A"
+        },
+        {
+          "id": "k1",
+          "type": "Knowledge",
+          "subtype": "object_semantics",
+          "alias": "gift clock from grandfather",
+          "description": "dark green analog alarm clock with twin bells"
+        },
+        {
+          "id": "k2",
+          "type": "Knowledge",
+          "subtype": "object_semantics",
+          "alias": "picture frame",
+          "description": "black picture frame with teardrop-shaped embellishments"
+        },
+        {
+          "id": "o1",
+          "type": "Object",
+          "name": "picture frame",
+          "granularity": "instance",
+          "attributes": [
+            "black",
+            "teardrop-shaped embellishments"
+          ]
+        },
+        {
+          "id": "o2",
+          "type": "Object",
+          "name": "clock",
+          "granularity": "instance",
+          "attributes": [
+            "dark green",
+            "analog alarm clock",
+            "twin bells"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "source": "u1",
+          "target": "k1",
+          "type": "Hierarchical",
+          "relation": "owns"
+        },
+        {
+          "source": "u1",
+          "target": "k2",
+          "type": "Hierarchical",
+          "relation": "owns"
+        },
+        {
+          "source": "k1",
+          "target": "o2",
+          "type": "Hierarchical",
+          "relation": "alias_of"
+        },
+        {
+          "source": "k2",
+          "target": "o1",
+          "type": "Hierarchical",
+          "relation": "alias_of"
+        }
+      ],
+      "episode_id": "1243",
+      "scene_id": "103997895_171031182",
+      "instruction": "Move the picture frame and clock to the table in the bedroom. Then, place them next to each other on the counter in the kitchen. The picture frame is black with teardrop-shaped embellishments, and the clock is a dark green analog alarm clock with twin bells. The clock was a gift from my grandfather.",
+      "answer_knowledge_type": "object_semantics"
+    },
+    {
+      "nodes": [
+        {
+          "id": "u1",
+          "type": "User",
+          "name": "user_A"
+        },
+        {
+          "id": "k1",
+          "type": "Knowledge",
+          "subtype": "object_semantics",
+          "alias": "work setup",
+          "description": "black laptop with a gray touchpad and black mouse pad with a logo in the corner"
+        },
+        {
+          "id": "o1",
+          "type": "Object",
+          "name": "laptop",
+          "granularity": "instance",
+          "attributes": [
+            "black",
+            "rugged",
+            "gray touchpad"
+          ]
+        },
+        {
+          "id": "o2",
+          "type": "Object",
+          "name": "mouse pad",
+          "granularity": "instance",
+          "attributes": [
+            "black",
+            "logo in the corner"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "source": "u1",
+          "target": "k1",
+          "type": "Hierarchical",
+          "relation": "owns"
+        },
+        {
+          "source": "k1",
+          "target": "o1",
+          "type": "Hierarchical",
+          "relation": "alias_of"
+        },
+        {
+          "source": "k1",
+          "target": "o2",
+          "type": "Hierarchical",
+          "relation": "alias_of"
+        }
+      ],
+      "episode_id": "1238",
+      "scene_id": "103997895_171031182",
+      "instruction": "Move the laptop and mouse pad from the table in the bedroom to the counter in the kitchen. Place them next to each other on the counter. The laptop is black and rugged with a gray touchpad, and the mouse pad is black with a logo in the corner. The laptop and mouse pad are part of my work setup.",
+      "answer_knowledge_type": "object_semantics"
+    },
+    {
+      "nodes": [
+        {
+          "id": "u1",
+          "type": "User",
+          "name": "user_A"
+        },
+        {
+          "id": "k1",
+          "type": "Knowledge",
+          "subtype": "object_semantics",
+          "alias": "favorite bakery bread",
+          "description": "round, dark brown loaf with slashes on top"
+        },
+        {
+          "id": "o1",
+          "type": "Object",
+          "name": "bread",
+          "granularity": "instance",
+          "attributes": [
+            "round",
+            "dark brown",
+            "slashes on top"
+          ]
+        },
+        {
+          "id": "k2",
+          "type": "Knowledge",
+          "subtype": "object_semantics",
+          "alias": "brown potato",
+          "description": "brown with a smooth surface"
+        },
+        {
+          "id": "o2",
+          "type": "Object",
+          "name": "potato",
+          "granularity": "instance",
+          "attributes": [
+            "brown",
+            "smooth surface"
+          ]
+        },
+        {
+          "id": "k3",
+          "type": "Knowledge",
+          "subtype": "object_semantics",
+          "alias": "brown egg",
+          "description": "brown with a smooth surface"
+        },
+        {
+          "id": "o3",
+          "type": "Object",
+          "name": "egg",
+          "granularity": "instance",
+          "attributes": [
+            "brown",
+            "smooth surface"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "source": "u1",
+          "target": "k1",
+          "type": "Hierarchical",
+          "relation": "owns"
+        },
+        {
+          "source": "k1",
+          "target": "o1",
+          "type": "Hierarchical",
+          "relation": "alias_of"
+        },
+        {
+          "source": "u1",
+          "target": "k2",
+          "type": "Hierarchical",
+          "relation": "owns"
+        },
+        {
+          "source": "k2",
+          "target": "o2",
+          "type": "Hierarchical",
+          "relation": "alias_of"
+        },
+        {
+          "source": "u1",
+          "target": "k3",
+          "type": "Hierarchical",
+          "relation": "owns"
+        },
+        {
+          "source": "k3",
+          "target": "o3",
+          "type": "Hierarchical",
+          "relation": "alias_of"
+        }
+      ],
+      "episode_id": "1248",
+      "scene_id": "103997895_171031182",
+      "instruction": "Place the bread, the potato, and the egg on the kitchen table and place them next to each other. The bread is a round, dark brown loaf with slashes on top, the potato is brown with a smooth surface, and the egg is brown with a smooth surface. The bread is from my favorite bakery.",
+      "answer_knowledge_type": "object_semantics"
+    },
+    {
+      "nodes": [
+        {
+          "id": "u1",
+          "type": "User",
+          "name": "user_A"
+        },
+        {
+          "id": "k1",
+          "type": "Knowledge",
+          "subtype": "object_semantics",
+          "alias": "work laptop",
+          "description": "black laptop with a dark keyboard and a large touchpad"
+        },
+        {
+          "id": "o1",
+          "type": "Object",
+          "name": "laptop",
+          "granularity": "instance",
+          "attributes": [
+            "black",
+            "dark keyboard",
+            "large touchpad"
+          ]
+        },
+        {
+          "id": "k2",
+          "type": "Knowledge",
+          "subtype": "object_semantics",
+          "alias": "mouse pad with logo",
+          "description": "black mouse pad with a logo in the corner"
+        },
+        {
+          "id": "o2",
+          "type": "Object",
+          "name": "mouse pad",
+          "granularity": "instance",
+          "attributes": [
+            "black",
+            "logo in the corner"
+          ]
+        },
+        {
+          "id": "k3",
+          "type": "Knowledge",
+          "subtype": "object_semantics",
+          "alias": "clock with white face",
+          "description": "red clock with a white face and black numbers"
+        },
+        {
+          "id": "o3",
+          "type": "Object",
+          "name": "clock",
+          "granularity": "instance",
+          "attributes": [
+            "red",
+            "white face",
+            "black numbers"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "source": "u1",
+          "target": "k1",
+          "type": "Hierarchical",
+          "relation": "owns"
+        },
+        {
+          "source": "k1",
+          "target": "o1",
+          "type": "Hierarchical",
+          "relation": "alias_of"
+        },
+        {
+          "source": "u1",
+          "target": "k2",
+          "type": "Hierarchical",
+          "relation": "owns"
+        },
+        {
+          "source": "k2",
+          "target": "o2",
+          "type": "Hierarchical",
+          "relation": "alias_of"
+        },
+        {
+          "source": "u1",
+          "target": "k3",
+          "type": "Hierarchical",
+          "relation": "owns"
+        },
+        {
+          "source": "k3",
+          "target": "o3",
+          "type": "Hierarchical",
+          "relation": "alias_of"
+        }
+      ],
+      "episode_id": "1233",
+      "scene_id": "103997895_171031182",
+      "instruction": "Move the laptop and the mouse pad to a new living room table. Move the clock to another shelf. The laptop is black with a dark keyboard and a large touchpad, and the mouse pad is black with a logo in the corner. The clock is red with a white face and black numbers. The laptop is essential for my work.",
+      "answer_knowledge_type": "object_semantics"
+    },
+    {
+      "nodes": [
+        {
+          "id": "u1",
+          "type": "User",
+          "name": "user_A"
+        },
+        {
+          "id": "k1",
+          "type": "Knowledge",
+          "subtype": "object_semantics",
+          "alias": "favorite set cup and plate",
+          "description": "dark blue cup with a dandelion design and plain white plate with a smooth, circular design"
+        },
+        {
+          "id": "o1",
+          "type": "Object",
+          "name": "jug",
+          "granularity": "instance",
+          "attributes": [
+            "dark green",
+            "rounded base"
+          ]
+        },
+        {
+          "id": "o2",
+          "type": "Object",
+          "name": "cup",
+          "granularity": "instance",
+          "attributes": [
+            "dark blue",
+            "dandelion design"
+          ]
+        },
+        {
+          "id": "o3",
+          "type": "Object",
+          "name": "plate",
+          "granularity": "instance",
+          "attributes": [
+            "plain white",
+            "smooth, circular design"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "source": "u1",
+          "target": "k1",
+          "type": "Hierarchical",
+          "relation": "owns"
+        },
+        {
+          "source": "k1",
+          "target": "o2",
+          "type": "Hierarchical",
+          "relation": "alias_of"
+        },
+        {
+          "source": "k1",
+          "target": "o3",
+          "type": "Hierarchical",
+          "relation": "alias_of"
+        }
+      ],
+      "episode_id": "1239",
+      "scene_id": "103997895_171031182",
+      "instruction": "Move the jug, cup, and plate to the living room table. The jug is dark green with a rounded base, the cup is dark blue with a dandelion design, and the plate is plain white with a smooth, circular design. The cup and the plate are part of my favorite set.",
+      "answer_knowledge_type": "object_semantics"
+    },
+    {
+      "nodes": [
+        {
+          "id": "u1",
+          "type": "User",
+          "name": "user_A"
+        },
+        {
+          "id": "k1",
+          "type": "Knowledge",
+          "subtype": "object_semantics",
+          "alias": "book with dark cover and clock with rabbit ears",
+          "description": "book with a dark cover featuring a portrait with teal text and a blue clock with rabbit ears and feet"
+        },
+        {
+          "id": "o1",
+          "type": "Object",
+          "name": "book",
+          "granularity": "instance",
+          "attributes": [
+            "dark cover",
+            "portrait with teal text"
+          ]
+        },
+        {
+          "id": "o2",
+          "type": "Object",
+          "name": "clock",
+          "granularity": "instance",
+          "attributes": [
+            "blue",
+            "rabbit ears",
+            "feet"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "source": "u1",
+          "target": "k1",
+          "type": "Hierarchical",
+          "relation": "owns"
+        },
+        {
+          "source": "k1",
+          "target": "o1",
+          "type": "Hierarchical",
+          "relation": "alias_of"
+        },
+        {
+          "source": "k1",
+          "target": "o2",
+          "type": "Hierarchical",
+          "relation": "alias_of"
+        }
+      ],
+      "episode_id": "1234",
+      "scene_id": "103997895_171031182",
+      "instruction": "Move the book and clock from the living room shelves to the bedroom chair. Place them next to each other on the chair. The book has a dark cover featuring a portrait with teal text, and the clock is blue with rabbit ears and feet. The clock is a gift from my brother.",
+      "answer_knowledge_type": "object_semantics"
+    },
+    {
+      "nodes": [
+        {
+          "id": "u1",
+          "type": "User",
+          "name": "user_A"
+        },
+        {
+          "id": "k1",
+          "type": "Knowledge",
+          "subtype": "object_semantics",
+          "alias": "family heirloom vase",
+          "description": "white vase with a faceted design"
+        },
+        {
+          "id": "o1",
+          "type": "Object",
+          "name": "vase",
+          "granularity": "instance",
+          "attributes": [
+            "white",
+            "faceted design"
+          ]
+        },
+        {
+          "id": "k2",
+          "type": "Knowledge",
+          "subtype": "object_semantics",
+          "alias": "mint green candle",
+          "description": "mint green candle with white butterfly designs"
+        },
+        {
+          "id": "o2",
+          "type": "Object",
+          "name": "candle",
+          "granularity": "instance",
+          "attributes": [
+            "mint green",
+            "white butterfly designs"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "source": "u1",
+          "target": "k1",
+          "type": "Hierarchical",
+          "relation": "owns"
+        },
+        {
+          "source": "k1",
+          "target": "o1",
+          "type": "Hierarchical",
+          "relation": "alias_of"
+        },
+        {
+          "source": "u1",
+          "target": "k2",
+          "type": "Hierarchical",
+          "relation": "owns"
+        },
+        {
+          "source": "k2",
+          "target": "o2",
+          "type": "Hierarchical",
+          "relation": "alias_of"
+        }
+      ],
+      "episode_id": "1236",
+      "scene_id": "103997895_171031182",
+      "instruction": "Place the vase on the shelves, the candle on the table? The vase is white with a faceted design, and the candle is mint green with white butterfly designs. The vase is a family heirloom.",
+      "answer_knowledge_type": "object_semantics"
+    },
+    {
+      "nodes": [
+        {
+          "id": "u1",
+          "type": "User",
+          "name": "user_A"
+        },
+        {
+          "id": "k1",
+          "type": "Knowledge",
+          "subtype": "object_semantics",
+          "alias": "gift teapot from grandfather",
+          "description": "black teapot with a curved spout and an ornate lid"
+        },
+        {
+          "id": "o1",
+          "type": "Object",
+          "name": "teapot",
+          "granularity": "instance",
+          "attributes": [
+            "black",
+            "curved spout",
+            "ornate lid"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "source": "u1",
+          "target": "k1",
+          "type": "Hierarchical",
+          "relation": "owns"
+        },
+        {
+          "source": "k1",
+          "target": "o1",
+          "type": "Hierarchical",
+          "relation": "alias_of"
+        }
+      ],
+      "episode_id": "1244",
+      "scene_id": "103997895_171031182",
+      "instruction": "First, take the teapot from the kitchen and put it on the couch in the living room. Then move it to the table in the bedroom. The teapot is black with a curved spout and an ornate lid. This teapot is a gift from my grandfather.",
+      "answer_knowledge_type": "object_semantics"
+    },
+    {
+      "nodes": [
+        {
+          "id": "u1",
+          "type": "User",
+          "name": "user_A"
+        },
+        {
+          "id": "k1",
+          "type": "Knowledge",
+          "subtype": "object_semantics",
+          "alias": "kettle and keychain from Japan",
+          "description": "black kettle with a silver handle and black and orange keychain with a circular pendant"
+        },
+        {
+          "id": "o1",
+          "type": "Object",
+          "name": "kettle",
+          "granularity": "instance",
+          "attributes": [
+            "black",
+            "silver handle"
+          ]
+        },
+        {
+          "id": "o2",
+          "type": "Object",
+          "name": "keychain",
+          "granularity": "instance",
+          "attributes": [
+            "black",
+            "orange",
+            "circular pendant"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "source": "u1",
+          "target": "k1",
+          "type": "Hierarchical",
+          "relation": "owns"
+        },
+        {
+          "source": "k1",
+          "target": "o1",
+          "type": "Hierarchical",
+          "relation": "alias_of"
+        },
+        {
+          "source": "k1",
+          "target": "o2",
+          "type": "Hierarchical",
+          "relation": "alias_of"
+        }
+      ],
+      "episode_id": "1241",
+      "scene_id": "103997895_171031182",
+      "instruction": "Move the kettle and keychain from the kitchen cabinet to the bedroom filing cabinet. Place them next to each other on the filing cabinet. The kettle is black with a silver handle, and the keychain is black and orange with a circular pendant. The keychain is a souvenir from my trip to Japan.",
+      "answer_knowledge_type": "object_semantics"
+    },
+    {
+      "nodes": [
+        {
+          "id": "u1",
+          "type": "User",
+          "name": "user_A"
+        },
+        {
+          "id": "k1",
+          "type": "Knowledge",
+          "subtype": "object_semantics",
+          "alias": "Android figure",
+          "description": "black and white Android_Figure_Panda"
+        },
+        {
+          "id": "k2",
+          "type": "Knowledge",
+          "subtype": "object_semantics",
+          "alias": "Action figure",
+          "description": "green and blue Leonardo from Teenage Mutant Ninja Turtles"
+        },
+        {
+          "id": "o1",
+          "type": "Object",
+          "name": "android figure",
+          "granularity": "instance",
+          "attributes": [
+            "black and white",
+            "Android_Figure_Panda"
+          ]
+        },
+        {
+          "id": "o2",
+          "type": "Object",
+          "name": "action figure",
+          "granularity": "instance",
+          "attributes": [
+            "green and blue",
+            "Leonardo from Teenage Mutant Ninja Turtles"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "source": "u1",
+          "target": "k1",
+          "type": "Hierarchical",
+          "relation": "owns"
+        },
+        {
+          "source": "k1",
+          "target": "o1",
+          "type": "Hierarchical",
+          "relation": "alias_of"
+        },
+        {
+          "source": "u1",
+          "target": "k2",
+          "type": "Hierarchical",
+          "relation": "owns"
+        },
+        {
+          "source": "k2",
+          "target": "o2",
+          "type": "Hierarchical",
+          "relation": "alias_of"
+        }
+      ],
+      "episode_id": "1235",
+      "scene_id": "103997895_171031182",
+      "instruction": "Move the android figure to a new living room table. Also, move the action figure to a new living room table. The android figure is a black and white Android_Figure_Panda, and the action figure is a green and blue Leonardo from Teenage Mutant Ninja Turtles. The Android figure is a collectible item.",
+      "answer_knowledge_type": "object_semantics"
+    },
+    {
+      "nodes": [
+        {
+          "id": "u1",
+          "type": "User",
+          "name": "user_A"
+        },
+        {
+          "id": "k1",
+          "type": "Knowledge",
+          "subtype": "user_pattern",
+          "alias": "bedroom decor setup",
+          "description": "keep statue and picture frame on the shelves in the bedroom to maintain a cohesive decor"
+        },
+        {
+          "id": "o1",
+          "type": "Object",
+          "name": "statue",
+          "granularity": "type"
+        },
+        {
+          "id": "o2",
+          "type": "Object",
+          "name": "picture frame",
+          "granularity": "type"
+        },
+        {
+          "id": "p1",
+          "type": "Pattern",
+          "name": "place",
+          "args": [
+            "statue",
+            "on shelves",
+            "in bedroom"
+          ]
+        },
+        {
+          "id": "p2",
+          "type": "Pattern",
+          "name": "place",
+          "args": [
+            "picture frame",
+            "on shelves",
+            "in bedroom"
+          ]
+        },
+        {
+          "id": "l1",
+          "type": "Location",
+          "name": "shelves",
+          "expression": "on the shelves in the bedroom"
+        }
+      ],
+      "edges": [
+        {
+          "source": "u1",
+          "target": "k1",
+          "type": "Hierarchical",
+          "relation": "owns"
+        },
+        {
+          "source": "k1",
+          "target": "p1",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "k1",
+          "target": "p2",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "p1",
+          "target": "o1",
+          "type": "Hierarchical",
+          "relation": "target_object"
+        },
+        {
+          "source": "p1",
+          "target": "l1",
+          "type": "Hierarchical",
+          "relation": "target_location",
+          "object": "o1"
+        },
+        {
+          "source": "p2",
+          "target": "o2",
+          "type": "Hierarchical",
+          "relation": "target_object"
+        },
+        {
+          "source": "p2",
+          "target": "l1",
+          "type": "Hierarchical",
+          "relation": "target_location",
+          "object": "o2"
+        },
+        {
+          "source": "o1",
+          "target": "o2",
+          "type": "Hierarchical",
+          "relation": "next_to"
+        }
+      ],
+      "episode_id": "1229",
+      "scene_id": "103997895_171031182",
+      "instruction": "Move the statue and picture frame from the table in the living room to the shelves in the bedroom. Place them next to each other on the shelves. I prefer to keep the statue and picture frame on the shelves in the bedroom to maintain a cohesive decor.",
+      "answer_knowledge_type": "user_pattern"
+    },
+    {
+      "nodes": [
+        {
+          "id": "u1",
+          "type": "User",
+          "name": "user_A"
+        },
+        {
+          "id": "k1",
+          "type": "Knowledge",
+          "subtype": "user_pattern",
+          "alias": "living room play setup",
+          "description": "keep toy airplane next to the couch for easy access while relaxing"
+        },
+        {
+          "id": "o1",
+          "type": "Object",
+          "name": "toy airplane",
+          "granularity": "type"
+        },
+        {
+          "id": "l1",
+          "type": "Location",
+          "name": "bedroom",
+          "expression": "in the bedroom"
+        },
+        {
+          "id": "l2",
+          "type": "Location",
+          "name": "livingroom_table",
+          "expression": "on the living room table"
+        },
+        {
+          "id": "l3",
+          "type": "Location",
+          "name": "couch",
+          "expression": "next to the couch"
+        }
+      ],
+      "edges": [
+        {
+          "source": "u1",
+          "target": "k1",
+          "type": "Hierarchical",
+          "relation": "owns"
+        },
+        {
+          "source": "k1",
+          "target": "o1",
+          "type": "Hierarchical",
+          "relation": "target_object"
+        },
+        {
+          "source": "k1",
+          "target": "l2",
+          "type": "Hierarchical",
+          "relation": "target_location"
+        },
+        {
+          "source": "k1",
+          "target": "l3",
+          "type": "Hierarchical",
+          "relation": "next_to"
+        },
+        {
+          "source": "p1",
+          "target": "o1",
+          "type": "Hierarchical",
+          "relation": "target"
+        },
+        {
+          "source": "p1",
+          "target": "l1",
+          "type": "Hierarchical",
+          "relation": "source_location"
+        },
+        {
+          "source": "p2",
+          "target": "o1",
+          "type": "Hierarchical",
+          "relation": "target"
+        },
+        {
+          "source": "p2",
+          "target": "l2",
+          "type": "Hierarchical",
+          "relation": "source_location"
+        },
+        {
+          "source": "p2",
+          "target": "l3",
+          "type": "Hierarchical",
+          "relation": "target_location"
+        },
+        {
+          "source": "p1",
+          "target": "p2",
+          "type": "Temporal",
+          "relation": "before"
+        }
+      ],
+      "episode_id": "1230",
+      "scene_id": "103997895_171031182",
+      "instruction": "Move the toy airplane from the bedroom to the living room table. Place it next to the couch. I like to keep the toy airplane next to the couch so I can easily play with it while relaxing.",
+      "answer_knowledge_type": "user_pattern"
+    },
+    {
+      "nodes": [
+        {
+          "id": "u1",
+          "type": "User",
+          "name": "user_A"
+        },
+        {
+          "id": "k1",
+          "type": "Knowledge",
+          "subtype": "user_pattern",
+          "alias": "room ambiance setup",
+          "description": "have vase on shelves and candle on table to create a cozy atmosphere"
+        },
+        {
+          "id": "o1",
+          "type": "Object",
+          "name": "vase",
+          "granularity": "type"
+        },
+        {
+          "id": "o2",
+          "type": "Object",
+          "name": "candle",
+          "granularity": "type"
+        },
+        {
+          "id": "l1",
+          "type": "Location",
+          "name": "shelves",
+          "expression": "on the shelves"
+        },
+        {
+          "id": "l2",
+          "type": "Location",
+          "name": "table",
+          "expression": "on the table"
+        }
+      ],
+      "edges": [
+        {
+          "source": "u1",
+          "target": "k1",
+          "type": "Hierarchical",
+          "relation": "owns"
+        },
+        {
+          "source": "k1",
+          "target": "p1",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "k1",
+          "target": "p2",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "p1",
+          "target": "o1",
+          "type": "Hierarchical",
+          "relation": "target_object"
+        },
+        {
+          "source": "p1",
+          "target": "l1",
+          "type": "Hierarchical",
+          "relation": "target_location"
+        },
+        {
+          "source": "p2",
+          "target": "o2",
+          "type": "Hierarchical",
+          "relation": "target_object"
+        },
+        {
+          "source": "p2",
+          "target": "l2",
+          "type": "Hierarchical",
+          "relation": "target_location"
+        }
+      ],
+      "episode_id": "1217",
+      "scene_id": "103997895_171031182",
+      "instruction": "Place the vase on the shelves, the candle on the table. I prefer to have the vase on the shelves and the candle on the table to create a cozy atmosphere in the room.",
+      "answer_knowledge_type": "user_pattern"
+    },
+    {
+      "nodes": [
+        {
+          "id": "u1",
+          "type": "User",
+          "name": "user_A"
+        },
+        {
+          "id": "k1",
+          "type": "Knowledge",
+          "subtype": "user_pattern",
+          "alias": "daily breakfast setup",
+          "description": "keep bread, potato, and egg next to each other on the kitchen table for breakfast"
+        },
+        {
+          "id": "o1",
+          "type": "Object",
+          "name": "bread",
+          "granularity": "type"
+        },
+        {
+          "id": "o2",
+          "type": "Object",
+          "name": "potato",
+          "granularity": "type"
+        },
+        {
+          "id": "o3",
+          "type": "Object",
+          "name": "egg",
+          "granularity": "type"
+        },
+        {
+          "id": "l1",
+          "type": "Location",
+          "name": "kitchen_table",
+          "expression": "on the kitchen table"
+        }
+      ],
+      "edges": [
+        {
+          "source": "u1",
+          "target": "k1",
+          "type": "Hierarchical",
+          "relation": "owns"
+        },
+        {
+          "source": "k1",
+          "target": "o1",
+          "type": "Hierarchical",
+          "relation": "target_object"
+        },
+        {
+          "source": "k1",
+          "target": "o2",
+          "type": "Hierarchical",
+          "relation": "target_object"
+        },
+        {
+          "source": "k1",
+          "target": "o3",
+          "type": "Hierarchical",
+          "relation": "target_object"
+        },
+        {
+          "source": "k1",
+          "target": "l1",
+          "type": "Hierarchical",
+          "relation": "target_location"
+        }
+      ],
+      "episode_id": "1228",
+      "scene_id": "103997895_171031182",
+      "instruction": "Place the bread, the potato, and the egg on the kitchen table and place them next to each other. Almost everyday I these items together on the kitchen table for my breakfast.",
+      "answer_knowledge_type": "user_pattern"
+    },
+    {
+      "nodes": [
+        {
+          "id": "u1",
+          "type": "User",
+          "name": "user_A"
+        },
+        {
+          "id": "k1",
+          "type": "Knowledge",
+          "subtype": "user_pattern",
+          "alias": "bedroom study setup",
+          "description": "keep book, pencil case, and multiport hub together on the bedroom shelves for easy access"
+        },
+        {
+          "id": "p1",
+          "type": "Pattern",
+          "name": "move",
+          "args": [
+            "book",
+            "from table",
+            "to bedroom shelves"
+          ]
+        },
+        {
+          "id": "p2",
+          "type": "Pattern",
+          "name": "move",
+          "args": [
+            "pencil case",
+            "from table",
+            "to bedroom shelves"
+          ]
+        },
+        {
+          "id": "p3",
+          "type": "Pattern",
+          "name": "move",
+          "args": [
+            "multiport hub",
+            "from table",
+            "to bedroom shelves"
+          ]
+        },
+        {
+          "id": "o1",
+          "type": "Object",
+          "name": "book",
+          "granularity": "type"
+        },
+        {
+          "id": "o2",
+          "type": "Object",
+          "name": "pencil case",
+          "granularity": "type"
+        },
+        {
+          "id": "o3",
+          "type": "Object",
+          "name": "multiport hub",
+          "granularity": "type"
+        },
+        {
+          "id": "l1",
+          "type": "Location",
+          "name": "table",
+          "expression": "in the living room"
+        },
+        {
+          "id": "l2",
+          "type": "Location",
+          "name": "bedroom shelves",
+          "expression": "on the bedroom shelves"
+        }
+      ],
+      "edges": [
+        {
+          "source": "u1",
+          "target": "k1",
+          "type": "Hierarchical",
+          "relation": "owns"
+        },
+        {
+          "source": "k1",
+          "target": "p1",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "k1",
+          "target": "p2",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "k1",
+          "target": "p3",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "p1",
+          "target": "o1",
+          "type": "Hierarchical",
+          "relation": "target"
+        },
+        {
+          "source": "p1",
+          "target": "l1",
+          "type": "Hierarchical",
+          "relation": "source_location"
+        },
+        {
+          "source": "p1",
+          "target": "l2",
+          "type": "Hierarchical",
+          "relation": "target_location"
+        },
+        {
+          "source": "p2",
+          "target": "o2",
+          "type": "Hierarchical",
+          "relation": "target"
+        },
+        {
+          "source": "p2",
+          "target": "l1",
+          "type": "Hierarchical",
+          "relation": "source_location"
+        },
+        {
+          "source": "p2",
+          "target": "l2",
+          "type": "Hierarchical",
+          "relation": "target_location"
+        },
+        {
+          "source": "p3",
+          "target": "o3",
+          "type": "Hierarchical",
+          "relation": "target"
+        },
+        {
+          "source": "p3",
+          "target": "l1",
+          "type": "Hierarchical",
+          "relation": "source_location"
+        },
+        {
+          "source": "p3",
+          "target": "l2",
+          "type": "Hierarchical",
+          "relation": "target_location"
+        },
+        {
+          "source": "p1",
+          "target": "p2",
+          "type": "Temporal",
+          "relation": "before"
+        },
+        {
+          "source": "p2",
+          "target": "p3",
+          "type": "Temporal",
+          "relation": "before"
+        }
+      ],
+      "episode_id": "1221",
+      "scene_id": "103997895_171031182",
+      "instruction": "Take the book, pencil case, and multiport hub from the table in the living room and put them on the shelves in the bedroom, placing them next to each other. I like to keep my study materials together on the bedroom shelves for easy access when I'm working or studying in my room.",
+      "answer_knowledge_type": "user_pattern"
+    },
+    {
+      "nodes": [
+        {
+          "id": "u1",
+          "type": "User",
+          "name": "user_A"
+        },
+        {
+          "id": "k1",
+          "type": "Knowledge",
+          "subtype": "user_pattern",
+          "alias": "afternoon tea setup",
+          "description": "keep jug, cup, and plate ready on the living room table for afternoon tea time"
+        },
+        {
+          "id": "p1",
+          "type": "Pattern",
+          "name": "move",
+          "args": [
+            "jug",
+            "to livingroom_table",
+            "in living room"
+          ]
+        },
+        {
+          "id": "p2",
+          "type": "Pattern",
+          "name": "move",
+          "args": [
+            "cup",
+            "to livingroom_table",
+            "in living room"
+          ]
+        },
+        {
+          "id": "p3",
+          "type": "Pattern",
+          "name": "move",
+          "args": [
+            "plate",
+            "to livingroom_table",
+            "in living room"
+          ]
+        },
+        {
+          "id": "o1",
+          "type": "Object",
+          "name": "jug",
+          "granularity": "type"
+        },
+        {
+          "id": "o2",
+          "type": "Object",
+          "name": "cup",
+          "granularity": "type"
+        },
+        {
+          "id": "o3",
+          "type": "Object",
+          "name": "plate",
+          "granularity": "type"
+        },
+        {
+          "id": "l1",
+          "type": "Location",
+          "name": "livingroom_table",
+          "expression": "on the living room table"
+        }
+      ],
+      "edges": [
+        {
+          "source": "u1",
+          "target": "k1",
+          "type": "Hierarchical",
+          "relation": "owns"
+        },
+        {
+          "source": "k1",
+          "target": "p1",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "k1",
+          "target": "p2",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "k1",
+          "target": "p3",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "p1",
+          "target": "o1",
+          "type": "Hierarchical",
+          "relation": "target_object"
+        },
+        {
+          "source": "p1",
+          "target": "l1",
+          "type": "Hierarchical",
+          "relation": "target_location"
+        },
+        {
+          "source": "p2",
+          "target": "o2",
+          "type": "Hierarchical",
+          "relation": "target_object"
+        },
+        {
+          "source": "p2",
+          "target": "l1",
+          "type": "Hierarchical",
+          "relation": "target_location"
+        },
+        {
+          "source": "p3",
+          "target": "o3",
+          "type": "Hierarchical",
+          "relation": "target_object"
+        },
+        {
+          "source": "p3",
+          "target": "l1",
+          "type": "Hierarchical",
+          "relation": "target_location"
+        }
+      ],
+      "episode_id": "1220",
+      "scene_id": "103997895_171031182",
+      "instruction": "Move the jug, cup, and plate to the living room table. I always like to have the jug, cup, and plate ready on the living room table for my afternoon tea time.",
+      "answer_knowledge_type": "user_pattern"
+    },
+    {
+      "nodes": [
+        {
+          "id": "u1",
+          "type": "User",
+          "name": "user_A"
+        },
+        {
+          "id": "k1",
+          "type": "Knowledge",
+          "subtype": "user_pattern",
+          "alias": "bedroom setup for easy access",
+          "description": "keep book and clock next to each other on the bedroom chair for easy access before bed"
+        },
+        {
+          "id": "o1",
+          "type": "Object",
+          "name": "book",
+          "granularity": "type"
+        },
+        {
+          "id": "o2",
+          "type": "Object",
+          "name": "clock",
+          "granularity": "type"
+        },
+        {
+          "id": "p1",
+          "type": "Pattern",
+          "name": "place",
+          "args": [
+            "book",
+            "on chair",
+            "in bedroom"
+          ]
+        },
+        {
+          "id": "p2",
+          "type": "Pattern",
+          "name": "place",
+          "args": [
+            "clock",
+            "on chair",
+            "in bedroom"
+          ]
+        },
+        {
+          "id": "l1",
+          "type": "Location",
+          "name": "livingroom_shelves",
+          "expression": "on the living room shelves"
+        },
+        {
+          "id": "l2",
+          "type": "Location",
+          "name": "bedroom_chair",
+          "expression": "on the bedroom chair"
+        }
+      ],
+      "edges": [
+        {
+          "source": "u1",
+          "target": "k1",
+          "type": "Hierarchical",
+          "relation": "owns"
+        },
+        {
+          "source": "k1",
+          "target": "p1",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "k1",
+          "target": "p2",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "p1",
+          "target": "o1",
+          "type": "Hierarchical",
+          "relation": "target_object"
+        },
+        {
+          "source": "p1",
+          "target": "l2",
+          "type": "Hierarchical",
+          "relation": "target_location",
+          "object": "o1"
+        },
+        {
+          "source": "p2",
+          "target": "o2",
+          "type": "Hierarchical",
+          "relation": "target_object"
+        },
+        {
+          "source": "p2",
+          "target": "l2",
+          "type": "Hierarchical",
+          "relation": "target_location",
+          "object": "o2"
+        },
+        {
+          "source": "o1",
+          "target": "o2",
+          "type": "Hierarchical",
+          "relation": "next_to"
+        }
+      ],
+      "episode_id": "1215",
+      "scene_id": "103997895_171031182",
+      "instruction": "Move the book and clock from the living room shelves to the bedroom chair. Place them next to each other on the chair. I prefer to have my book and clock together on the bedroom chair for easy access before bed.",
+      "answer_knowledge_type": "user_pattern"
+    },
+    {
+      "nodes": [
+        {
+          "id": "u1",
+          "type": "User",
+          "name": "user_A"
+        },
+        {
+          "id": "k1",
+          "type": "Knowledge",
+          "subtype": "user_pattern",
+          "alias": "morning routine setup",
+          "description": "start my day by having the picture frame and clock together in the kitchen"
+        },
+        {
+          "id": "p1",
+          "type": "Pattern",
+          "name": "move",
+          "args": [
+            "picture frame",
+            "to table",
+            "in bedroom"
+          ]
+        },
+        {
+          "id": "p2",
+          "type": "Pattern",
+          "name": "move",
+          "args": [
+            "clock",
+            "to table",
+            "in bedroom"
+          ]
+        },
+        {
+          "id": "p3",
+          "type": "Pattern",
+          "name": "place",
+          "args": [
+            "picture frame",
+            "next to",
+            "clock",
+            "on counter",
+            "in kitchen"
+          ]
+        },
+        {
+          "id": "o1",
+          "type": "Object",
+          "name": "picture frame",
+          "granularity": "type"
+        },
+        {
+          "id": "o2",
+          "type": "Object",
+          "name": "clock",
+          "granularity": "type"
+        },
+        {
+          "id": "l1",
+          "type": "Location",
+          "name": "table",
+          "expression": "table in the bedroom"
+        },
+        {
+          "id": "l2",
+          "type": "Location",
+          "name": "counter",
+          "expression": "counter in the kitchen"
+        }
+      ],
+      "edges": [
+        {
+          "source": "u1",
+          "target": "k1",
+          "type": "Hierarchical",
+          "relation": "owns"
+        },
+        {
+          "source": "k1",
+          "target": "p1",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "k1",
+          "target": "p2",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "k1",
+          "target": "p3",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "p1",
+          "target": "o1",
+          "type": "Hierarchical",
+          "relation": "target_object"
+        },
+        {
+          "source": "p1",
+          "target": "l1",
+          "type": "Hierarchical",
+          "relation": "target_location"
+        },
+        {
+          "source": "p2",
+          "target": "o2",
+          "type": "Hierarchical",
+          "relation": "target_object"
+        },
+        {
+          "source": "p2",
+          "target": "l1",
+          "type": "Hierarchical",
+          "relation": "target_location"
+        },
+        {
+          "source": "p3",
+          "target": "o1",
+          "type": "Hierarchical",
+          "relation": "target_object"
+        },
+        {
+          "source": "p3",
+          "target": "o2",
+          "type": "Hierarchical",
+          "relation": "target_object"
+        },
+        {
+          "source": "p3",
+          "target": "l2",
+          "type": "Hierarchical",
+          "relation": "target_location"
+        },
+        {
+          "source": "p1",
+          "target": "p2",
+          "type": "Temporal",
+          "relation": "before"
+        },
+        {
+          "source": "p2",
+          "target": "p3",
+          "type": "Temporal",
+          "relation": "before"
+        }
+      ],
+      "episode_id": "1224",
+      "scene_id": "103997895_171031182",
+      "instruction": "Move the picture frame and clock to the table in the bedroom. Then, place them next to each other on the counter in the kitchen. I usually like to start my day by having the picture frame and clock together in the kitchen.",
+      "answer_knowledge_type": "user_pattern"
+    },
+    {
+      "nodes": [
+        {
+          "id": "u1",
+          "type": "User",
+          "name": "user_A"
+        },
+        {
+          "id": "k1",
+          "type": "Knowledge",
+          "subtype": "user_pattern",
+          "alias": "bathroom calming setup",
+          "description": "keep candle and vase together on the bathroom toilet for a calming atmosphere"
+        },
+        {
+          "id": "o1",
+          "type": "Object",
+          "name": "candle",
+          "granularity": "type"
+        },
+        {
+          "id": "o2",
+          "type": "Object",
+          "name": "vase",
+          "granularity": "type"
+        },
+        {
+          "id": "p1",
+          "type": "Pattern",
+          "name": "move",
+          "args": [
+            "candle",
+            "from living room shelves",
+            "to bathroom toilet"
+          ]
+        },
+        {
+          "id": "p2",
+          "type": "Pattern",
+          "name": "move",
+          "args": [
+            "vase",
+            "from living room shelves",
+            "to bathroom toilet"
+          ]
+        },
+        {
+          "id": "p3",
+          "type": "Pattern",
+          "name": "place",
+          "args": [
+            "candle",
+            "next to",
+            "vase",
+            "on toilet",
+            "in bathroom"
+          ]
+        },
+        {
+          "id": "l1",
+          "type": "Location",
+          "name": "living_room_shelves",
+          "expression": "on the living room shelves"
+        },
+        {
+          "id": "l2",
+          "type": "Location",
+          "name": "bathroom_toilet",
+          "expression": "on the bathroom toilet"
+        }
+      ],
+      "edges": [
+        {
+          "source": "u1",
+          "target": "k1",
+          "type": "Hierarchical",
+          "relation": "owns"
+        },
+        {
+          "source": "k1",
+          "target": "p1",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "k1",
+          "target": "p2",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "k1",
+          "target": "p3",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "p1",
+          "target": "o1",
+          "type": "Hierarchical",
+          "relation": "target"
+        },
+        {
+          "source": "p1",
+          "target": "l1",
+          "type": "Hierarchical",
+          "relation": "source_location"
+        },
+        {
+          "source": "p1",
+          "target": "l2",
+          "type": "Hierarchical",
+          "relation": "target_location"
+        },
+        {
+          "source": "p2",
+          "target": "o2",
+          "type": "Hierarchical",
+          "relation": "target"
+        },
+        {
+          "source": "p2",
+          "target": "l1",
+          "type": "Hierarchical",
+          "relation": "source_location"
+        },
+        {
+          "source": "p2",
+          "target": "l2",
+          "type": "Hierarchical",
+          "relation": "target_location"
+        },
+        {
+          "source": "p3",
+          "target": "o1",
+          "type": "Hierarchical",
+          "relation": "target"
+        },
+        {
+          "source": "p3",
+          "target": "o2",
+          "type": "Hierarchical",
+          "relation": "target"
+        },
+        {
+          "source": "p3",
+          "target": "l2",
+          "type": "Hierarchical",
+          "relation": "target_location"
+        }
+      ],
+      "episode_id": "1223",
+      "scene_id": "103997895_171031182",
+      "instruction": "First, move the candle and then the vase from the living room shelves to the bathroom toilet. Place them next to each other on the toilet. I typically keep the candle and vase together on the bathroom toilet for a calming atmosphere.",
+      "answer_knowledge_type": "user_pattern"
+    },
+    {
+      "nodes": [
+        {
+          "id": "u1",
+          "type": "User",
+          "name": "user_A"
+        },
+        {
+          "id": "k1",
+          "type": "Knowledge",
+          "subtype": "user_pattern",
+          "alias": "work setup transition",
+          "description": "move laptop and stand to bedroom chair and keep a book on living room table for breaks"
+        },
+        {
+          "id": "p1",
+          "type": "Pattern",
+          "name": "move",
+          "args": [
+            "laptop",
+            "from living room table",
+            "to bedroom chair"
+          ]
+        },
+        {
+          "id": "p2",
+          "type": "Pattern",
+          "name": "move",
+          "args": [
+            "laptop stand",
+            "from living room table",
+            "to bedroom chair"
+          ]
+        },
+        {
+          "id": "p3",
+          "type": "Pattern",
+          "name": "move",
+          "args": [
+            "book",
+            "from bedroom chair",
+            "to living room table"
+          ]
+        },
+        {
+          "id": "o1",
+          "type": "Object",
+          "name": "laptop",
+          "granularity": "type"
+        },
+        {
+          "id": "o2",
+          "type": "Object",
+          "name": "laptop stand",
+          "granularity": "type"
+        },
+        {
+          "id": "o3",
+          "type": "Object",
+          "name": "book",
+          "granularity": "type"
+        },
+        {
+          "id": "l1",
+          "type": "Location",
+          "name": "livingroom_table",
+          "expression": "in the living room table"
+        },
+        {
+          "id": "l2",
+          "type": "Location",
+          "name": "bedroom_chair",
+          "expression": "in the bedroom chair"
+        }
+      ],
+      "edges": [
+        {
+          "source": "u1",
+          "target": "k1",
+          "type": "Hierarchical",
+          "relation": "owns"
+        },
+        {
+          "source": "k1",
+          "target": "p1",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "k1",
+          "target": "p2",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "k1",
+          "target": "p3",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "p1",
+          "target": "o1",
+          "type": "Hierarchical",
+          "relation": "target_object"
+        },
+        {
+          "source": "p1",
+          "target": "l1",
+          "type": "Hierarchical",
+          "relation": "source_location"
+        },
+        {
+          "source": "p1",
+          "target": "l2",
+          "type": "Hierarchical",
+          "relation": "target_location"
+        },
+        {
+          "source": "p2",
+          "target": "o2",
+          "type": "Hierarchical",
+          "relation": "target_object"
+        },
+        {
+          "source": "p2",
+          "target": "l1",
+          "type": "Hierarchical",
+          "relation": "source_location"
+        },
+        {
+          "source": "p2",
+          "target": "l2",
+          "type": "Hierarchical",
+          "relation": "target_location"
+        },
+        {
+          "source": "p3",
+          "target": "o3",
+          "type": "Hierarchical",
+          "relation": "target_object"
+        },
+        {
+          "source": "p3",
+          "target": "l2",
+          "type": "Hierarchical",
+          "relation": "source_location"
+        },
+        {
+          "source": "p3",
+          "target": "l1",
+          "type": "Hierarchical",
+          "relation": "target_location"
+        },
+        {
+          "source": "p1",
+          "target": "p2",
+          "type": "Temporal",
+          "relation": "before"
+        },
+        {
+          "source": "p2",
+          "target": "p3",
+          "type": "Temporal",
+          "relation": "before"
+        }
+      ],
+      "episode_id": "1212",
+      "scene_id": "103997895_171031182",
+      "instruction": "Move the laptop and laptop stand from the living room table to the bedroom chair. Also, bring a book from the bedroom chair to the living room table. I usually move my laptop and stand to the bedroom chair when I'm ready for work and keep a book on the living room table for quick access during breaks.",
+      "answer_knowledge_type": "user_pattern"
+    },
+    {
+      "nodes": [
+        {
+          "id": "u1",
+          "type": "User",
+          "name": "user_A"
+        },
+        {
+          "id": "k1",
+          "type": "Knowledge",
+          "subtype": "user_pattern",
+          "alias": "morning work setup",
+          "description": "keep laptop and mouse pad on the kitchen counter for morning work sessions"
+        },
+        {
+          "id": "p1",
+          "type": "Pattern",
+          "name": "move",
+          "args": [
+            "laptop",
+            "from bedroom_table",
+            "to kitchen_counter"
+          ]
+        },
+        {
+          "id": "p2",
+          "type": "Pattern",
+          "name": "move",
+          "args": [
+            "mouse_pad",
+            "from bedroom_table",
+            "to kitchen_counter"
+          ]
+        },
+        {
+          "id": "p3",
+          "type": "Pattern",
+          "name": "place",
+          "args": [
+            "laptop",
+            "next_to",
+            "mouse_pad",
+            "on kitchen_counter"
+          ]
+        },
+        {
+          "id": "o1",
+          "type": "Object",
+          "name": "laptop",
+          "granularity": "type"
+        },
+        {
+          "id": "o2",
+          "type": "Object",
+          "name": "mouse_pad",
+          "granularity": "type"
+        },
+        {
+          "id": "l1",
+          "type": "Location",
+          "name": "bedroom_table",
+          "expression": "table in the bedroom"
+        },
+        {
+          "id": "l2",
+          "type": "Location",
+          "name": "kitchen_counter",
+          "expression": "counter in the kitchen"
+        }
+      ],
+      "edges": [
+        {
+          "source": "u1",
+          "target": "k1",
+          "type": "Hierarchical",
+          "relation": "owns"
+        },
+        {
+          "source": "k1",
+          "target": "p1",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "k1",
+          "target": "p2",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "k1",
+          "target": "p3",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "p1",
+          "target": "o1",
+          "type": "Hierarchical",
+          "relation": "target"
+        },
+        {
+          "source": "p1",
+          "target": "l1",
+          "type": "Hierarchical",
+          "relation": "source_location"
+        },
+        {
+          "source": "p1",
+          "target": "l2",
+          "type": "Hierarchical",
+          "relation": "target_location"
+        },
+        {
+          "source": "p2",
+          "target": "o2",
+          "type": "Hierarchical",
+          "relation": "target"
+        },
+        {
+          "source": "p2",
+          "target": "l1",
+          "type": "Hierarchical",
+          "relation": "source_location"
+        },
+        {
+          "source": "p2",
+          "target": "l2",
+          "type": "Hierarchical",
+          "relation": "target_location"
+        },
+        {
+          "source": "p3",
+          "target": "o1",
+          "type": "Hierarchical",
+          "relation": "target"
+        },
+        {
+          "source": "p3",
+          "target": "o2",
+          "type": "Hierarchical",
+          "relation": "target"
+        },
+        {
+          "source": "p3",
+          "target": "l2",
+          "type": "Hierarchical",
+          "relation": "target_location"
+        },
+        {
+          "source": "p1",
+          "target": "p2",
+          "type": "Temporal",
+          "relation": "before"
+        },
+        {
+          "source": "p2",
+          "target": "p3",
+          "type": "Temporal",
+          "relation": "before"
+        }
+      ],
+      "episode_id": "1219",
+      "scene_id": "103997895_171031182",
+      "instruction": "Move the laptop and mouse pad from the table in the bedroom to the counter in the kitchen. Place them next to each other on the counter. I like to keep my laptop and mouse pad on the kitchen counter for morning work sessions.",
+      "answer_knowledge_type": "user_pattern"
+    },
+    {
+      "nodes": [
+        {
+          "id": "u1",
+          "type": "User",
+          "name": "user_A"
+        },
+        {
+          "id": "k1",
+          "type": "Knowledge",
+          "subtype": "user_pattern",
+          "alias": "bedroom tidiness setup",
+          "description": "keep vase, book, and clock neatly arranged on the chest of drawers for a tidy look"
+        },
+        {
+          "id": "o1",
+          "type": "Object",
+          "name": "vase",
+          "granularity": "type"
+        },
+        {
+          "id": "o2",
+          "type": "Object",
+          "name": "book",
+          "granularity": "type"
+        },
+        {
+          "id": "o3",
+          "type": "Object",
+          "name": "clock",
+          "granularity": "type"
+        },
+        {
+          "id": "p1",
+          "type": "Pattern",
+          "name": "place",
+          "args": [
+            "vase",
+            "on chest_of_drawers",
+            "in bedroom"
+          ]
+        },
+        {
+          "id": "p2",
+          "type": "Pattern",
+          "name": "place",
+          "args": [
+            "book",
+            "on chest_of_drawers",
+            "in bedroom"
+          ]
+        },
+        {
+          "id": "p3",
+          "type": "Pattern",
+          "name": "place",
+          "args": [
+            "clock",
+            "on chest_of_drawers",
+            "in bedroom"
+          ]
+        },
+        {
+          "id": "l1",
+          "type": "Location",
+          "name": "chest_of_drawers",
+          "expression": "on the chest of drawers in the bedroom"
+        }
+      ],
+      "edges": [
+        {
+          "source": "u1",
+          "target": "k1",
+          "type": "Hierarchical",
+          "relation": "owns"
+        },
+        {
+          "source": "k1",
+          "target": "p1",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "k1",
+          "target": "p2",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "k1",
+          "target": "p3",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "p1",
+          "target": "o1",
+          "type": "Hierarchical",
+          "relation": "target_object"
+        },
+        {
+          "source": "p1",
+          "target": "l1",
+          "type": "Hierarchical",
+          "relation": "target_location",
+          "object": "o1"
+        },
+        {
+          "source": "p2",
+          "target": "o2",
+          "type": "Hierarchical",
+          "relation": "target_object"
+        },
+        {
+          "source": "p2",
+          "target": "l1",
+          "type": "Hierarchical",
+          "relation": "target_location",
+          "object": "o2"
+        },
+        {
+          "source": "p3",
+          "target": "o3",
+          "type": "Hierarchical",
+          "relation": "target_object"
+        },
+        {
+          "source": "p3",
+          "target": "l1",
+          "type": "Hierarchical",
+          "relation": "target_location",
+          "object": "o3"
+        }
+      ],
+      "episode_id": "1218",
+      "scene_id": "103997895_171031182",
+      "instruction": "Organize the bedroom. Put the vase, book, and clock on the chest of drawers. I prefer to have the vase, book, and clock neatly arranged on the chest of drawers for a tidy look.",
+      "answer_knowledge_type": "user_pattern"
+    },
+    {
+      "nodes": [
+        {
+          "id": "u1",
+          "type": "User",
+          "name": "user_A"
+        },
+        {
+          "id": "k1",
+          "type": "Knowledge",
+          "subtype": "user_pattern",
+          "alias": "living room workspace setup",
+          "description": "keep laptop and mouse pad on the living room table for work, and clock on a different shelf to keep track of time without cluttering the workspace"
+        },
+        {
+          "id": "p1",
+          "type": "Pattern",
+          "name": "move",
+          "args": [
+            "laptop",
+            "to livingroom_table",
+            "in living room"
+          ]
+        },
+        {
+          "id": "p2",
+          "type": "Pattern",
+          "name": "move",
+          "args": [
+            "mouse pad",
+            "to livingroom_table",
+            "in living room"
+          ]
+        },
+        {
+          "id": "p3",
+          "type": "Pattern",
+          "name": "move",
+          "args": [
+            "clock",
+            "to shelf",
+            "in living room"
+          ]
+        },
+        {
+          "id": "o1",
+          "type": "Object",
+          "name": "laptop",
+          "granularity": "type"
+        },
+        {
+          "id": "o2",
+          "type": "Object",
+          "name": "mouse pad",
+          "granularity": "type"
+        },
+        {
+          "id": "o3",
+          "type": "Object",
+          "name": "clock",
+          "granularity": "type"
+        },
+        {
+          "id": "l1",
+          "type": "Location",
+          "name": "livingroom_table",
+          "expression": "new living room table"
+        },
+        {
+          "id": "l2",
+          "type": "Location",
+          "name": "shelf",
+          "expression": "another shelf"
+        }
+      ],
+      "edges": [
+        {
+          "source": "u1",
+          "target": "k1",
+          "type": "Hierarchical",
+          "relation": "owns"
+        },
+        {
+          "source": "k1",
+          "target": "p1",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "k1",
+          "target": "p2",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "k1",
+          "target": "p3",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "p1",
+          "target": "o1",
+          "type": "Hierarchical",
+          "relation": "target_object"
+        },
+        {
+          "source": "p1",
+          "target": "l1",
+          "type": "Hierarchical",
+          "relation": "target_location"
+        },
+        {
+          "source": "p2",
+          "target": "o2",
+          "type": "Hierarchical",
+          "relation": "target_object"
+        },
+        {
+          "source": "p2",
+          "target": "l1",
+          "type": "Hierarchical",
+          "relation": "target_location"
+        },
+        {
+          "source": "p3",
+          "target": "o3",
+          "type": "Hierarchical",
+          "relation": "target_object"
+        },
+        {
+          "source": "p3",
+          "target": "l2",
+          "type": "Hierarchical",
+          "relation": "target_location"
+        }
+      ],
+      "episode_id": "1214",
+      "scene_id": "103997895_171031182",
+      "instruction": "Move the laptop and the mouse pad to a new living room table. Move the clock to another shelf. I prefer to have my laptop and mouse pad on the living room table for work, and the clock on a different shelf to keep track of time without cluttering my workspace.",
+      "answer_knowledge_type": "user_pattern"
+    },
+    {
+      "nodes": [
+        {
+          "id": "u1",
+          "type": "User",
+          "name": "user_A"
+        },
+        {
+          "id": "k1",
+          "type": "Knowledge",
+          "subtype": "user_pattern",
+          "alias": "morning convenience setup",
+          "description": "keep kettle and keychain together in the bedroom for morning convenience"
+        },
+        {
+          "id": "p1",
+          "type": "Pattern",
+          "name": "move",
+          "args": [
+            "kettle",
+            "from kitchen cabinet",
+            "to bedroom filing cabinet"
+          ]
+        },
+        {
+          "id": "p2",
+          "type": "Pattern",
+          "name": "move",
+          "args": [
+            "keychain",
+            "from kitchen cabinet",
+            "to bedroom filing cabinet"
+          ]
+        },
+        {
+          "id": "p3",
+          "type": "Pattern",
+          "name": "place",
+          "args": [
+            "kettle",
+            "next to keychain",
+            "on bedroom filing cabinet"
+          ]
+        },
+        {
+          "id": "o1",
+          "type": "Object",
+          "name": "kettle",
+          "granularity": "type"
+        },
+        {
+          "id": "o2",
+          "type": "Object",
+          "name": "keychain",
+          "granularity": "type"
+        },
+        {
+          "id": "l1",
+          "type": "Location",
+          "name": "kitchen_cabinet",
+          "expression": "in the kitchen cabinet"
+        },
+        {
+          "id": "l2",
+          "type": "Location",
+          "name": "bedroom_filing_cabinet",
+          "expression": "in the bedroom filing cabinet"
+        }
+      ],
+      "edges": [
+        {
+          "source": "u1",
+          "target": "k1",
+          "type": "Hierarchical",
+          "relation": "owns"
+        },
+        {
+          "source": "k1",
+          "target": "p1",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "k1",
+          "target": "p2",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "k1",
+          "target": "p3",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "p1",
+          "target": "o1",
+          "type": "Hierarchical",
+          "relation": "target_object"
+        },
+        {
+          "source": "p1",
+          "target": "l1",
+          "type": "Hierarchical",
+          "relation": "source_location"
+        },
+        {
+          "source": "p1",
+          "target": "l2",
+          "type": "Hierarchical",
+          "relation": "target_location"
+        },
+        {
+          "source": "p2",
+          "target": "o2",
+          "type": "Hierarchical",
+          "relation": "target_object"
+        },
+        {
+          "source": "p2",
+          "target": "l1",
+          "type": "Hierarchical",
+          "relation": "source_location"
+        },
+        {
+          "source": "p2",
+          "target": "l2",
+          "type": "Hierarchical",
+          "relation": "target_location"
+        },
+        {
+          "source": "p3",
+          "target": "o1",
+          "type": "Hierarchical",
+          "relation": "target_object"
+        },
+        {
+          "source": "p3",
+          "target": "o2",
+          "type": "Hierarchical",
+          "relation": "target_object"
+        },
+        {
+          "source": "p3",
+          "target": "l2",
+          "type": "Hierarchical",
+          "relation": "target_location"
+        }
+      ],
+      "episode_id": "1222",
+      "scene_id": "103997895_171031182",
+      "instruction": "Move the kettle and keychain from the kitchen cabinet to the bedroom filing cabinet. Place them next to each other on the filing cabinet. I like to keep my kettle and keychain together in the bedroom for convenience in the morning.",
+      "answer_knowledge_type": "user_pattern"
+    },
+    {
+      "nodes": [
+        {
+          "id": "u1",
+          "type": "User",
+          "name": "user_A"
+        },
+        {
+          "id": "k1",
+          "type": "Knowledge",
+          "subtype": "user_pattern",
+          "alias": "living room rearrangement",
+          "description": "keep vase, lamp, and plate together on the couch in the living room after rearranging from the table"
+        },
+        {
+          "id": "p1",
+          "type": "Pattern",
+          "name": "move",
+          "args": [
+            "vase",
+            "from table",
+            "to livingroom_table"
+          ]
+        },
+        {
+          "id": "p2",
+          "type": "Pattern",
+          "name": "move",
+          "args": [
+            "lamp",
+            "from table",
+            "to livingroom_table"
+          ]
+        },
+        {
+          "id": "p3",
+          "type": "Pattern",
+          "name": "move",
+          "args": [
+            "plate",
+            "from table",
+            "to livingroom_table"
+          ]
+        },
+        {
+          "id": "p4",
+          "type": "Pattern",
+          "name": "place",
+          "args": [
+            "vase",
+            "on couch",
+            "in livingroom"
+          ]
+        },
+        {
+          "id": "p5",
+          "type": "Pattern",
+          "name": "place",
+          "args": [
+            "lamp",
+            "on couch",
+            "in livingroom"
+          ]
+        },
+        {
+          "id": "p6",
+          "type": "Pattern",
+          "name": "place",
+          "args": [
+            "plate",
+            "on couch",
+            "in livingroom"
+          ]
+        },
+        {
+          "id": "o1",
+          "type": "Object",
+          "name": "vase",
+          "granularity": "type"
+        },
+        {
+          "id": "o2",
+          "type": "Object",
+          "name": "lamp",
+          "granularity": "type"
+        },
+        {
+          "id": "o3",
+          "type": "Object",
+          "name": "plate",
+          "granularity": "type"
+        },
+        {
+          "id": "l1",
+          "type": "Location",
+          "name": "table",
+          "expression": "on the table"
+        },
+        {
+          "id": "l2",
+          "type": "Location",
+          "name": "livingroom_table",
+          "expression": "on the table in the living room"
+        },
+        {
+          "id": "l3",
+          "type": "Location",
+          "name": "couch",
+          "expression": "on the couch in the living room"
+        }
+      ],
+      "edges": [
+        {
+          "source": "u1",
+          "target": "k1",
+          "type": "Hierarchical",
+          "relation": "owns"
+        },
+        {
+          "source": "k1",
+          "target": "p1",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "k1",
+          "target": "p2",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "k1",
+          "target": "p3",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "k1",
+          "target": "p4",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "k1",
+          "target": "p5",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "k1",
+          "target": "p6",
+          "type": "Hierarchical",
+          "relation": "entails"
+        },
+        {
+          "source": "p1",
+          "target": "o1",
+          "type": "Hierarchical",
+          "relation": "target_object"
+        },
+        {
+          "source": "p1",
+          "target": "l1",
+          "type": "Hierarchical",
+          "relation": "source_location"
+        },
+        {
+          "source": "p1",
+          "target": "l2",
+          "type": "Hierarchical",
+          "relation": "target_location"
+        },
+        {
+          "source": "p2",
+          "target": "o2",
+          "type": "Hierarchical",
+          "relation": "target_object"
+        },
+        {
+          "source": "p2",
+          "target": "l1",
+          "type": "Hierarchical",
+          "relation": "source_location"
+        },
+        {
+          "source": "p2",
+          "target": "l2",
+          "type": "Hierarchical",
+          "relation": "target_location"
+        },
+        {
+          "source": "p3",
+          "target": "o3",
+          "type": "Hierarchical",
+          "relation": "target_object"
+        },
+        {
+          "source": "p3",
+          "target": "l1",
+          "type": "Hierarchical",
+          "relation": "source_location"
+        },
+        {
+          "source": "p3",
+          "target": "l2",
+          "type": "Hierarchical",
+          "relation": "target_location"
+        },
+        {
+          "source": "p4",
+          "target": "o1",
+          "type": "Hierarchical",
+          "relation": "target_object"
+        },
+        {
+          "source": "p4",
+          "target": "l2",
+          "type": "Hierarchical",
+          "relation": "target_location"
+        },
+        {
+          "source": "p5",
+          "target": "o2",
+          "type": "Hierarchical",
+          "relation": "target_object"
+        },
+        {
+          "source": "p5",
+          "target": "l2",
+          "type": "Hierarchical",
+          "relation": "target_location"
+        },
+        {
+          "source": "p6",
+          "target": "o3",
+          "type": "Hierarchical",
+          "relation": "target_object"
+        },
+        {
+          "source": "p6",
+          "target": "l2",
+          "type": "Hierarchical",
+          "relation": "target_location"
+        },
+        {
+          "source": "p1",
+          "target": "p2",
+          "type": "Temporal",
+          "relation": "before"
+        },
+        {
+          "source": "p2",
+          "target": "p3",
+          "type": "Temporal",
+          "relation": "before"
+        },
+        {
+          "source": "p3",
+          "target": "p4",
+          "type": "Temporal",
+          "relation": "before"
+        },
+        {
+          "source": "p4",
+          "target": "p5",
+          "type": "Temporal",
+          "relation": "before"
+        },
+        {
+          "source": "p5",
+          "target": "p6",
+          "type": "Temporal",
+          "relation": "before"
+        }
+      ],
+      "episode_id": "1225",
+      "scene_id": "103997895_171031182",
+      "instruction": "Move the vase, then the lamp, and finally the plate to the table in the living room. Then, move them to the couch in the living room and place them next to each other. I prefer to keep the vase, lamp, and plate together on the couch in the living room after rearranging them from the table.",
+      "answer_knowledge_type": "user_pattern"
+    }
+  ]
+}

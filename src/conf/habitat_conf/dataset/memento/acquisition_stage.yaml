@@ -6,5 +6,5 @@ defaults:
 
 type: MemoryManagementDataset-v0
 split: test
-data_path: data/datasets/memory_acquisition_stage.json.gz
+data_path: resource/datasets/memory_acquisition_stage.json.gz
 scenes_dir: data/hssd-hab

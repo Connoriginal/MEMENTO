@@ -1,0 +1,1093 @@
+[
+    {
+        "episode_id": 3137,
+        "error": false,
+        "instruction": "Could you first move my favorite candle to the chair in the TV room, and then place it on the TV table?",
+        "replanning_count_0": 14.0,
+        "run_id": 0,
+        "runtime": 108.66062378883362,
+        "sim_step_count": 1551.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "3137",
+            "instruction": "Could you first move my favorite candle to the chair in the TV room, and then place it on the TV table?",
+            "original_data_info": {
+                "episode_id": "674",
+                "instruction": "First, move the candle from the table to the chair in the tv room. Then, place it on tv the table.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1137",
+                "episode_type": "object_semantics",
+                "target_objects": [
+                    {
+                        "id": "b012e7b6b46475fdee5e0d64dfbb5b359e1c7e5b",
+                        "caption": "A mint green candle with white butterfly designs.",
+                        "source": "hssd_hab",
+                        "category": "candle",
+                        "cluster": 0
+                    }
+                ],
+                "distractors": [
+                    {
+                        "id": "36f46c7b967c8101325848bcf43db07589ae2cc1",
+                        "caption": "A white candle with a light blue base in a round holder.",
+                        "source": "hssd_hab",
+                        "category": "candle",
+                        "cluster": 1,
+                        "pair_id": "b012e7b6b46475fdee5e0d64dfbb5b359e1c7e5b"
+                    }
+                ],
+                "subtype": "preference",
+                "num_targets": 1,
+                "memory": "The mint green candle with white butterfly designs is the user's favorite.",
+                "used_object": [
+                    "candle"
+                ]
+            },
+            "scene_id": "102344529",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "b012e7b6b46475fdee5e0d64dfbb5b359e1c7e5b_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "3b77d0a7c6b76e39f050385d2548c0de327b76f2_:0000",
+                            "4857100a62e0e8ae2bf7d58e34ce9a84f9c27bd2_:0000",
+                            "a8bdceeb3b502b9755a0ec55b776a874d74cd343_:0000",
+                            "c62bd3f57959ef6e18c81d003f3c55fdde452e52_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "b012e7b6b46475fdee5e0d64dfbb5b359e1c7e5b_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "1f20f5194541179686f9bff3a01d002076751910_:0000",
+                            "9812cf1f7ced3de9596d88244068b628e346069c_:0000",
+                            "9b2f527215b5f508680ff582ad412a68407c07bd_:0000",
+                            "cb0d27b5428679b54fc8bf347ccc168cba08092f_:0000",
+                            "f1a090d794cf38e36a584e07672edf7ad1a70f8a_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        1
+                    ],
+                    "depends_on": [
+                        0
+                    ],
+                    "relation_type": "after_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [
+                            [
+                                0,
+                                1
+                            ]
+                        ],
+                        "n_propositions": 2
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            1
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 3133,
+        "error": false,
+        "instruction": "Could you help me prepare a snack by bringing the red apple with a hint of orange, my preferred knife, and plate to the tv room table, and then placing them next to each other?",
+        "replanning_count_0": 17.0,
+        "run_id": 0,
+        "runtime": 177.85850954055786,
+        "sim_step_count": 2323.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "3133",
+            "instruction": "Could you help me prepare a snack by bringing the red apple with a hint of orange, my preferred knife, and plate to the tv room table, and then placing them next to each other?",
+            "original_data_info": {
+                "episode_id": "629",
+                "instruction": "Help me prepare a snack in the tv room. First, move the apple, knife, and plate from the dining room to the tv room table. Place them next to each other on the table.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1133",
+                "episode_type": "object_semantics",
+                "target_objects": [
+                    {
+                        "id": "Apple_26",
+                        "caption": "A red apple with a hint of orange.",
+                        "source": "ai2thorhab",
+                        "category": "apple",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "Knife_7",
+                        "caption": "A silver knife with a black handle.",
+                        "source": "ai2thorhab",
+                        "category": "knife",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "Plate_13",
+                        "caption": "A dark blue, hexagonal plate.",
+                        "source": "ai2thorhab",
+                        "category": "plate",
+                        "cluster": 0
+                    }
+                ],
+                "distractors": [
+                    {
+                        "id": "Apple_25",
+                        "caption": "A red apple with a glossy finish.",
+                        "source": "ai2thorhab",
+                        "category": "apple",
+                        "cluster": 1,
+                        "pair_id": "Apple_26"
+                    },
+                    {
+                        "id": "Knife_2",
+                        "caption": "A stainless steel knife with a black handle.",
+                        "source": "ai2thorhab",
+                        "category": "knife",
+                        "cluster": 1,
+                        "pair_id": "Knife_7"
+                    },
+                    {
+                        "id": "cc9929ee326793bba8cc58e9120ef2262f087ca4",
+                        "caption": "A pink plate with a white polka dot pattern.",
+                        "source": "hssd_hab",
+                        "category": "plate",
+                        "cluster": 1,
+                        "pair_id": "Plate_13"
+                    }
+                ],
+                "subtype": "preference",
+                "num_targets": 2,
+                "memory": "User prefers to use the silver knife with a black handle and the dark blue hexagonal plate when preparing snacks.",
+                "used_object": [
+                    "plate",
+                    "knife"
+                ]
+            },
+            "scene_id": "102344529",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Apple_26_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "1f20f5194541179686f9bff3a01d002076751910_:0000",
+                            "9812cf1f7ced3de9596d88244068b628e346069c_:0000",
+                            "9b2f527215b5f508680ff582ad412a68407c07bd_:0000",
+                            "cb0d27b5428679b54fc8bf347ccc168cba08092f_:0000",
+                            "f1a090d794cf38e36a584e07672edf7ad1a70f8a_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Knife_7_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "1f20f5194541179686f9bff3a01d002076751910_:0000",
+                            "9812cf1f7ced3de9596d88244068b628e346069c_:0000",
+                            "9b2f527215b5f508680ff582ad412a68407c07bd_:0000",
+                            "cb0d27b5428679b54fc8bf347ccc168cba08092f_:0000",
+                            "f1a090d794cf38e36a584e07672edf7ad1a70f8a_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Plate_13_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "1f20f5194541179686f9bff3a01d002076751910_:0000",
+                            "9812cf1f7ced3de9596d88244068b628e346069c_:0000",
+                            "9b2f527215b5f508680ff582ad412a68407c07bd_:0000",
+                            "cb0d27b5428679b54fc8bf347ccc168cba08092f_:0000",
+                            "f1a090d794cf38e36a584e07672edf7ad1a70f8a_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "Apple_26_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "Knife_7_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "Knife_7_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "Plate_13_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        3
+                    ],
+                    "depends_on": [
+                        0,
+                        1
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                },
+                {
+                    "proposition_indices": [
+                        4
+                    ],
+                    "depends_on": [
+                        1,
+                        2
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 5
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2,
+                            3,
+                            4
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 3148,
+        "error": false,
+        "instruction": "Could you move the jug from my preferred kitchenware collection from the kitchen counter to the living room table? Then, take the cup from the same collection and the plain white plate with a smooth, circular design from the kitchen cabinet to the living room table, and place them next to each other.",
+        "replanning_count_0": 15.0,
+        "run_id": 0,
+        "runtime": 125.37655544281006,
+        "sim_step_count": 1935.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "3148",
+            "instruction": "Could you move the jug from my preferred kitchenware collection from the kitchen counter to the living room table? Then, take the cup from the same collection and the plain white plate with a smooth, circular design from the kitchen cabinet to the living room table, and place them next to each other.",
+            "original_data_info": {
+                "episode_id": "564",
+                "instruction": "First, move the jug from the kitchen counter to living room table. Then, take the cup and plate from the kitchen cabinet to the living room table and place them next to each other.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1148",
+                "episode_type": "object_semantics",
+                "target_objects": [
+                    {
+                        "id": "aaf1ba3e91ae781751ab5eba22ec2bbd30e05365",
+                        "caption": "A blue jug with a round lid.",
+                        "source": "hssd_hab",
+                        "category": "jug",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "6a833596dd725a0044674dbaada29368ebe7a53e",
+                        "caption": "A yellow cup with a white interior.",
+                        "source": "hssd_hab",
+                        "category": "cup",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "b599eb548442db2690265de15d2bf8aa549acd02",
+                        "caption": "A plain white plate with a smooth, circular design.",
+                        "source": "hssd_hab",
+                        "category": "plate",
+                        "cluster": 1
+                    }
+                ],
+                "distractors": [
+                    {
+                        "id": "e70ea42b5270583ea34fe50123b841d79a380e19",
+                        "caption": "A white jug with a colorful dot pattern.",
+                        "source": "hssd_hab",
+                        "category": "jug",
+                        "cluster": 0,
+                        "pair_id": "aaf1ba3e91ae781751ab5eba22ec2bbd30e05365"
+                    },
+                    {
+                        "id": "Cup_4",
+                        "caption": "A translucent gray cup with a tapered design.",
+                        "source": "ai2thorhab",
+                        "category": "cup",
+                        "cluster": 0,
+                        "pair_id": "6a833596dd725a0044674dbaada29368ebe7a53e"
+                    },
+                    {
+                        "id": "Plate_13",
+                        "caption": "A dark blue, hexagonal plate.",
+                        "source": "ai2thorhab",
+                        "category": "plate",
+                        "cluster": 0,
+                        "pair_id": "b599eb548442db2690265de15d2bf8aa549acd02"
+                    }
+                ],
+                "subtype": "preference",
+                "num_targets": 2,
+                "memory": "The blue jug with a round lid and the yellow cup with a white interior are part of the user's preferred kitchenware collection.",
+                "used_object": [
+                    "jug",
+                    "cup"
+                ]
+            },
+            "scene_id": "104348361_171513414",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "aaf1ba3e91ae781751ab5eba22ec2bbd30e05365_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "2e7f82e48f14d6fb2ad6a6b1a8d0429e76401542_part_7_:0000",
+                            "7adfff7e2fab4e59b6390f012d434a6239b04e66_:0000",
+                            "87ec2d5fefc4493289c251c6eb84f1c02371addc_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "6a833596dd725a0044674dbaada29368ebe7a53e_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "2e7f82e48f14d6fb2ad6a6b1a8d0429e76401542_part_7_:0000",
+                            "7adfff7e2fab4e59b6390f012d434a6239b04e66_:0000",
+                            "87ec2d5fefc4493289c251c6eb84f1c02371addc_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "b599eb548442db2690265de15d2bf8aa549acd02_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "2e7f82e48f14d6fb2ad6a6b1a8d0429e76401542_part_7_:0000",
+                            "7adfff7e2fab4e59b6390f012d434a6239b04e66_:0000",
+                            "87ec2d5fefc4493289c251c6eb84f1c02371addc_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "6a833596dd725a0044674dbaada29368ebe7a53e_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "b599eb548442db2690265de15d2bf8aa549acd02_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        3
+                    ],
+                    "depends_on": [
+                        1,
+                        2
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [
+                            [
+                                0,
+                                1
+                            ],
+                            [
+                                0,
+                                2
+                            ],
+                            [
+                                0,
+                                3
+                            ]
+                        ],
+                        "n_propositions": 4
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2,
+                            3
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 3174,
+        "error": false,
+        "instruction": "Could you move my favorite vase and the picture frame with a light blue border and multicolored accents from the living room table to the lounge chair? Place them next to each other on the chair.",
+        "replanning_count_0": 18.0,
+        "run_id": 0,
+        "runtime": 138.30463433265686,
+        "sim_step_count": 2482.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "3174",
+            "instruction": "Could you move my favorite vase and the picture frame with a light blue border and multicolored accents from the living room table to the lounge chair? Place them next to each other on the chair.",
+            "original_data_info": {
+                "episode_id": "518",
+                "instruction": "Move the vase and picture frame from the living room table to the lounge chair. Place them next to each other on the chair.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1174",
+                "episode_type": "object_semantics",
+                "target_objects": [
+                    {
+                        "id": "Vase_Open_2",
+                        "caption": "A dark blue vase with a faceted design.",
+                        "source": "ai2thorhab",
+                        "category": "vase",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "5063d7a560f9af30a6fdec857fc51d7008c60fd3",
+                        "caption": "A decorative picture frame with a light blue border and multicolored accents.",
+                        "source": "hssd_hab",
+                        "category": "picture_frame",
+                        "cluster": 1
+                    }
+                ],
+                "distractors": [
+                    {
+                        "id": "B075HR7DM7",
+                        "caption": "A white vase with a geometric pattern.",
+                        "source": "amazon_berkeley",
+                        "category": "vase",
+                        "cluster": 0,
+                        "pair_id": "Vase_Open_2"
+                    },
+                    {
+                        "id": "844510f08ce0cfae1b8e6079c03896aa649cbcc7",
+                        "caption": "A white picture frame with scalloped edges.",
+                        "source": "hssd_hab",
+                        "category": "picture_frame",
+                        "cluster": 0,
+                        "pair_id": "5063d7a560f9af30a6fdec857fc51d7008c60fd3"
+                    }
+                ],
+                "subtype": "preference",
+                "num_targets": 1,
+                "memory": "The dark blue vase with a faceted design is the user's personal favorite.",
+                "used_object": [
+                    "vase"
+                ]
+            },
+            "scene_id": "107734176_176000019",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Vase_Open_2_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "0bd3fff760626beb3b250521c516ebc696984229_:0000",
+                            "bbe458f78e3686c63a219a0b9a6fcd785b55cf3d_:0000",
+                            "bbe458f78e3686c63a219a0b9a6fcd785b55cf3d_:0001",
+                            "bbe458f78e3686c63a219a0b9a6fcd785b55cf3d_:0002"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "5063d7a560f9af30a6fdec857fc51d7008c60fd3_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "0bd3fff760626beb3b250521c516ebc696984229_:0000",
+                            "bbe458f78e3686c63a219a0b9a6fcd785b55cf3d_:0000",
+                            "bbe458f78e3686c63a219a0b9a6fcd785b55cf3d_:0001",
+                            "bbe458f78e3686c63a219a0b9a6fcd785b55cf3d_:0002"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "Vase_Open_2_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "5063d7a560f9af30a6fdec857fc51d7008c60fd3_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        2
+                    ],
+                    "depends_on": [
+                        0,
+                        1
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 3
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 3207,
+        "error": false,
+        "instruction": "First, take my favorite stuffed toy from the bedroom to the laundry room/mudroom. Then, move it to the living room and place it on the couch.",
+        "replanning_count_0": 15.0,
+        "run_id": 0,
+        "runtime": 99.44666385650636,
+        "sim_step_count": 1571.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "3207",
+            "instruction": "First, take my favorite stuffed toy from the bedroom to the laundry room/mudroom. Then, move it to the living room and place it on the couch.",
+            "original_data_info": {
+                "episode_id": "755",
+                "instruction": "First, take the stuffed toy from the bedroom to the laundryroom/mudroom. Then, move it to the living room and place it on couch.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1207",
+                "episode_type": "object_semantics",
+                "target_objects": [
+                    {
+                        "id": "Shark",
+                        "caption": "A blue and white stuffed toy shark.",
+                        "source": "google",
+                        "category": "stuffed_toy",
+                        "cluster": 0
+                    }
+                ],
+                "distractors": [
+                    {
+                        "id": "Racoon",
+                        "caption": "A plush raccoon stuffed toy with gray and black fur.",
+                        "source": "google",
+                        "category": "stuffed_toy",
+                        "cluster": 1,
+                        "pair_id": "Shark"
+                    }
+                ],
+                "subtype": "preference",
+                "num_targets": 1,
+                "memory": "The blue and white stuffed toy shark is the user's favorite stuffed toy.",
+                "used_object": [
+                    "stuffed_toy"
+                ]
+            },
+            "scene_id": "106366410_174226806",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_in_room",
+                    "args": {
+                        "object_handles": [
+                            "Shark_:0000"
+                        ],
+                        "room_ids": [
+                            "laundryroom"
+                        ],
+                        "number": 1,
+                        "is_same_room": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Shark_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "265b95037433ed097b550c434029af9fb4c0d907_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        1
+                    ],
+                    "depends_on": [
+                        0
+                    ],
+                    "relation_type": "after_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [
+                            [
+                                0,
+                                1
+                            ]
+                        ],
+                        "n_propositions": 2
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            1
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 3248,
+        "error": false,
+        "instruction": "Could you place the bread from my favorite bakery, the brown potato with a smooth surface, and the brown egg with a smooth surface on the kitchen table next to each other?",
+        "replanning_count_0": 20.0,
+        "run_id": 0,
+        "runtime": 98.73287558555604,
+        "sim_step_count": 1199.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "3248",
+            "instruction": "Could you place the bread from my favorite bakery, the brown potato with a smooth surface, and the brown egg with a smooth surface on the kitchen table next to each other?",
+            "original_data_info": {
+                "episode_id": "746",
+                "instruction": "Place the bread, the potato, and the egg on the kitchen table and place them next to each other.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1248",
+                "episode_type": "object_semantics",
+                "target_objects": [
+                    {
+                        "id": "Bread_19",
+                        "caption": "A round, dark brown loaf of bread with slashes on top.",
+                        "source": "ai2thorhab",
+                        "category": "bread",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "Potato_8",
+                        "caption": "A brown potato with a smooth surface.",
+                        "source": "ai2thorhab",
+                        "category": "potato",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "Egg_10",
+                        "caption": "A brown egg with a smooth surface.",
+                        "source": "ai2thorhab",
+                        "category": "egg",
+                        "cluster": 1
+                    }
+                ],
+                "distractors": [
+                    {
+                        "id": "Bread_12",
+                        "caption": "A brown loaf of sliced bread.",
+                        "source": "ai2thorhab",
+                        "category": "bread",
+                        "cluster": 0,
+                        "pair_id": "Bread_19"
+                    },
+                    {
+                        "id": "Potato_26",
+                        "caption": "A round white plate with a dark brown rim.",
+                        "source": "ai2thorhab",
+                        "category": "potato",
+                        "cluster": 1,
+                        "pair_id": "Potato_8"
+                    },
+                    {
+                        "id": "Egg_25",
+                        "caption": "A white egg.",
+                        "source": "ai2thorhab",
+                        "category": "egg",
+                        "cluster": 0,
+                        "pair_id": "Egg_10"
+                    }
+                ],
+                "subtype": "preference",
+                "num_targets": 1,
+                "memory": "The round, dark brown loaf of bread with slashes on top is from the user's favorite bakery.",
+                "used_object": [
+                    "bread"
+                ]
+            },
+            "scene_id": "103997895_171031182",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Bread_19_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "dd00b36439864cbfa47440f93d6fc81f91a164d3_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Potato_8_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "dd00b36439864cbfa47440f93d6fc81f91a164d3_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Egg_10_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "dd00b36439864cbfa47440f93d6fc81f91a164d3_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "Bread_19_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "Potato_8_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "Potato_8_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "Egg_10_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        3
+                    ],
+                    "depends_on": [
+                        0,
+                        1
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                },
+                {
+                    "proposition_indices": [
+                        4
+                    ],
+                    "depends_on": [
+                        1,
+                        2
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 5
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2,
+                            3,
+                            4
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 3268,
+        "error": false,
+        "instruction": "Could you swap my favorite food collection can with the black and white bottle with a leaf pattern to the office table?",
+        "replanning_count_0": 17.0,
+        "run_id": 0,
+        "runtime": 556.3813531398773,
+        "sim_step_count": 5792.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "3268",
+            "instruction": "Could you swap my favorite food collection can with the black and white bottle with a leaf pattern to the office table?",
+            "original_data_info": {
+                "episode_id": "506",
+                "instruction": "Swap the can and bottle to office table?",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1268",
+                "episode_type": "object_semantics",
+                "target_objects": [
+                    {
+                        "id": "Polar_Herring_Fillets_Smoked_Peppered_705_oz_total",
+                        "caption": "A silver can of Polar Herring Fillets, Smoked & Peppered, 7.05 oz.",
+                        "source": "google",
+                        "category": "can",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "867cf3a6f88aa00b97aee772c2349bff732fbac5",
+                        "caption": "A black and white bottle with a leaf pattern.",
+                        "source": "hssd_hab",
+                        "category": "bottle",
+                        "cluster": 0
+                    }
+                ],
+                "distractors": [
+                    {
+                        "id": "Don_Franciscos_Gourmet_Coffee_Medium_Decaf_100_Colombian_12_oz_340_g",
+                        "caption": "A brown and yellow coffee can, Don Francisco's Gourmet Coffee Medium Decaf.",
+                        "source": "google",
+                        "category": "can",
+                        "cluster": 1,
+                        "pair_id": "Polar_Herring_Fillets_Smoked_Peppered_705_oz_total"
+                    },
+                    {
+                        "id": "Sleep_Optimizer",
+                        "caption": "A transparent bottle with a blue label, Sleep_Optimizer.",
+                        "source": "google",
+                        "category": "bottle",
+                        "cluster": 1,
+                        "pair_id": "867cf3a6f88aa00b97aee772c2349bff732fbac5"
+                    }
+                ],
+                "subtype": "preference",
+                "num_targets": 1,
+                "memory": "The silver can containing Polar Herring Fillets, Smoked & Peppered, is part of the user's favorite food collection.",
+                "used_object": [
+                    "can"
+                ]
+            },
+            "scene_id": "104348010_171512832",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Polar_Herring_Fillets_Smoked_Peppered_705_oz_total_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "2aa6ddd969d37db340725a8fcf11d95df87023f6_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "867cf3a6f88aa00b97aee772c2349bff732fbac5_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "2aa6ddd969d37db340725a8fcf11d95df87023f6_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 2
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    }
+]

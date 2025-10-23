@@ -1,0 +1,170 @@
+[
+    {
+        "episode_id": 2958,
+        "error": false,
+        "instruction": "Please put my dinnerware set together in another cabinet in the kitchen, placing them next to each other.",
+        "replanning_count_0": 14.0,
+        "run_id": 0,
+        "runtime": 182.7757678031921,
+        "sim_step_count": 1908.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "2958",
+            "instruction": "Please put my dinnerware set together in another cabinet in the kitchen, placing them next to each other.",
+            "original_data_info": {
+                "episode_id": "536",
+                "instruction": "Put the plate and bowl together in another cabinet in the kitchen and place them next to each other.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "958",
+                "episode_type": "object_semantics",
+                "target_objects": [
+                    {
+                        "id": "Plate_28",
+                        "caption": "A square white plate with a black geometric pattern.",
+                        "source": "ai2thorhab",
+                        "category": "plate",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "B075HWTX4Z",
+                        "caption": "A white bowl with a brown lid.",
+                        "source": "amazon_berkeley",
+                        "category": "bowl",
+                        "cluster": 1
+                    }
+                ],
+                "distractors": [
+                    {
+                        "id": "Plate_22",
+                        "caption": "A black plate with a polka dot pattern.",
+                        "source": "ai2thorhab",
+                        "category": "plate",
+                        "cluster": 0,
+                        "pair_id": "Plate_28"
+                    },
+                    {
+                        "id": "Bowl_28",
+                        "caption": "A sleek, dark blue bowl.",
+                        "source": "ai2thorhab",
+                        "category": "bowl",
+                        "cluster": 0,
+                        "pair_id": "B075HWTX4Z"
+                    }
+                ],
+                "subtype": "group",
+                "num_targets": 2,
+                "memory": "The square white plate with a black geometric pattern and the white bowl with a brown lid are part of the user's dinnerware set.",
+                "used_object": [
+                    "plate",
+                    "bowl"
+                ]
+            },
+            "scene_id": "102816756",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_inside",
+                    "args": {
+                        "object_handles": [
+                            "Plate_28_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "33c1689bc5fb3b6f599f261ad069d9510804deb9_:0000",
+                            "33c1689bc5fb3b6f599f261ad069d9510804deb9_:0001",
+                            "424d7e7d258370736e6cfdbad2b253e521f80c79_:0000",
+                            "42c2fce42ed600de5f0c6919ba47fe97e60ab673_:0000",
+                            "77af27c6a414131f13d2aac55153720028fd4ed5_:0000",
+                            "a19b47699883e5841599452274d671a1bb2c775e_:0000",
+                            "bdab4ca579230f7652590bc19fa00a35701857ef_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_inside",
+                    "args": {
+                        "object_handles": [
+                            "B075HWTX4Z_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "33c1689bc5fb3b6f599f261ad069d9510804deb9_:0000",
+                            "33c1689bc5fb3b6f599f261ad069d9510804deb9_:0001",
+                            "424d7e7d258370736e6cfdbad2b253e521f80c79_:0000",
+                            "42c2fce42ed600de5f0c6919ba47fe97e60ab673_:0000",
+                            "77af27c6a414131f13d2aac55153720028fd4ed5_:0000",
+                            "a19b47699883e5841599452274d671a1bb2c775e_:0000",
+                            "bdab4ca579230f7652590bc19fa00a35701857ef_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "Plate_28_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "B075HWTX4Z_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        2
+                    ],
+                    "depends_on": [
+                        0,
+                        1
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 3
+                    }
+                },
+                {
+                    "type": "SameArgConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1
+                        ],
+                        "arg_names": [
+                            "receptacle_handles",
+                            "receptacle_handles"
+                        ],
+                        "n_propositions": null
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    }
+]

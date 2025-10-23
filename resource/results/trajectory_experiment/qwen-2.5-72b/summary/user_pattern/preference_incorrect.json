@@ -1,0 +1,588 @@
+[
+    {
+        "episode_id": 3215,
+        "error": false,
+        "instruction": "Could you set up my bedtime essentials?",
+        "replanning_count_0": 18.0,
+        "run_id": 0,
+        "runtime": 193.65286326408383,
+        "sim_step_count": 2814.0,
+        "task_percent_complete": 0.0,
+        "task_state_success": 0.0,
+        "org_data": {
+            "episode_id": "3215",
+            "instruction": "Could you set up my bedtime essentials?",
+            "original_data_info": {
+                "episode_id": "490",
+                "instruction": "Move the book and clock from the living room shelves to the bedroom chair. Place them next to each other on the chair.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1215",
+                "episode_type": "user_pattern",
+                "target_objects": [
+                    {
+                        "id": "79431fb55870504f86c5f3e2e4c47f4ba88f63e0",
+                        "caption": "A book with a dark cover featuring a portrait and teal text.",
+                        "source": "hssd_hab",
+                        "category": "book",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "816e0f1c12330b98d26990c08c278d46d13111fe",
+                        "caption": "A blue clock with rabbit ears and feet.",
+                        "source": "hssd_hab",
+                        "category": "clock",
+                        "cluster": 0
+                    }
+                ],
+                "subtype": "preference",
+                "memory": "Arrange the book and clock together on the bedroom chair for easy access before bed."
+            },
+            "scene_id": "103997895_171031182",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "79431fb55870504f86c5f3e2e4c47f4ba88f63e0_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "04801d6f327197470d63bfd728d4cf02bd33ec56_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "816e0f1c12330b98d26990c08c278d46d13111fe_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "04801d6f327197470d63bfd728d4cf02bd33ec56_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "79431fb55870504f86c5f3e2e4c47f4ba88f63e0_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "816e0f1c12330b98d26990c08c278d46d13111fe_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        2
+                    ],
+                    "depends_on": [
+                        0,
+                        1
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 3
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 2995,
+        "error": false,
+        "instruction": "Can you arrange my bedtime cozy setup?",
+        "replanning_count_0": 18.0,
+        "run_id": 0,
+        "runtime": 209.56177520751956,
+        "sim_step_count": 2938.0,
+        "task_percent_complete": 0.4,
+        "task_state_success": 0.0,
+        "org_data": {
+            "episode_id": "2995",
+            "instruction": "Can you arrange my bedtime cozy setup?",
+            "original_data_info": {
+                "episode_id": "577",
+                "instruction": "Move the lamp, vase, and picture frame from the living room table to the bedroom table. Place them next to each other on the bedroom table.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "995",
+                "episode_type": "user_pattern",
+                "target_objects": [
+                    {
+                        "id": "B07HK83QRB",
+                        "caption": "A wooden lamp with a white spherical shade.",
+                        "source": "amazon_berkeley",
+                        "category": "lamp",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "Vase_Tall_1",
+                        "caption": "A white vase with a narrow neck.",
+                        "source": "ai2thorhab",
+                        "category": "vase",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "0369f773266cd0aadce9e6ccdaf6d3f321ddab3e",
+                        "caption": "A copper picture frame with a diamond pattern.",
+                        "source": "hssd_hab",
+                        "category": "picture_frame",
+                        "cluster": 1
+                    }
+                ],
+                "subtype": "preference",
+                "memory": "Keep the lamp, vase, and picture frame together on the bedroom table for a cozy atmosphere."
+            },
+            "scene_id": "102817140",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "B07HK83QRB_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "2d677064b6bd4a3ba262cd510fd03c58efb57533_:0000",
+                            "689340fdf94601c7e57aabc45c1f1752bc7791da_:0000",
+                            "72305abe342ae61ffd01243a6acfcdb8aa0381c6_:0000",
+                            "72305abe342ae61ffd01243a6acfcdb8aa0381c6_:0001",
+                            "a858cba39573583f6aff0a31d237bcebabaaf503_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Vase_Tall_1_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "2d677064b6bd4a3ba262cd510fd03c58efb57533_:0000",
+                            "689340fdf94601c7e57aabc45c1f1752bc7791da_:0000",
+                            "72305abe342ae61ffd01243a6acfcdb8aa0381c6_:0000",
+                            "72305abe342ae61ffd01243a6acfcdb8aa0381c6_:0001",
+                            "a858cba39573583f6aff0a31d237bcebabaaf503_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "0369f773266cd0aadce9e6ccdaf6d3f321ddab3e_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "2d677064b6bd4a3ba262cd510fd03c58efb57533_:0000",
+                            "689340fdf94601c7e57aabc45c1f1752bc7791da_:0000",
+                            "72305abe342ae61ffd01243a6acfcdb8aa0381c6_:0000",
+                            "72305abe342ae61ffd01243a6acfcdb8aa0381c6_:0001",
+                            "a858cba39573583f6aff0a31d237bcebabaaf503_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "B07HK83QRB_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "Vase_Tall_1_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "Vase_Tall_1_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "0369f773266cd0aadce9e6ccdaf6d3f321ddab3e_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        3
+                    ],
+                    "depends_on": [
+                        0,
+                        1
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                },
+                {
+                    "proposition_indices": [
+                        4
+                    ],
+                    "depends_on": [
+                        1,
+                        2
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 5
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2,
+                            3,
+                            4
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 3221,
+        "error": false,
+        "instruction": "Can you organize my study materials in the bedroom?",
+        "replanning_count_0": 20.0,
+        "run_id": 0,
+        "runtime": 194.23845720291135,
+        "sim_step_count": 2456.0,
+        "task_percent_complete": 0.0,
+        "task_state_success": 0.0,
+        "org_data": {
+            "episode_id": "3221",
+            "instruction": "Can you organize my study materials in the bedroom?",
+            "original_data_info": {
+                "episode_id": "612",
+                "instruction": "Take the book, pencil case, and multiport hub from the table in the living room and put them on the shelves in bedroom , placing them next to each other.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1221",
+                "episode_type": "user_pattern",
+                "target_objects": [
+                    {
+                        "id": "e204459fc66073fd8832ec0c5f5f9c018ae2f440",
+                        "caption": "A hardcover book with a colorful cover design.",
+                        "source": "hssd_hab",
+                        "category": "book",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "Big_Dot_Pink_Pencil_Case",
+                        "caption": "A pink pencil case with large white dots, Big Dot Pink Pencil Case.",
+                        "source": "google",
+                        "category": "pencil_case",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "B076YRSWGH",
+                        "caption": "A gray multiport hub with multiple USB ports.",
+                        "source": "amazon_berkeley",
+                        "category": "multiport_hub",
+                        "cluster": 1
+                    }
+                ],
+                "subtype": "preference",
+                "memory": "Keep study materials like the book, pencil case, and multiport hub together on the bedroom shelves for easy access during study sessions."
+            },
+            "scene_id": "103997895_171031182",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "e204459fc66073fd8832ec0c5f5f9c018ae2f440_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "499dd12f83d3fcb655a0bc2373e4da020a67008a_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Big_Dot_Pink_Pencil_Case_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "499dd12f83d3fcb655a0bc2373e4da020a67008a_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "B076YRSWGH_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "499dd12f83d3fcb655a0bc2373e4da020a67008a_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "e204459fc66073fd8832ec0c5f5f9c018ae2f440_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "Big_Dot_Pink_Pencil_Case_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "Big_Dot_Pink_Pencil_Case_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "B076YRSWGH_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        3
+                    ],
+                    "depends_on": [
+                        0,
+                        1
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                },
+                {
+                    "proposition_indices": [
+                        4
+                    ],
+                    "depends_on": [
+                        1,
+                        2
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 5
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2,
+                            3,
+                            4
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 3000,
+        "error": false,
+        "instruction": "Could you decorate the bedroom as I like?",
+        "replanning_count_0": 35.0,
+        "run_id": 0,
+        "runtime": 509.3861315250397,
+        "sim_step_count": 9503.0,
+        "task_percent_complete": 0.0,
+        "task_state_success": 0.0,
+        "org_data": {
+            "episode_id": "3000",
+            "instruction": "Could you decorate the bedroom as I like?",
+            "original_data_info": {
+                "episode_id": "586",
+                "instruction": "Move the statue and plant container from the living room shelves to the bedroom chest of drawers. Place them next to each other on the chest of drawers.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1000",
+                "episode_type": "user_pattern",
+                "target_objects": [
+                    {
+                        "id": "Cole_Hardware_Electric_Pot_Assortment_55",
+                        "caption": "A colorful assortment of electric pots, Cole Hardware.",
+                        "source": "google",
+                        "category": "plant_container",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "Dog_Statue_4",
+                        "caption": "A gray dog-shaped statue.",
+                        "source": "ai2thorhab",
+                        "category": "statue",
+                        "cluster": 1
+                    }
+                ],
+                "subtype": "preference",
+                "memory": "Place the statue and plant container together on the bedroom chest of drawers for decoration."
+            },
+            "scene_id": "102817140",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Cole_Hardware_Electric_Pot_Assortment_55_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "2d93837fd0fb80b2f2e9b0d3d55eb6506b22d4c1_:0000",
+                            "47c28745703eaa9b3bfe792ad97a4de3467d3bc3_:0000",
+                            "ee4b6239be4a2513feccbe0a96c2a59cda30b1ee_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Dog_Statue_4_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "2d93837fd0fb80b2f2e9b0d3d55eb6506b22d4c1_:0000",
+                            "47c28745703eaa9b3bfe792ad97a4de3467d3bc3_:0000",
+                            "ee4b6239be4a2513feccbe0a96c2a59cda30b1ee_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "Cole_Hardware_Electric_Pot_Assortment_55_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "Dog_Statue_4_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        2
+                    ],
+                    "depends_on": [
+                        0,
+                        1
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 3
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    }
+]

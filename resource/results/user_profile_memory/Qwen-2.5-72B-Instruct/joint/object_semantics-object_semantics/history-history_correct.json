@@ -1,0 +1,319 @@
+[
+    {
+        "episode_id": 10002,
+        "error": false,
+        "instruction": "Please move the gift lamp from my grandmother to the bedroom table and then place the black hand-shaped statue with a glossy finish on the living room shelves. Then, can we move the special gift vase and the white candle with a light blue base from the living room table to the bedroom chest of drawers?",
+        "replanning_count_0": 36.0,
+        "run_id": 0,
+        "runtime": 355.5757534503937,
+        "sim_step_count": 6063.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "10002",
+            "instruction": "Please move the gift lamp from my grandmother to the bedroom table and then place the black hand-shaped statue with a glossy finish on the living room shelves. Then, can we move the special gift vase and the white candle with a light blue base from the living room table to the bedroom chest of drawers?",
+            "original_data_info": {
+                "episode_id": [
+                    "3009",
+                    "3011"
+                ],
+                "instruction": [
+                    "Please move the gift lamp from my grandmother to the bedroom table and then place the black hand-shaped statue with a glossy finish on the living room shelves.",
+                    "Can we move the special gift vase and the white candle with a light blue base from the living room table to the bedroom chest of drawers?"
+                ],
+                "data_path": [
+                    "data/datasets/partnr_episodes/v0_0/val.json",
+                    "data/datasets/partnr_episodes/v0_0/val.json"
+                ]
+            },
+            "metadata": {
+                "subtype": [
+                    "history",
+                    "history"
+                ],
+                "memory": [
+                    "The wooden lamp with a white spherical shade is a gift from the user's grandmother.",
+                    "The black vase with white geometric patterns was a special gift to the user."
+                ],
+                "episode_type": [
+                    "object_semantics",
+                    "object_semantics"
+                ],
+                "num_targets": [
+                    1,
+                    1
+                ],
+                "related_episode_id": [
+                    "1009",
+                    "1011"
+                ],
+                "stage": "2",
+                "target_objects_original": [
+                    [
+                        {
+                            "id": "B07HK83QRB",
+                            "caption": "A wooden lamp with a white spherical shade.",
+                            "source": "amazon_berkeley",
+                            "category": "lamp",
+                            "cluster": 0
+                        },
+                        {
+                            "id": "Hand_Statue_3",
+                            "caption": "A black hand-shaped statue with a glossy finish.",
+                            "source": "ai2thorhab",
+                            "category": "statue",
+                            "cluster": 1
+                        }
+                    ],
+                    [
+                        {
+                            "id": "36f46c7b967c8101325848bcf43db07589ae2cc1",
+                            "caption": "A white candle with a light blue base in a round holder.",
+                            "source": "hssd_hab",
+                            "category": "candle",
+                            "cluster": 1
+                        },
+                        {
+                            "id": "c3a6db9251980820f1e2ddcabebf8d21f059e0a4",
+                            "caption": "A black vase with white geometric patterns.",
+                            "source": "hssd_hab",
+                            "category": "vase",
+                            "cluster": 0
+                        }
+                    ]
+                ],
+                "target_objects": [
+                    {
+                        "id": "B07HK83QRB",
+                        "caption": "A wooden lamp with a white spherical shade.",
+                        "source": "amazon_berkeley",
+                        "category": "lamp",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "Hand_Statue_3",
+                        "caption": "A black hand-shaped statue with a glossy finish.",
+                        "source": "ai2thorhab",
+                        "category": "statue",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "36f46c7b967c8101325848bcf43db07589ae2cc1",
+                        "caption": "A white candle with a light blue base in a round holder.",
+                        "source": "hssd_hab",
+                        "category": "candle",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "c3a6db9251980820f1e2ddcabebf8d21f059e0a4",
+                        "caption": "A black vase with white geometric patterns.",
+                        "source": "hssd_hab",
+                        "category": "vase",
+                        "cluster": 0
+                    }
+                ],
+                "distractors_original": [
+                    [
+                        {
+                            "id": "B07HK3PNSK",
+                            "caption": "A lamp with a pineapple-shaped neon outline and a black base.",
+                            "source": "amazon_berkeley",
+                            "category": "lamp",
+                            "cluster": 1,
+                            "pair_id": "B07HK83QRB"
+                        },
+                        {
+                            "id": "Towel_Statue_1",
+                            "caption": "A dark bronze statue of a standing figure with an umbrella.",
+                            "source": "ai2thorhab",
+                            "category": "statue",
+                            "cluster": 0,
+                            "pair_id": "Hand_Statue_3"
+                        }
+                    ],
+                    [
+                        {
+                            "id": "ea21d1fc5ed78e1a0c2ec72acdecbf7ca7983ffe",
+                            "caption": "A pink ombre candle with a cylindrical shape.",
+                            "source": "hssd_hab",
+                            "category": "candle",
+                            "cluster": 0,
+                            "pair_id": "36f46c7b967c8101325848bcf43db07589ae2cc1"
+                        },
+                        {
+                            "id": "8ffc1468a4c10a3badb8b36062d58f5553c02d21",
+                            "caption": "A light green vase with a tall, cylindrical shape.",
+                            "source": "hssd_hab",
+                            "category": "vase",
+                            "cluster": 1,
+                            "pair_id": "c3a6db9251980820f1e2ddcabebf8d21f059e0a4"
+                        }
+                    ]
+                ],
+                "distractors": [
+                    {
+                        "id": "B07HK3PNSK",
+                        "caption": "A lamp with a pineapple-shaped neon outline and a black base.",
+                        "source": "amazon_berkeley",
+                        "category": "lamp",
+                        "cluster": 1,
+                        "pair_id": "B07HK83QRB"
+                    },
+                    {
+                        "id": "Towel_Statue_1",
+                        "caption": "A dark bronze statue of a standing figure with an umbrella.",
+                        "source": "ai2thorhab",
+                        "category": "statue",
+                        "cluster": 0,
+                        "pair_id": "Hand_Statue_3"
+                    },
+                    {
+                        "id": "ea21d1fc5ed78e1a0c2ec72acdecbf7ca7983ffe",
+                        "caption": "A pink ombre candle with a cylindrical shape.",
+                        "source": "hssd_hab",
+                        "category": "candle",
+                        "cluster": 0,
+                        "pair_id": "36f46c7b967c8101325848bcf43db07589ae2cc1"
+                    },
+                    {
+                        "id": "8ffc1468a4c10a3badb8b36062d58f5553c02d21",
+                        "caption": "A light green vase with a tall, cylindrical shape.",
+                        "source": "hssd_hab",
+                        "category": "vase",
+                        "cluster": 1,
+                        "pair_id": "c3a6db9251980820f1e2ddcabebf8d21f059e0a4"
+                    }
+                ],
+                "used_object_original": [
+                    [
+                        "lamp"
+                    ],
+                    [
+                        "vase"
+                    ]
+                ],
+                "used_object": [
+                    "lamp",
+                    "vase"
+                ],
+                "combination_type": "Object Semantics + Object Semantics",
+                "object_overlaps": {
+                    "target_target": [],
+                    "distractor_distractor": [],
+                    "target1_distractor2": [],
+                    "target2_distractor1": [],
+                    "target_category_overlap": [],
+                    "counts": {
+                        "target_target": 0,
+                        "distractor_distractor": 0,
+                        "target1_distractor2": 0,
+                        "target2_distractor1": 0,
+                        "target_category_overlap": 0,
+                        "total_overlap": 0
+                    },
+                    "has_target_category_overlap": false,
+                    "has_target_distractor_overlap": false
+                },
+                "receptacle_overlaps": {
+                    "has_overlaps": false,
+                    "common_receptacles": [],
+                    "overlap_count": 0
+                }
+            },
+            "scene_id": "102817140",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "B07HK83QRB_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "2d677064b6bd4a3ba262cd510fd03c58efb57533_:0000",
+                            "689340fdf94601c7e57aabc45c1f1752bc7791da_:0000",
+                            "72305abe342ae61ffd01243a6acfcdb8aa0381c6_:0000",
+                            "72305abe342ae61ffd01243a6acfcdb8aa0381c6_:0001",
+                            "a858cba39573583f6aff0a31d237bcebabaaf503_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Hand_Statue_3_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "7b395deb580a75ca10a361d25b5e10b1bab8464b_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "36f46c7b967c8101325848bcf43db07589ae2cc1_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "2d93837fd0fb80b2f2e9b0d3d55eb6506b22d4c1_:0000",
+                            "47c28745703eaa9b3bfe792ad97a4de3467d3bc3_:0000",
+                            "ee4b6239be4a2513feccbe0a96c2a59cda30b1ee_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "c3a6db9251980820f1e2ddcabebf8d21f059e0a4_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "2d93837fd0fb80b2f2e9b0d3d55eb6506b22d4c1_:0000",
+                            "47c28745703eaa9b3bfe792ad97a4de3467d3bc3_:0000",
+                            "ee4b6239be4a2513feccbe0a96c2a59cda30b1ee_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [
+                            [
+                                0,
+                                2
+                            ],
+                            [
+                                1,
+                                2
+                            ]
+                        ],
+                        "n_propositions": 4
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2,
+                            3
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    }
+]

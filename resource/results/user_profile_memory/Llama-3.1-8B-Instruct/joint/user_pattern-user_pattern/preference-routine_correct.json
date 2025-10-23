@@ -1,0 +1,300 @@
+[
+    {
+        "episode_id": 10035,
+        "error": false,
+        "instruction": "Could you arrange the entryway to look welcoming? Additionally, could you organize the dishes for cleanup?",
+        "replanning_count_0": 25.0,
+        "run_id": 0,
+        "runtime": 341.4034242630005,
+        "sim_step_count": 2494.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "10035",
+            "instruction": "Could you arrange the entryway to look welcoming? Additionally, could you organize the dishes for cleanup?",
+            "original_data_info": {
+                "episode_id": [
+                    "3254",
+                    "3256"
+                ],
+                "instruction": [
+                    "Could you arrange the entryway to look welcoming?",
+                    "Could you organize the dishes for cleanup?"
+                ],
+                "data_path": [
+                    "data/datasets/partnr_episodes/v0_0/val.json",
+                    "data/datasets/partnr_episodes/v0_0/val.json"
+                ]
+            },
+            "metadata": {
+                "subtype": [
+                    "preference",
+                    "routine"
+                ],
+                "memory": [
+                    "Place the vase and statue next to each other on the entryway chest of drawers for a welcoming aesthetic.",
+                    "Place the plate and bowl together on the kitchen counter after meals for easy cleanup."
+                ],
+                "episode_type": [
+                    "user_pattern",
+                    "user_pattern"
+                ],
+                "related_episode_id": [
+                    "1254",
+                    "1256"
+                ],
+                "stage": "2",
+                "target_objects_original": [
+                    [
+                        {
+                            "id": "dfcbfd3a7de15b9689dc0580c38f2f0896b6647d",
+                            "caption": "A white and light gray vase with a matte finish.",
+                            "source": "hssd_hab",
+                            "category": "vase",
+                            "cluster": 0
+                        },
+                        {
+                            "id": "Dog_Statue_4",
+                            "caption": "A gray dog-shaped statue.",
+                            "source": "ai2thorhab",
+                            "category": "statue",
+                            "cluster": 1
+                        }
+                    ],
+                    [
+                        {
+                            "id": "Plate_14",
+                            "caption": "A white square plate.",
+                            "source": "ai2thorhab",
+                            "category": "plate",
+                            "cluster": 1
+                        },
+                        {
+                            "id": "Bowl_24",
+                            "caption": "A gray bowl with a faceted design.",
+                            "source": "ai2thorhab",
+                            "category": "bowl",
+                            "cluster": 0
+                        }
+                    ]
+                ],
+                "target_objects": [
+                    {
+                        "id": "dfcbfd3a7de15b9689dc0580c38f2f0896b6647d",
+                        "caption": "A white and light gray vase with a matte finish.",
+                        "source": "hssd_hab",
+                        "category": "vase",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "Dog_Statue_4",
+                        "caption": "A gray dog-shaped statue.",
+                        "source": "ai2thorhab",
+                        "category": "statue",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "Plate_14",
+                        "caption": "A white square plate.",
+                        "source": "ai2thorhab",
+                        "category": "plate",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "Bowl_24",
+                        "caption": "A gray bowl with a faceted design.",
+                        "source": "ai2thorhab",
+                        "category": "bowl",
+                        "cluster": 0
+                    }
+                ],
+                "distractors_original": [
+                    [],
+                    []
+                ],
+                "distractors": [],
+                "used_object_original": [
+                    [],
+                    []
+                ],
+                "used_object": [],
+                "combination_type": "User Pattern + User Pattern",
+                "object_overlaps": {
+                    "target_target": [],
+                    "distractor_distractor": [],
+                    "target1_distractor2": [],
+                    "target2_distractor1": [],
+                    "target_category_overlap": [],
+                    "counts": {
+                        "target_target": 0,
+                        "distractor_distractor": 0,
+                        "target1_distractor2": 0,
+                        "target2_distractor1": 0,
+                        "target_category_overlap": 0,
+                        "total_overlap": 0
+                    },
+                    "has_target_category_overlap": false,
+                    "has_target_distractor_overlap": false
+                },
+                "receptacle_overlaps": {
+                    "has_overlaps": false,
+                    "common_receptacles": [],
+                    "overlap_count": 0
+                }
+            },
+            "scene_id": "104348010_171512832",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "dfcbfd3a7de15b9689dc0580c38f2f0896b6647d_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "ab147892f0d3e77a2ff2cf511c8cd62cafb2b973_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Dog_Statue_4_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "ab147892f0d3e77a2ff2cf511c8cd62cafb2b973_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "dfcbfd3a7de15b9689dc0580c38f2f0896b6647d_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "Dog_Statue_4_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Plate_14_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "27903d5a77d900067dd9031caf2f229776d800d4_:0000",
+                            "27903d5a77d900067dd9031caf2f229776d800d4_:0001",
+                            "27903d5a77d900067dd9031caf2f229776d800d4_:0002",
+                            "27903d5a77d900067dd9031caf2f229776d800d4_:0003",
+                            "55dcc18191c2412b899ff405d5d0574571bb81cf_:0000",
+                            "55dcc18191c2412b899ff405d5d0574571bb81cf_:0001"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Bowl_24_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "27903d5a77d900067dd9031caf2f229776d800d4_:0000",
+                            "27903d5a77d900067dd9031caf2f229776d800d4_:0001",
+                            "27903d5a77d900067dd9031caf2f229776d800d4_:0002",
+                            "27903d5a77d900067dd9031caf2f229776d800d4_:0003",
+                            "55dcc18191c2412b899ff405d5d0574571bb81cf_:0000",
+                            "55dcc18191c2412b899ff405d5d0574571bb81cf_:0001"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "Plate_14_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "Bowl_24_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        2
+                    ],
+                    "depends_on": [
+                        0,
+                        1
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                },
+                {
+                    "proposition_indices": [
+                        5
+                    ],
+                    "depends_on": [
+                        3,
+                        4
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [
+                            [
+                                0,
+                                3
+                            ],
+                            [
+                                1,
+                                3
+                            ],
+                            [
+                                2,
+                                3
+                            ]
+                        ],
+                        "n_propositions": 6
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2,
+                            3,
+                            4,
+                            5
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    }
+]

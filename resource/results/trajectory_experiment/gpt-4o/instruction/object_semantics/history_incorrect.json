@@ -1,0 +1,717 @@
+[
+    {
+        "episode_id": 3241,
+        "error": false,
+        "instruction": "Please move the black kettle with a silver handle and my Japan trip souvenir keychain from the kitchen cabinet to the bedroom filing cabinet, placing them next to each other.",
+        "replanning_count_0": 14.0,
+        "run_id": 0,
+        "runtime": 119.11019730567932,
+        "sim_step_count": 2216.0,
+        "task_percent_complete": 0.0,
+        "task_state_success": 0.0,
+        "org_data": {
+            "episode_id": "3241",
+            "instruction": "Please move the black kettle with a silver handle and my Japan trip souvenir keychain from the kitchen cabinet to the bedroom filing cabinet, placing them next to each other.",
+            "original_data_info": {
+                "episode_id": "616",
+                "instruction": "Move the kettle and keychain from the kitchen cabinet to the bedroom filing cabinet. Place them next to each other on the filing cabinet.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1241",
+                "episode_type": "object_semantics",
+                "target_objects": [
+                    {
+                        "id": "6982c7794384aecaa6134b600d473e98d812b8be",
+                        "caption": "A black kettle with a silver handle.",
+                        "source": "hssd_hab",
+                        "category": "kettle",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "Keychain_1",
+                        "caption": "A black and orange keychain with a circular pendant.",
+                        "source": "ai2thorhab",
+                        "category": "keychain",
+                        "cluster": 0
+                    }
+                ],
+                "distractors": [
+                    {
+                        "id": "Kettle_1",
+                        "caption": "A black kettle with a pixelated pattern.",
+                        "source": "ai2thorhab",
+                        "category": "kettle",
+                        "cluster": 1,
+                        "pair_id": "6982c7794384aecaa6134b600d473e98d812b8be"
+                    },
+                    {
+                        "id": "Keychain_2",
+                        "caption": "A black keychain with white buttons and silver keys.",
+                        "source": "ai2thorhab",
+                        "category": "keychain",
+                        "cluster": 1,
+                        "pair_id": "Keychain_1"
+                    }
+                ],
+                "subtype": "history",
+                "num_targets": 1,
+                "memory": "The black and orange keychain with a circular pendant is a souvenir from the user's trip to Japan.",
+                "used_object": [
+                    "keychain"
+                ]
+            },
+            "scene_id": "103997895_171031182",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "6982c7794384aecaa6134b600d473e98d812b8be_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "f70c9cd37e4949edaa532254729fb3153ff6a76f_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Keychain_1_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "f70c9cd37e4949edaa532254729fb3153ff6a76f_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "6982c7794384aecaa6134b600d473e98d812b8be_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "Keychain_1_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        2
+                    ],
+                    "depends_on": [
+                        0,
+                        1
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 3
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 3025,
+        "error": false,
+        "instruction": "Could you move my book with favorite notes and the Big Dot Aqua Pencil Case from the living room table to the chest of drawers in the bedroom, placing them next to each other?",
+        "replanning_count_0": 12.0,
+        "run_id": 0,
+        "runtime": 126.75645756721497,
+        "sim_step_count": 2468.0,
+        "task_percent_complete": 0.3333333333333333,
+        "task_state_success": 0.0,
+        "org_data": {
+            "episode_id": "3025",
+            "instruction": "Could you move my book with favorite notes and the Big Dot Aqua Pencil Case from the living room table to the chest of drawers in the bedroom, placing them next to each other?",
+            "original_data_info": {
+                "episode_id": "714",
+                "instruction": "Move the book and pencil case from the living room table to the chest of drawers in the bedroom. Place them next to each other.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1025",
+                "episode_type": "object_semantics",
+                "target_objects": [
+                    {
+                        "id": "8c6411e06f17477320b687b36a247e4ebc86dc3d",
+                        "caption": "A white book with subtle yellow accents and a bookmark.",
+                        "source": "hssd_hab",
+                        "category": "book",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "Big_Dot_Aqua_Pencil_Case",
+                        "caption": "A pencil case with large white dots on an aqua background, Big Dot Aqua Pencil Case.",
+                        "source": "google",
+                        "category": "pencil_case",
+                        "cluster": 1
+                    }
+                ],
+                "distractors": [
+                    {
+                        "id": "361a6c08b1137a16977f5a00761aabcb311a7475",
+                        "caption": "A black hardcover book with an elastic band.",
+                        "source": "hssd_hab",
+                        "category": "book",
+                        "cluster": 0,
+                        "pair_id": "8c6411e06f17477320b687b36a247e4ebc86dc3d"
+                    },
+                    {
+                        "id": "Olive_Kids_Robots_Pencil_Case",
+                        "caption": "A blue and gray pencil case with robot designs, Olive Kids Robots Pencil Case.",
+                        "source": "google",
+                        "category": "pencil_case",
+                        "cluster": 0,
+                        "pair_id": "Big_Dot_Aqua_Pencil_Case"
+                    }
+                ],
+                "subtype": "history",
+                "num_targets": 1,
+                "memory": "The white book with subtle yellow accents contains the user's favorite notes.",
+                "used_object": [
+                    "book"
+                ]
+            },
+            "scene_id": "102817140",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "8c6411e06f17477320b687b36a247e4ebc86dc3d_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "2d93837fd0fb80b2f2e9b0d3d55eb6506b22d4c1_:0000",
+                            "47c28745703eaa9b3bfe792ad97a4de3467d3bc3_:0000",
+                            "ee4b6239be4a2513feccbe0a96c2a59cda30b1ee_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Big_Dot_Aqua_Pencil_Case_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "2d93837fd0fb80b2f2e9b0d3d55eb6506b22d4c1_:0000",
+                            "47c28745703eaa9b3bfe792ad97a4de3467d3bc3_:0000",
+                            "ee4b6239be4a2513feccbe0a96c2a59cda30b1ee_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "8c6411e06f17477320b687b36a247e4ebc86dc3d_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "Big_Dot_Aqua_Pencil_Case_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        2
+                    ],
+                    "depends_on": [
+                        0,
+                        1
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 3
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 2960,
+        "error": false,
+        "instruction": "Could you move the book which is a gift from my best friend and the white candle on a black holder from the living room couch to the dining table, placing them next to each other?",
+        "replanning_count_0": 10.0,
+        "run_id": 0,
+        "runtime": 251.7470810413361,
+        "sim_step_count": 3278.0,
+        "task_percent_complete": 0.0,
+        "task_state_success": 0.0,
+        "org_data": {
+            "episode_id": "2960",
+            "instruction": "Could you move the book which is a gift from my best friend and the white candle on a black holder from the living room couch to the dining table, placing them next to each other?",
+            "original_data_info": {
+                "episode_id": "763",
+                "instruction": "Move the book and candle from the living room couch to the dining table? Place them next to each other on the table.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "960",
+                "episode_type": "object_semantics",
+                "target_objects": [
+                    {
+                        "id": "Book_15",
+                        "caption": "A beige book titled \"UNIX\" with a simple cover design.",
+                        "source": "ai2thorhab",
+                        "category": "book",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "Candle_6",
+                        "caption": "A white candle on a black holder.",
+                        "source": "ai2thorhab",
+                        "category": "candle",
+                        "cluster": 1
+                    }
+                ],
+                "distractors": [
+                    {
+                        "id": "6c012b2a87c94cc8b26d014ba8601b4eadf0c17d",
+                        "caption": "A black book with a textured cover.",
+                        "source": "hssd_hab",
+                        "category": "book",
+                        "cluster": 0,
+                        "pair_id": "Book_15"
+                    },
+                    {
+                        "id": "xxxx575beb73xadbex4b2axbc06x2273ca72ce73",
+                        "caption": "A gradient teal candle with a white top.",
+                        "source": "hssd_hab",
+                        "category": "candle",
+                        "cluster": 0,
+                        "pair_id": "Candle_6"
+                    }
+                ],
+                "subtype": "history",
+                "num_targets": 1,
+                "memory": "The beige book titled 'UNIX' is a gift from the user's best friend.",
+                "used_object": [
+                    "book"
+                ]
+            },
+            "scene_id": "102816756",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Book_15_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "786845ecaee2a43d135f922f4d617da02c8543b6_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Candle_6_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "786845ecaee2a43d135f922f4d617da02c8543b6_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "Book_15_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "Candle_6_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        2
+                    ],
+                    "depends_on": [
+                        0,
+                        1
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 3
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 3237,
+        "error": false,
+        "instruction": "Please organize the bedroom by putting my gift book from my best friend, the white vase with a beige geometric pattern, and the maroon digital clock with a green display on the chest of drawers.",
+        "replanning_count_0": 15.0,
+        "run_id": 0,
+        "runtime": 88.98492050170898,
+        "sim_step_count": 1616.0,
+        "task_percent_complete": 0.3333333333333333,
+        "task_state_success": 0.0,
+        "org_data": {
+            "episode_id": "3237",
+            "instruction": "Please organize the bedroom by putting my gift book from my best friend, the white vase with a beige geometric pattern, and the maroon digital clock with a green display on the chest of drawers.",
+            "original_data_info": {
+                "episode_id": "495",
+                "instruction": "Organize the bedroom. Put the vase, book, and clock on the chest of drawers.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1237",
+                "episode_type": "object_semantics",
+                "target_objects": [
+                    {
+                        "id": "B075HR4ZDB",
+                        "caption": "A white vase with a beige geometric pattern.",
+                        "source": "amazon_berkeley",
+                        "category": "vase",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "99843575975c6fcf087647c77f56bce970b7902a",
+                        "caption": "A multicolored hardcover book with a geometric design.",
+                        "source": "hssd_hab",
+                        "category": "book",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "Alarm_Clock_20",
+                        "caption": "A maroon digital clock with a green display.",
+                        "source": "ai2thorhab",
+                        "category": "clock",
+                        "cluster": 1
+                    }
+                ],
+                "distractors": [
+                    {
+                        "id": "Vase_Medium_3",
+                        "caption": "A blue vase with a round shape.",
+                        "source": "ai2thorhab",
+                        "category": "vase",
+                        "cluster": 1,
+                        "pair_id": "B075HR4ZDB"
+                    },
+                    {
+                        "id": "10aad7e8b95a3bc4bf9cc81d416016befad8e737",
+                        "caption": "A purple spiral-bound notebook.",
+                        "source": "hssd_hab",
+                        "category": "book",
+                        "cluster": 0,
+                        "pair_id": "99843575975c6fcf087647c77f56bce970b7902a"
+                    },
+                    {
+                        "id": "739934e1838a630706d354d75a73355c93e07f69",
+                        "caption": "A gray square clock with minimalistic hands.",
+                        "source": "hssd_hab",
+                        "category": "clock",
+                        "cluster": 0,
+                        "pair_id": "Alarm_Clock_20"
+                    }
+                ],
+                "subtype": "history",
+                "num_targets": 1,
+                "memory": "The multicolored hardcover book with a geometric design is a gift from the user's best friend.",
+                "used_object": [
+                    "book"
+                ]
+            },
+            "scene_id": "103997895_171031182",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "B075HR4ZDB_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "b759f0cf80e62d9701b18edb6791d2172cf11c36_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "99843575975c6fcf087647c77f56bce970b7902a_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "b759f0cf80e62d9701b18edb6791d2172cf11c36_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Alarm_Clock_20_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "b759f0cf80e62d9701b18edb6791d2172cf11c36_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 3
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 3022,
+        "error": false,
+        "instruction": "Could you move the souvenir statue from my last vacation and the colorful Cole Hardware electric pots from the living room shelves to the bedroom chest of drawers and place them next to each other?",
+        "replanning_count_0": 12.0,
+        "run_id": 0,
+        "runtime": 127.77199649810792,
+        "sim_step_count": 2744.0,
+        "task_percent_complete": 0.3333333333333333,
+        "task_state_success": 0.0,
+        "org_data": {
+            "episode_id": "3022",
+            "instruction": "Could you move the souvenir statue from my last vacation and the colorful Cole Hardware electric pots from the living room shelves to the bedroom chest of drawers and place them next to each other?",
+            "original_data_info": {
+                "episode_id": "586",
+                "instruction": "Move the statue and plant container from the living room shelves to the bedroom chest of drawers. Place them next to each other on the chest of drawers.",
+                "data_path": "data/datasets/partnr_episodes/v0_0/val.json"
+            },
+            "metadata": {
+                "stage": "2",
+                "related_episode_id": "1022",
+                "episode_type": "object_semantics",
+                "target_objects": [
+                    {
+                        "id": "Cole_Hardware_Electric_Pot_Assortment_55",
+                        "caption": "A colorful assortment of electric pots, Cole Hardware.",
+                        "source": "google",
+                        "category": "plant_container",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "Dog_Statue_4",
+                        "caption": "A gray dog-shaped statue.",
+                        "source": "ai2thorhab",
+                        "category": "statue",
+                        "cluster": 1
+                    }
+                ],
+                "distractors": [
+                    {
+                        "id": "Ecoforms_Plant_Pot_GP9AAvocado",
+                        "caption": "A green and beige plant pot, Ecoforms GP9A Avocado.",
+                        "source": "google",
+                        "category": "plant_container",
+                        "cluster": 1,
+                        "pair_id": "Cole_Hardware_Electric_Pot_Assortment_55"
+                    },
+                    {
+                        "id": "Towel_Statue_Master",
+                        "caption": "A dark bronze statue of a standing figure.",
+                        "source": "ai2thorhab",
+                        "category": "statue",
+                        "cluster": 0,
+                        "pair_id": "Dog_Statue_4"
+                    }
+                ],
+                "subtype": "history",
+                "num_targets": 1,
+                "memory": "The gray dog-shaped statue is a souvenir from the user's last vacation.",
+                "used_object": [
+                    "statue"
+                ]
+            },
+            "scene_id": "102817140",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Cole_Hardware_Electric_Pot_Assortment_55_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "2d93837fd0fb80b2f2e9b0d3d55eb6506b22d4c1_:0000",
+                            "47c28745703eaa9b3bfe792ad97a4de3467d3bc3_:0000",
+                            "ee4b6239be4a2513feccbe0a96c2a59cda30b1ee_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Dog_Statue_4_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "2d93837fd0fb80b2f2e9b0d3d55eb6506b22d4c1_:0000",
+                            "47c28745703eaa9b3bfe792ad97a4de3467d3bc3_:0000",
+                            "ee4b6239be4a2513feccbe0a96c2a59cda30b1ee_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "Cole_Hardware_Electric_Pot_Assortment_55_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "Dog_Statue_4_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        2
+                    ],
+                    "depends_on": [
+                        0,
+                        1
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [],
+                        "n_propositions": 3
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    }
+]

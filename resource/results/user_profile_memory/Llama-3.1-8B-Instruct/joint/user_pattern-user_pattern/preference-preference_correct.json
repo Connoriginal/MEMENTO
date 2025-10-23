@@ -1,0 +1,556 @@
+[
+    {
+        "episode_id": 10029,
+        "error": false,
+        "instruction": "Can you arrange the vase and stuffed toy in their usual place? Additionally, can you set the tray and plate for meal prep?",
+        "replanning_count_0": 22.0,
+        "run_id": 0,
+        "runtime": 184.94368815422055,
+        "sim_step_count": 1998.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "10029",
+            "instruction": "Can you arrange the vase and stuffed toy in their usual place? Additionally, can you set the tray and plate for meal prep?",
+            "original_data_info": {
+                "episode_id": [
+                    "3082",
+                    "3083"
+                ],
+                "instruction": [
+                    "Can you arrange the vase and stuffed toy in their usual place?",
+                    "Can you set the tray and plate for meal prep?"
+                ],
+                "data_path": [
+                    "data/datasets/partnr_episodes/v0_0/val.json",
+                    "data/datasets/partnr_episodes/v0_0/val.json"
+                ]
+            },
+            "metadata": {
+                "subtype": [
+                    "preference",
+                    "preference"
+                ],
+                "memory": [
+                    "Keep the vase and stuffed toy together on the office shelves for a personal touch in the workspace.",
+                    "Arrange the tray and plate together on the counter for easy access during meal prep."
+                ],
+                "episode_type": [
+                    "user_pattern",
+                    "user_pattern"
+                ],
+                "related_episode_id": [
+                    "1082",
+                    "1083"
+                ],
+                "stage": "2",
+                "target_objects_original": [
+                    [
+                        {
+                            "id": "a21f46139ac72eca15b4240cf8055b984d593af1",
+                            "caption": "A brown vase with a ribbed design.",
+                            "source": "hssd_hab",
+                            "category": "vase",
+                            "cluster": 1
+                        },
+                        {
+                            "id": "b469cdabd74ce7e2a4cfb787504e17a8e71f172d",
+                            "caption": "A blue stuffed toy with a textured pattern and a white snout.",
+                            "source": "hssd_hab",
+                            "category": "stuffed_toy",
+                            "cluster": 1
+                        }
+                    ],
+                    [
+                        {
+                            "id": "xxxx1ae0e97exf786x4862x8c5ex80b5044f44c0",
+                            "caption": "A beige square tray with a marbled texture.",
+                            "source": "hssd_hab",
+                            "category": "tray",
+                            "cluster": 1
+                        },
+                        {
+                            "id": "Plate_22",
+                            "caption": "A black plate with a polka dot pattern.",
+                            "source": "ai2thorhab",
+                            "category": "plate",
+                            "cluster": 0
+                        }
+                    ]
+                ],
+                "target_objects": [
+                    {
+                        "id": "a21f46139ac72eca15b4240cf8055b984d593af1",
+                        "caption": "A brown vase with a ribbed design.",
+                        "source": "hssd_hab",
+                        "category": "vase",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "b469cdabd74ce7e2a4cfb787504e17a8e71f172d",
+                        "caption": "A blue stuffed toy with a textured pattern and a white snout.",
+                        "source": "hssd_hab",
+                        "category": "stuffed_toy",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "xxxx1ae0e97exf786x4862x8c5ex80b5044f44c0",
+                        "caption": "A beige square tray with a marbled texture.",
+                        "source": "hssd_hab",
+                        "category": "tray",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "Plate_22",
+                        "caption": "A black plate with a polka dot pattern.",
+                        "source": "ai2thorhab",
+                        "category": "plate",
+                        "cluster": 0
+                    }
+                ],
+                "distractors_original": [
+                    [],
+                    []
+                ],
+                "distractors": [],
+                "used_object_original": [
+                    [],
+                    []
+                ],
+                "used_object": [],
+                "combination_type": "User Pattern + User Pattern",
+                "object_overlaps": {
+                    "target_target": [],
+                    "distractor_distractor": [],
+                    "target1_distractor2": [],
+                    "target2_distractor1": [],
+                    "target_category_overlap": [],
+                    "counts": {
+                        "target_target": 0,
+                        "distractor_distractor": 0,
+                        "target1_distractor2": 0,
+                        "target2_distractor1": 0,
+                        "target_category_overlap": 0,
+                        "total_overlap": 0
+                    },
+                    "has_target_category_overlap": false,
+                    "has_target_distractor_overlap": false
+                },
+                "receptacle_overlaps": {
+                    "has_overlaps": false,
+                    "common_receptacles": [],
+                    "overlap_count": 0
+                }
+            },
+            "scene_id": "106878960_174887073",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "a21f46139ac72eca15b4240cf8055b984d593af1_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "2ad85bce6b2b0aa63f224958abe390b9be0ab72f_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "b469cdabd74ce7e2a4cfb787504e17a8e71f172d_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "2ad85bce6b2b0aa63f224958abe390b9be0ab72f_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "a21f46139ac72eca15b4240cf8055b984d593af1_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "b469cdabd74ce7e2a4cfb787504e17a8e71f172d_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "xxxx1ae0e97exf786x4862x8c5ex80b5044f44c0_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "51c3494e896f54f12169c9a6a054960048899cdf_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Plate_22_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "51c3494e896f54f12169c9a6a054960048899cdf_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "xxxx1ae0e97exf786x4862x8c5ex80b5044f44c0_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "Plate_22_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        2
+                    ],
+                    "depends_on": [
+                        0,
+                        1
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                },
+                {
+                    "proposition_indices": [
+                        5
+                    ],
+                    "depends_on": [
+                        3,
+                        4
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [
+                            [
+                                0,
+                                3
+                            ],
+                            [
+                                1,
+                                3
+                            ],
+                            [
+                                2,
+                                3
+                            ]
+                        ],
+                        "n_propositions": 6
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2,
+                            3,
+                            4,
+                            5
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "episode_id": 10032,
+        "error": false,
+        "instruction": "Could you set up my relaxing spot with the vase and plate? Additionally, could you set up my plants in their usual spot?",
+        "replanning_count_0": 27.0,
+        "run_id": 0,
+        "runtime": 197.3770236968994,
+        "sim_step_count": 3648.0,
+        "task_percent_complete": 1.0,
+        "task_state_success": 1.0,
+        "org_data": {
+            "episode_id": "10032",
+            "instruction": "Could you set up my relaxing spot with the vase and plate? Additionally, could you set up my plants in their usual spot?",
+            "original_data_info": {
+                "episode_id": [
+                    "3155",
+                    "3164"
+                ],
+                "instruction": [
+                    "Could you set up my relaxing spot with the vase and plate?",
+                    "Could you set up my plants in their usual spot?"
+                ],
+                "data_path": [
+                    "data/datasets/partnr_episodes/v0_0/val.json",
+                    "data/datasets/partnr_episodes/v0_0/val.json"
+                ]
+            },
+            "metadata": {
+                "subtype": [
+                    "preference",
+                    "preference"
+                ],
+                "memory": [
+                    "Place the vase and plate on the lounge chair for easy access while relaxing.",
+                    "Place the plant saucer and plant container on the bench in the bathroom for better humidity and sunlight."
+                ],
+                "episode_type": [
+                    "user_pattern",
+                    "user_pattern"
+                ],
+                "related_episode_id": [
+                    "1155",
+                    "1164"
+                ],
+                "stage": "2",
+                "target_objects_original": [
+                    [
+                        {
+                            "id": "Plate_10",
+                            "caption": "A brown square plate.",
+                            "source": "ai2thorhab",
+                            "category": "plate",
+                            "cluster": 1
+                        },
+                        {
+                            "id": "Vase_Tall_2",
+                            "caption": "A red vase with a long neck and bulbous base.",
+                            "source": "ai2thorhab",
+                            "category": "vase",
+                            "cluster": 1
+                        }
+                    ],
+                    [
+                        {
+                            "id": "Central_Garden_Flower_Pot_Goo_425",
+                            "caption": "A green plant container, Central Garden Flower Pot Goo 425.",
+                            "source": "google",
+                            "category": "plant_container",
+                            "cluster": 0
+                        },
+                        {
+                            "id": "Ecoforms_Quadra_Saucer_SQ1_Avocado",
+                            "caption": "A green, square plant saucer, Ecoforms Quadra Saucer SQ1 Avocado.",
+                            "source": "google",
+                            "category": "plant_saucer",
+                            "cluster": 0
+                        }
+                    ]
+                ],
+                "target_objects": [
+                    {
+                        "id": "Plate_10",
+                        "caption": "A brown square plate.",
+                        "source": "ai2thorhab",
+                        "category": "plate",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "Vase_Tall_2",
+                        "caption": "A red vase with a long neck and bulbous base.",
+                        "source": "ai2thorhab",
+                        "category": "vase",
+                        "cluster": 1
+                    },
+                    {
+                        "id": "Central_Garden_Flower_Pot_Goo_425",
+                        "caption": "A green plant container, Central Garden Flower Pot Goo 425.",
+                        "source": "google",
+                        "category": "plant_container",
+                        "cluster": 0
+                    },
+                    {
+                        "id": "Ecoforms_Quadra_Saucer_SQ1_Avocado",
+                        "caption": "A green, square plant saucer, Ecoforms Quadra Saucer SQ1 Avocado.",
+                        "source": "google",
+                        "category": "plant_saucer",
+                        "cluster": 0
+                    }
+                ],
+                "distractors_original": [
+                    [],
+                    []
+                ],
+                "distractors": [],
+                "used_object_original": [
+                    [],
+                    []
+                ],
+                "used_object": [],
+                "combination_type": "User Pattern + User Pattern",
+                "object_overlaps": {
+                    "target_target": [],
+                    "distractor_distractor": [],
+                    "target1_distractor2": [],
+                    "target2_distractor1": [],
+                    "target_category_overlap": [],
+                    "counts": {
+                        "target_target": 0,
+                        "distractor_distractor": 0,
+                        "target1_distractor2": 0,
+                        "target2_distractor1": 0,
+                        "target_category_overlap": 0,
+                        "total_overlap": 0
+                    },
+                    "has_target_category_overlap": false,
+                    "has_target_distractor_overlap": false
+                },
+                "receptacle_overlaps": {
+                    "has_overlaps": false,
+                    "common_receptacles": [],
+                    "overlap_count": 0
+                }
+            },
+            "scene_id": "107734176_176000019",
+            "evaluation_propositions": [
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Plate_10_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "0bd3fff760626beb3b250521c516ebc696984229_:0000",
+                            "bbe458f78e3686c63a219a0b9a6fcd785b55cf3d_:0000",
+                            "bbe458f78e3686c63a219a0b9a6fcd785b55cf3d_:0001",
+                            "bbe458f78e3686c63a219a0b9a6fcd785b55cf3d_:0002"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Vase_Tall_2_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "0bd3fff760626beb3b250521c516ebc696984229_:0000",
+                            "bbe458f78e3686c63a219a0b9a6fcd785b55cf3d_:0000",
+                            "bbe458f78e3686c63a219a0b9a6fcd785b55cf3d_:0001",
+                            "bbe458f78e3686c63a219a0b9a6fcd785b55cf3d_:0002"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Central_Garden_Flower_Pot_Goo_425_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "257f0502154f87737d29e4c63b90197f77808640_:0000",
+                            "9e94bcd5f087018a11366b769a6fc6ec05a7f1b3_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_on_top",
+                    "args": {
+                        "object_handles": [
+                            "Ecoforms_Quadra_Saucer_SQ1_Avocado_:0000"
+                        ],
+                        "receptacle_handles": [
+                            "257f0502154f87737d29e4c63b90197f77808640_:0000",
+                            "9e94bcd5f087018a11366b769a6fc6ec05a7f1b3_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_receptacle": false
+                    }
+                },
+                {
+                    "function_name": "is_next_to",
+                    "args": {
+                        "entity_handles_a": [
+                            "Central_Garden_Flower_Pot_Goo_425_:0000"
+                        ],
+                        "entity_handles_b": [
+                            "Ecoforms_Quadra_Saucer_SQ1_Avocado_:0000"
+                        ],
+                        "number": 1,
+                        "is_same_b": false,
+                        "l2_threshold": 1.0
+                    }
+                }
+            ],
+            "evaluation_proposition_dependencies": [
+                {
+                    "proposition_indices": [
+                        4
+                    ],
+                    "depends_on": [
+                        2,
+                        3
+                    ],
+                    "relation_type": "while_satisfied",
+                    "dependency_mode": "any"
+                }
+            ],
+            "evaluation_constraints": [
+                {
+                    "type": "TemporalConstraint",
+                    "args": {
+                        "dag_edges": [
+                            [
+                                0,
+                                2
+                            ],
+                            [
+                                1,
+                                2
+                            ]
+                        ],
+                        "n_propositions": 5
+                    }
+                },
+                {
+                    "type": "TerminalSatisfactionConstraint",
+                    "args": {
+                        "proposition_indices": [
+                            0,
+                            1,
+                            2,
+                            3,
+                            4
+                        ],
+                        "n_propositions": null
+                    }
+                }
+            ]
+        }
+    }
+]
