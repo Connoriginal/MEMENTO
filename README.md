@@ -1,4 +1,4 @@
-# MEMENTO: Embodied Agents Meet Personalization: Investigating Challenges and Solutions Through the Lens of Memory Utilization
+# Embodied Agents Meet Personalization: Investigating Challenges and Solutions Through the Lens of Memory Utilization
 
 ![MEMENTO Main Figure](./images/memento.png)
 
