@@ -1,10 +1,11 @@
-# MEMENTO: Embodied Agents Meet Personalization: Analyzing Memory Utilization for Personalized Assistance
+# MEMENTO: Embodied Agents Meet Personalization: Investigating Challenges and Solutions Through the Lens of Memory Utilization
 
-![MEMENTO Main Figure](./images/MEMENTO_overview.png)
+![MEMENTO Main Figure](./images/memento.png)
 
 ## Abstract
 
-Embodied agents empowered by large language models (LLMs) have shown strong performance in object rearrangement tasks. However, these tasks primarily focus on single-turn interactions with static and simplified instructions, which limits their relevance to real-world personalized assistance. To provide meaningful support, personalized embodied agents must understand personalized knowledge—unique semantics users assign to their environment—and leverage episodic memory to interpret dynamic instructions. Therefore, in this work, we present MEMENTO, a personalized embodied agent evaluation framework designed for comprehensive assessment of memory utilization with personalized knowledge. MEMENTO consists of a two-stage memory evaluation process.  In the *memory acquisition stage*, agents perform tasks with instructions containing personalized knowledge while accumulating the interaction history. Subsequently, the *memory utilization stage* challenges agents to complete the same tasks using modified instructions that require previous interaction history to succeed.  This process enables the evaluation of agents' understanding of personalized knowledge in object rearrangement tasks by focusing on its role in goal interpretation: (1) the ability to identify target objects based on personal meaning (*object semantics*), and (2) the ability to infer object–location configurations from consistent user patterns, such as routines (*user patterns*). Our evaluation across a range of LLM-powered embodied agents reveals that even frontier models struggle to utilize episodic memory with personalized knowledge, highlighting key limitations and providing insights for developing more personalized embodied agents.
+LLM-powered embodied agents have shown success on conventional object-rearrangement tasks, but providing personalized assistance that leverages user-specific knowledge from past interactions presents new challenges. 
+We investigate these challenges through the lens of agents' memory utilization along two critical dimensions: object semantics (identifying objects based on personal meaning) and user patterns (recalling sequences from behavioral routines). To assess these capabilities, we construct *MEMENTO*, an end-to-end two-stage evaluation framework comprising single-memory and joint-memory tasks. Our experiments reveal that current agents can recall simple object semantics but struggle to apply sequential user patterns to planning. Through in-depth analysis, we identify two critical bottlenecks: information overload and coordination failures when handling multiple memories. Based on these findings, we explore memory architectural approaches to address these challenges. Given our observation that episodic memory provides both personalized knowledge and in-context learning benefits, we design a hierarchical knowledge graph-based user-profile memory module that separately manages personalized knowledge, achieving substantial improvements on both single and joint-memory tasks.
 
 ## Installation
 For anonymity reasons, we are unable to share the Docker image directly. Instead, we have uploaded the Dockerfile to the repository.
@@ -96,6 +97,15 @@ To run an experiment, simply execute the appropriate script:
 ```
 
 ## Citation
+
+```
+@article{kwon2025embodied,
+  title={Embodied Agents Meet Personalization: Exploring Memory Utilization for Personalized Assistance},
+  author={Kwon, Taeyoon and Choi, Dongwook and Kim, Sunghwan and Kim, Hyojun and Moon, Seungjun and Kwak, Beong-woo and Huang, Kuan-Hao and Yeo, Jinyoung},
+  journal={arXiv preprint arXiv:2505.16348},
+  year={2025}
+}
+```
 
 Our codebase is based on [PARTNR](https://github.com/facebookresearch/partnr-planner), [Habitat-Lab](https://github.com/facebookresearch/habitat-lab).
 
